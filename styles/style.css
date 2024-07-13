@@ -212,6 +212,95 @@ body {
 
 /* TARRIF SECTION  ============================================= */
 
+.tariff-section {
+  padding-bottom: 4.1vw;
+}
+
+.tariff-section-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.6vw;
+  color: #030317;
+  margin-bottom: 1.6vw;
+}
+
+.tariff-title-span {
+  color: var(--primary-color);
+}
+
+.tariff-navigation-list {
+  display: flex;
+  background: #f3f3f4;
+  width: fit-content;
+  border-radius: 8.6vw;
+  margin-bottom: 1.6vw;
+}
+
+.navigation-item {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 1.5vw;
+  color: #030317;
+  padding: 0.6vw 1.2vw;
+  border-radius: 8.6vw;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navigation-item:hover {
+  color: var(--primary-color);
+}
+
+.tariff-navigation-list .current-nav-item {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.tariff-item-title-wrapper {
+  padding: 2.2vw 0 0 2vw;
+  background-image: url(../images/main-page/tariff-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 21.8vw;
+  height: 42.2vw;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+.tariff-item-title-wrapper .special-item-action {
+  border-radius: 8.6vw;
+  margin-bottom: 1vw;
+}
+
+.tariff-item-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 2.7vw;
+  color: #fff;
+  width: 17vw;
+  margin-bottom: 2.5vw;
+}
+
+.tariff-item-title-span {
+  color: var(--primary-yellow);
+}
+
+.tariff-item-title-inform {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.9vw;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  padding: 0.6vw 1vw;
+  background-color: var(--primary-yellow);
+  width: 11.8vw;
+  border-radius: 8.6vw;
+  margin-bottom: 0.6vw;
+}
+
 /* FORN SECTION ================================================= */
 
 .form-section {
@@ -435,6 +524,7 @@ body {
   background-color: var(--primary-yellow);
   padding: 0.4vw 0.8vw;
   border-radius: 0.4vw;
+  width: fit-content;
 }
 
 .special-item-title {
