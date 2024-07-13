@@ -57,6 +57,10 @@ body {
 
 /* HERO SLIDER SECTION ======================================================= */
 
+.hero-swiper-section {
+  padding-top: 2vw;
+}
+
 .hero-slide-item {
   padding: 5.7vw;
   background-image: url(../images/main-page/hero-bg-1.jpg);
@@ -131,7 +135,7 @@ body {
 
 .hero-swiper-container .swiper-pagination {
   position: absolute !important;
-  top: 0 !important;
+  top: 0.9vw !important;
   height: 2vw !important;
 }
 
