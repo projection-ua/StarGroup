@@ -301,6 +301,259 @@ body {
   margin-bottom: 0.6vw;
 }
 
+.tariff-marker-container {
+  display: flex;
+  gap: 0.4vw;
+}
+
+.tariff-popular-marker {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 0.6vw;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(90deg, #3358ff 0%, #a117c3 100%);
+  padding: 0.4vw 0.8vw;
+  border-radius: 1vw;
+  color: #fff;
+  width: fit-content;
+}
+
+.tariff-title {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 1.6vw;
+  color: #000;
+  margin-bottom: 1.6vw;
+}
+
+.info-container-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.7vw;
+  line-height: 1vw;
+  color: #81818b;
+  margin-bottom: 0.2vw;
+}
+
+.tariff-info-container {
+  display: flex;
+  gap: 0.8vw;
+  align-items: flex-start;
+  margin-bottom: 1.2vw;
+}
+
+.tariff-item-icons {
+  width: 1.2vw;
+  height: 1.2vw;
+  /* align-self: center; */
+}
+
+.inner-info-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2vw;
+}
+
+.inner-number-span {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  text-align: center;
+  color: #030317;
+}
+
+.inner-text-span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  color: #030317;
+}
+
+.inner-blue-link {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  color: var(--primary-color);
+}
+
+.inner-price-span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.6vw;
+  color: #484848;
+}
+
+.question-icon {
+  width: 1vw;
+  height: 1vw;
+  margin-right: 0.6vw;
+}
+
+.tariff-backdrop-button {
+  display: flex;
+  align-items: center;
+  background: #f2f3f7;
+  border: none;
+  padding: 0.6vw;
+  border-radius: 0.4vw;
+}
+
+.tariff-btn-text {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
+  text-align: center;
+  color: #030317;
+  margin-right: 0.2vw;
+}
+
+.backdrop-ico-tariff {
+  width: 0.8vw;
+  height: 0.5vw;
+}
+
+.backdrop-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
+}
+
+.tariff-info-container:nth-child(5) .info-container-title {
+  margin-bottom: 0.4vw;
+}
+
+.tariff-item-line {
+  height: 0.052vw;
+  background: #f2f2f2;
+}
+
+.tariff-info-container-list {
+  margin-bottom: 1.6vw;
+}
+
+.bonus-tag-container {
+  position: relative;
+  width: 3.1vw;
+  height: 1.7vw;
+  background-image: url(../images/main-page/bonus-tag-container.png);
+  background-repeat: no-repeat;
+  background-size: 3.1vw 1.7vw;
+  margin-bottom: 0.2vw;
+}
+
+.bonus-tag-text {
+  position: absolute;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.6vw;
+  line-height: 0.6vw;
+  color: #fff;
+  left: 22%;
+  top: 22%;
+}
+
+.tariff-item-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.7vw;
+  line-height: 1vw;
+  color: #030317;
+  width: 16vw;
+}
+
+.tv-icon {
+  width: 1.1vw;
+  height: 1.1vw;
+}
+
+.tv-list-container {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+.tv-list-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.7vw;
+  text-align: center;
+  color: #030317;
+}
+
+.tariff-item-price-container {
+}
+
+.inner-item-price-container {
+  display: flex;
+}
+
+.old-price-container {
+}
+
+.old-price-value {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  text-decoration: line-through;
+  text-align: center;
+  color: #9a9aa2;
+}
+
+.old-price-span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.6vw;
+  line-height: 0.6vw;
+  color: #9a9aa2;
+}
+
+.current-price-container {
+  display: flex;
+  gap: 0.2vw;
+}
+
+.current-price-value {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 2.5vw;
+  text-align: center;
+}
+
+.current-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.current-inner-span {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 0.6vw;
+  line-height: 0.6vw;
+  line-height: 1;
+  color: #030317;
+  display: flex;
+  flex-direction: column;
+}
+
+.current-inner-span:nth-child(1)::after {
+  position: absolute;
+  top: 0.8vw;
+  content: "";
+  width: -webkit-fill-available;
+  height: 0.052vw;
+  background-color: #000;
+}
+
+.inner-item-price-container {
+  gap: 0.6vw;
+}
 /* FORN SECTION ================================================= */
 
 .form-section {
