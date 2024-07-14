@@ -37,7 +37,7 @@ img {
 body {
   margin: 0;
 
-  background: #f9f9f9;
+  background: #f2f3f7;
 }
 
 .container {
@@ -638,7 +638,7 @@ body {
   /* position: absolute; */
   padding: 1.6vw;
   background-color: #ffffff;
-  width: 19.8vw;
+  width: fit-content;
   border-radius: 1vw;
   top: 0.7vw;
   z-index: 1;
@@ -647,7 +647,7 @@ body {
 
 .tariff-list-container {
   display: flex;
-  gap: 0.8vw;
+  justify-content: space-between;
 }
 
 .tv-list-container:hover .tv-icon {
