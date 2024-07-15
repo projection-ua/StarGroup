@@ -1088,3 +1088,160 @@ body {
 .first-child .news-date-container {
   justify-content: space-between;
 }
+
+/* FOOTER ================================================================ */
+
+footer {
+  background-color: #ffffff;
+  padding: 4.6vw 0;
+}
+
+.footer-info-question-container {
+}
+
+.footer-number-container {
+}
+
+.footer-number {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  text-align: center;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  background-color: var(--primary-blue-bg);
+  padding: 0.8vw;
+  width: fit-content;
+  border-radius: 0.4vw;
+  margin-bottom: 1.2vw;
+}
+
+.footer-number-backdrop-icon {
+  width: 0.8vw;
+  height: 0.5vw;
+}
+
+.footer-question-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: #9a9aa2;
+  margin-bottom: 0.4vw;
+}
+
+.footer-email-address {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.9vw;
+  color: #030317;
+  margin-bottom: 1.2vw;
+}
+
+.copy-icon {
+  width: 0.88vw;
+  height: 1vw;
+}
+
+.footer-info-container {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #030317;
+  width: 15vw;
+  display: flex;
+  gap: 0.7vw;
+}
+
+.location-icon {
+  width: 1.9vw;
+  height: 1.2vw;
+}
+
+.footer-nav-link-item {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.9vw;
+  line-height: 0.9vw;
+  color: #030317;
+}
+
+.footer-nav-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+}
+
+.footer-nav-container {
+  display: flex;
+  gap: 5.2vw;
+}
+
+.main-footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4.1vw;
+}
+
+.footer-line {
+  background: #f2f2f2;
+  height: 1px;
+}
+
+.footer-social-container {
+  display: flex;
+  padding: 2.55vw 0;
+  align-items: center;
+  gap: 31vw;
+}
+
+.footer-logo {
+  width: 5.7vw;
+  height: 2.5vw;
+}
+
+.footer-social-link-container {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.footer-social-link {
+  background: #f2f3f7;
+  width: 2.9vw;
+  height: 2.9vw;
+  border-radius: 0.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-icon {
+  width: 1.2vw;
+  height: 1vw;
+}
+
+.footer-bottom-info {
+  display: flex;
+  gap: 22vw;
+  margin-top: 2.5vw;
+}
+
+.footer-bottom-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.7vw;
+  color: #9a9aa2;
+}
+
+.inner-politic-link {
+  color: #353545;
+}
+
+.footer-bottom-text:nth-child(2) {
+  width: 31vw;
+}
