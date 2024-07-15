@@ -36,8 +36,7 @@ img {
 
 body {
   margin: 0;
-
-  background: #f2f3f7;
+  background: #f9f9f9;
 }
 
 .container {
@@ -746,6 +745,8 @@ body {
 
 .form-search-icon {
   fill: #fff;
+  width: 1vw;
+  height: 1vw;
 }
 
 .form-address {
@@ -1244,4 +1245,145 @@ footer {
 
 .footer-bottom-text:nth-child(2) {
   width: 31vw;
+}
+
+/* =============INTERNET + TV PAGE====================================================== */
+/*  INTERNET_TV_HERO===========================================*/
+.internet-tv-hero-section {
+  background-color: #f2f3f7;
+  padding: 2vw 0;
+}
+
+.internet-tv-hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2.6vw;
+  border-radius: 1vw;
+}
+
+.internet-tv-hero-inf0 {
+}
+
+.internet-tv-hero-title {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 2.6vw;
+  line-height: 2.8vw;
+  color: #030317;
+  margin-bottom: 1.2vw;
+  width: 31vw;
+}
+
+.internet-tv-hero-text {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  color: #030317;
+  width: 30vw;
+  margin-bottom: 1.6vw;
+}
+
+.internet-tv-hero-btn {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  color: #fff;
+  border-radius: 9px;
+  padding: 1.2vw 4.7vw;
+  background-color: var(--primary-color);
+  border: none;
+  transition: 0.3s;
+}
+
+.internet-tv-hero-btn:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-color);
+}
+
+.internet-tv-hero-image-container {
+  width: 39.3vw;
+  height: 21.8vw;
+}
+
+/* TARIFF IN INTERNET_TV ===================== */
+.tariff-in-internet-tv {
+  padding-top: 4vw;
+}
+
+.tariff-in-internet-tv .tariff-list-container {
+  justify-content: flex-start;
+  gap: 0.8vw;
+  margin-bottom: 2vw;
+}
+
+.tariff-in-internet-tv-bottom-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.7vw;
+  line-height: 1vw;
+  color: #9a9aa2;
+}
+
+/* INTERNET-TV-FORM-SECTION ========================================================= */
+
+.internet-tv-form-section .form-container {
+  width: 100%;
+  padding-left: 24vw;
+  background-image: url(../images/internet-tv-page/internet-tv-form-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.internet-tv-form-section .form-btn {
+  width: 19.1vw;
+  margin-top: 1.6vw;
+}
+
+.inner-form-container {
+  display: flex;
+  gap: 1.2vw;
+}
+
+.internet-tv-form-section .first-label .form-input {
+  width: 25.3vw;
+}
+
+.internet-tv-form-section .form-input {
+  width: 12vw;
+}
+
+.internet-tv-form-section .first-label {
+  width: 25.3vw;
+  flex: none;
+}
+
+.internet-tv-form-section .form-title {
+  width: auto;
+}
+
+/* WE CAN SECTION ================================= */
+
+.we-can-icon {
+  width: 2.8vw;
+  height: 2.8vw;
+  fill: #fff;
+}
+
+.separate-we-can-icon {
+  width: 2.8vw;
+  height: 2.8vw;
+}
+
+.we-can-icon-container {
+  background-color: var(--primary-color);
+  width: 5.4vw;
+  height: 5.4vw;
+  border-radius: 0.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
