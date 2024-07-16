@@ -327,6 +327,9 @@ body {
   font-size: 1.6vw;
   color: #000;
   margin-bottom: 1.6vw;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .info-container-title {
@@ -642,6 +645,7 @@ body {
   top: 0.7vw;
   z-index: 1;
   margin-top: -0.7vw;
+  box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.08);
 }
 
 .tariff-list-container {
@@ -1584,4 +1588,106 @@ footer {
 .equipment-link-item:nth-child(3) .equipment-image-container {
   width: 19.3vw;
   height: 11.6vw;
+}
+
+/* QUESTION SECTION ===================================== */
+
+.question-section {
+  padding-bottom: 4vw;
+}
+
+.question-container {
+  margin-bottom: 1.2vw;
+}
+
+.question-item {
+  background: #f4f4f4;
+  border-radius: 0.8vw;
+  padding: 1.4vw;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-item:not(:last-child) {
+  margin-bottom: 0.4vw;
+}
+
+.question-item .question-item-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.question-item-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  color: #030317;
+}
+
+.question-item-acardeon-text-JS {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #030317;
+  width: 60vw;
+  height: 0px;
+  opacity: 0;
+  transition: 0.3s;
+  margin-top: 1vw;
+  /* display: none; */
+  visibility: hidden;
+}
+
+.is-active {
+  transition: 0.3;
+  height: auto;
+  opacity: 1;
+  /* display: block; */
+  visibility: visible;
+}
+
+.question-item-icon-circle {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100%;
+  background-color: var(--primary-blue-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-item-icon {
+  width: 0.7vw;
+  height: 0.4vw;
+}
+
+.question-link {
+  color: var(--primary-color);
+  background-color: var(--primary-blue-bg);
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vw 1.6vw;
+  border-radius: 0.4vw;
+  width: fit-content;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+}
+
+.question-link-icon {
+  width: 0.6vw;
+  height: 0.8vw;
+}
+
+/* =============INTERNET-MEGOGO-PAGE ==============*/
+
+.without-marker .inner-tariff-container {
+  margin-top: 0.9vw;
 }
