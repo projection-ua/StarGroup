@@ -119,7 +119,7 @@ body {
   border-radius: 1vw;
 }
 
-.swiper-pagination-bullet {
+.hero-swiper-container .swiper-pagination-bullet {
   border-radius: 3.4vw !important;
   width: 18.9vw !important;
   height: 0.2vw !important;
@@ -127,7 +127,7 @@ body {
   opacity: 0.1 !important;
 }
 
-.swiper-pagination-bullet-active {
+.hero-swiper-container .swiper-pagination-bullet-active {
   background: #fff !important;
   opacity: 1 !important;
 }
@@ -213,6 +213,7 @@ body {
 
 .tariff-section {
   padding-bottom: 4.1vw;
+  overflow: hidden;
 }
 
 .tariff-section-title {
@@ -265,6 +266,8 @@ body {
   height: 42.2vw;
   border-radius: 1vw;
   overflow: hidden;
+  z-index: 9;
+  flex-shrink: 0;
 }
 
 .tariff-item-title-wrapper .special-item-action {
@@ -1690,4 +1693,104 @@ footer {
 
 .without-marker .inner-tariff-container {
   margin-top: 0.9vw;
+}
+
+.tariif-section-in-megogo .tariff-list-container {
+  /* display: block; */
+  /* min-width: 0; */
+  gap: 0.8vw;
+  margin-bottom: 2vw;
+}
+
+.tariff-swiper-container {
+  position: relative;
+  width: 61vw;
+  /* height: 43.8vw; */
+}
+
+.tariff-swiper-container .swiper-pagination {
+  top: ;
+  left: ;
+}
+
+.tariff-swiper-container .swiper-pagination-bullet-active {
+  border-radius: 0.8vw;
+  width: 2.5vw !important;
+  height: 0.3vw;
+  background: #030317 !important;
+}
+
+.tariff-swiper-container .swiper-pagination-bullet {
+  border-radius: 0.8vw;
+  width: 1.2vw;
+  height: 0.3vw;
+  background: #e4e4e4;
+}
+
+.tariif-section-in-megogo {
+  padding-top: 4vw;
+}
+
+.instruction-item-link-intariff {
+  color: #9a9aa2;
+  margin-top: 0.8vw;
+}
+
+/* UNIVERSAL_SECTION ----------FOR MEGOGO SWEET OMEGA =======================*/
+
+.universal-section {
+  padding: 4vw 0;
+}
+
+.universal-container {
+  background-color: var(--primary-color);
+  border-radius: 1vw;
+  padding: 2.6vw;
+}
+
+.universal-container .special-item-action {
+  margin-bottom: 0.8vw;
+}
+
+.universal-info-container {
+}
+
+.special-item-action {
+}
+
+.universal-info-item-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2.6vw;
+  line-height: 2.6vw;
+  color: #fff;
+  width: 31vw;
+  margin-bottom: 1.2vw;
+}
+
+.universal-info-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  color: #fff;
+  width: 30vw;
+  margin-bottom: 1.6vw;
+}
+
+.universal-info-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.9vw;
+  line-height: 0.9vw;
+  color: var(--primary-color);
+  background-color: var(--primary-yellow);
+  border: none;
+  padding: 1.2vw 1.6vw;
+  border-radius: 0.4vw;
+  transition: 0.3s;
+}
+
+.universal-info-btn:hover {
+  background-color: #ffffff;
 }
