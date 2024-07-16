@@ -52,6 +52,7 @@ body {
   --primary-blue-bg: #ebeeff;
   --primary-orange: #ff5300;
   --primary-orange-bg: #ffe3d5;
+  --primary-transparrent-blue: rgba(255, 255, 255, 0.1);
 }
 
 /* HERO SLIDER SECTION ====================================================== */
@@ -1742,10 +1743,17 @@ footer {
   padding: 4vw 0;
 }
 
-.universal-container {
+.universal-section .container {
   background-color: var(--primary-color);
   border-radius: 1vw;
   padding: 2.6vw;
+}
+
+.universal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5vw;
 }
 
 .universal-container .special-item-action {
@@ -1786,11 +1794,74 @@ footer {
   color: var(--primary-color);
   background-color: var(--primary-yellow);
   border: none;
-  padding: 1.2vw 1.6vw;
+  padding: 1.2vw 4.4vw;
   border-radius: 0.4vw;
   transition: 0.3s;
 }
 
 .universal-info-btn:hover {
   background-color: #ffffff;
+}
+
+.universal-swiper-container {
+  position: relative;
+  width: 39.2vw;
+  height: 23.3vw;
+  border-radius: 0.8vw;
+  overflow: hidden;
+}
+
+.universal-swiper-container img {
+  border-radius: 0.8vw;
+}
+
+.universal-swiper-container .swiper-wrapper {
+}
+
+.universal-swiper-container .swiper-pagination {
+  bottom: 0;
+}
+
+.universal-swiper-container .swiper-pagination-bullet {
+  border-radius: 3.4vw;
+  width: 7.5vw;
+  height: 0.22vw;
+
+  transition: 0.3s;
+  background: #fff;
+  opacity: 0.2;
+}
+
+.universal-swiper-container .swiper-pagination-bullet-active {
+  width: 14vw;
+  opacity: 1;
+}
+
+.universal-platform-list {
+  display: flex;
+  padding: 1.6vw 4vw;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+  border-radius: 0.8vw;
+}
+
+.universal-platform-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
+}
+
+.universal-platform-icon {
+  width: 2.5vw;
+  height: 2.5vw;
+  fill: white;
+}
+
+.universal-platform-name {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 1.2vw;
+  color: #fff;
+  width: 7vw;
 }
