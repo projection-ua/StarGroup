@@ -1469,6 +1469,12 @@ footer {
   border-radius: 0.4vw;
   padding: 1.2vw 0;
   width: 11.5vw;
+  transition: 0.3s;
+}
+
+.instructions-item-btn:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-color);
 }
 
 .instructions-graph-text {
@@ -1485,4 +1491,97 @@ footer {
 
 .instructions-item:nth-child(4) .we-can-item-title {
   width: 10vw;
+}
+
+.instructions-item:nth-child(4) .without-btn-item {
+  margin-bottom: 0.6vw !important;
+}
+
+.instruction-item-link {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  transition: 0.3s;
+}
+
+.instruction-item-link:hover .instruction-item-link-icon {
+  stroke: var(--primary-color);
+}
+
+.instruction-item-link:hover {
+  color: var(--primary-color);
+}
+
+.instruction-item-link-icon {
+  stroke: rgba(0, 0, 0, 0.2);
+  width: 0.4vw;
+  height: 0.6vw;
+  transition: 0.3s;
+}
+
+/* EQUIPMENT_SECTION ===================================================== */
+
+.equipment-section {
+  /* background-color: #f2f3f7; */
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+
+.equipment-link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.equipment-link-item {
+  display: block;
+  width: 27vw;
+  background-color: #ffffff;
+  padding: 1.7vw;
+  border-radius: 0.8vw;
+}
+
+.equipment-image-container {
+  width: 11.7vw;
+  height: 11.7vw;
+  margin: 0 auto;
+  margin-bottom: 1.2vw;
+}
+
+.equipment-link-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.4vw;
+  line-height: 2vw;
+  letter-spacing: -0.01em;
+  color: #030317;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.equipment-link-icon {
+  width: 0.5vw;
+  height: 0.8vw;
+}
+
+.equipment-image-container img {
+  transition: 0.3s;
+}
+
+.equipment-link-item:hover .equipment-image-container img {
+  transform: scale(1.15);
+}
+
+.equipment-link-item:hover .equipment-link-title {
+  gap: 1.5vw;
+}
+
+.equipment-link-item:nth-child(3) .equipment-image-container {
+  width: 19.3vw;
+  height: 11.6vw;
 }
