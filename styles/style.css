@@ -672,6 +672,86 @@ body {
 .tariff-item {
   position: relative;
 }
+
+.without-bonus {
+  margin-bottom: 7.5vw;
+}
+
+.small-part-of-tariff-title {
+  font-size: 1.2vw;
+}
+
+.tariff-enth-speed-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2vw;
+}
+
+.enth-speed-value {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #030317;
+}
+
+.enth-speed-span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.7vw;
+  line-height: 0.8vw;
+  color: #030317;
+}
+
+.special-price-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.6vw;
+  margin: 1.6vw 0 1.2vw 0;
+}
+
+.special-price-value {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2vw;
+}
+
+.special-price-value-number {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.6vw;
+  line-height: 1.6vw;
+  text-align: center;
+  color: #030317;
+}
+
+.special-price-span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.6vw;
+  line-height: 0.6vw;
+  color: #030317;
+}
+
+.special-price-termin {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  line-height: 0.6vw;
+  color: #3d3606;
+  background-color: var(--primary-yellow);
+  border-radius: 0.2vw;
+  padding: 0.3vw 0.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tariff-in-apartment-bottom-text{
+  width: 64vw;
+}
 /* FORN SECTION ================================================ */
 
 .form-section {
@@ -1646,17 +1726,17 @@ footer {
   height: 0px;
   opacity: 0;
   transition: 0.3s;
-  margin-top: 1vw;
   /* display: none; */
   visibility: hidden;
 }
 
 .is-active {
-  transition: 0.3;
+  transition: 0.3s;
   height: auto;
   opacity: 1;
   /* display: block; */
   visibility: visible;
+  margin-top: 1vw;
 }
 
 .question-item-icon-circle {
@@ -1697,7 +1777,7 @@ footer {
 /* =============INTERNET-MEGOGO-PAGE ==============*/
 
 .without-marker .inner-tariff-container {
-  margin-top: 0.9vw;
+  margin-top: 0.8vw;
 }
 
 .tariif-section-in-megogo .tariff-list-container {
@@ -1954,3 +2034,20 @@ footer {
   justify-content: space-between;
   gap: 0.8vw;
 }
+
+/*===================== OMEGA_PAGE ================= */
+
+.tariff-section-in-omega .tariff-item-title-wrapper {
+  background-image: url(../images/internet-omega.page/omega-tariff-img.jpg);
+}
+
+/* ===============APARTMENT-BUILDING PAGE=================== */
+
+.apartment-building-hero .internet-tv-hero-title {
+  width: 37vw;
+}
+
+.apartment-building-hero .special-item-action {
+  margin-bottom: 1.6vw;
+}
+
