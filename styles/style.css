@@ -126,17 +126,21 @@ body {
   height: 0.2vw !important;
   background: #fff !important;
   opacity: 0.1 !important;
+  transition: 0.3s;
 }
 
 .hero-swiper-container .swiper-pagination-bullet-active {
   background: #fff !important;
   opacity: 1 !important;
+  width: 14vw !important;
 }
 
 .hero-swiper-container .swiper-pagination {
-  position: absolute !important;
-  top: 0.9vw !important;
-  height: 2vw !important;
+  position: absolute;
+  top: 0.9vw;
+  left: 5vw;
+  height: 2vw;
+  width: 73vw;
 }
 
 /* SERVICES SECTION ========================================================== */
@@ -1744,6 +1748,9 @@ footer {
 }
 
 .universal-section .container {
+}
+
+.universal-bg-container {
   background-color: var(--primary-color);
   border-radius: 1vw;
   padding: 2.6vw;
@@ -1864,4 +1871,86 @@ footer {
   line-height: 1.2vw;
   color: #fff;
   width: 7vw;
+}
+
+/* INTERACTIVE-TV-SECTION ======================= */
+.interactive-tv-section {
+  padding-bottom: 4vw;
+}
+
+.interactive-tv-section-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.8vw;
+  color: #000;
+  margin-bottom: 2vw;
+}
+
+.interactive-tv-item {
+  background-color: #ffffff;
+  padding: 2vw;
+  border-radius: 0.7vw;
+  width: fit-content;
+}
+
+.interactive-tv-iamge-container {
+  padding: 1.5vw;
+  border-radius: 0.4vw;
+  width: 23.2vw;
+  height: 14.5vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  margin-bottom: 1.6vw;
+}
+
+.interactive-tv-item:nth-child(1) .interactive-tv-iamge-container {
+  background-image: url(../images/internet-megogo-page/interactive-tv/man-looking-image.jpg);
+}
+.interactive-tv-item:nth-child(2) .interactive-tv-iamge-container {
+  background-image: url(../images/internet-megogo-page/interactive-tv/family-image.jpg);
+}
+.interactive-tv-item:nth-child(3) .interactive-tv-iamge-container {
+  background-image: url(../images/internet-megogo-page/interactive-tv/tv-image.jpg);
+}
+
+.we-can-icon-container {
+}
+
+.we-can-icon {
+}
+
+.interactive-tv-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+  color: #000;
+  margin-bottom: 0.8vw;
+  max-width: 23.2vw;
+}
+
+.interactive-tv-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #686874;
+  width: 22.2vw;
+}
+
+.we-can-icon-in-interactive {
+  align-self: flex-end;
+  width: 4vw;
+  height: 4vw;
+}
+
+.we-can-icon-in-interactive svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.interactive-tv-item-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8vw;
 }
