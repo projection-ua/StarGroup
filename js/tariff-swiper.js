@@ -1,10 +1,10 @@
-import { Pagination } from "../node_modules/swiper/modules";
+// import { Pagination } from "../node_modules/swiper/modules";
 
-import Swiper from "../node_modules/swiper";
-import "../node_modules/swiper/swiper-bundle.min.css";
+// import Swiper from "../node_modules/swiper";
+// import "../node_modules/swiper/swiper-bundle.min.css";
 
 new Swiper(".tariff-swiper-container", {
-  modules: [Pagination],
+  // modules: [Pagination],
 
   slidesPerView: 3,
   pagination: {

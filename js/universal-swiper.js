@@ -1,9 +1,9 @@
-import { Autoplay, Pagination } from "../node_modules/swiper/modules";
-import Swiper from "../node_modules/swiper";
-import "../node_modules/swiper/swiper-bundle.min.css";
+// import { Autoplay, Pagination } from "../node_modules/swiper/modules";
+// import Swiper from "../node_modules/swiper";
+// import "../node_modules/swiper/swiper-bundle.min.css";
 
 new Swiper(".universal-swiper-container", {
-  modules: [Autoplay, Pagination],
+  // modules: [Autoplay, Pagination],
 
   spaceBetween: 10,
   slidesPerView: 1,
