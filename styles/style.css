@@ -138,7 +138,7 @@ body {
 
 .hero-swiper-container .swiper-pagination {
   position: absolute;
-  top: 0.9vw;
+  top: 0.9vw !important;
   left: 5vw;
   height: 2vw;
   width: 73vw;
@@ -1266,7 +1266,7 @@ footer {
   transition: 0.3s;
 }
 
-.footer-nav-link-item:hover{
+.footer-nav-link-item:hover {
   color: var(--primary-color);
 }
 
