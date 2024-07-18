@@ -2162,3 +2162,58 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* ============== TABLE_SECTION ================ */
+
+.tariff-table-section {
+  padding: 4vw 0;
+}
+
+.table-container-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2.6vw;
+  line-height: 2.6vw;
+  color: #030317;
+  margin-bottom: 0.4vw;
+}
+
+.tariff-plan-list {
+  display: flex;
+}
+
+.tariff-plan-item {
+  width: 14.5vw;
+}
+
+.tariff-plan-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+  text-align: center;
+  color: #000;
+}
+
+.tariff-plan-btn {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  color: var(--primary-color);
+  padding: 1.2vw 3.6vw;
+  border: 0.07vw solid var(--primary-color);
+  border-radius: 0.4vw;
+  margin: 0 auto;
+}
+
+.upper-table-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-logo-icon {
+  width: 6.4vw;
+  height: 6.4vw;
+}
