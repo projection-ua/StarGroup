@@ -50,6 +50,7 @@ body {
   --primary-hover: #1436cf;
   --primary-yellow: #ffe000;
   --primary-blue-bg: #ebeeff;
+  --primary-blue-bg-hover: #c2cdff;
   --primary-orange: #ff5300;
   --primary-orange-bg: #ffe3d5;
   --primary-transparrent-blue: rgba(255, 255, 255, 0.1);
@@ -1262,6 +1263,11 @@ footer {
   font-size: 0.9vw;
   line-height: 0.9vw;
   color: #030317;
+  transition: 0.3s;
+}
+
+.footer-nav-link-item:hover{
+  color: var(--primary-color);
 }
 
 .footer-nav-block {
@@ -1311,11 +1317,22 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 }
 
 .footer-social-icon {
   width: 1.2vw;
   height: 1vw;
+  fill: #9a9aa2;
+  transition: 0.3s;
+}
+
+.footer-social-link:hover {
+  background-color: var(--primary-color);
+}
+
+.footer-social-link:hover .footer-social-icon {
+  fill: #ffffff;
 }
 
 .footer-bottom-info {
@@ -1399,6 +1416,8 @@ footer {
 .internet-tv-hero-image-container {
   width: 39.3vw;
   height: 21.8vw;
+  border-radius: 1vw;
+  overflow: hidden;
 }
 
 /* TARIFF IN INTERNET_TV ===================== */
@@ -1495,15 +1514,15 @@ footer {
 .we-can-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5vw;
+  gap: 0.4vw;
 }
 
 .we-can-item-container {
   display: flex;
   /* align-items: center; */
-  gap: 1.5vw;
+  gap: 1.6vw;
   background: #fff;
-  padding: 1.6vw;
+  padding: 1.5vw;
   border-radius: 0.6vw;
 }
 
@@ -1526,6 +1545,7 @@ footer {
   line-height: 1.25vw;
   color: #030317;
   width: 16.7vw;
+  margin-bottom: 0.2vw;
 }
 
 /* INSTRUCTIONS_SECTION ================================================== */
@@ -1773,6 +1793,11 @@ footer {
   font-weight: 700;
   font-size: 0.8vw;
   line-height: 0.8vw;
+  transition: 0.3s;
+}
+
+.question-link:hover {
+  background-color: var(--primary-blue-bg-hover);
 }
 
 .question-link-icon {
@@ -2074,4 +2099,66 @@ footer {
 
 .why-section .additional-services {
   margin-bottom: 0;
+}
+
+.conditions-container {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  cursor: pointer;
+}
+
+.conditions-icon {
+  width: 1vw;
+  height: 1vw;
+  fill: #9a9aa2;
+  transition: 0.3s;
+}
+
+.conditions-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #9a9aa2;
+}
+
+.conditions-container:hover .conditions-icon {
+  fill: var(--primary-color);
+}
+
+/* ============PRIVATE HOUSE PAGE ==================== */
+
+.tariff-in-private-house .inner-number-span {
+  font-size: 1vw;
+}
+
+.tariff-in-private-house .tariff-item-line {
+  /* margin-bottom: 5vw; */
+}
+
+.tariff-in-private-house .price-in-private-house {
+  font-size: 1.4vw;
+}
+
+.tariff-temporary-discount {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.6vw;
+  line-height: 0.6vw;
+  color: #3d3606;
+  background-color: var(--primary-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2vw;
+  width: 6.3vw;
+  height: 1.2vw;
+}
+
+.tariff-in-private-house .inner-tariff-container {
+  height: 32.7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
