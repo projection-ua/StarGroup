@@ -2164,9 +2164,11 @@ footer {
 }
 
 /* ============== TABLE_SECTION ================ */
+.tariff-table-container {
+}
 
-.tariff-table-section {
-  padding: 4vw 0;
+.info-table-line {
+  width: 21.7vw;
 }
 
 .table-container-title {
@@ -2178,42 +2180,27 @@ footer {
   margin-bottom: 0.4vw;
 }
 
-.tariff-plan-list {
-  display: flex;
-}
-
-.tariff-plan-item {
-  width: 14.5vw;
-}
-
-.tariff-plan-title {
-  font-family: "Exo 2", sans-serif;
-  font-weight: 700;
-  font-size: 1.2vw;
-  text-align: center;
-  color: #000;
-}
-
-.tariff-plan-btn {
-  display: block;
-  font-family: "Manrope", sans-serif;
-  font-weight: 700;
-  font-size: 0.8vw;
-  line-height: 0.8vw;
-  color: var(--primary-color);
-  padding: 1.2vw 3.6vw;
-  border: 0.07vw solid var(--primary-color);
-  border-radius: 0.4vw;
-  margin: 0 auto;
-}
-
-.upper-table-line {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .table-logo-icon {
   width: 6.4vw;
   height: 6.4vw;
+}
+
+.tariff-plan-categorie-item {
+  border-bottom: 1px solid #eaeaea;
+  padding: 1vw 0;
+
+}
+
+.tariff-plan-categoties {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #030317;
+  max-width: 19vw;
+}
+
+.table-title-container {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 2.7vw;
 }
