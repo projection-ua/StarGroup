@@ -2169,23 +2169,26 @@ footer {
 
 /* ============== TABLE_SECTION ================ */
 
-.tariff-table-section .container {
+.tariff-table-section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 
 .table-container {
   background-color: #ffffff;
-  padding: 3.7vw 2vw 3.3vw 2vw;
+  padding: 2.7vw 2vw 3.3vw 2vw;
   border-radius: 1vw;
+  margin-bottom: 1.6vw;
 }
 
 .main-upper-table-container {
   display: flex;
-  padding-bottom: 2vw;
   justify-content: space-between;
 }
 
 .table-main-container {
   width: 21.7vw;
+  padding-top: 1.5vw;
 }
 
 .table-logo-title {
@@ -2215,7 +2218,24 @@ footer {
 }
 
 .secondary-table-container {
+  position: relative;
   width: 14.4vw;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+  border-top-right-radius: 1vw;
+  border-top-left-radius: 1vw;
+  transition: 0.3s;
+}
+
+.secondary-table-container .tariff-marker-container {
+  position: absolute;
+  top: -0.8vw;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.secondary-table-container .tariff-marker-container.hovered {
+  opacity: 1;
 }
 
 .table-btn {
@@ -2230,6 +2250,27 @@ footer {
   padding: 1.2vw 3.6vw;
   display: block;
   margin: 0 auto;
+  transition: 0.3s;
+}
+
+.first-column-btn.hovered {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.second-column-btn.hovered {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.third-column-btn.hovered {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.fourth-column-btn.hovered {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .table-container .tariff-item-price-container {
@@ -2244,6 +2285,10 @@ footer {
   /* padding: 1vw 0; */
 }
 
+.lower-table-container:last-child {
+  border-bottom: 1px solid #eaeaea;
+}
+
 .lower-table-title-container {
   width: 21.7vw;
 }
@@ -2253,6 +2298,7 @@ footer {
   font-weight: 700;
   font-size: 0.8vw;
   line-height: 1.2vw;
+  max-width: 19vw;
 }
 
 .lower-table-info-list {
@@ -2267,6 +2313,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
 }
 
 .lower-table-number {
@@ -2293,8 +2340,8 @@ footer {
 }
 
 .chek-mark-icon {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.45vw;
+  height: 1.45vw;
   margin: 0 auto;
   display: block;
 }
@@ -2306,4 +2353,46 @@ footer {
   line-height: 1.4vw;
   text-align: center;
   color: #030317;
+}
+
+.with-price .lower-table-info-item {
+  height: 5vw;
+}
+
+.first-column.hovered {
+  background-color: #f7f7f7;
+}
+
+.second-column.hovered {
+  background-color: #f7f7f7;
+}
+
+.third-column.hovered {
+  background-color: #f7f7f7;
+}
+
+.fourth-column.hovered {
+  background-color: #f7f7f7;
+}
+
+.question-section.in-tables-page {
+  padding-top: 4vw;
+}
+
+/* =================== SWEET-TV PAGE =============================== */
+
+.sweet-tv-logo-image {
+  width: 14.1vw;
+  height: 2.6vw;
+}
+
+.tariff-table-section.in-sweet-tv .table-logo-title {
+  margin-bottom: 1.2vw;
+}
+
+/* ======================== OMEGA PAGE ============================== */
+
+.omega-logo-image {
+  width: 8.9vw;
+  height: 3.3vw;
 }
