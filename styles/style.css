@@ -56,6 +56,10 @@ body {
   --primary-transparrent-blue: rgba(255, 255, 255, 0.1);
 }
 
+.primary-color {
+  color: var(--primary-color);
+}
+
 /* HERO SLIDER SECTION ====================================================== */
 
 .hero-swiper-section {
@@ -2164,14 +2168,27 @@ footer {
 }
 
 /* ============== TABLE_SECTION ================ */
-.tariff-table-container {
+
+.tariff-table-section .container {
 }
 
-.info-table-line {
+.table-container {
+  background-color: #ffffff;
+  padding: 3.7vw 2vw 3.3vw 2vw;
+  border-radius: 1vw;
+}
+
+.main-upper-table-container {
+  display: flex;
+  padding-bottom: 2vw;
+  justify-content: space-between;
+}
+
+.table-main-container {
   width: 21.7vw;
 }
 
-.table-container-title {
+.table-logo-title {
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 2.6vw;
@@ -2180,27 +2197,113 @@ footer {
   margin-bottom: 0.4vw;
 }
 
-.table-logo-icon {
+.table-logo-image {
   width: 6.4vw;
   height: 6.4vw;
 }
 
-.tariff-plan-categorie-item {
-  border-bottom: 1px solid #eaeaea;
-  padding: 1vw 0;
-
+.table-upper-line-container {
+  display: flex;
 }
 
-.tariff-plan-categoties {
+.upper-line-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+  text-align: center;
+  color: #000;
+}
+
+.secondary-table-container {
+  width: 14.4vw;
+}
+
+.table-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1.5px solid var(--primary-color);
+  border-radius: 0.4vw;
+  padding: 1.2vw 3.6vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.table-container .tariff-item-price-container {
+  margin: 1.2vw;
+}
+
+.lower-table-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+  /* padding: 1vw 0; */
+}
+
+.lower-table-title-container {
+  width: 21.7vw;
+}
+
+.lower-table-title {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 0.8vw;
   line-height: 1.2vw;
-  color: #030317;
-  max-width: 19vw;
 }
 
-.table-title-container {
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 2.7vw;
+.lower-table-info-list {
+  display: flex;
+}
+
+.lower-table-info-item {
+  width: 14.4vw;
+  /* padding: 1vw 0; */
+  height: 3.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower-table-number {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  text-align: center;
+  color: #030317;
+}
+
+.tariff-table-section .tv-list-container {
+  justify-content: center;
+}
+
+.table-defis {
+  font-family: "Exo 2";
+  font-weight: 300;
+  font-size: 3.4vw;
+  line-height: 1.4vw;
+  text-align: center;
+  color: #030317;
+}
+
+.chek-mark-icon {
+  width: 1.5vw;
+  height: 1.5vw;
+  margin: 0 auto;
+  display: block;
+}
+
+.table-large-numbers {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  text-align: center;
+  color: #030317;
 }
