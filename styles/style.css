@@ -39,6 +39,10 @@ body {
   background: #f9f9f9;
 }
 
+input {
+  outline: none;
+}
+
 .container {
   width: 83.8vw;
   margin: 0 auto;
@@ -814,7 +818,17 @@ body {
   padding: 1vw;
   height: 3.3vw;
   margin-top: 0.6vw;
+  transition: 0.3s;
 }
+
+.form-input:hover {
+  border: 0.078vw solid black;
+}
+
+/* .form-input:active {
+  border: 0.078vw solid var(--primary-color);
+  outline: 0.078vw solid var(--primary-color);
+} */
 
 .form-btn {
   display: block;
@@ -1249,7 +1263,7 @@ footer {
 .footer-info-container {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.7vw;
   color: #030317;
   width: 15vw;
   display: flex;
@@ -1283,11 +1297,12 @@ footer {
 .footer-nav-container {
   display: flex;
   gap: 5.2vw;
+  justify-content: space-between;
 }
 
 .main-footer-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 47vw;
   padding-bottom: 4.1vw;
 }
 
@@ -1297,10 +1312,10 @@ footer {
 }
 
 .footer-social-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 47vw;
   padding: 2.55vw 0;
   align-items: center;
-  gap: 31vw;
 }
 
 .footer-logo {
@@ -1340,8 +1355,8 @@ footer {
 }
 
 .footer-bottom-info {
-  display: flex;
-  gap: 22vw;
+  display: grid;
+  grid-template-columns: 1fr 47vw;
   margin-top: 2.5vw;
 }
 
@@ -2245,7 +2260,7 @@ footer {
   line-height: 0.8vw;
   color: var(--primary-color);
   background-color: transparent;
-  border: 1.5px solid var(--primary-color);
+  border: 0.07vww solid var(--primary-color);
   border-radius: 0.4vw;
   padding: 1.2vw 3.6vw;
   display: block;
@@ -2390,9 +2405,171 @@ footer {
   margin-bottom: 1.2vw;
 }
 
+.tariff-table-section.in-sweet-tv .lower-table-title {
+  max-width: max-content;
+}
+
+.lower-bottom-table-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.7vw;
+  line-height: 1vw;
+  color: #81818b;
+}
+
 /* ======================== OMEGA PAGE ============================== */
 
 .omega-logo-image {
   width: 8.9vw;
   height: 3.3vw;
+}
+
+/*  ================================INTERCOM PAGE ==================================== */
+
+.additional-hero-text {
+  font-family: Manrope;
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 17.6px;
+  letter-spacing: 0.24em;
+  text-align: left;
+  margin-bottom: 1.2vw;
+}
+
+.options-section .we-can-item-text {
+  width: 13vw;
+}
+
+.options-section .without-btn-item {
+  width: 15vw !important;
+}
+
+.options-section {
+  background-color: #fff;
+}
+
+/* FORM============ */
+
+.additional-form-example .form-container {
+  background-image: none;
+  padding-left: 3.1vw;
+}
+
+.form-input.with-icons {
+  padding-left: 2.9vw;
+}
+
+.input-container {
+  position: relative;
+}
+
+.jk-icon {
+  position: absolute;
+  top: 55%;
+  left: 1vw;
+  transform: translateY(-50%);
+}
+
+.inner-form-arrow-icon {
+  position: absolute;
+  top: 50%;
+  right: 1vw;
+  cursor: pointer;
+}
+
+.additional-form-example .first-label {
+  width: 20.8vw !important;
+}
+.additional-form-example .first-label .form-input {
+  width: 20.8vw !important;
+}
+.additional-form-example .form-input {
+  width: 7.2vw !important;
+}
+
+/* ================== AKUVOX SECTION ======================== */
+
+.akuvox-section {
+  padding: 4vw 0;
+}
+
+.akuvox-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.akuvox-image-container {
+  width: 42vw;
+  background-color: #f2f3f7;
+  border-radius: 0.8vw;
+}
+
+.akuvox-info-container {
+  padding: 0 4vw 0 6.2vw;
+}
+
+.akuvox-section-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2.6vw;
+  line-height: 3.1vw;
+  color: #030317;
+  margin-bottom: 2vw;
+  width: 25vw;
+}
+
+.akuvox-acardeon-container {
+}
+
+.akuvox-acardeon-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2vw;
+  padding: 1.2vw;
+  cursor: pointer;
+}
+
+.akuvox-acardeon-item.is-active {
+  border-bottom: 0.2vw solid var(--primary-color);
+}
+
+.akuvox-acardeon-item-icon {
+  stroke: #9a9aa2;
+  transition: 0.3s;
+}
+
+.akuvox-acardeon-item-icon.is-active {
+  stroke: var(--primary-color);
+}
+
+.akuvox-acardeon-info-container {
+}
+
+.akuvox-acardeon-item-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #9a9aa2;
+  transition: 0.3s;
+}
+
+.akuvox-acardeon-item-title.is-active {
+  color: #030317;
+}
+
+.akuvox-acardeon-item-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  opacity: 0;
+  transition: 0.3s;
+  height: 0px;
+}
+
+.akuvox-acardeon-item-text.is-active {
+  opacity: 1;
+  height: auto;
+  margin-top: 0.8vw;
+  color: #030317;
 }

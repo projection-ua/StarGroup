@@ -9,3 +9,4 @@ parent.addEventListener("click", (event) => {
     .querySelector(".question-item-acardeon-text-JS")
     .classList.toggle("is-active");
 });
+
