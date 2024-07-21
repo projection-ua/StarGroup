@@ -1775,7 +1775,7 @@ footer {
   visibility: hidden;
 }
 
-.is-active {
+.question-item-acardeon-text-JS.is-active {
   transition: 0.3s;
   height: auto;
   opacity: 1;
@@ -2527,19 +2527,33 @@ footer {
   gap: 1.2vw;
   padding: 1.2vw;
   cursor: pointer;
+  /* transition: 0.3s; */
 }
 
 .akuvox-acardeon-item.is-active {
-  border-bottom: 0.2vw solid var(--primary-color);
+  border-bottom: 0.15vw solid var(--primary-color);
+  background-color: #f5f5f6;
 }
 
 .akuvox-acardeon-item-icon {
-  stroke: #9a9aa2;
   transition: 0.3s;
+  width: 1.6vw;
+  height: 1.6vw;
 }
 
-.akuvox-acardeon-item-icon.is-active {
+.akuvox-acardeon-item-icon.with-stroke {
+  stroke: #9a9aa2;
+}
+
+.akuvox-acardeon-item-icon.with-fill {
+  fill: #9a9aa2;
+}
+
+.akuvox-acardeon-item-icon.with-stroke.is-active {
   stroke: var(--primary-color);
+}
+.akuvox-acardeon-item-icon.with-fill.is-active {
+  fill: var(--primary-color);
 }
 
 .akuvox-acardeon-info-container {
@@ -2572,4 +2586,173 @@ footer {
   height: auto;
   margin-top: 0.8vw;
   color: #030317;
+}
+
+/* ========================= CATALOG SECTION ================= */
+
+.catalog-section {
+  padding-bottom: 4vw;
+}
+
+.catalog-item {
+  position: relative;
+  background-color: #ffffff;
+  padding: 0.3vw 1.2vw 1.2vw 1.2vw;
+  border-radius: 0.8vw;
+}
+
+.catalog-item-img {
+  margin: 0 auto;
+  width: 10.4vw;
+  height: 10.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+
+/* .catalog-item-img img {
+  object-fit: contain;
+} */
+
+.catalog-item-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #000;
+  margin-bottom: 1vw;
+}
+
+.catalog-price-container {
+  display: flex;
+  gap: 0.8vw;
+  align-items: flex-end;
+  margin-bottom: 1vw;
+}
+
+.catalog-current-price {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  text-align: center;
+  color: #030317;
+}
+
+.catalog-current-price span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.9vw;
+  color: #030317;
+  margin-left: 0.2vw;
+}
+
+.catalog-old-price {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 1vw;
+  text-decoration: line-through;
+  text-align: center;
+  color: #9a9aa2;
+}
+
+.catalog-old-price span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.9vw;
+  text-decoration: line-through;
+  color: #9a9aa2;
+  margin-left: 0.2vw;
+}
+
+.catalog-btn-container {
+  display: flex;
+  gap: 0.64vw;
+}
+
+.catalog-buy-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  line-height: 0.7vw;
+  color: #fff;
+  flex-basis: 50%;
+  padding: 1vw 0;
+  border: none;
+  background: var(--primary-color);
+  border-radius: 0.4vw;
+  transition: 0.3s;
+}
+
+.catalog-buy-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.catalog-catalog-add-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  line-height: 0.7vw;
+  background: #f2f3f7;
+  line-height: 0.7vw;
+  padding: 1vw 0;
+  color: #9a9aa2;
+  flex-basis: 50%;
+  border: none;
+  border-radius: 0.4vw;
+  transition: 0.3s;
+}
+
+.catalog-catalog-add-btn:hover {
+  background-color: ;
+  color: #030317;
+}
+
+.catalog-section-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.8vw;
+  color: #000;
+}
+
+.catalog-swiper-container {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 4vw;
+  padding-top: 2vw;
+}
+
+.catalog-swiper-container .swiper-slide {
+  /* margin-left: 0.7vw; */
+}
+
+.catalog-swiper-container .swiper-pagination {
+  bottom: 1vw;
+}
+
+.catalog-swiper-container .swiper-pagination-bullet {
+  border-radius: 0.8vw;
+  width: 1.2vw;
+  height: 0.31vw;
+  transition: 0.3s;
+
+  background: #8d8d8d;
+}
+
+.catalog-swiper-container .swiper-pagination-bullet-active {
+  border-radius: 0.8vw;
+  width: 2.5vw;
+  height: 0.31vw;
+
+  background: #030317;
+}
+
+.catalog-section .tariff-marker-container {
+  position: absolute;
+  left: 0;
+  top: -0.5vw;
+}
+
+.smart-plus-img {
+  width: 8.1vw;
 }
