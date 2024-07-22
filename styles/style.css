@@ -2767,6 +2767,7 @@ footer {
   width: 0;
   transition: width 6s linear;
   z-index: 9999;
+  height: 0.07vw;
 }
 
 .akuvox-acardeon-item .progress-bar-bg {
