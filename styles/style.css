@@ -2589,6 +2589,38 @@ footer {
   color: #030317;
 }
 
+.akuvox-acardeon-item .progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.07vw;
+  background-color: var(--primary-color); /* Змініть колір за потреби */
+  width: 0;
+  transition: width 6s linear;
+  z-index: 9999;
+  height: 0.07vw;
+}
+
+.akuvox-acardeon-item .progress-bar-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.07vw;
+  background-color: #dfdfdf; /* Змініть колір за потреби */
+  width: 0;
+}
+
+.akuvox-acardeon-item.is-active .progress-bar {
+  width: 100%;
+}
+.akuvox-acardeon-item.is-active .progress-bar-bg {
+  width: 100%;
+}
+
+.akuvox-acardeon-item:not(.is-active) .progress-bar {
+  transition: none;
+}
+
 /* ========================= CATALOG SECTION ================= */
 
 .catalog-section {
@@ -2758,34 +2790,219 @@ footer {
   width: 8.1vw;
 }
 
-.akuvox-acardeon-item .progress-bar {
+/* ========================= BLUE FORM SECTION ============================= */
+
+.blue-form-section {
+  position: relative;
+  margin-bottom: 4vw;
+  padding-top: 2.3vw;
+}
+
+.blue-form-container {
+  background-color: var(--primary-color);
+  padding: 3.1vw;
+  border-radius: 1vw;
+}
+
+.blue-form-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2vw;
+  color: #fff;
+  margin-bottom: 0.8vw;
+}
+
+.blue-form-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #fff;
+  margin-bottom: 1.2vw;
+}
+
+.blue-form {
+  display: flex;
+  gap: 0.8vw;
+  margin-bottom: 1vw;
+  align-items: flex-end;
+}
+
+.blue-form-label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  color: #fff;
+}
+
+.blue-form-input {
+  border: 0.07vw solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.3vw;
+  padding: 1vw;
+  width: 15.2vw;
+  height: 3.3vw;
+  background: transparent;
+  margin-top: 0.6vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #fff;
+}
+
+.blue-form-input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #fff;
+  opacity: 0.4;
+}
+
+.blue-form-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  line-height: 0.7vw;
+  color: var(--primary-color);
+  border-radius: 0.4vw;
+  padding: 1vw 1.2vw;
+  width: 10.4vw;
+  height: 3.3vw;
+  border: none;
+  background: #fff;
+}
+
+.blue-form-bottom-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.6vw;
+  line-height: 0.9vw;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.blue-form-bottom-link {
+  font-weight: 700;
+  color: #fff;
+}
+
+.blue-form-img {
   position: absolute;
+  right: 8vw;
   bottom: 0;
-  left: 0;
-  height: 0.07vw;
-  background-color: var(--primary-color); /* Змініть колір за потреби */
-  width: 0;
-  transition: width 6s linear;
-  z-index: 9999;
-  height: 0.07vw;
+  width: 33vw;
 }
 
-.akuvox-acardeon-item .progress-bar-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0.07vw;
-  background-color: #dfdfdf; /* Змініть колір за потреби */
-  width: 0;
+/* ======================== VIDEO PAGE ================== */
+
+/* ================= SUPERVISION SECTION ================= */
+
+.supervision-tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8vw;
+  display: none;
 }
 
-.akuvox-acardeon-item.is-active .progress-bar {
-  width: 100%;
-}
-.akuvox-acardeon-item.is-active .progress-bar-bg {
-  width: 100%;
+.supervision-tab-list.is-active {
+  display: flex;
 }
 
-.akuvox-acardeon-item:not(.is-active) .progress-bar {
-  transition: none;
+.large {
+  flex-basis: calc((100% - 1 * 0.8vw) / 2);
+}
+
+.small {
+  flex-basis: calc((100% - 2 * 0.8vw) / 3);
+}
+
+.supervision-tab-item {
+  background-color: #ffffff;
+  border-radius: 0.8vw;
+  overflow: hidden;
+}
+
+.supervision-tab-item-img {
+}
+
+.supervision-tab-item-text-container {
+  padding: 1.2vw;
+}
+
+.supervision-tab-item-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #030317;
+  margin-bottom: 0.6vw;
+}
+
+.supervision-tab-item-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #686874;
+}
+
+.large .supervision-tab-item-text {
+  width: 60%;
+}
+
+.small .supervision-tab-item-text {
+  width: 75%;
+}
+
+.blue-form-img.in-video {
+  width: 20vw;
+  right: 18vw;
+  bottom: 3vw;
+}
+
+.akuvox-section.in-video .akuvox-image-container img {
+  width: 25.5vw;
+}
+
+.akuvox-section.in-video .akuvox-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.4vw;
+  padding: 3vw 0;
+}
+
+.akuvox-section.in-video {
+  padding-top: 0;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 10.1vw;
+  padding: 1.9vw;
+  border-radius: 0.6vw;
+}
+
+.akuvox-section.in-video .akuvox-info-container {
+  padding: 0;
+}
+
+.akuvox-item-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  color: #030317;
+}
+.akuvox-item-span {
+  font-weight: 700;
 }
