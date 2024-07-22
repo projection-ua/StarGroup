@@ -2522,6 +2522,7 @@ footer {
 }
 
 .akuvox-acardeon-item {
+  position: relative;
   display: flex;
   align-items: flex-start;
   gap: 1.2vw;
@@ -2531,7 +2532,7 @@ footer {
 }
 
 .akuvox-acardeon-item.is-active {
-  border-bottom: 0.15vw solid var(--primary-color);
+  /* border-bottom: 0.15vw solid var(--primary-color); */
   background-color: #f5f5f6;
 }
 
@@ -2755,4 +2756,35 @@ footer {
 
 .smart-plus-img {
   width: 8.1vw;
+}
+
+.akuvox-acardeon-item .progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.07vw;
+  background-color: var(--primary-color); /* Змініть колір за потреби */
+  width: 0;
+  transition: width 6s linear;
+  z-index: 9999;
+}
+
+.akuvox-acardeon-item .progress-bar-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.07vw;
+  background-color: #dfdfdf; /* Змініть колір за потреби */
+  width: 0;
+}
+
+.akuvox-acardeon-item.is-active .progress-bar {
+  width: 100%;
+}
+.akuvox-acardeon-item.is-active .progress-bar-bg {
+  width: 100%;
+}
+
+.akuvox-acardeon-item:not(.is-active) .progress-bar {
+  transition: none;
 }
