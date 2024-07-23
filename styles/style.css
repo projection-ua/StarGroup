@@ -1801,7 +1801,7 @@ footer {
 
 .question-link {
   color: var(--primary-color);
-  background-color: var(--primary-blue-bg);
+  background-color: transparent;
   display: flex;
   align-items: center;
   gap: 1vw;
@@ -1813,6 +1813,7 @@ footer {
   font-size: 0.8vw;
   line-height: 0.8vw;
   transition: 0.3s;
+  border: 0.06vw solid var(--primary-color);
 }
 
 .question-link:hover {
@@ -3018,4 +3019,160 @@ footer {
 }
 .akuvox-section.in-video .akuvox-section-title {
   width: 35vw;
+}
+
+/* ================== DOSCOUNT PAGE ====================== */
+
+.special-list.in-discount {
+  flex-wrap: wrap;
+}
+
+.special-list.in-discount .special-item {
+  flex-basis: calc((100% - 2 * 0.8vw) / 3);
+}
+
+.form-special-item {
+  background-color: var(--primary-color);
+  border-radius: 1vw;
+  padding: 2.6vw 3.1vw 0 3.1vw;
+}
+.form-special-item img {
+  width: 9.4vw;
+  margin-bottom: 2vw;
+}
+
+.form-item-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 1.6vw;
+  line-height: 2.1vw;
+  color: #fff;
+  margin-bottom: 2vw;
+}
+
+.special-item-form {
+}
+
+.special-form-label {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  color: #fff;
+}
+
+.special-form-input {
+  background-color: transparent;
+  width: 100%;
+  border: 0.07vw solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.3vw;
+  padding: 1vw;
+  margin-top: 0.6vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.special-form-input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #fff;
+  opacity: 0.4;
+}
+
+.special-form-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  color: var(--primary-color);
+  display: block;
+  width: 100%;
+  padding: 1.2vw 0vw;
+  border: none;
+  border-radius: 0.3vw;
+}
+
+.special-form-input-container {
+  position: relative;
+  margin-bottom: 2vw;
+}
+
+.special-form-input-icon {
+  position: absolute;
+  stroke: #9a9aa2;
+  width: 0.8vw;
+  height: 0.8vw;
+  top: 50%;
+  left: 7.3vw;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.special-form-input:hover {
+  border: 0.07vw solid black;
+}
+
+.special-form-input-container:hover .special-form-input-icon {
+  stroke: black;
+  opacity: 1;
+}
+
+.special-list.in-discount {
+  margin-bottom: 2vw;
+}
+
+/* ===================== ARTICLE PAGES ============================================ */
+
+.article-container {
+  width: 65vw;
+  margin: 0 auto;
+}
+
+.article-container .special-item-date-container {
+  gap: 1.6vw;
+  justify-content: flex-start;
+}
+
+.article-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  color: #030317;
+}
+
+.article-info-container {
+  max-width: 41vw;
+}
+
+.article-info-container img {
+  border-radius: 1vw;
+  margin-bottom: 2vw;
+}
+
+.article-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vw;
+}
+
+.article-list-item {
+  list-style-type: disc;
+  margin-left: 1.3vw;
+}
+
+.article-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2.6vw;
+  line-height: 2.8vw;
+  color: #030317;
+  width: 33vw;
+  margin-bottom: 1.6vw;
 }
