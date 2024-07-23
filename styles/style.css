@@ -3002,7 +3002,20 @@ footer {
   font-size: 0.8vw;
   line-height: 1.3vw;
   color: #030317;
+  max-width: 28vw;
 }
 .akuvox-item-span {
   font-weight: 700;
+}
+
+.akuvox-section.in-video .akuvox-acardeon-item img {
+  width: 1.6vw;
+  height: 1.6vw;
+}
+
+.akuvox-section.in-video .akuvox-acardeon-item {
+  align-items: center;
+}
+.akuvox-section.in-video .akuvox-section-title {
+  width: 35vw;
 }

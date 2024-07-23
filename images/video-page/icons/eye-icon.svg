@@ -1,0 +1,23 @@
+<svg width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#a)" stroke-width="1.406" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M27.816 1.438h3.75v3.75" stroke="#030317"/>
+    <path d="M27.816 1.438h3.75v3.75" stroke="#000" stroke-opacity=".2"/>
+    <path d="M5.191 1.438h-3.75v3.75" stroke="#030317"/>
+    <path d="M5.191 1.438h-3.75v3.75" stroke="#000" stroke-opacity=".2"/>
+    <path d="M27.816 31.563h3.75v-3.75" stroke="#030317"/>
+    <path d="M27.816 31.563h3.75v-3.75" stroke="#000" stroke-opacity=".2"/>
+    <path d="M5.191 31.563h-3.75v-3.75" stroke="#030317"/>
+    <path d="M5.191 31.563h-3.75v-3.75" stroke="#000" stroke-opacity=".2"/>
+    <path d="M31.566 16.5S24.823 24 16.504 24C8.185 24 1.44 16.5 1.44 16.5S8.185 9 16.504 9s15.062 7.5 15.062 7.5Z" stroke="#030317"/>
+    <path d="M31.566 16.5S24.823 24 16.504 24C8.185 24 1.44 16.5 1.44 16.5S8.185 9 16.504 9s15.062 7.5 15.062 7.5Z" stroke="#000" stroke-opacity=".2"/>
+    <path d="M16.504 24a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" stroke="#030317"/>
+    <path d="M16.504 24a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" stroke="#000" stroke-opacity=".2"/>
+    <path d="M16.504 19.625a3.125 3.125 0 1 0 0-6.25 3.125 3.125 0 0 0 0 6.25Z" stroke="#030317"/>
+    <path d="M16.504 19.625a3.125 3.125 0 1 0 0-6.25 3.125 3.125 0 0 0 0 6.25Z" stroke="#000" stroke-opacity=".2"/>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" transform="translate(.5 .5)" d="M0 0h32v32H0z"/>
+    </clipPath>
+  </defs>
+</svg>
