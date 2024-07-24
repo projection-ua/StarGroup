@@ -86,6 +86,8 @@ input {
   width: 0.7vw;
   height: 0.7vw;
   stroke: white;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .top-header {
@@ -273,6 +275,10 @@ input {
 .header-botttom-nav-list li {
   padding: 1.2vw 0;
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 3.5vw;
+  gap: 0.2vw;
 }
 
 .header-botttom-nav-list li::after {
@@ -289,6 +295,10 @@ input {
 
 .header-botttom-nav-list li:hover::after {
   opacity: 1;
+}
+
+.header-botttom-nav-list li:hover svg {
+  stroke: var(--primary-color);
 }
 
 .header-botttom-nav-list li:hover .header-bottom-nav-link {
@@ -347,6 +357,27 @@ input {
 
 .header-bottom-section {
   background-color: #fff;
+}
+
+.header-botttom-nav-list svg {
+  margin-left: 0.2vw;
+}
+
+.discount-qty-circle {
+  width: 0.8vw;
+  height: 0.8vw;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.6vw;
+  line-height: 0.6vw;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
 }
 /* HERO SLIDER SECTION ====================================================== */
 
@@ -2096,6 +2127,7 @@ footer {
   padding: 1vw 1.6vw;
   border-radius: 0.4vw;
   width: fit-content;
+  height: 2.9vw;
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 0.8vw;
@@ -3483,4 +3515,168 @@ footer {
   font-weight: 600;
   font-size: 1.2vw;
   color: #000;
+}
+
+/* ==================== LOYALTY_PAGE ========================= */
+
+.special-list.in-loyalty {
+  flex-wrap: wrap;
+  margin-bottom: 2vw;
+}
+
+.loyalty-container {
+  position: relative;
+  padding: 3.2vw 0 5.2vw 4.1vw;
+  background: linear-gradient(-100deg, var(--primary-color) 0%, #a117c3 100%);
+  border-radius: 0.4vw;
+}
+
+.special-list.in-loyalty .special-item {
+  flex-basis: calc((100% - 0.8vw) / 2);
+}
+
+.loyalty-hero-section .container {
+}
+
+.loyalty-marker-container {
+  display: flex;
+  gap: 0.6vw;
+  margin-bottom: 0.8vw;
+}
+
+.offers-marker {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  background-color: var(--primary-yellow);
+  padding: 0.4vw 0.8vw;
+  border-radius: 0.4vw;
+  width: fit-content;
+}
+
+.bonus-marker {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.4vw 0.8vw;
+  border-radius: 0.4vw;
+  width: fit-content;
+  background: linear-gradient(100deg, var(--primary-color) 0%, #a117c3 100%);
+}
+
+.loyalty-hero-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2.9vw;
+  line-height: 3.4vw;
+  color: #fff;
+  margin-bottom: 0.8vw;
+}
+
+.loyalty-hero-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  color: #fff;
+  width: 23vw;
+  margin-bottom: 2vw;
+}
+
+.loyalty-hero-section .special-item-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.8vw;
+}
+
+.special-form-label {
+}
+
+.special-form-input-container {
+}
+
+.special-form-input {
+}
+
+.special-form-input-icon {
+}
+
+.loyalty-hero-section .special-form-btn {
+  width: 10.4vw;
+  height: 3.2vw;
+  color: black;
+}
+
+.loyalty-hero-section .special-form-input-container {
+  margin-bottom: 0;
+}
+.loyalty-hero-section .special-form-input {
+  height: 3.2vw;
+  width: 17.7vw;
+}
+
+.loyalty-hero-girl {
+  position: absolute;
+  width: 34vw;
+  bottom: 0;
+  right: 11.6vw;
+}
+.loyalty-hero-gift {
+  position: absolute;
+  width: 27vw;
+  bottom: 0;
+  right: 1.1vw;
+}
+
+.special-loyalty .special-item-title {
+  width: 100%;
+}
+.special-loyalty .special-item-text {
+  width: 100%;
+}
+
+.archive-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  background: #f2f3f7;
+  width: 7.7vw;
+  height: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3vw;
+  cursor: pointer;
+}
+
+.archive-btn:hover .archive-icon {
+  fill: black;
+}
+.archive-btn:hover .archive-text {
+  color: black;
+}
+
+.archive-icon {
+  width: 1vw;
+  height: 1vw;
+  fill: #9a9aa2;
+  transition: 0.3s;
+}
+
+.archive-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  line-height: 0.7vw;
+  color: #9a9aa2;
+  transition: 0.3s;
+}
+
+.archive-container {
+  display: flex;
+  justify-content: space-between;
 }
