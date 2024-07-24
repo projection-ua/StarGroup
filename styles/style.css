@@ -3724,9 +3724,36 @@ footer {
   cursor: pointer;
 }
 
-.pagination-custom div img {
-  opacity: 0.3;
+.pagination-custom div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 6vw;
+  transition: 0.3s;
 }
-.pagination-custom div.active img {
+.pagination-custom div:nth-child(1) {
+  background-image: url(../images/video-page/company-icons/image\ 517.png);
+}
+.pagination-custom div:nth-child(2) {
+  background-image: url(../images/video-page/company-icons/image\ 516.png);
+}
+.pagination-custom div:nth-child(3) {
+  background-image: url(../images/video-page/company-icons/ajax-234\ 1.png);
+}
+.pagination-custom div:nth-child(4) {
+  background-image: url(../images/video-page/company-icons/image\ 515.png);
+}
+.pagination-custom div:nth-child(1).active {
+  background-image: url(../images/video-page/company-icons/alhua.png);
+}
+.pagination-custom div:nth-child(2).active {
+  background-image: url(../images/video-page/company-icons/hikvision.png);
+}
+.pagination-custom div:nth-child(3).active {
+  background-image: url(../images/video-page/company-icons/ajax.png);
+}
+.pagination-custom div:nth-child(4).active {
+  background-image: url(../images/video-page/company-icons/tvt.png);
+}
+.pagination-custom div.active {
   opacity: 1;
 }
