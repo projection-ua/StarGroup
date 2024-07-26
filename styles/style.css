@@ -306,12 +306,6 @@ input {
   color: var(--primary-color);
 }
 
-.bottom-header-right {
-}
-
-.bottom-header-addres-container {
-}
-
 .address-tel-number {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
@@ -498,9 +492,6 @@ input {
 .services-images {
   transition: 0.3s;
   margin-bottom: 1vw;
-}
-
-.services-item-info-container {
 }
 
 .services-title {
@@ -846,9 +837,6 @@ input {
   margin-bottom: 0.4vw;
 }
 
-.old-price-container {
-}
-
 .old-price-value {
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
@@ -1165,9 +1153,6 @@ input {
   margin-bottom: 2vw;
 }
 
-.form {
-}
-
 .form-label {
   display: flex;
   flex-direction: column;
@@ -1347,9 +1332,6 @@ input {
   opacity: 1;
 }
 
-.loyalty-desc-container {
-}
-
 .loyalty-section .tariff-marker-container {
   margin-left: 0;
 }
@@ -1357,12 +1339,6 @@ input {
 .loyalty-section .tariff-marker-container .special-item-action,
 .loyalty-section .tariff-marker-container .tariff-popular-marker {
   border-radius: 0.4vw;
-}
-
-.special-item-action {
-}
-
-.tariff-popular-marker {
 }
 
 .loyalty-desc-title {
@@ -1519,12 +1495,6 @@ input {
   height: 17.1vw;
 }
 
-.special-inner-block {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
-}
-
 .special-item:hover .special-img {
   transform: scale(1.3);
 }
@@ -1677,12 +1647,6 @@ input {
 footer {
   background-color: #ffffff;
   padding: 4.6vw 0;
-}
-
-.footer-info-question-container {
-}
-
-.footer-number-container {
 }
 
 .footer-number {
@@ -1862,9 +1826,6 @@ footer {
   border-radius: 1vw;
 }
 
-.internet-tv-hero-inf0 {
-}
-
 .internet-tv-hero-title {
   font-family: "Exo 2";
   font-weight: 600;
@@ -2014,9 +1975,6 @@ footer {
   background: #fff;
   padding: 1.5vw;
   border-radius: 0.6vw;
-}
-
-.we-can-icon {
 }
 
 .we-can-item-title {
@@ -2350,9 +2308,6 @@ footer {
   padding: 4vw 0;
 }
 
-.universal-section .container {
-}
-
 .universal-bg-container {
   background-color: var(--primary-color);
   border-radius: 1vw;
@@ -2368,12 +2323,6 @@ footer {
 
 .universal-container .special-item-action {
   margin-bottom: 0.8vw;
-}
-
-.universal-info-container {
-}
-
-.special-item-action {
 }
 
 .universal-info-item-title {
@@ -2423,9 +2372,6 @@ footer {
 
 .universal-swiper-container img {
   border-radius: 0.8vw;
-}
-
-.universal-swiper-container .swiper-wrapper {
 }
 
 .universal-swiper-container .swiper-pagination {
@@ -2515,12 +2461,6 @@ footer {
 }
 .interactive-tv-item:nth-child(3) .interactive-tv-iamge-container {
   background-image: url(../images/internet-megogo-page/interactive-tv/tv-image.jpg);
-}
-
-.we-can-icon-container {
-}
-
-.we-can-icon {
 }
 
 .interactive-tv-title {
@@ -2623,10 +2563,6 @@ footer {
 
 .tariff-in-private-house .inner-number-span {
   font-size: 1vw;
-}
-
-.tariff-in-private-house .tariff-item-line {
-  /* margin-bottom: 5vw; */
 }
 
 .tariff-in-private-house .price-in-private-house {
@@ -2991,9 +2927,6 @@ footer {
   width: 25vw;
 }
 
-.akuvox-acardeon-container {
-}
-
 .akuvox-acardeon-item {
   position: relative;
   display: flex;
@@ -3028,9 +2961,6 @@ footer {
 }
 .akuvox-acardeon-item-icon.with-fill.is-active {
   fill: var(--primary-color);
-}
-
-.akuvox-acardeon-info-container {
 }
 
 .akuvox-acardeon-item-title {
@@ -3233,10 +3163,6 @@ footer {
   padding-top: 2vw;
 }
 
-.catalog-swiper-container .swiper-slide {
-  /* margin-left: 0.7vw; */
-}
-
 .catalog-swiper-container .swiper-pagination {
   bottom: 1vw;
 }
@@ -3402,9 +3328,6 @@ footer {
   overflow: hidden;
 }
 
-.supervision-tab-item-img {
-}
-
 .supervision-tab-item-text-container {
   padding: 1.2vw;
 }
@@ -3525,9 +3448,6 @@ footer {
   line-height: 2.1vw;
   color: #fff;
   margin-bottom: 2vw;
-}
-
-.special-item-form {
 }
 
 .special-form-label {
@@ -3692,9 +3612,6 @@ footer {
   flex-basis: calc((100% - 0.8vw) / 2);
 }
 
-.loyalty-hero-section .container {
-}
-
 .loyalty-marker-container {
   display: flex;
   gap: 0.6vw;
@@ -3748,18 +3665,6 @@ footer {
   display: flex;
   align-items: flex-end;
   gap: 0.8vw;
-}
-
-.special-form-label {
-}
-
-.special-form-input-container {
-}
-
-.special-form-input {
-}
-
-.special-form-input-icon {
 }
 
 .loyalty-hero-section .special-form-btn {
