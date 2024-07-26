@@ -567,7 +567,6 @@ input {
   background: #f3f3f4;
   width: fit-content;
   border-radius: 8.6vw;
-  margin-bottom: 1.6vw;
 }
 
 .navigation-item {
@@ -663,10 +662,14 @@ input {
   font-weight: 700;
   font-size: 1.6vw;
   color: #000;
-  margin-bottom: 1.6vw;
+  margin-bottom: 0.8vw;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+.tariff-title.without-host-name {
+  margin-bottom: 1.6vw;
 }
 
 .info-container-title {
@@ -1080,6 +1083,58 @@ input {
 
 .tariff-in-apartment-bottom-text {
   width: 64vw;
+}
+
+.tariff-ckeckbox-container {
+  display: flex;
+  gap: 1.2vw;
+  align-items: center;
+}
+
+.tariff-ckeckbox-container label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  color: #030317;
+  padding-left: 1.5vw;
+}
+
+.tariff-ckeckbox-container label:hover .checkmark {
+  border: 0.11vw solid var(--primary-color);
+}
+
+.tariff-ckeckbox-container input[type="checkbox"]:checked + .checkmark {
+  border: 0.11vw solid var(--primary-color);
+  background-image: url(../images/active-checkmark.svg);
+  background-repeat: no-repeat;
+  background-size: 0.7vw 0.7vw;
+  background-position: center;
+}
+
+.tariff-ckeckbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.2vw;
+  width: 1.2vw;
+  border: 0.11vw solid #bdbdbd;
+  border-radius: 0.2vw;
+}
+
+.tariff-ckeckbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.tariff-nav-form-container {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  margin-bottom: 1.6vw;
 }
 /* FORN SECTION ================================================ */
 
@@ -2181,7 +2236,7 @@ footer {
   border-radius: 0.8vw;
   width: 1.2vw;
   height: 0.3vw;
-  background: #e4e4e4;
+  background: #8d8d8d;
 }
 
 .tariif-section-in-megogo {
@@ -3870,4 +3925,13 @@ footer {
   height: 0.5vw;
   background: #b7b7cb;
   border-radius: 50%;
+}
+
+.host-name-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  text-align: center;
+  color: #000;
+  margin-bottom: 1.6vw;
 }
