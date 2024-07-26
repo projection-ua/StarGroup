@@ -13,4 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(`.${tab.dataset.tab}`).classList.add("active-tab");
     });
   });
+
+  // Додати активний клас до першої вкладки та її контенту
+  if (tabs.length > 0 && tabContents.length > 0) {
+    tabs[0].classList.add("current-nav-item");
+    tabContents[0].classList.add("active-tab");
+  }
 });
