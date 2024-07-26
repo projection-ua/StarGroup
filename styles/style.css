@@ -1306,6 +1306,102 @@ input {
   justify-content: space-between;
 }
 
+/*========================= LOYALTY_SECTION ================================= */
+
+.loyalty-section {
+  padding-top: 4vw;
+}
+
+.loyalty-container-im-main {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  padding: 2.6vw;
+  background-color: #ffffff;
+  border-radius: 1vw;
+}
+
+.loyalty-swiper-container {
+  position: relative;
+  width: 41.3vw;
+  overflow: hidden;
+  border-radius: 1vw;
+}
+
+.loyalty-swiper-container .swiper-pagination {
+  top: 0.5vw;
+  height: 2vw;
+}
+
+.loyalty-swiper-container .swiper-pagination-bullet {
+  width: 7.1vw;
+  height: 0.2vw;
+  border-radius: 3.4vw;
+  background: #fff;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.loyalty-swiper-container .swiper-pagination-bullet-active {
+  width: 14vw;
+  opacity: 1;
+}
+
+.loyalty-desc-container {
+}
+
+.loyalty-section .tariff-marker-container {
+  margin-left: 0;
+}
+
+.loyalty-section .tariff-marker-container .special-item-action,
+.loyalty-section .tariff-marker-container .tariff-popular-marker {
+  border-radius: 0.4vw;
+}
+
+.special-item-action {
+}
+
+.tariff-popular-marker {
+}
+
+.loyalty-desc-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2.9vw;
+  line-height: 3.4vw;
+  color: black;
+  margin-bottom: 0.8vw;
+}
+
+.loyalty-desc-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  color: black;
+  margin-bottom: 2vw;
+  width: 25vw;
+}
+
+.loyalty-desc-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.4vw;
+  padding: 1vw 1.2vw;
+  transition: 0.3s;
+}
+
+.loyalty-desc-btn:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-color);
+}
+
 /* SPECIAL SECTION ============================================== */
 .special-section {
   padding: 4.1vw 0;
@@ -3741,6 +3837,7 @@ footer {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  margin-bottom: 1.6vw;
 }
 
 .swiper-container.company {
@@ -3934,4 +4031,241 @@ footer {
   text-align: center;
   color: #000;
   margin-bottom: 1.6vw;
+}
+
+/* ======================== PAYMENT_METHODS_PAGE ======================== */
+
+.online-payment {
+  padding-top: 1.6vw;
+}
+
+.online-payment .container {
+  display: flex;
+  gap: 0.8vw;
+  align-items: center;
+}
+
+.online-payment-form-container {
+  background-color: #ffffff;
+  width: 38.7vw;
+  border-radius: 0.8vw;
+  padding: 3.1vw;
+  height: fit-content;
+}
+
+.online-payment-form-container .payment-title {
+  width: 30vw;
+}
+
+.payment-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.6vw;
+  line-height: 1.8vw;
+  color: black;
+  margin-bottom: 1.6vw;
+}
+
+.online-payment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.online-payment-form label {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 1.1vw;
+  color: black;
+  margin-bottom: 0.6vw;
+}
+
+.online-payment-form input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #9a9aa2;
+}
+
+.online-payment-form input {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #9a9aa2;
+  border: 0.07vw solid #f2f2f2;
+  border-radius: 0.3vw;
+  padding: 1vw;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.online-payment-form input:hover {
+  border: 0.07vw solid black;
+}
+
+.online-payment-form input:focus {
+  border: 0.07vw solid black;
+}
+
+.online-payment-form input :nth-child(1) {
+  margin-bottom: 1vw;
+}
+
+.online-payment-form-container .tariff-btn {
+  margin-top: 0.8vw;
+  margin-bottom: 0;
+}
+
+.online-payment .instructions-item .we-can-item-text {
+  margin-bottom: 0;
+  width: 11vw;
+}
+
+.payment-instruction-icon-container {
+  width: 3.3vw;
+  height: 3.3vw;
+  border-radius: 0.4vw;
+  background-color: var(--primary-blue-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.2vw;
+}
+
+.payment-instruction-icon-container img {
+  width: 1.6vw;
+  height: 1.6vw;
+}
+
+.online-payment-instruction-container {
+  width: 44.3vw;
+  background: #ffffff;
+  border-radius: 0.8vw;
+  padding: 3.1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6.3vw;
+}
+
+.online-payment-system-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4vw;
+  align-items: center;
+}
+
+.online-payment-system-images:nth-child(1) {
+  margin-bottom: 1.4vw;
+}
+
+/* ======================CASH PAyment ========================= */
+
+.mob-app-payment {
+  padding-top: 1.6vw;
+  padding-bottom: 3.2vw;
+}
+
+.cash-payment {
+  padding-top: 1.6vw;
+  padding-bottom: 13vw;
+}
+
+.cash-container {
+  background-color: #ffffff;
+  padding: 2.6vw;
+  border-radius: 0.8vw;
+}
+
+.cash-terminal-list {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.cash-terminal-item {
+  background: #f5f5f6;
+  padding: 2vw;
+  border-radius: 0.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.privat-img {
+  width: 5vw;
+  height: 5vw;
+}
+
+.easy-img {
+  width: 8.9vw;
+  height: 4.4vw;
+}
+.city-img {
+  width: 5vw;
+  height: 5vw;
+}
+.ibox-img {
+  width: 8.8vw;
+  height: 2.9vw;
+}
+
+.tyme-img {
+  width: 3.8vw;
+  height: 5vw;
+}
+
+.payment-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: black;
+  margin-bottom: 1.6vw;
+}
+
+.mob-app-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.mob-app-item {
+  flex-basis: calc((100% - 9vw) / 10);
+}
+
+.mob-app-container {
+  background-color: #ffffff;
+  padding: 2.6vw;
+  border-radius: 0.8vw;
+}
+
+.portmone {
+  padding-top: 1.6vw;
+}
+
+.portmone .payment-text {
+  margin-bottom: 2vw;
+}
+
+.portmone .we-can-item-text {
+  width: 14vw;
+}
+
+.portmone-container {
+  background-color: #ffffff;
+  border-radius: 0.8vw;
+  padding: 2.6vw;
+}
+
+.portmone-logo {
+  margin-bottom: 0.8vw;
+}
+
+.payment-tab {
+  display: none;
+}
+
+.payment-tab.active-tab {
+  display: block;
 }

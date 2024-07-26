@@ -189,296 +189,398 @@
       </section>
     </header>
     <main>
-      <section class="article-section">
-        <div class="article-container">
-          <div class="special-item-date-container">
-            <p class="special-item-date">24.04.2024</p>
-            <div class="news-marker">Новини</div>
+      <section class="tariff-section tariif-section-in-megogo in-article">
+        <div class="container">
+          <h2 class="tariff-section-title">Способи оплати</h2>
+          <div class="tariff-navigation-list">
+            <div
+              class="navigation-item current-nav-item"
+              data-tab="online-payment"
+            >
+              Онлайн на сайті
+            </div>
+            <div class="navigation-item" data-tab="cash-payment">Готівкою</div>
+            <div class="navigation-item" data-tab="mob-app-payment">
+              Клієнт-банк (мобільний застосунок)
+            </div>
+            <div class="navigation-item" data-tab="portmone">PORTMONE.COM</div>
           </div>
+        </div>
 
-          <h1 class="article-title">Воспользуйтесь «Срочным включением»!</h1>
+        <div class="online-payment payment-tab">
+          <div class="container">
+            <div class="online-payment-form-container">
+              <h2 class="payment-title">
+                Поповнити рахунок онлайн платіжною карткою:
+              </h2>
 
-          <div class="article-info-container">
-            <img
-              src="../images/main-page/news-image- wrapper.jpg"
-              alt="Power lines"
-            />
+              <form class="online-payment-form">
+                <label for="option1">
+                  Особистий рахунок<span style="color: var(--primary-color)"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  id="option1"
+                  placeholder="Номер особистого рахунку"
+                />
 
-            <div class="article-text-container">
-              <p class="article-text">
-                З 16 липня в сітці мовлення Movix відбудуться зміни - клієнтам
-                стануть доступні до 14 нових телеканалів! Процес появи і
-                кількість нових каналів відрізнятиметься залежно від обладнання
-                - про всі особливості розповідаємо в цій статті.
-              </p>
+                <label for="option2"
+                  >Сума<span style="color: var(--primary-color)">*</span></label
+                >
+                <input
+                  type="text"
+                  id="option2"
+                  placeholder="Введіть суму від 5.00 до 4999.00 грн."
+                />
 
-              <p class="article-text">
-                Абсолютно всі клієнти цифрового ТБ від Дом.ру, незалежно від
-                використовуваного обладнання, отримають можливість дивитися 7
-                нових телеканалів:
-              </p>
-
-              <ul class="article-list">
-                <li class="article-list-item article-text">
-                  Садиба - пізнавальний канал про дачне життя.
-                </li>
-                <li class="article-list-item article-text">
-                  Ми HD - про культуру, історію та красу Росії.
-                </li>
-                <li class="article-list-item article-text">
-                  Cartoon Classic SD - класична анімація різних поколінь.
-                </li>
-                <li class="article-list-item article-text">
-                  Romance HD - фільми та серіали про кохання.
-                </li>
-                <li class="article-list-item article-text">
-                  Torre Ricca - ювелірний теле-бутік.
-                </li>
-                <li class="article-list-item article-text">
-                  ЛДПР ТВ - новини, аналітика та розважальні програми.
-                </li>
-                <li class="article-list-item article-text">
-                  Кіномульт SD - хіти мультиплікації від радянської класики до
-                  сучасних шедеврів.
-                </li>
-                <li class="article-list-item article-text">
-                  Крім того, у власників сучасних моделей приставок Movix, а
-                  також користувачів застосунку Movix для Smart TV, мобільного
-                  застосунку та сайту movix.ru у сітці мовлення з'являться ще
-                  кілька телеканалів (загалом - 14 нових каналів):
-                </li>
-              </ul>
-
-              <div>
-                <p class="article-text">
-                  Індійське кіно - класика та сучасність Боллівуду.
-                </p>
-                <p class="article-text">
-                  Suspense - гостросюжетне та захопливе кіно.
-                </p>
-                <p class="article-text">
-                  VHS-ка - найкращі та улюблені блокбастери 80-х і 90-х років.
-                </p>
-                <p class="article-text">
-                  Апетитний HD - все про їжу та кулінарію.
-                </p>
-                <p class="article-text">
-                  СТАРТ і СТАРТ ТРІУМФ - спорт у прямому ефірі та повтори
-                  великих моментів.
-                </p>
-                <p class="article-text">
-                  EPIC HD - контент від популярних блогерів-мільйонників.
-                </p>
-              </div>
+                <button class="tariff-btn" type="submit">Продовжити</button>
+              </form>
             </div>
 
-            <div class="article-share-text">Поділитися:</div>
+            <div class="online-payment-instruction-container">
+              <div class="instructions-list">
+                <div class="instructions-item">
+                  <div class="payment-instruction-icon-container">
+                    <img
+                      src="../images/payment-page/online-payment/card.svg"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="we-can-item-title">Щоб оплатити рахунок</h3>
 
-            <div class="footer-social-link-container">
-              <a class="footer-social-link" href=""
-                ><svg class="footer-social-icon">
-                  <use
-                    href="../images/footer-social-icons.svg#icon-instagram"
-                  ></use>
-                </svg>
-              </a>
+                  <p class="we-can-item-text without-btn-item">
+                    Введіть номер особистого рахунку та суму поповнення. Після,
+                    натисніть кнопку “Продовжити”.
+                  </p>
+                </div>
 
-              <a class="footer-social-link" href=""
-                ><svg class="footer-social-icon">
-                  <use
-                    href="../images/footer-social-icons.svg#icon-telegram"
-                  ></use>
-                </svg>
-              </a>
+                <div class="instructions-item">
+                  <div class="payment-instruction-icon-container">
+                    <img
+                      src="../images/payment-page/online-payment/tel.svg"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="we-can-item-title">У разі виникнення питань</h3>
 
-              <a class="footer-social-link" href=""
-                ><svg class="footer-social-icon">
-                  <use
-                    href="../images/footer-social-icons.svg#icon-facebook"
-                  ></use>
-                </svg>
-              </a>
+                  <p class="we-can-item-text without-btn-item">
+                    Cлужба підтримки завжди готова вам допомогти.
+                  </p>
 
-              <a class="footer-social-link" href=""
-                ><svg
-                  class="footer-social-icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.6437 9.3546C14.3594 9.06862 14.0442 8.81512 13.7039 8.59874C12.8026 8.02158 11.7547 7.71488 10.6844 7.71488C9.19891 7.71212 7.77375 8.30236 6.72515 9.3546L1.63807 14.4457C0.591255 15.4945 0.00289162 16.9155 0.00195428 18.3974C-1.41122e-05 21.4896 2.5051 23.998 5.59736 23.9999C7.08059 24.0051 8.50444 23.4177 9.55266 22.3682L13.7519 18.169C13.8282 18.0933 13.8708 17.9901 13.8702 17.8827C13.8689 17.6618 13.6888 17.4838 13.4679 17.4851H13.308C12.4306 17.4882 11.5611 17.3197 10.7485 16.9892C10.5987 16.9276 10.4266 16.9624 10.3126 17.0772L7.29308 20.1006C6.35547 21.0383 4.8353 21.0383 3.89769 20.1006C2.96008 19.163 2.96008 17.6429 3.89769 16.7053L9.00479 11.6022C9.94165 10.6665 11.4593 10.6665 12.3962 11.6022C13.0276 12.1964 14.0124 12.1964 14.6438 11.6022C14.9154 11.3303 15.0801 10.9697 15.1077 10.5864C15.1369 10.1282 14.968 9.67958 14.6437 9.3546Z"
-                  />
-                  <path
-                    d="M22.3583 1.63999C20.1717 -0.546663 16.6264 -0.546663 14.4398 1.63999L10.2445 5.83122C10.1293 5.94698 10.0961 6.12109 10.1605 6.27116C10.2242 6.42165 10.3731 6.51824 10.5364 6.5151H10.6844C11.5607 6.51351 12.4288 6.6833 13.2399 7.01502C13.3897 7.07665 13.5618 7.04188 13.6758 6.92706L16.6873 3.91958C17.6249 2.98197 19.1451 2.98197 20.0827 3.91958C21.0203 4.85719 21.0203 6.37736 20.0827 7.31497L16.3313 11.0623L16.2993 11.0983L14.9876 12.4021C14.0507 13.3377 12.533 13.3377 11.5962 12.4021C10.9648 11.8078 9.97994 11.8078 9.3486 12.4021C9.07523 12.676 8.9104 13.0397 8.88467 13.4259C8.85543 13.884 9.02438 14.3326 9.3486 14.6577C9.8115 15.1225 10.3531 15.5016 10.9483 15.7774C11.0323 15.8174 11.1163 15.8494 11.2003 15.8854C11.2842 15.9214 11.3722 15.9494 11.4562 15.9814C11.5402 16.0134 11.6281 16.0414 11.7121 16.0654L11.9481 16.1294C12.1081 16.1693 12.2681 16.2013 12.432 16.2293C12.6295 16.2587 12.8284 16.2774 13.0279 16.2853H13.3318L13.5718 16.2573C13.6598 16.2534 13.7518 16.2334 13.8558 16.2334H13.9917L14.2677 16.1934L14.3957 16.1694L14.6276 16.1214H14.6716C15.654 15.8746 16.551 15.366 17.2671 14.6496L22.3582 9.55857C24.545 7.37191 24.545 3.82664 22.3583 1.63999Z"
-                  />
-                </svg>
-              </a>
+                  <p class="we-can-item-text item-text-in-grph">
+                    У будні
+                    <span class="instructions-graph-text"
+                      >— з 8:00 до 22:00.</span
+                    >
+                  </p>
+                  <p class="we-can-item-text item-text-in-grph">
+                    У вихідні
+                    <span class="instructions-graph-text"
+                      >— з 11:00 до 18:00.</span
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="online-payment-system-images">
+                  <div class="payment-system-image">
+                    <img
+                      src="../images/payment-page/online-payment/Masterpass_logo 1.svg"
+                      alt="Masterpass"
+                    />
+                  </div>
+                  <div class="payment-system-image">
+                    <img
+                      src="../images/payment-page/online-payment/Frame 1321317064.svg"
+                      alt="Masterpass"
+                    />
+                  </div>
+                </div>
+
+                <div class="online-payment-system-images">
+                  <div class="payment-system-image">
+                    <img
+                      src="../images/payment-page/online-payment/Frame 1321317063.svg"
+                      alt="Masterpass"
+                    />
+                  </div>
+                  <div class="payment-system-image">
+                    <img
+                      src="../images/payment-page/online-payment/Mastecard-Securecode-logo 1.svg"
+                      alt="Masterpass"
+                    />
+                  </div>
+                  <div class="payment-system-image">
+                    <img
+                      src="../images/payment-page/online-payment//Page-1.svg"
+                      alt="Masterpass"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="special-section">
-        <div class="container">
-          <div class="archive-container">
-            <h2 class="special-section-title">Актуальні новини</h2>
-            <a class="question-link" href=""
-              >Усі акції
-              <svg
-                class="question-link-icon"
-                width="8"
-                height="12"
-                viewBox="0 0 8 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.33398 10.6668L6.4523 6.18825C6.56613 6.08864 6.56613 5.91156 6.4523 5.81196L1.33398 1.33344"
-                  stroke="#3358FF"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </a>
+        <div class="cash-payment payment-tab">
+          <div class="container">
+            <div class="cash-container">
+              <h2 class="payment-title">Через термінали самообслуговування:</h2>
+
+              <div class="cash-terminal-list">
+                <div class="cash-terminal-item">
+                  <img
+                    class="privat-img"
+                    src="../images/payment-page/cash-payment/privat-img.png"
+                    alt="Privat"
+                  />
+                </div>
+
+                <div class="cash-terminal-item">
+                  <img
+                    class="easy-img"
+                    src="../images/payment-page/cash-payment/easy-pay-img.png"
+                    alt="easy-pay"
+                  />
+                </div>
+
+                <div class="cash-terminal-item">
+                  <img
+                    class="city-img"
+                    src="../images/payment-page/cash-payment/city24-img.png"
+                    alt="city24"
+                  />
+                </div>
+
+                <div class="cash-terminal-item">
+                  <img
+                    class="ibox-img"
+                    src="../images/payment-page/cash-payment/ibox-img.png"
+                    alt="ibox"
+                  />
+                </div>
+
+                <div class="cash-terminal-item">
+                  <img
+                    class="tyme-img"
+                    src="../images/payment-page/cash-payment/tyme-img.png"
+                    alt="tyme"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="special-list">
-            <div class="special-item">
-              <div class="special-img-wrapper">
-                <img
-                  class="special-img"
-                  src="../images/main-page/news-image- wrapper.jpg"
-                  alt="Power lines"
-                />
-              </div>
+        </div>
 
-              <div class="special-item-info-container">
-                <div>
-                  <div class="special-item-date-container">
-                    <p class="special-item-date">24.04.2024</p>
-                    <div class="news-marker">Новини</div>
-                  </div>
-                  <h3 class="special-item-title">
-                    Підключись до мережі Simnet вдвох з другом — отримайте 2
-                    місяці в подарунок!
-                  </h3>
+        <div class="mob-app-payment payment-tab">
+          <div class="container">
+            <div class="mob-app-container">
+              <h2 class="payment-title">Клієнт-банк (мобільний застосунок)</h2>
+              <p class="payment-text">
+                У розділі
+                <span style="font-weight: 700">"Комунальних послуг"</span>
+                шукайте SimNet
+              </p>
 
-                  <p class="special-item-text">
-                    С 10.06.2024 запускается программа «Срочное включение» У
-                    абонентов есть возможность подключить услугу Интернет по
-                    программе «Срочное включение» сроком до 3-х рабочих дней.
-                  </p>
+              <div class="mob-app-list">
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/privat24.jpg"
+                    alt="Privat"
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/mono.jpg"
+                    alt="Mono"
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/oshchad.jpg"
+                    alt="oshchad"
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/abank.jpg"
+                    alt="Abank"
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/sense.jpg"
+                    alt="Sense"
+                  />
                 </div>
 
-                <div class="special-item-other">
-                  Докладніше
-                  <svg
-                    class="special-other-icon"
-                    width="8"
-                    height="12"
-                    viewBox="0 0 8 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33398 10.6668L6.4523 6.18831C6.56613 6.0887 6.56613 5.91162 6.4523 5.81202L1.33398 1.3335"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3646.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/raifaizen.jpg"
+                    alt="Raifaizen"
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img src="../images/payment-page/mob-app/izi.jpg" alt="Izi" />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/pumb.jpg"
+                    alt="Pumb"
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3648.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3649.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3650.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3651.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img src="../images/payment-page/mob-app/otp.jpg" alt="Otp" />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3653.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3654.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3655.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/tas2u.jpg"
+                    alt="Tas2u"
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img src="../images/payment-page/mob-app/sim.jpg" alt="Sim" />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/unex.jpg"
+                    alt="Unex"
+                  />
+                </div>
+                <div class="mob-app-item">
+                  <img
+                    src="../images/payment-page/mob-app/image 3659.jpg"
+                    alt="Privat"
+                  />
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="special-item">
-              <div class="special-img-wrapper">
-                <img
-                  class="special-img"
-                  src="../images/main-page/news-image- wrapper.jpg"
-                  alt="Power lines"
-                />
-              </div>
+        <div class="portmone payment-tab">
+          <div class="container">
+            <div class="portmone-container">
+              <img
+                class="portmone-logo"
+                src="../images/payment-page/portmone/portmone_logo.svg"
+                alt="portmone-logo"
+              />
+              <p class="payment-text">
+                Здійснити поповнення рахунку на сайті
+                <span style="font-weight: 700">PORTMONE.COM </span>
+                або через телефон у мобільному додатку Portmone.
+              </p>
 
-              <div class="special-item-info-container">
-                <div>
-                  <div class="special-item-date-container">
-                    <p class="special-item-date">24.04.2024</p>
-                    <div class="news-marker">Новини</div>
-                  </div>
-                  <h3 class="special-item-title">
-                    Воспользуйтесь «Срочным включением»!
-                  </h3>
+              <div class="instructions-list">
+                <div class="instructions-item">
+                  <img
+                    class="instructions-item-icon"
+                    src="../images/payment-page/portmone/Icon and Number Container.svg"
+                    alt="First"
+                  />
+                  <h3 class="we-can-item-title">Введіть необхідні дані</h3>
 
-                  <p class="special-item-text">
-                    С 10.06.2024 запускается программа «Срочное включение» У
-                    абонентов есть возможность подключить услугу Интернет по
-                    программе «Срочное включение» сроком до 3-х рабочих дней.
+                  <p class="we-can-item-text">
+                    Це може бути ваш особовий рахунок або номер мобільного.
+                    Також оплата може здійснюватися за вашим персональним
+                    платіжним кодом або за номером договору.
                   </p>
                 </div>
-                <div class="special-item-other">
-                  Докладніше
-                  <svg
-                    class="special-other-icon"
-                    width="8"
-                    height="12"
-                    viewBox="0 0 8 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33398 10.6668L6.4523 6.18831C6.56613 6.0887 6.56613 5.91162 6.4523 5.81202L1.33398 1.3335"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
 
-            <div class="special-item">
-              <div class="special-img-wrapper">
-                <img
-                  class="special-img"
-                  src="../images/main-page/news-image- wrapper.jpg"
-                  alt="Power lines"
-                />
-              </div>
+                <div class="instructions-item">
+                  <img
+                    class="instructions-item-icon"
+                    src="../images/payment-page/portmone/Icon and Number Container-1.svg"
+                    alt="First"
+                  />
 
-              <div class="special-item-info-container">
-                <div>
-                  <div class="special-item-date-container">
-                    <p class="special-item-date">24.04.2024</p>
-                    <div class="news-marker">Новини</div>
-                  </div>
-                  <h3 class="special-item-title">
-                    Уважаемые клиенты! Наблюдаются внеплановые отключения
-                    электроэнергии
-                  </h3>
+                  <h3 class="we-can-item-title">Оплата</h3>
 
-                  <p class="special-item-text">
-                    С 10.06.2024 запускается программа «Срочное включение» У
-                    абонентов есть возможность подключить услугу Интернет по
-                    программе «Срочное включение» сроком до 3-х рабочих дней.
+                  <p class="we-can-item-text item-text-in-grph">
+                    Далі пропишіть суму згідно з тарифом і натисніть «Оплатити».
                   </p>
                 </div>
-                <div class="special-item-other">
-                  Докладніше
-                  <svg
-                    class="special-other-icon"
-                    width="8"
-                    height="12"
-                    viewBox="0 0 8 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33398 10.6668L6.4523 6.18831C6.56613 6.0887 6.56613 5.91162 6.4523 5.81202L1.33398 1.3335"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
+
+                <div class="instructions-item">
+                  <img
+                    class="instructions-item-icon"
+                    src="../images/payment-page/portmone/Icon and Number Container-2.svg"
+                    alt="First"
+                  />
+                  <h3 class="we-can-item-title">
+                    Напишіть свій email і дані банківської картки
+                  </h3>
+
+                  <p class="we-can-item-text without-btn-item">
+                    Якщо ви пройшли авторизацію, вам залишиться лише знайти свою
+                    картку серед збережених у системі.
+                  </p>
+                </div>
+
+                <div class="instructions-item">
+                  <img
+                    class="instructions-item-icon"
+                    src="../images/payment-page/portmone/Icon and Number Container-3.svg"
+                    alt="First"
+                  />
+                  <h3 class="we-can-item-title">Натисніть «Оплатити»</h3>
+
+                  <p class="we-can-item-text">
+                    Дотримуйтеся підказок і підтвердьте платіж запропонованим
+                    вам способом.
+                  </p>
                 </div>
               </div>
             </div>
@@ -707,6 +809,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../js/tariff-swiper.js"></script>
     <script type="module" src="../js/universal-swiper.js"></script>
-    <script src="../js/catalog-swiper.js"></script>
+    <script src="../js/acardeon.js"></script>
+    <script src="../js/payment-tab.js"></script>
   </body>
 </html>
