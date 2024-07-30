@@ -4196,14 +4196,17 @@ footer {
 }
 
 .document-backdrop-container-JS {
-  height: 0vw;
-  display: none;
+  max-height: 0vw;
+  overflow: hidden;
+  transition: 0.5s;
+  /* display: none; */
 }
 
 .document-backdrop-container-JS.is-active {
-  height: auto;
+  height: max-content;
+  max-height: 1000px;
   margin-top: 1.2vw;
-  transition: 0.3s;
+  /* transition: 0.3s; */
   display: block;
 }
 
@@ -4219,6 +4222,7 @@ footer {
 .document-list-icon {
   width: 1.2vw;
   height: 1.2vw;
+  min-width: 1.2vw;
   fill: #9a9aa2;
   margin-right: 0.8vw;
   transition: 0.3s;
@@ -4527,4 +4531,25 @@ footer {
 .contact-form input:focus,
 .contact-form textarea:focus {
   border: 0.07vw solid var(--primary-color);
+}
+
+/* =-======================= QUESTION PAGE ================================== */
+
+.question-container.in-page {
+  width: 65vw;
+}
+
+.question-container.in-page {
+  display: none; /* Приховати всі контейнери за замовчуванням */
+}
+
+.question-container.in-page.active {
+  display: block; /* Показати активний контейнер */
+}
+
+.question-search-form input {
+  width: 56vw;
+}
+
+.search-input-container {
 }
