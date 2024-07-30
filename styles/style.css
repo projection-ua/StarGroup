@@ -39,7 +39,8 @@ body {
   background: #f9f9f9;
 }
 
-input {
+input,
+textarea {
   outline: none;
 }
 
@@ -4173,4 +4174,357 @@ footer {
 
 .payment-tab.active-tab {
   display: block;
+}
+
+/*  ================================= =====DOCUMENT PAGE ============================================ */
+
+.page-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2.6vw;
+  line-height: 2.8vw;
+  color: black;
+  margin-bottom: 1.6vw;
+}
+
+.documenet-backdrop-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.2vw;
+  line-height: 1.3vw;
+  color: black;
+}
+
+.document-backdrop-container-JS {
+  height: 0vw;
+  display: none;
+}
+
+.document-backdrop-container-JS.is-active {
+  height: auto;
+  margin-top: 1.2vw;
+  transition: 0.3s;
+  display: block;
+}
+
+.document-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8vw;
+  border-radius: 0.4vw;
+  transition: 0.3s;
+}
+
+.document-list-icon {
+  width: 1.2vw;
+  height: 1.2vw;
+  fill: #9a9aa2;
+  margin-right: 0.8vw;
+  transition: 0.3s;
+}
+
+.document-list-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 1.4vw;
+  color: black;
+  transition: 0.3s;
+}
+
+.document-download-icon {
+  width: 1vw;
+  height: 1vw;
+  fill: #9a9aa2;
+  margin-right: 0.5vw;
+  transition: 0.3s;
+}
+
+.download-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  line-height: 0.7vw;
+  color: #9a9aa2;
+  transition: 0.3s;
+}
+
+.document-item-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.documents-backdrop-container {
+  background-color: #ffffff;
+  padding: 1.6vw;
+  border-radius: 0.8vw;
+  transition: 0.3s;
+  flex-basis: calc((100% - 0.8vw) / 2);
+  height: max-content;
+}
+
+.backdrop-btn-container-JS {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.document-list-item:hover {
+  background: #f2f3f7;
+}
+.document-list-item:hover .document-list-text {
+  color: var(--primary-color);
+}
+
+.document-list-item:hover .document-list-icon {
+  fill: var(--primary-color);
+}
+
+.document-flex-container {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.document-item-flex-container.download:hover .document-download-icon {
+  fill: black;
+}
+
+.document-item-flex-container.download:hover .download-text {
+  color: black;
+}
+
+.document-item-flex-container.download:hover {
+  cursor: pointer;
+}
+
+.document-section {
+  padding: 2vw 0 17vw 0;
+}
+
+/* ===================== CONTACT PAGE ===================================== */
+
+.contact-section {
+  padding: 2vw 0 7.2vw 0;
+}
+
+.contact-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.8vw;
+  line-height: 2vw;
+  color: black;
+  margin-bottom: 0.8vw;
+}
+
+.contact-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: black;
+  margin-bottom: 2vw;
+}
+
+.contact-support-number-container {
+  margin-bottom: 2vw;
+}
+
+.contact-number-item {
+  display: flex;
+  align-self: start;
+  gap: 0.8vw;
+}
+
+.contact-number-item:not(:last-child) {
+  margin-bottom: 1vw;
+}
+
+.contact-number {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  line-height: 1.4vw;
+  text-align: center;
+  color: black;
+  transition: 0.3s;
+}
+
+.number-item-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  color: #9a9aa2;
+}
+
+.question-support-container {
+  margin-bottom: 2vw;
+}
+
+.contact-number-item:hover .contact-number {
+  color: var(--primary-color);
+}
+
+.tg-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  margin-bottom: 2vw;
+}
+
+.tg-icon {
+  width: 1.2vw;
+  height: 1vw;
+}
+
+.tg-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.9vw;
+  color: var(--primary-color);
+}
+
+.team-viewer-container {
+  display: flex;
+  align-items: center;
+  background: #f2f3f7;
+  width: fit-content;
+  padding: 0.7vw 1vw;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  margin-bottom: 2vw;
+}
+
+.team-viewer-container:hover .download-text {
+  color: var(--primary-color);
+}
+.team-viewer-container:hover .document-download-icon {
+  fill: var(--primary-color);
+}
+
+.team-viewer-icon {
+  margin-right: 0.8vw;
+}
+
+.download-text {
+  font-size: 0.7vw;
+  margin-right: 0.5vw;
+}
+
+.social-link-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: #9a9aa2;
+  margin-bottom: 0.8vw;
+}
+
+.contact-support-container {
+  background: #ffffff;
+  padding: 3.1vw;
+  border-radius: 0.8vw;
+}
+
+.contact-form label {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: black;
+  margin-bottom: 0.6vw;
+}
+
+.contact-form-input-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form-input-line:nth-child(1) {
+  margin-bottom: 1.8vw;
+}
+
+.contact-label-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% - 1.2vw) / 2);
+}
+
+.contact-label-container input,
+.contact-label-container textarea {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #9a9aa2;
+  padding: 1vw;
+  border: 0.07vw solid #f2f2f2;
+  border-radius: 0.3vw;
+  transition: 0.3s;
+}
+
+/* .contact-label-container textarea {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #9a9aa2;
+  padding: 1vw;
+  border: 0.07vw solid #f2f2f2;
+  border-radius: 0.3vw;
+  transition: 0.3s;
+} */
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 34.4vw 1fr;
+  gap: 0.8vw;
+}
+
+.contact-form-container {
+  background: #ffffff;
+  padding: 3.1vw 8.2vw 0 3.1vw;
+  border-radius: 0.8vw;
+}
+
+.contact-form {
+  margin-top: 2vw;
+}
+
+.contact-form > .contact-label-container {
+  margin-top: 1.8vw;
+}
+
+.contact-label-container textarea {
+  resize: none;
+  height: 8.8vw;
+}
+
+.contact-form-btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1.2vw;
+  border-radius: 0.4vw;
+  width: 100%;
+  margin-top: 2vw;
+  transition: 0.3s;
+}
+
+.contact-form-btn:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-color);
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 0.07vw solid black;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 0.07vw solid var(--primary-color);
 }
