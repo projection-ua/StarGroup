@@ -3041,7 +3041,7 @@ footer {
 .catalog-item {
   position: relative;
   background-color: #ffffff;
-  padding: 3.3vw 1.2vw 1.2vw 1.2vw;
+  padding: 1vw 1.2vw 1.2vw 1.2vw;
   border-radius: 0.8vw;
   transition: 0.3s;
   cursor: pointer;
@@ -3058,7 +3058,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3vw;
+}
+
+.catalog-item-img img {
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 /* .catalog-item-img img {
