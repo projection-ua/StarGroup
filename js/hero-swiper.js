@@ -18,4 +18,9 @@ new Swiper(".hero-swiper-container", {
     el: ".swiper-pagination",
     clickable: true,
   },
+
+  navigation: {
+    nextEl: ".hero-swiper-btn-next",
+    prevEl: ".hero-swiper-btn-prev",
+  },
 });
