@@ -5357,6 +5357,21 @@ footer {
     margin-bottom: 4.2vw;
   }
 
+  .special-item.swiper-slide-active .special-img-wrapper img {
+    transform: scale(1.5);
+  }
+
+  .special-item.swiper-slide-active .special-item-title,
+  .special-item.swiper-slide-active .special-other-icon,
+  .special-item.swiper-slide-active .special-item-other {
+    color: var(--primary-color);
+    stroke: var(--primary-color);
+  }
+
+  .special-item:hover .special-item-other {
+    gap: 3vw;
+  }
+
   /* ==================== NEWS SECTION ============================*/
 
   .news-section {
