@@ -6,8 +6,15 @@
 new Swiper(".tariff-swiper-container", {
   // modules: [Pagination],
 
-  slidesPerView: 3,
+  slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
   },
 });
