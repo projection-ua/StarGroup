@@ -5048,6 +5048,7 @@ footer {
   .tariff-question-container {
     gap: 2.1vw;
     align-items: center;
+    margin-bottom: 2.1vw;
   }
 
   .bonus-tag-container {
@@ -5975,5 +5976,10 @@ footer {
     font-size: 3.7vw;
     line-height: 5.6vw;
     width: auto;
+  }
+
+  .we-can-icon-in-interactive svg {
+    width: 8.5vw;
+    height: 8.5vw;
   }
 }
