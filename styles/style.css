@@ -67,12 +67,22 @@ textarea {
 
 .swiper-pagination {
   white-space: nowrap;
+  bottom: 0 !important;
+}
+
+.without-backdrop-icon-in-desc .backdrop-ico-tariff {
+  display: none;
 }
 
 @media (max-width: 1024px) {
   .container {
     width: 97vw;
     padding: 0 4vw;
+  }
+
+  .without-backdrop-icon-in-desc .backdrop-ico-tariff {
+    display: block;
+    margin-left: 1.5vw;
   }
 }
 
@@ -662,7 +672,7 @@ textarea {
   color: #fff;
   background: linear-gradient(90deg, #3358ff 0%, #a117c3 100%);
   padding: 0.4vw 0.8vw;
-  border-radius: 1vw;
+  border-radius: 0.4vw;
   color: #fff;
   width: fit-content;
 }
@@ -1725,7 +1735,7 @@ footer {
   font-weight: 500;
   font-size: 0.8vw;
   color: #9a9aa2;
-  margin-bottom: 0.4vw;
+  margin-bottom: 1.2vw;
 }
 
 .footer-email-address {
@@ -2339,6 +2349,7 @@ footer {
   width: 1.2vw;
   height: 0.3vw;
   background: #8d8d8d;
+  transition: 0.3s;
 }
 
 .tariif-section-in-megogo {
@@ -2565,8 +2576,9 @@ footer {
 
 /* WHY-SECTION================================ */
 
-.why-section .we-can-list {
-  margin-bottom: 5.5vw;
+.why-section {
+  padding-bottom: 4vw;
+  overflow: hidden;
 }
 
 .additional-services .we-can-item-text {
@@ -2634,7 +2646,7 @@ footer {
 }
 
 .tariff-in-private-house .inner-tariff-container {
-  height: 32.7vw;
+  min-height: 31vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4842,7 +4854,7 @@ footer {
 
 @media (max-width: 1024px) {
   .tariff-section {
-    padding-bottom: 24.5vw;
+    padding-bottom: 15vw;
   }
 
   .tariff-section-title {
@@ -4908,6 +4920,7 @@ footer {
 
   .tariff-title {
     font-size: 6.4vw;
+    margin-bottom: 6.4vw;
   }
 
   .host-name-title {
@@ -4984,10 +4997,7 @@ footer {
   .main-tariff-swiper-container {
     width: 82.6vw;
     position: relative;
-  }
-
-  .main-tariff-swiper-container .swiper-pagination {
-    bottom: -10vw;
+    padding-bottom: 9.6vw;
   }
 
   .main-tariff-swiper-container .swiper-pagination-bullet {
@@ -5026,18 +5036,14 @@ footer {
   }
 
   .tariff-backdrop-button {
-    padding: 1.6vw 1.8vw;
-    border-radius: 1vw;
+    padding: 2.6vw;
+    border-radius: 2vw;
+    gap: 1vw;
   }
 
   .backdrop-ico-tariff {
     width: 3.2vw;
     height: 3.2vw;
-  }
-
-  .tariff-backdrop-btn-price-container {
-    margin-right: 2.1vw;
-    margin-left: 2.1vw;
   }
 
   .question-icon {
@@ -5088,6 +5094,7 @@ footer {
   .tariff-item-price-container {
     flex-direction: column-reverse;
     margin: 8.5vw 0;
+    gap: 1vw;
   }
 
   .inner-date-info {
@@ -5129,7 +5136,7 @@ footer {
     padding: 6.4vw 5.4vw;
     border-radius: 2.4vw;
     width: 100%;
-    margin-bottom: 5.3vw;
+    margin-bottom: 0;
   }
 
   .tariff-link {
@@ -5530,10 +5537,25 @@ footer {
   .tariff-in-internet-tv-bottom-text {
     font-size: 3.3vw;
     line-height: 5.6vw;
+    width: 100%;
   }
 
-  .tariff-section.tariff-in-internet-tv .main-tariff-swiper-container {
+  .tariff-in-private-house .inner-tariff-container {
+    min-height: unset;
+    height: 148vw;
+  }
+
+  /* .tariff-section.tariff-in-internet-tv .main-tariff-swiper-container {
     padding-bottom: 18vw;
+  } */
+
+  .tariff-title.without-host-name {
+    font-size: 6.4vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .small-part-of-tariff-title {
+    font-size: 5.3vw;
   }
 
   /* ======================== FORM SECTION with bg ============================ */
@@ -5822,6 +5844,14 @@ footer {
     display: none;
   }
 
+  .tariff-temporary-discount {
+    font-size: 2.6vw;
+    line-height: 2.6vw;
+    border-radius: 1vw;
+    width: 19.2vw;
+    height: 5.8vw;
+  }
+
   /*================ UNIVERSAL_SECTION ============================ */
   .universal-section {
     padding: 15vw 0;
@@ -5981,5 +6011,100 @@ footer {
   .we-can-icon-in-interactive svg {
     width: 8.5vw;
     height: 8.5vw;
+  }
+
+  /* ====================== APARTMENT PAGE ================================= */
+
+  .special-price-value-number {
+    font-size: 6.4vw;
+    line-height: 6.4vw;
+  }
+
+  .special-price-span {
+    font-size: 3.2vw;
+    color: #000;
+  }
+
+  .special-price-termin {
+    font-size: 3.2vw;
+    line-height: 3.2vw;
+    padding: 1.6vw 1vw;
+    border-radius: 1vw;
+    margin-bottom: 2.1vw;
+  }
+
+  .special-price-container {
+    gap: 2.1vw;
+    margin: 8.5vw 0 6.4vw 0;
+  }
+
+  .apartment-building-hero .internet-tv-hero-title {
+    width: 100%;
+  }
+
+  .apartment-building-hero .special-item-action {
+    margin-bottom: 4.2vw;
+  }
+
+  .why-section .we-can-list {
+    margin-bottom: 0vw;
+  }
+
+  .why-section {
+    padding-bottom: 15vw;
+  }
+
+  .special-price-value {
+    gap: 1vw;
+  }
+}
+
+.main-tariff-swiper-container.apartment .swiper-slide {
+  flex-shrink: 1;
+}
+
+.main-tariff-swiper-container.apartment {
+  margin-bottom: 8.5vw;
+}
+
+@media (max-width: 1024px) {
+  /*======================== PRIVATE HOUSE ==================================== */
+
+  .enth-speed-value {
+    font-size: 7.4vw;
+    line-height: 7.4vw;
+  }
+
+  .enth-speed-span {
+    font-size: 3.7vw;
+    line-height: 4.5vw;
+  }
+
+  .tariff-enth-speed-container {
+    gap: 1vw;
+  }
+
+  .tariff-in-private-house .price-in-private-house {
+    font-size: 7.4vw;
+  }
+
+  .backdrop-btn-container {
+    gap: 3.2vw;
+  }
+
+  .tariff-in-private-house .inner-number-span {
+    font-size: 5.3vw;
+  }
+
+  .tariff-in-internet-tv .tariff-list-container {
+    margin-bottom: 0vw;
+  }
+
+  .tariff-in-private-house .main-tariff-swiper-container {
+    margin-bottom: 8.5vw;
+  }
+
+  .item-text-in-grph {
+    margin-bottom: 2.2vw !important;
   }
 }

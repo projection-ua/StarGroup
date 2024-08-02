@@ -9,6 +9,7 @@ new Swiper(".main-tariff-swiper-container", {
     // when window width is >= 320px
     1024: {
       slidesPerView: 4,
+      spaceBetween: 0,
     },
   },
 });
