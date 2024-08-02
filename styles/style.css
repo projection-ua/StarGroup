@@ -3057,19 +3057,18 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 0.07vw;
+  min-height: 0.12vw;
   background-color: var(--primary-color); /* Змініть колір за потреби */
   width: 0;
   transition: width 6s linear;
   z-index: 9999;
-  height: 0.07vw;
 }
 
 .akuvox-acardeon-item .progress-bar-bg {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 0.07vw;
+  height: 0.12vw;
   background-color: #dfdfdf; /* Змініть колір за потреби */
   width: 0;
 }
