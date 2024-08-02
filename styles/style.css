@@ -84,6 +84,10 @@ textarea {
     display: block;
     margin-left: 1.5vw;
   }
+
+  .tariff-table-section {
+    display: none;
+  }
 }
 
 /* ========================= HEADER ======================== */
@@ -683,9 +687,7 @@ textarea {
   font-size: 1.6vw;
   color: #000;
   margin-bottom: 0.8vw;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 .tariff-title.without-host-name {
@@ -3102,6 +3104,10 @@ footer {
   border-radius: 0.8vw;
   transition: 0.3s;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .catalog-item:hover {
@@ -3258,6 +3264,10 @@ footer {
   position: absolute;
   left: 0;
   top: -0.5vw;
+}
+
+.catalog-swiper-container .swiper-slide {
+  height: auto;
 }
 
 /* ========================= BLUE FORM SECTION ============================= */
@@ -5141,6 +5151,7 @@ footer {
   .tariff-link {
     font-size: 4.2vw;
     gap: 2.1vw;
+    margin-top: 5.3vw;
   }
 
   .tariff-link-icon {
@@ -5179,6 +5190,7 @@ footer {
   .form-label {
     font-size: 3.7vw;
     line-height: 5.3vw;
+    gap: 2.1vw;
   }
 
   .form-input {
@@ -5487,6 +5499,7 @@ footer {
   .internet-tv-hero-image-container {
     width: 100%;
     margin-bottom: 6.4vw;
+    border-radius: 3vw;
   }
 
   .internet-tv-hero-title {
@@ -5541,7 +5554,7 @@ footer {
 
   .tariff-in-private-house .inner-tariff-container {
     min-height: unset;
-    height: 148vw;
+    height: 142vw;
   }
 
   /* .tariff-section.tariff-in-internet-tv .main-tariff-swiper-container {
@@ -5588,6 +5601,7 @@ footer {
   .internet-tv-form-section .form-btn {
     width: 100%;
     margin-top: 1.6vw;
+    margin-top: 4.6vw;
   }
 
   /* =================== WE CAN SECTION ============================================ */
@@ -6058,12 +6072,25 @@ footer {
   }
 }
 
-.main-tariff-swiper-container.apartment .swiper-slide {
+.main-tariff-swiper-container .swiper-slide {
   flex-shrink: 1;
 }
 
 .main-tariff-swiper-container.apartment {
   margin-bottom: 8.5vw;
+}
+
+.additional-form-example .form-title {
+  margin-bottom: 0.8vw;
+}
+
+.form-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: black;
+  margin-bottom: 1.2vw;
 }
 
 @media (max-width: 1024px) {
@@ -6105,5 +6132,160 @@ footer {
 
   .item-text-in-grph {
     margin-bottom: 2.2vw !important;
+  }
+
+  /* =============== INTERCOM PAGE ===================================== */
+
+  .additional-hero-text {
+    font-size: 3.2vw;
+    line-height: 3.4px;
+    margin-bottom: 4.2vw;
+  }
+
+  .instructions-item .we-can-item-text {
+    margin-bottom: 6.4vw;
+    width: 100%;
+  }
+
+  .options-section .without-btn-item {
+    width: 100% !important;
+  }
+
+  .additional-form-example .first-label {
+    width: 100% !important;
+  }
+
+  .additional-form-example .first-label .form-input {
+    width: 100% !important;
+  }
+
+  .form-input.with-icons {
+    padding-left: 11.7vw;
+  }
+
+  .jk-icon {
+    left: 3vw;
+  }
+
+  .inner-form-arrow-icon {
+    right: 5vw;
+    top: 45%;
+  }
+
+  .additional-form-example .form-input {
+    width: 100% !important;
+  }
+
+  .form-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .additional-form-example .form-title {
+    margin-bottom: 3.2vw;
+  }
+
+  /* ================== CATALOG SECTION ================================ */
+
+  .catalog-swiper-container {
+    width: 82vw;
+  }
+
+  .catalog-item-img {
+    margin: 0 auto;
+    width: 58.6vw;
+    height: 58.6vw;
+    margin-bottom: 6.1vw;
+  }
+
+  .catalog-item {
+    padding: 8.5vw 8.5vw 8.5vw 8.5vw;
+    border-radius: 5.3vw;
+  }
+
+  .catalog-btn-container {
+    display: flex;
+    gap: 3.2vw;
+    flex-direction: column;
+  }
+
+  .catalog-item-title {
+    font-size: 4.8vw;
+  }
+
+  .catalog-current-price {
+    font-size: 8.5vw;
+    line-height: 8.5vw;
+  }
+
+  .catalog-current-price span {
+    font-size: 5.3vw;
+    margin-left: 1vw;
+  }
+
+  .catalog-old-price {
+    font-size: 5.3vw;
+    line-height: 5.3vw;
+  }
+
+  .catalog-old-price span {
+    font-size: 4.2vw;
+    margin-left: 1vw;
+  }
+
+  .catalog-price-container {
+    gap: 3.2vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .catalog-buy-btn {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    flex-basis: 50%;
+    padding: 5.3vw 0;
+    border-radius: 2.4vw;
+  }
+
+  .catalog-catalog-add-btn {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    padding: 5.3vw 0;
+    border-radius: 2.4vw;
+  }
+
+  .catalog-section .tariff-marker-container {
+    position: absolute;
+    left: 0;
+    top: -3.5vw;
+  }
+
+  .catalog-swiper-container {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+  }
+
+  .catalog-section-title {
+    font-size: 6.4vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .catalog-swiper-container .swiper-pagination-bullet {
+    border-radius: 4.2vw;
+    width: 6.4vw;
+    height: 1.6vw;
+  }
+
+  .catalog-swiper-container .swiper-pagination-bullet-active {
+    border-radius: 4.2vw;
+    width: 12.8vw;
+    height: 1.6vw;
+  }
+
+  .catalog-swiper-container {
+    padding-bottom: 9.6vw;
+    padding-top: 4vw;
   }
 }

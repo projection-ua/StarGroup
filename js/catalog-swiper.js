@@ -1,9 +1,17 @@
 new Swiper(".catalog-swiper-container", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   loop: true,
-  spaceBetween: 14,
+  spaceBetween: 12,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 14,
+    },
   },
 });

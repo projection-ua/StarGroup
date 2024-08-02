@@ -8,13 +8,18 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap"
       rel="stylesheet"
     />
-   
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" type="text/css" href="../styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Group</title>
   </head>
   <body>
-     <header>
+    <header>
       <section class="header-top-section">
         <div class="container">
           <div class="top-header">
@@ -157,20 +162,21 @@
             <address class="bottom-header-addres-container">
               <a class="address-tel-number" href="tel:+380674811650"
                 ><svg class="address-icon">
-                  <use href="../images/header-icons.svg#icon-phone-call"></use>
-                </svg>+38(067) 481 16 50<svg
-                    class="header-backdrop-arrow"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.91602 4.66699L6.77985 9.0828C6.89605 9.2156 7.10265 9.2156 7.21885 9.0828L11.0827 4.66699"
-                      stroke-width="1.75"
-                      stroke-linecap="round"
-                    />
-                  </svg></a
-              >
+                  <use
+                    href="../images/header-icons.svg#icon-phone-call"
+                  ></use></svg
+                >+38(067) 481 16 50<svg
+                  class="header-backdrop-arrow"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.91602 4.66699L6.77985 9.0828C6.89605 9.2156 7.10265 9.2156 7.21885 9.0828L11.0827 4.66699"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                  /></svg
+              ></a>
               <div class="address-location">
                 <svg class="address-icon">
                   <use href="../images/header-icons.svg#icon-location"></use>
@@ -234,7 +240,10 @@
                 <div class="swiper-slide tariff-item without-marker">
                   <div class="tariff-marker-container"></div>
                   <div class="inner-tariff-container">
-                    <h3 class="tariff-title">Кабельне телебачення</h3>
+                    <h3 class="tariff-title">
+                      Кабельне<br />
+                      телебачення
+                    </h3>
 
                     <div class="tariff-info-container-list">
                       <div class="tariff-info-container">
@@ -347,7 +356,7 @@
                     <div class="tariff-item-price-container">
                       <div class="inner-item-price-container">
                         <div class="current-price-container">
-                          <span class="current-price-value">310</span>
+                          <span class="current-price-value">99</span>
                           <div class="current-inner-container">
                             <span class="current-inner-span">грн.</span>
                             <span class="current-inner-span">місяць</span>
@@ -434,177 +443,209 @@
         </div>
       </section>
 
-      <section class="we-can-section why-section">
+      <section class="we-can-section">
         <div class="container">
-          <h2 class="we-can-section-title">
-           Чому інтернет від Simnet?
-          </h2>
-          <div class="we-can-list">
-            <div class="we-can-item-container">
-              <div class="we-can-icon-container">
-                <svg class="we-can-icon">
-                  <use
-                    href="../images/internet-tv-page/we-can-icons.svg#icon-wi-fi"
-                  ></use>
-                </svg>
-              </div>
+          <h2 class="we-can-section-title">Чому інтернет від Simnet?</h2>
 
-              <div>
-                <h4 class="we-can-item-title">Встановленння обладнання</h4>
-                <p class="we-can-item-text">
-                  Кріплення абонентського роутера до стіни (за необхідності).
-                </p>
-              </div>
-            </div>
-
-            <div class="we-can-item-container">
-              <div class="we-can-icon-container">
-                <svg class="we-can-icon">
-                  <use
-                    href="../images/internet-tv-page/we-can-icons.svg#icon-Vector-2"
-                  ></use>
-                </svg>
-              </div>
-
-              <div>
-                <h4 class="we-can-item-title">Цілодобова технічна підтримка</h4>
-                <p class="we-can-item-text">
-                  Зручні та сучасні способи комунікації із технічною підтримкою
-                  24/7/365.
-                </p>
-              </div>
-            </div>
-
-            <div class="we-can-item-container">
-              <div class="we-can-icon-container">
-                <svg class="we-can-icon">
-                  <use
-                    href="../images/internet-tv-page/we-can-icons.svg#icon-Vector-5"
-                  ></use>
-                </svg>
-              </div>
-
-              <div>
-                <h4 class="we-can-item-title">Первинне налаштування</h4>
-                <p class="we-can-item-text">
-                  Налаштування абонентського роутера та кабельного-цифорового
-                  телебачення.
-                </p>
-              </div>
-            </div>
-
-            <div class="we-can-item-container">
-              <div class="we-can-icon-container">
-                <svg class="we-can-icon">
-                  <use
-                    href="../images/internet-tv-page/we-can-icons.svg#icon-Vector-1"
-                  ></use>
-                </svg>
-              </div>
-
-              <div>
-                <h4 class="we-can-item-title">Монтаж кабеля</h4>
-                <p class="we-can-item-text">
-                  10 метрів (витої пари або оптоволокна), та 1 коаксиального
-                  кабелю. Від обладнання оператора до 1-го обладнання абонента.
-                </p>
-              </div>
-            </div>
-
-            <div class="we-can-item-container">
-              <div class="we-can-icon-container">
-                <svg class="we-can-icon">
-                  <use
-                    href="../images/internet-tv-page/we-can-icons.svg#icon-Vector-4"
-                  ></use>
-                </svg>
-              </div>
-
-              <div>
-                <h4 class="we-can-item-title">Гігабітний порт</h4>
-                <p class="we-can-item-text">
-                  Для технології підключення 300 мбіт/с , 1000 мбіт/с
-                </p>
-              </div>
-            </div>
-
-            <div class="we-can-item-container">
-              <div class="we-can-icon-container">
-                <svg
-                  class="separate-we-can-icon"
-                  width="54"
-                  height="50"
-                  viewBox="0 0 54 50"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.58203 27.5649V26.0649H0.0820312V27.5649H1.58203ZM52.418 27.5649H53.918V26.0649H52.418V27.5649ZM50.6037 2.61624C50.8046 1.81255 50.3159 0.998151 49.5122 0.797228C48.7085 0.596305 47.8941 1.08495 47.6932 1.88864L50.6037 2.61624ZM6.30678 1.88864C6.10585 1.08495 5.29145 0.596305 4.48776 0.797228C3.68407 0.998151 3.19543 1.81255 3.39635 2.61624L6.30678 1.88864ZM6.43359 32.3931C5.60517 32.3931 4.93359 33.0646 4.93359 33.8931C4.93359 34.7215 5.60517 35.3931 6.43359 35.3931V32.3931ZM15.9258 35.3931C16.7542 35.3931 17.4258 34.7215 17.4258 33.8931C17.4258 33.0646 16.7542 32.3931 15.9258 32.3931V35.3931ZM9.67969 38.6392C9.67969 39.4676 10.3513 40.1392 11.1797 40.1392C12.0081 40.1392 12.6797 39.4676 12.6797 38.6392H9.67969ZM22.2539 32.3931C21.4255 32.3931 20.7539 33.0646 20.7539 33.8931C20.7539 34.7215 21.4255 35.3931 22.2539 35.3931V32.3931ZM31.7461 35.3931C32.5745 35.3931 33.2461 34.7215 33.2461 33.8931C33.2461 33.0646 32.5745 32.3931 31.7461 32.3931V35.3931ZM25.5 38.6392C25.5 39.4676 26.1716 40.1392 27 40.1392C27.8284 40.1392 28.5 39.4676 28.5 38.6392H25.5ZM38.0742 32.3931C37.2458 32.3931 36.5742 33.0646 36.5742 33.8931C36.5742 34.7215 37.2458 35.3931 38.0742 35.3931V32.3931ZM47.5664 35.3931C48.3948 35.3931 49.0664 34.7215 49.0664 33.8931C49.0664 33.0646 48.3948 32.3931 47.5664 32.3931V35.3931ZM41.3203 38.6392C41.3203 39.4676 41.9919 40.1392 42.8203 40.1392C43.6487 40.1392 44.3203 39.4676 44.3203 38.6392H41.3203ZM6.41016 48.1313C6.41016 48.9598 7.08173 49.6313 7.91016 49.6313C8.73858 49.6313 9.41016 48.9598 9.41016 48.1313H6.41016ZM44.5898 48.1313C44.5898 48.9598 45.2614 49.6313 46.0898 49.6313C46.9183 49.6313 47.5898 48.9598 47.5898 48.1313H44.5898ZM25.4183 16.5728C24.5899 16.5728 23.9183 17.2444 23.9183 18.0728C23.9183 18.9013 24.5899 19.5728 25.4183 19.5728V16.5728ZM28.5824 19.5728C29.4108 19.5728 30.0824 18.9013 30.0824 18.0728C30.0824 17.2444 29.4108 16.5728 28.5824 16.5728V19.5728ZM16.9942 8.06702C16.4084 8.65279 16.4084 9.60254 16.9941 10.1883C17.5799 10.7741 18.5297 10.7742 19.1155 10.1884L16.9942 8.06702ZM34.8844 10.1884C35.4702 10.7742 36.42 10.7741 37.0058 10.1883C37.5915 9.60254 37.5915 8.65279 37.0057 8.06702L34.8844 10.1884ZM21.4668 12.5375C20.881 13.1233 20.881 14.0731 21.4668 14.6589C22.0526 15.2447 23.0024 15.2447 23.5881 14.6589L21.4668 12.5375ZM30.416 14.6588C31.0018 15.2446 31.9515 15.2447 32.5373 14.6589C33.1231 14.0732 33.1232 13.1234 32.5374 12.5376L30.416 14.6588ZM49.2539 41.8853H4.74609V44.8853H49.2539V41.8853ZM4.74609 41.8853C3.82701 41.8853 3.08203 41.1403 3.08203 40.2212H0.0820312C0.0820312 42.7971 2.17015 44.8853 4.74609 44.8853V41.8853ZM3.08203 40.2212V27.5649H0.0820312V40.2212H3.08203ZM1.58203 29.0649H52.418V26.0649H1.58203V29.0649ZM50.918 27.5649V40.2212H53.918V27.5649H50.918ZM50.918 40.2212C50.918 41.1403 50.173 41.8853 49.2539 41.8853V44.8853C51.8298 44.8853 53.918 42.7971 53.918 40.2212H50.918ZM47.6932 1.88864L41.3651 27.2011L44.2755 27.9287L50.6037 2.61624L47.6932 1.88864ZM3.39635 2.61624L9.72447 27.9287L12.6349 27.2011L6.30678 1.88864L3.39635 2.61624ZM6.43359 35.3931H15.9258V32.3931H6.43359V35.3931ZM9.67969 33.8931V38.6392H12.6797V33.8931H9.67969ZM22.2539 35.3931H31.7461V32.3931H22.2539V35.3931ZM25.5 33.8931V38.6392H28.5V33.8931H25.5ZM38.0742 35.3931H47.5664V32.3931H38.0742V35.3931ZM41.3203 33.8931V38.6392H44.3203V33.8931H41.3203ZM9.41016 48.1313V43.3853H6.41016V48.1313H9.41016ZM47.5898 48.1313V43.3853H44.5898V48.1313H47.5898ZM25.4183 19.5728H28.5824V16.5728H25.4183V19.5728ZM19.1155 10.1884C21.1385 8.16547 23.9258 6.91658 27 6.91658V3.91658C23.0956 3.91658 19.5549 5.50648 16.9942 8.06702L19.1155 10.1884ZM27 6.91658C30.0741 6.91658 32.8614 8.16547 34.8844 10.1884L37.0057 8.06702C34.445 5.50648 30.9043 3.91658 27 3.91658V6.91658ZM23.5881 14.6589C24.4635 13.7835 25.6685 13.2447 27.0021 13.2447V10.2447C24.8409 10.2447 22.8818 11.1226 21.4668 12.5375L23.5881 14.6589ZM27.0021 13.2447C28.3357 13.2447 29.5408 13.7835 30.416 14.6588L32.5374 12.5376C31.1225 11.1226 29.1633 10.2447 27.0021 10.2447V13.2447Z"
-                    fill="white"
+          <div class="we-can-swiper-container">
+            <div class="swiper-wrapper we-can-list">
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/apartment building-page/why-section-icons/hand-icon.svg"
+                    alt="Hand"
                   />
-                </svg>
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">Стабільна ціна тарифу</h4>
+                  <p class="we-can-item-text">
+                    Ніяких сюрпризів та прихованих платежів – ви завжди знаєте,
+                    скільки платите за послугу.
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <h4 class="we-can-item-title">Оптичний термінал</h4>
-                <p class="we-can-item-text">
-                  Пристрій, що встановлюється на стороні абонента при
-                  підключенні за технологією xPON.
-                </p>
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <svg class="we-can-icon">
+                    <use
+                      href="../images/internet-tv-page/we-can-icons.svg#icon-Vector-4"
+                    ></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">
+                    Безперебійне та постійне з'єднання
+                  </h4>
+                  <p class="we-can-item-text">
+                    Швидке завантаження та передача даних дозволяють вам
+                    ефективно працювати, навчатися та розважатися.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/apartment building-page/why-section-icons/domophone-icon.svg"
+                    alt="Domophone"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">
+                    У вартість включено домофонію
+                  </h4>
+                  <p class="we-can-item-text">
+                    Сучасна система домофонії дозволяє контролювати доступ до
+                    вашого будинку та забезпечує додатковий рівень безпеки.
+                  </p>
+
+                  <div class="conditions-container">
+                    <svg
+                      class="conditions-icon"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 0C8.02219 0 6.08879 0.58649 4.4443 1.6853C2.79981 2.78412 1.51809 4.3459 0.761209 6.17317C0.0043329 8.00043 -0.193701 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8079C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C19.9971 7.34872 18.9426 4.80684 17.0679 2.9321C15.1932 1.05736 12.6513 0.00286757 10 0ZM10 18.3333C8.35183 18.3333 6.74066 17.8446 5.37025 16.9289C3.99984 16.0132 2.93174 14.7117 2.30101 13.189C1.67028 11.6663 1.50525 9.99076 1.82679 8.37425C2.14834 6.75774 2.94201 5.27288 4.10745 4.10744C5.27289 2.94201 6.75774 2.14833 8.37425 1.82679C9.99076 1.50525 11.6663 1.67027 13.189 2.301C14.7118 2.93173 16.0132 3.99984 16.9289 5.37025C17.8446 6.74066 18.3333 8.35182 18.3333 10C18.3309 12.2094 17.4522 14.3276 15.8899 15.8899C14.3276 17.4522 12.2094 18.3309 10 18.3333Z"
+                      />
+                      <path
+                        d="M10.5975 4.21917C10.1169 4.13161 9.62301 4.15074 9.15066 4.2752C8.67831 4.39966 8.23909 4.62642 7.86408 4.93942C7.48906 5.25242 7.18743 5.64402 6.98051 6.0865C6.77359 6.52898 6.66645 7.01153 6.66667 7.5C6.66667 7.72101 6.75446 7.93298 6.91074 8.08926C7.06702 8.24554 7.27899 8.33333 7.5 8.33333C7.72101 8.33333 7.93298 8.24554 8.08926 8.08926C8.24554 7.93298 8.33333 7.72101 8.33333 7.5C8.33312 7.25481 8.38701 7.0126 8.49116 6.79063C8.59531 6.56866 8.74715 6.37241 8.93585 6.21586C9.12455 6.05931 9.34547 5.94632 9.58285 5.88495C9.82024 5.82359 10.0682 5.81535 10.3092 5.86083C10.6384 5.92474 10.941 6.08532 11.1785 6.32207C11.416 6.55883 11.5776 6.861 11.6425 7.19C11.7081 7.53534 11.6628 7.89256 11.5131 8.21061C11.3635 8.52866 11.1171 8.79125 10.8092 8.96083C10.2993 9.25622 9.87799 9.68293 9.5891 10.1965C9.30022 10.7101 9.15434 11.2917 9.16667 11.8808V12.5C9.16667 12.721 9.25446 12.933 9.41074 13.0893C9.56702 13.2455 9.77899 13.3333 10 13.3333C10.221 13.3333 10.433 13.2455 10.5893 13.0893C10.7455 12.933 10.8333 12.721 10.8333 12.5V11.8808C10.8229 11.5908 10.889 11.3032 11.0251 11.0469C11.1611 10.7906 11.3623 10.5747 11.6083 10.4208C12.2121 10.0892 12.6983 9.57871 13.0001 8.9595C13.3018 8.34029 13.4044 7.6428 13.2936 6.96294C13.1828 6.28308 12.864 5.65424 12.3812 5.16291C11.8985 4.67158 11.2753 4.34189 10.5975 4.21917Z"
+                      />
+                      <path
+                        d="M10.8333 15C10.8333 14.5398 10.4602 14.1667 10 14.1667C9.53976 14.1667 9.16667 14.5398 9.16667 15C9.16667 15.4602 9.53976 15.8333 10 15.8333C10.4602 15.8333 10.8333 15.4602 10.8333 15Z"
+                      />
+                    </svg>
+                    <p class="conditions-text">
+                      Умови та можливості підключення
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/apartment building-page/why-section-icons/reserve-icon.svg"
+                    alt="Reserve"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">
+                    Резервне живлення до 72 годин
+                  </h4>
+                  <p class="we-can-item-text">
+                    Безперебійний доступ до інтернету навіть під час тривалих
+                    відключень електроенергії.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <svg class="we-can-icon">
+                    <use
+                      href="../images/internet-tv-page/we-can-icons.svg#icon-Vector-1"
+                    ></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">10 метрів кабелю</h4>
+                  <p class="we-can-item-text">
+                    Монтаж кабеля (витої пари або оптоволокна) від обладнання
+                    оператора до 1-го обладнання абонента.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <svg class="we-can-icon">
+                    <use
+                      href="../images/internet-tv-page/we-can-icons.svg#icon-Vector-5"
+                    ></use>
+                  </svg>
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">Первинне налаштування</h4>
+                  <p class="we-can-item-text">
+                    Кріплення абонентського роутера до стіни (за необхідності).
+                  </p>
+                </div>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
+        </div>
+      </section>
 
+      <section class="why-section">
+        <div class="container">
           <h2 class="we-can-section-title">Додаткові послуги для вас</h2>
 
-          <div class="we-can-list additional-services">
-            <div class="we-can-item-container">
-              <div class="we-can-icon-container">
-                <img
-                  class="we-can-icon"
-                  src="../images/apartment building-page/why-section-icons/ip-icon.svg"
-                  alt="Hand"
-                />
+          <div class="we-can-swiper-container">
+            <div class="swiper-wrapper we-can-list additional-services">
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/apartment building-page/why-section-icons/ip-icon.svg"
+                    alt="Hand"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">Виділений IP</h4>
+                  <p class="we-can-item-text">
+                    Організувати власний сервер для віддаленого доступу до
+                    комп'ютера та камер відеоспостереження.
+                  </p>
+
+                  <div class="special-price-value">
+                    <p class="special-price-value-number">50</p>
+                    <span class="special-price-span">грн. / місяць</span>
+                  </div>
+                </div>
               </div>
 
-              <div>
-                <h4 class="we-can-item-title">Виділений IP</h4>
-                <p class="we-can-item-text">
-                  Організувати власний сервер для віддаленого доступу до
-                  комп'ютера та камер відеоспостереження.
-                </p>
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/apartment building-page/why-section-icons/master-icon.svg"
+                    alt="Master"
+                  />
+                </div>
 
-                <div class="special-price-value">
-                  <p class="special-price-value-number">50</p>
-                  <span class="special-price-span">грн. / місяць</span>
+                <div>
+                  <h4 class="we-can-item-title">Виклик майстра</h4>
+                  <p class="we-can-item-text">
+                    Організувати власний сервер для віддаленого доступу до
+                    комп'ютера та камер відеоспостереження.
+                  </p>
+
+                  <div class="special-price-value">
+                    <span class="special-price-span">від</span>
+
+                    <p class="special-price-value-number">300</p>
+                    <span class="special-price-span">грн</span>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="we-can-item-container">
-              <div class="we-can-icon-container">
-                <img
-                  class="we-can-icon"
-                  src="../images/apartment building-page/why-section-icons/master-icon.svg"
-                  alt="Master"
-                />
-              </div>
-
-              <div>
-                <h4 class="we-can-item-title">Виклик майстра</h4>
-                <p class="we-can-item-text">
-                  Організувати власний сервер для віддаленого доступу до
-                  комп'ютера та камер відеоспостереження.
-                </p>
-
-                <div class="special-price-value">
-                  <span class="special-price-span">від</span>
-
-                  <p class="special-price-value-number">300</p>
-                  <span class="special-price-span">грн</span>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -708,87 +749,92 @@
       <section class="equipment-section">
         <div class="container">
           <h2 class="we-can-section-title">Обладнання від SimNet</h2>
-          <div class="equipment-link-container">
-            <a class="equipment-link-item" href="">
-              <div class="equipment-image-container">
-                <img
-                  src="../images/internet-tv-page/equipment/routers.png"
-                  alt="Router"
-                />
-              </div>
-              <div class="equipment-link-title">
-                Роутери
-                <svg
-                  class="equipment-link-icon"
-                  width="10"
-                  height="17"
-                  viewBox="0 0 10 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1.5L8.56996 8.12371C8.79762 8.32292 8.79762 8.67708 8.56996 8.87629L1 15.5"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </a>
 
-            <a class="equipment-link-item" href="">
-              <div class="equipment-image-container">
-                <img
-                  src="../images/internet-tv-page/equipment/cabels.png"
-                  alt="Cabel"
-                />
-              </div>
-              <div class="equipment-link-title">
-                Кабелі
-                <svg
-                  class="equipment-link-icon"
-                  width="10"
-                  height="17"
-                  viewBox="0 0 10 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1.5L8.56996 8.12371C8.79762 8.32292 8.79762 8.67708 8.56996 8.87629L1 15.5"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
+          <div class="we-can-swiper-container">
+            <div class="swiper-wrapper equipment-link-container">
+              <div class="swiper-slide equipment-link-item" href="">
+                <div class="equipment-image-container">
+                  <img
+                    src="../images/internet-tv-page/equipment/routers.png"
+                    alt="Router"
                   />
-                </svg>
+                </div>
+                <div class="equipment-link-title">
+                  Роутери
+                  <svg
+                    class="equipment-link-icon"
+                    width="10"
+                    height="17"
+                    viewBox="0 0 10 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.5L8.56996 8.12371C8.79762 8.32292 8.79762 8.67708 8.56996 8.87629L1 15.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
               </div>
-            </a>
 
-            <a class="equipment-link-item" href="">
-              <div class="equipment-image-container">
-                <img
-                  src="../images/internet-tv-page/equipment/other.png"
-                  alt="Other"
-                />
-              </div>
-              <div class="equipment-link-title">
-                Інше облоднання
-                <svg
-                  class="equipment-link-icon"
-                  width="10"
-                  height="17"
-                  viewBox="0 0 10 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1.5L8.56996 8.12371C8.79762 8.32292 8.79762 8.67708 8.56996 8.87629L1 15.5"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
+              <div class="swiper-slide equipment-link-item" href="">
+                <div class="equipment-image-container">
+                  <img
+                    src="../images/internet-tv-page/equipment/cabels.png"
+                    alt="Cabel"
                   />
-                </svg>
+                </div>
+                <div class="equipment-link-title">
+                  Кабелі
+                  <svg
+                    class="equipment-link-icon"
+                    width="10"
+                    height="17"
+                    viewBox="0 0 10 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.5L8.56996 8.12371C8.79762 8.32292 8.79762 8.67708 8.56996 8.87629L1 15.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
               </div>
-            </a>
+
+              <div class="swiper-slide equipment-link-item" href="">
+                <div class="equipment-image-container">
+                  <img
+                    src="../images/internet-tv-page/equipment/other.png"
+                    alt="Other"
+                  />
+                </div>
+                <div class="equipment-link-title">
+                  Інше облоднання
+                  <svg
+                    class="equipment-link-icon"
+                    width="10"
+                    height="17"
+                    viewBox="0 0 10 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1.5L8.56996 8.12371C8.79762 8.32292 8.79762 8.67708 8.56996 8.87629L1 15.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -1132,17 +1178,23 @@
           <div class="footer-social-link-container">
             <a class="footer-social-link" href=""
               ><svg class="footer-social-icon">
-                <use href="../images/footer-social-icons.svg#icon-instagram"></use>
+                <use
+                  href="../images/footer-social-icons.svg#icon-instagram"
+                ></use>
               </svg>
             </a>
             <a class="footer-social-link" href=""
               ><svg class="footer-social-icon">
-                <use href="../images/footer-social-icons.svg#icon-telegram"></use>
+                <use
+                  href="../images/footer-social-icons.svg#icon-telegram"
+                ></use>
               </svg>
             </a>
             <a class="footer-social-link" href=""
               ><svg class="footer-social-icon">
-                <use href="../images/footer-social-icons.svg#icon-facebook"></use>
+                <use
+                  href="../images/footer-social-icons.svg#icon-facebook"
+                ></use>
               </svg>
             </a>
           </div>
@@ -1164,6 +1216,9 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/we-can-swiper.js"></script>
     <script src="../js/acardeon.js"></script>
+    <script src="../js/tariff-swiper.js"></script>
   </body>
 </html>
