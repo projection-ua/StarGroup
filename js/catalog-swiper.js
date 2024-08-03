@@ -1,5 +1,5 @@
 new Swiper(".catalog-swiper-container", {
-  slidesPerView: 1,
+  slidesPerView: 1.1,
   loop: true,
   spaceBetween: 12,
   pagination: {
