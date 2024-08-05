@@ -1,6 +1,6 @@
 new Swiper(".main-tariff-swiper-container", {
-  slidesPerView: 1,
-  spaceBetween: 12,
+  slidesPerView: 1.1,
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
   },

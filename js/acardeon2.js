@@ -1,3 +1,7 @@
+const swiper = new Swiper(".akuvox-swiper-container", {
+  loop: true,
+});
+
 const parent = document.querySelector(".akuvox-acardeon-container");
 const akuvoxItems = Array.from(
   parent.querySelectorAll(".akuvox-acardeon-item")
@@ -47,8 +51,10 @@ function processNextItem() {
     // Переходимо до наступного елемента
     currentIndex = (currentIndex + 1) % akuvoxItems.length;
 
+    swiper.slideNext();
+
     // Переходимо до наступного елемента через 0.5 секунди після закриття попереднього
-    setTimeout(processNextItem, 50);
+    setTimeout(processNextItem, 1);
   }, 6000);
 }
 

@@ -51,7 +51,7 @@ textarea {
 }
 
 :root {
-  --primary-color: #3358ff;
+  --primary-color: #0426a0;
   --primary-hover: #1436cf;
   --primary-yellow: #ffe000;
   --primary-blue-bg: #ebeeff;
@@ -155,7 +155,7 @@ textarea {
 }
 
 .without-light-header-container {
-  background-color: var(--primary-color);
+  background-color: #fff;
   display: flex;
   align-items: center;
   gap: 0.2vw;
@@ -168,7 +168,7 @@ textarea {
 .without-light-header-container svg {
   width: 0.7vw;
   height: 0.7vw;
-  fill: #ffffff;
+  fill: var(--primary-color);
 }
 
 .without-light-header-container p {
@@ -177,7 +177,7 @@ textarea {
   font-size: 0.7vw;
   line-height: 1vw;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-color);
 }
 
 .addition-header-btn {
@@ -367,7 +367,7 @@ textarea {
 
 .bottom-header-addres-container {
   display: flex;
-  gap: 1.2vw;
+  gap: 0.8vw;
 }
 
 .header-bottom-section .container {
@@ -400,26 +400,6 @@ textarea {
   text-transform: uppercase;
   color: #fff;
 }
-
-.top-heaer-nav-list-mob-backdrop {
-  display: flex;
-  gap: 1.6vw;
-}
-
-@media (min-width: 1024px) {
-  .header-mob-logo {
-    display: none;
-  }
-
-  .top-header-backdrop-icon {
-    display: none;
-  }
-
-  .header-menu-container {
-    display: none;
-  }
-}
-
 /* HERO SLIDER SECTION ====================================================== */
 
 .hero-swiper-section {
@@ -428,7 +408,7 @@ textarea {
 
 .hero-slide-item {
   padding: 5.7vw;
-  background-image: url(../images/main-page/hero-bg-1.jpg);
+  background-image: url(/images/main-page/hero-bg-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 26vw; */
@@ -525,11 +505,11 @@ textarea {
 .services-list {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .services-item {
-  flex-basis: calc((100% - 4 * 0.7vw) / 5);
+  /* flex-basis: calc((100% - 4 * 0.7vw) / 5); */
   background: #f2f3f7;
   border-top-left-radius: 0.4vw;
   border-top-right-radius: 0.4vw;
@@ -610,6 +590,7 @@ textarea {
   background: #f3f3f4;
   width: fit-content;
   border-radius: 8.6vw;
+  margin-bottom: 1.6vw;
 }
 
 .navigation-item {
@@ -1168,7 +1149,7 @@ textarea {
 .tariff-nav-form-container {
   display: flex;
   gap: 4vw;
-  margin-bottom: 1.6vw;
+  /* margin-bottom: 1.6vw; */
 }
 
 .host-name-title {
@@ -1192,10 +1173,6 @@ textarea {
   gap: 0.2vw;
   margin-right: 0.4vw;
   margin-left: 0.4vw;
-}
-
-.tariff-navigation-list.mb {
-  margin-bottom: 1.6vw;
 }
 
 /* FORM SECTION ================================================ */
@@ -2998,16 +2975,12 @@ footer {
 .akuvox-section .container {
   display: flex;
   justify-content: space-between;
-  height: 33vw;
 }
 
 .akuvox-image-container {
   width: 42vw;
   background-color: #f2f3f7;
   border-radius: 0.8vw;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .akuvox-info-container {
@@ -3547,11 +3520,6 @@ footer {
   width: 35vw;
 }
 
-.akuvox-swiper-container {
-  width: 42vw;
-  overflow: hidden;
-}
-
 /* ================== DOSCOUNT PAGE ====================== */
 
 .special-list.in-discount {
@@ -3876,7 +3844,6 @@ footer {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  margin-bottom: 1.6vw;
 }
 
 .swiper-container.company {
@@ -4765,97 +4732,10 @@ footer {
 }
 
 /* =============================== ADDAPTIVE =========================== */
-.articles-section {
-  padding: 2vw 0 4vw 0;
-}
-/* =========== HEADER ================================================================ */
+
+/* HERO SECTION IN MAIN  */
 
 @media (max-width: 1024px) {
-  .header-bottom-section {
-    display: none;
-  }
-
-  .top-header-right-nav-list {
-    position: relative;
-
-    display: none;
-  }
-
-  .top-header-nav-link-text {
-    font-size: 3.2vw;
-    line-height: 3.2vw;
-    color: #fff;
-  }
-
-  .top-heaer-nav-list-mob-backdrop {
-    display: none;
-  }
-
-  .top-heaer-nav-list-mob-backdrop.is-active {
-    position: absolute;
-    flex-direction: column;
-    top: 14vw;
-    z-index: 11;
-    background-color: var(--primary-color);
-    display: block;
-    height: auto;
-  }
-
-  .top-heaer-nav-list-mob-backdrop .top-header-nav-link {
-    padding: 2vw 0;
-  }
-
-  .top-header-nav-list {
-    flex-direction: column;
-  }
-
-  .top-header-nav-link {
-    padding: 6.4vw 0;
-    gap: 1vw;
-  }
-
-  .header-nav-icon {
-    width: 3.2vw;
-    height: 3.2vw;
-  }
-
-  .addition-header-btn {
-    display: none;
-  }
-
-  .header-enter-btn-text {
-    font-size: 3.2vw;
-    line-height: 3.2vw;
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-  }
-
-  .header-enter-icon {
-    width: 3.2vw;
-    height: 3.2vw;
-  }
-
-  .header-enter-btn {
-    border: 0.6vw solid #fff;
-    border-radius: 1vw;
-    padding: 3.7vw 4.2vw;
-  }
-
-  .header-menu-container {
-    background-color: #ffffff;
-    padding: 0 3.3vw;
-    border-radius: 1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .top-header-btn-container {
-    gap: 3.2vw;
-  }
-
-  /* HERO SECTION IN MAIN  */
   .hero-swiper-btn-prev {
     background-color: #ffffff;
     border-radius: 100%;
@@ -5059,6 +4939,7 @@ footer {
   }
 
   .tariff-navigation-list {
+    margin-bottom: 6.4vw;
     width: 100%;
     justify-content: space-between;
   }
@@ -5790,7 +5671,7 @@ footer {
   }
 
   .we-can-swiper-container {
-    width: 100%;
+    width: 82vw;
     position: relative;
     padding-bottom: 9.6vw;
   }
@@ -6394,7 +6275,7 @@ footer {
   }
 
   .catalog-swiper-container {
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     padding-bottom: 4vw;
     padding-top: 4vw;
@@ -6607,139 +6488,24 @@ footer {
   /* ==================== DISCOUNT_PAGE ============================== */
 
   .special-list.in-discount {
-    gap: 3.2vw;
+    flex-wrap: nowrap;
   }
 
   .dn.question-link {
     display: none;
   }
+}
 
-  .special-list.in-discount .special-item {
-    flex-basis: 100%;
-  }
+/* B2B ================================================================================= */
+/* SWRVICES_SECTION =============================*/
 
-  .form-special-item {
-    order: 999;
-  }
 
-  .form-special-item {
-    background-color: var(--primary-color);
-    border-radius: 3.2vw;
-    padding: 8.5vw 6.4vw 8.5vw 6.4vw;
-  }
+.services-section.b2b {
+  overflow: hidden;
+}
 
-  .form-special-item img {
-    width: 30vw;
-    margin-bottom: 8.5vw;
-  }
-
-  .form-item-title {
-    font-size: 6.4vw;
-    line-height: 6.9vw;
-    margin-bottom: 8.5vw;
-  }
-
-  .special-form-label {
-    font-size: 3.7vw;
-    color: #fff;
-  }
-
-  .special-form-input {
-    border: 0.5vw solid rgba(255, 255, 255, 0.4);
-    border-radius: 1.6vw;
-    padding: 4.2vw;
-    margin-top: 2.1vw;
-    font-size: 3.7vw;
-    line-height: 3.7vw;
-  }
-
-  .special-form-input::placeholder {
-    font-size: 3.7vw;
-    line-height: 3.7vw;
-  }
-
-  .special-form-input-container {
-    margin-bottom: 8.5vw;
-  }
-
-  .special-form-btn {
-    font-size: 4.2vw;
-    line-height: 4.2vw;
-    padding: 6.4vw 0vw;
-    border-radius: 2.1vw;
-  }
-
-  .archive-btn {
-    display: none;
-  }
-
-  .archive-container {
-    margin-bottom: 7.4vw;
-  }
-
-  .articles-section {
-    padding: 6.4vw 0 15vw 0;
-  }
-
-  .article-container {
-    width: 97vw;
-    padding: 0 4vw;
-  }
-
-  .article-title {
-    font-size: 8.5vw;
-    line-height: 10.1vw;
-    width: 100%;
-    margin-bottom: 6.4vw;
-  }
-
-  .article-info-container {
-    max-width: 100%;
-  }
-
-  .article-info-container img {
-    border-radius: 3.2vw;
-    margin-bottom: 8.5vw;
-  }
-
-  .article-text-title {
-    font-size: 3.7vw;
-    line-height: 5.8vw;
-    margin-bottom: 2.5vw;
-  }
-
-  .article-text {
-    font-size: 3.7vw;
-    line-height: 5.8vw;
-    margin-bottom: 2.5vw;
-  }
-
-  .article-list-item {
-    list-style-type: disc;
-    margin-left: 7.3vw;
-  }
-
-  .article-share-text {
-    margin-bottom: 6.4vw;
-    font-size: 5.3vw;
-  }
-
-  .footer-social-link {
-    width: 15vw;
-    height: 15vw;
-    border-radius: 2.1vw;
-  }
-
-  .footer-social-icon {
-    width: 6.4vw;
-    height: 6.4vw;
-  }
-
-  .footer-social-link-container {
-    gap: 3.2vw;
-  }
-
-  .article-text-container {
-    margin-bottom: 8.5vw;
-  }
+.services-swiper-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 2vw;
 }

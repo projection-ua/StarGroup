@@ -1,5 +1,5 @@
 new Swiper(".we-can-swiper-container", {
-  slidesPerView: 1,
+  slidesPerView: 1.1,
   spaceBetween: 12,
   pagination: {
     el: ".swiper-pagination",
