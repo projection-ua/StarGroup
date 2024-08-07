@@ -6499,7 +6499,6 @@ footer {
 /* B2B ================================================================================= */
 /* SWRVICES_SECTION =============================*/
 
-
 .services-section.b2b {
   overflow: hidden;
 }
@@ -6508,4 +6507,472 @@ footer {
   width: 100%;
   position: relative;
   padding-bottom: 2vw;
+}
+
+.services-swiper-container .swiper-pagination-bullet {
+  border-radius: 0.8vw;
+  width: 1.2vw;
+  height: 0.31vw;
+  transition: 0.3s;
+
+  background: #8d8d8d;
+}
+
+.services-swiper-container .swiper-pagination-bullet-active {
+  border-radius: 0.8vw;
+  width: 2.5vw;
+  height: 0.31vw;
+
+  background: #030317;
+}
+
+/* b2b-we-can-section ========================== */
+
+.b2b-we-can-section {
+  padding-bottom: 4vw;
+}
+
+.b2b-we-can-list {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.b2b-tariff-item-title {
+  font-family: "Exo 2";
+  font-size: 1.6vw;
+  font-weight: 700;
+  line-height: 1.9vw;
+  text-align: center;
+  margin-bottom: 1.6vw;
+}
+
+.b2b-we-can-item {
+  flex-basis: calc((100% - 0.8vw * 2) / 3);
+  fill: var(--primary-color);
+  padding: 2vw;
+  border-radius: 0.8vw;
+  background-color: #ffffff;
+}
+
+.b2b-we-can-icon-title-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  margin-bottom: 1.2vw;
+}
+
+.b2b-we-can-icon {
+  width: 2.9vw;
+  height: 2.9vw;
+}
+
+.b2b-we-can-item-title {
+  font-family: "Exo 2";
+  font-size: 1vw;
+  line-height: 1.2vw;
+  text-align: left;
+  font-weight: 700;
+}
+
+.b2b-we-can-item-text {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+  text-align: left;
+}
+
+/* B2B tariffSECTION ========================== */
+.b2b-tariff-section {
+  padding-bottom: 4vw;
+}
+
+.tariff-item-icon {
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+.tariff-item-icon.grey {
+  fill: #9a9aa2;
+}
+
+.tariff-equipment-btn {
+  border-top: 0.07vw solid #f2f2f2;
+  border-bottom: 0.07vw solid #f2f2f2;
+  display: flex;
+  gap: 0.5vw;
+  padding: 0.5vw 0;
+  align-items: center;
+  margin-bottom: 1.4vw;
+}
+
+.tariff-item-icon {
+}
+
+.equipment-text {
+  font-family: "Manrope";
+  font-size: 0.7vw;
+  font-weight: 600;
+  line-height: 1vw;
+  text-align: center;
+}
+
+.b2b-tariff-option-container {
+  border-bottom: 0.07vw solid #f2f2f2;
+  padding-bottom: 0.4vw;
+}
+
+.b2b-tariff-option-item {
+  display: flex;
+  align-items: center;
+  gap: 2.5vw;
+}
+
+.b2b-tariff-option-item:not(:last-child) {
+  margin-bottom: 0.4vw;
+}
+
+.b2b-tariff-option-item p {
+  font-family: "Manrope";
+  font-size: 0.7vw;
+  font-weight: 500;
+  line-height: 1.1vw;
+  text-align: left;
+  color: #81818b;
+  width: 9vw;
+}
+
+.b2b-tariff-option-item span {
+  font-family: "Exo 2";
+  font-size: 1.6vw;
+  font-weight: 600;
+  line-height: 1.4vw;
+  text-align: center;
+}
+
+.b2b-tariff-section .bonus-tag-container {
+  background-image: url(/images/main-page/bonus-tag-container.png);
+  margin-top: 0.8vw;
+}
+
+.add-info-item {
+  position: relative;
+  display: flex;
+  padding-left: 0.7vw;
+  font-family: "Manrope";
+  font-size: 0.7vw;
+  font-weight: 500;
+  line-height: 1vw;
+  text-align: left;
+}
+
+.add-info-item:not(:last-child) {
+  margin-bottom: 0.4vw;
+}
+
+.add-info-item::before {
+  content: "";
+  position: absolute;
+  width: 0.2vw;
+  height: 0.2vw;
+  border-radius: 100%;
+  background-color: #000;
+  left: 0;
+  top: 0.5vw;
+}
+
+.b2b-tariff-button {
+  width: 100%;
+  border: none;
+  font-family: "Manrope";
+  font-size: 0.9vw;
+  font-weight: 700;
+  line-height: 0.9vw;
+  text-align: left;
+  padding: 1.2vw 0;
+  text-align: center;
+  border-radius: 0.4vw;
+}
+
+.b2b-tariff-button.primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.b2b-tariff-button.white {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+.b2b-tariff-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 45vw;
+  flex-basis: calc((100% - 0.8vw * 2) / 3);
+  padding: 1.6vw;
+  border-radius: 1vw;
+}
+
+.b2b-tariff-item.white {
+  background-color: #ffffff;
+}
+
+.b2b-tariff-item-list {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.b2b-tariff-item.primary {
+  background: linear-gradient(180deg, #001c7f 0%, #0426a0 50%, #001c7f 100%);
+}
+
+.b2b-tariff-item.primary p,
+.b2b-tariff-item.primary svg,
+.b2b-tariff-item.primary div,
+.b2b-tariff-item.primary span,
+.b2b-tariff-item.primary h2,
+.b2b-tariff-item.dark-primary p,
+.b2b-tariff-item.primary svg,
+.b2b-tariff-item.dark-primary svg,
+.b2b-tariff-item.dark-primary div,
+.b2b-tariff-item.dark-primary span,
+.b2b-tariff-item.dark-primary h2 {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+.b2b-tariff-item.primary .tariff-equipment-btn,
+.b2b-tariff-item.dark-primary .tariff-equipment-btn {
+  border-top: 0.11vw solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0.11vw solid rgba(255, 255, 255, 0.1);
+}
+
+.b2b-tariff-item.dark-primary {
+  box-shadow: 0px 5px 24px 0px #0000000a;
+  background: linear-gradient(180deg, #0d162c 0%, #1b2a4a 50%, #0d162c 100%);
+}
+
+.b2b-tariff-item.primary .b2b-tariff-option-container,
+.b2b-tariff-item.dark-primary .b2b-tariff-option-container {
+  border-bottom: 0.11vw solid rgba(255, 255, 255, 0.1);
+}
+
+.b2b-tariff-item.primary .add-info-item::before,
+.b2b-tariff-item.dark-primary .add-info-item::before {
+  background-color: #ffffff;
+}
+
+.b2b-tariff-section .tariff-marker-container {
+  position: absolute;
+  margin-left: 0;
+  top: -0.8vw;
+}
+
+.b2b-tariff-section-title {
+  font-family: "Exo 2";
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 2.2vw;
+  text-align: left;
+  margin-bottom: 2.8vw;
+}
+
+/* FORM SECTIO b2b =============================== */
+
+.b2b-form-section {
+  background-color: #f2f3f7;
+  padding-top: 4vw;
+  padding-bottom: 5vw;
+}
+
+.b2b-form-container {
+  border-right: 0.1vw solid #f2f2f2;
+  padding-right: 2.5vw;
+}
+
+.b2b-checkbox-form-container {
+  display: flex;
+  background-color: #ffffff;
+  padding: 3.1vw;
+  border-radius: 0.8vw;
+  width: 100%;
+  gap: 2.5vw;
+}
+
+.form-container-title {
+  font-family: "Exo 2";
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 2.2vw;
+  margin-bottom: 0.8vw;
+}
+
+.form-container-text {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+  text-align: left;
+  margin-bottom: 1.2vw;
+  width: 27vw;
+  opacity: 0.7;
+}
+
+.b2b-form {
+}
+
+.b2b-form label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 1vw;
+  text-align: left;
+  gap: 0.6vw;
+}
+
+.b2b-form label:not(:last-child) {
+  margin-bottom: 0.8vw;
+}
+
+.b2b-form input {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+  text-align: left;
+  padding: 1vw;
+  border: 0.07vw solid #f2f2f2;
+  border-radius: 0.3vw;
+}
+
+.b2b-form input::placeholder {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+}
+
+.b2b-form button {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 700;
+  line-height: 0.8vw;
+  text-align: left;
+  border: none;
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 1.2vw 0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.4vw;
+  margin-top: 1.2vw;
+  margin-bottom: 1.2vw;
+
+  transition: 0.3s;
+}
+
+.b2b-form button:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-color);
+}
+
+.b2b-bottom-tetxt p {
+  font-family: "Manrope";
+  font-size: 0.6vw;
+  font-weight: 500;
+  line-height: 0.8vw;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.b2b-bottom-tetxt {
+  display: flex;
+  gap: 0.3vw;
+}
+
+.b2b-bottom-tetxt a {
+  font-family: "Manrope";
+  font-weight: 900;
+  text-align: left;
+  font-size: 0.6vw;
+  line-height: 0.8vw;
+}
+
+.b2b-form-image-wrapper {
+  width: 29vw;
+  flex-shrink: 0;
+}
+
+.b2b-form-section .container {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.b2b-checkbox-container label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b2b-checkbox-container label p {
+  font-family: "Manrope";
+  font-size: 0.9vw;
+  font-weight: 600;
+  line-height: 0.9vw;
+  text-align: left;
+  opacity: 0.5;
+}
+
+.b2b-checkbox-container label:not(:last-child) {
+  margin-bottom: 0.8vw;
+}
+
+.b2b-checkbox-container {
+  width: 100%;
+}
+
+.checkbox-title {
+  font-family: "Exo 2";
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 1.2vw;
+  text-align: left;
+  margin-bottom: 1.6vw;
+}
+
+.b2b-custom-checkbox {
+  width: 1.8vw;
+  height: 1vw;
+  background-color: #dadada;
+  border-radius: 0.2vw;
+  padding: 0.1vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.b2b-custom-checkbox div {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 0.2vw;
+  transition: 0.5s;
+}
+
+.b2b-checkbox-container input {
+  display: none;
+}
+
+.b2b-checkbox-container
+  input[type="checkbox"]:checked
+  + .b2b-custom-checkbox
+  div {
+  transform: translateX(100%);
+}
+
+.b2b-checkbox-container input[type="checkbox"]:checked + .b2b-custom-checkbox {
+  background-color: var(--primary-color);
 }

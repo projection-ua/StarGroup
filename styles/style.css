@@ -44,6 +44,10 @@ textarea {
   outline: none;
 }
 
+section {
+  overflow: hidden;
+}
+
 .container {
   width: 83.8vw;
   margin: 0 auto;
@@ -2998,7 +3002,6 @@ footer {
 .akuvox-section .container {
   display: flex;
   justify-content: space-between;
-  height: 33vw;
 }
 
 .akuvox-image-container {
@@ -6888,5 +6891,9 @@ footer {
   .we-can-swiper-container-short .swiper-pagination-bullet-active {
     width: 10.6vw;
     background-color: #000;
+  }
+
+  .tariff-navigation-list.mb {
+    margin-bottom: 9.6vw;
   }
 }
