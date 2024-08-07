@@ -408,7 +408,7 @@ textarea {
 
 .hero-slide-item {
   padding: 5.7vw;
-  background-image: url(/images/main-page/hero-bg-1.jpg);
+  background-image: url(../images/hero-bg-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 26vw; */
@@ -6975,4 +6975,241 @@ footer {
 
 .b2b-checkbox-container input[type="checkbox"]:checked + .b2b-custom-checkbox {
   background-color: var(--primary-color);
+}
+
+/* b2B DECISION SECTION ================================================================= */
+.b2b-decision-section {
+  padding: 4vw 0;
+}
+
+.b2b-section-title {
+  font-family: "Exo 2";
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 2.2vw;
+  text-align: left;
+  margin-bottom: 2vw;
+}
+
+.decision-item-btn svg {
+  stroke: black;
+  width: 0.8vw;
+  height: 0.8vw;
+  transform: 0.3s;
+}
+
+.decision-item-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 1vw;
+  text-align: left;
+  padding: 0.8vw 1.2vw;
+  background-color: #f2f3f7;
+  border-radius: 0.4vw;
+  border: none;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.decision-item-image-wraooer {
+  border-radius: 0.8vw;
+  overflow: hidden;
+  width: fit-content;
+  margin-bottom: 1.2vw;
+}
+
+.decision-item-title {
+  font-family: "Exo 2";
+  font-size: 1.2vw;
+  font-weight: 600;
+  line-height: 1.4vw;
+  text-align: left;
+  margin-bottom: 0.6vw;
+}
+
+.decision-item-text {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+  text-align: left;
+  color: rgba(104, 104, 116, 1);
+}
+
+.b2b-decision-item {
+  background-color: #ffffff;
+  border-radius: 0.8vw;
+  padding: 1.2vw;
+  height: 34.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.decision-item-image-wraooer img {
+  transition: 0.6s;
+}
+
+.b2b-decision-item:hover .decision-item-btn {
+  gap: 1vw;
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.b2b-decision-item:hover .decision-item-btn svg {
+  stroke: #ffffff;
+}
+
+.b2b-decision-item:hover .decision-item-image-wraooer img {
+  transform: scale(1.2);
+}
+
+.descision-swiper-container {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 2.3vw;
+}
+
+.descision-swiper-container .swiper-pagination-bullet {
+  border-radius: 0.8vw;
+  width: 1.2vw;
+  height: 0.31vw;
+  transition: 0.3s;
+
+  background: #8d8d8d;
+}
+
+.descision-swiper-container .swiper-pagination-bullet-active {
+  border-radius: 0.8vw;
+  width: 2.5vw;
+  height: 0.31vw;
+
+  background: #030317;
+}
+
+.swiper-btn-next {
+  position: absolute;
+  width: 2.9vw;
+  height: 2.9vw;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -1.5vw;
+  top: 35%;
+  z-index: 1;
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.swiper-btn-next svg {
+  stroke: black;
+  width: 1.4vw;
+  height: 1.4vw;
+}
+
+.relative-descision-container-for-btn {
+  position: relative;
+}
+
+/* B2B COMPANY SECTION ================================================== */
+
+.b2b-company-section {
+  padding-bottom: 4vw;
+}
+
+.b2b-company-list {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.b2b-company-item {
+  position: relative;
+  flex-basis: calc((100% - 5 * 0.8vw) / 6);
+  text-align: center;
+  height: 8vw;
+  background-color: #ffffff;
+  border-radius: 0.6vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7vw;
+  overflow: hidden; /* Додаємо overflow: hidden, щоб сховати вихід за межі елемента */
+  cursor: pointer;
+}
+
+.b2b-company-item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Копіюємо фонове зображення */
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  filter: grayscale(100%);
+  z-index: 1; /* Додаємо псевдоелемент перед фоновим зображенням */
+  transition: 0.3s;
+}
+
+.b2b-company-item:hover::before {
+  filter: grayscale(
+    0%
+  ); /* При наведенні прибираємо фільтр чорно-білого зображення */
+}
+
+.b2b-company-item:nth-child(1) {
+  background-image: url(../images/company-logos/atl2\ 1\ 1-min.png);
+}
+.b2b-company-item:nth-child(2) {
+  background-image: url(../images/company-logos/Clip\ path\ group\ 1-min.png);
+}
+.b2b-company-item:nth-child(3) {
+  background-image: url(../images/company-logos/logo\ 1\ 1-min.png);
+}
+.b2b-company-item:nth-child(4) {
+  background-image: url(../images/company-logos/logo-nova-poshta\ 1\ 1-min.png);
+}
+.b2b-company-item:nth-child(5) {
+  background-image: url(../images/company-logos/privatlogo-2\ 1\ 1-min.png);
+}
+.b2b-company-item:nth-child(6) {
+  background-image: url(../images/company-logos/rozetka\ 1\ 1-min.png);
+}
+
+/* B2B question FPRM ==================================================== */
+
+.b2b-form-section.question .b2b-checkbox-container {
+  display: none;
+}
+
+.b2b-form-section.question .b2b-form-container {
+  border: none;
+  width: 100%;
+  padding-right: 0;
+}
+
+.b2b-question-form-labels {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.b2b-question-form-labels label {
+  flex-basis: calc((100% - 0.8vw) / 2);
+}
+
+.b2b-form-section.question .b2b-form-image-wrapper {
+  width: 34.6vw;
+  flex-shrink: 0;
+}
+
+.b2b-form-section.question {
+  margin-bottom: 4vw;
 }
