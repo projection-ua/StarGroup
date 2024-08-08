@@ -7412,7 +7412,32 @@ footer {
   background-color: #000;
 }
 
-.sks-table-item.black span{
+.sks-table-item.black span {
   color: #ffffff;
+}
 
+.akuvox-image-wrapper {
+  width: 42vw;
+  overflow: hidden;
+  border-radius: 1vw;
+}
+
+.akuvox-section.in-video.b2b .container {
+  align-items: center;
+}
+
+.akuvox-section.in-video.b2b .container.reverse {
+  flex-direction: row-reverse;
+}
+
+.akuvox-section.in-video.b2b .container .akuvox-image-wrapper {
+  flex: 0 0 50%;
+}
+
+.akuvox-section.in-video.b2b .container .akuvox-info-container {
+  flex: 0 0 45%;
+}
+
+.akuvox-section.in-video.b2b .container:not(:last-child) {
+  margin-bottom: 4vw;
 }
