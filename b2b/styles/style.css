@@ -155,7 +155,7 @@ textarea {
 }
 
 .without-light-header-container {
-  background-color: #fff;
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
   gap: 0.2vw;
@@ -168,7 +168,7 @@ textarea {
 .without-light-header-container svg {
   width: 0.7vw;
   height: 0.7vw;
-  fill: var(--primary-color);
+  fill: #ffffff;
 }
 
 .without-light-header-container p {
@@ -177,7 +177,7 @@ textarea {
   font-size: 0.7vw;
   line-height: 1vw;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: #ffffff;
 }
 
 .addition-header-btn {
@@ -367,7 +367,7 @@ textarea {
 
 .bottom-header-addres-container {
   display: flex;
-  gap: 0.8vw;
+  gap: 1.2vw;
 }
 
 .header-bottom-section .container {
@@ -400,6 +400,26 @@ textarea {
   text-transform: uppercase;
   color: #fff;
 }
+
+.top-heaer-nav-list-mob-backdrop {
+  display: flex;
+  gap: 1.6vw;
+}
+
+@media (min-width: 1024px) {
+  .header-mob-logo {
+    display: none;
+  }
+
+  .top-header-backdrop-icon {
+    display: none;
+  }
+
+  .header-menu-container {
+    display: none;
+  }
+}
+
 /* HERO SLIDER SECTION ====================================================== */
 
 .hero-swiper-section {
@@ -1960,7 +1980,7 @@ footer {
 .internet-tv-form-section .form-container {
   width: 100%;
   padding-left: 24vw;
-  background-image: url(../images/internet-tv-page/internet-tv-form-bg.jpg);
+  background-image: url(/images/internet-tv-page/internet-tv-form-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -3889,28 +3909,28 @@ footer {
   transition: 0.3s;
 }
 .pagination-custom div:nth-child(1) {
-  background-image: url(../images/video-page/company-icons/image\ 517.png);
+  background-image: url("/images/video-page/company-icons/image-517.png");
 }
 .pagination-custom div:nth-child(2) {
-  background-image: url(../images/video-page/company-icons/image\ 516.png);
+  background-image: url("/images/video-page/company-icons/image-516.png");
 }
 .pagination-custom div:nth-child(3) {
-  background-image: url(../images/video-page/company-icons/ajax-234\ 1.png);
+  background-image: url("/images/video-page/company-icons/ajax-234-1.png");
 }
 .pagination-custom div:nth-child(4) {
-  background-image: url(../images/video-page/company-icons/image\ 515.png);
+  background-image: url("/images/video-page/company-icons/image-515.png");
 }
 .pagination-custom div:nth-child(1).active {
-  background-image: url(../images/video-page/company-icons/alhua.png);
+  background-image: url("/images/video-page/company-icons/alhua.png");
 }
 .pagination-custom div:nth-child(2).active {
-  background-image: url(../images/video-page/company-icons/hikvision.png);
+  background-image: url("/images/video-page/company-icons/hikvision.png");
 }
 .pagination-custom div:nth-child(3).active {
-  background-image: url(../images/video-page/company-icons/ajax.png);
+  background-image: url("/images/video-page/company-icons/ajax.png");
 }
 .pagination-custom div:nth-child(4).active {
-  background-image: url(../images/video-page/company-icons/tvt.png);
+  background-image: url("/images/video-page/company-icons/tvt.png");
 }
 .pagination-custom div.active {
   opacity: 1;
@@ -6535,6 +6555,7 @@ footer {
 .b2b-we-can-list {
   display: flex;
   gap: 0.8vw;
+  flex-wrap: wrap;
 }
 
 .b2b-tariff-item-title {
@@ -7212,4 +7233,186 @@ footer {
 
 .b2b-form-section.question {
   margin-bottom: 4vw;
+}
+
+/* ENTH FOR BUISNESS PAGE ===================== */
+
+.tariff-popular-marker.b2b {
+  margin-bottom: 1.2vw;
+}
+
+.b2b-we-can-section.large {
+  padding-top: 4vw;
+}
+
+.we-can-section.b2b-enth {
+  padding: 0;
+}
+
+.option-item {
+  display: flex;
+  /* align-items: center; */
+  gap: 0.8vw;
+}
+
+.option-item:not(:last-child) {
+  margin-bottom: 1.2vw;
+}
+
+.option-item svg {
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+.option-item p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.3vw;
+  color: black;
+  max-width: 20vw;
+}
+
+.option-item p span {
+  font-weight: 700;
+}
+
+.options-list {
+  margin-bottom: 2vw;
+}
+
+.equipment-option-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 2vw;
+  line-height: 2.2vw;
+  color: black;
+  margin-bottom: 1.2vw;
+  width: 30vw;
+}
+
+.partners-block-list {
+  display: flex;
+  width: 37.2vw;
+  gap: 0.6vw;
+  flex-wrap: wrap;
+}
+
+.partnner-item-image-wrapper {
+  flex-basis: calc((100% - 0.6vw) / 2);
+}
+
+.partners-block-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0.8vw;
+  padding: 2.6vw;
+  justify-content: space-between;
+}
+
+.equipment-option-section {
+  padding: 4vw 0;
+}
+
+.question-section.b2b {
+  padding-top: 4vw;
+}
+
+.video-tabs-section.b2b .small .supervision-tab-item-text {
+  width: 100%;
+}
+
+.instruction-section.b2b .instructions-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.instruction-section.b2b .instructions-list .instructions-item {
+  flex: 0 0 27%;
+}
+
+.instruction-section.b2b
+  .instructions-list
+  .instructions-item
+  .we-can-item-title {
+  max-width: 100%;
+}
+
+.instruction-section.b2b {
+  background-color: #f9f9f9;
+  padding-bottom: 4vw;
+  padding-top: 0;
+}
+
+.instruction-section.b2b
+  .instructions-list
+  .instructions-item
+  .we-can-item-text {
+  width: 100%;
+}
+
+.instruction-section.b2b .instructions-item:nth-child(4) .we-can-item-title {
+  width: 100%;
+}
+
+.we-can-section.b2b {
+  padding-bottom: 0;
+}
+
+.blue-form-section.b2b .blue-form-container {
+  background: linear-gradient(180deg, #001c7f 0%, #0426a0 50%, #001c7f 100%);
+}
+
+.sks-table-container {
+  padding: 2vw;
+  background-color: #ffffff;
+  border-radius: 1vw;
+}
+
+.sks-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.8vw;
+  text-align: center;
+  color: #000;
+  margin-bottom: 1.6vw;
+}
+
+.sks-table-item {
+  display: flex;
+  gap: 1vw;
+  border-radius: 0.6vw;
+}
+
+.sks-table-item:nth-child(even) {
+  background-color: #f2f3f7;
+}
+
+.sks-table-item span {
+  flex-basis: calc((100% - 1vw) / 2);
+  text-align: center;
+  padding: 0.8vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.9vw;
+  color: #000;
+}
+
+.sks-table-item.title span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+  color: black;
+}
+
+.sks-table-item.black {
+  justify-content: center;
+  background-color: #000;
+}
+
+.sks-table-item.black span{
+  color: #ffffff;
+
 }

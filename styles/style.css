@@ -3939,16 +3939,16 @@ footer {
   transition: 0.3s;
 }
 .pagination-custom div:nth-child(1) {
-  background-image: url(../images/video-page/company-icons/image\ 517.png);
+  background-image: url(../images/video-page/company-icons/image-517.png);
 }
 .pagination-custom div:nth-child(2) {
-  background-image: url(../images/video-page/company-icons/image\ 516.png);
+  background-image: url(../images/video-page/company-icons/image-516.png);
 }
 .pagination-custom div:nth-child(3) {
-  background-image: url(../images/video-page/company-icons/ajax-234\ 1.png);
+  background-image: url(../images/video-page/company-icons/ajax-234-1.png);
 }
 .pagination-custom div:nth-child(4) {
-  background-image: url(../images/video-page/company-icons/image\ 515.png);
+  background-image: url(../images/video-page/company-icons/image-515.png);
 }
 .pagination-custom div:nth-child(1).active {
   background-image: url(../images/video-page/company-icons/alhua.png);

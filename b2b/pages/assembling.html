@@ -2,34 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" type="text/css" href="../styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Group</title>
   </head>
   <body>
-    <div
-      style="
-        display: flex;
-        gap: 1vw;
-        text-decoration: underline;
-        flex-wrap: wrap;
-      "
-    >
-      <a href="./enth-for-buisness.html">ІНТЕРНЕТ ДЛЯ БІЗНЕСУ</a>
-      <a href="./video.html">ВІДЕОНАГЛЯД</a>
-      <a href="./assembling.html">МОНТАЖ</a>
-    </div>
     <header>
       <section class="header-top-section">
         <div class="container">
@@ -112,9 +101,6 @@
                     />
                   </svg>
                 </a>
-                <a class="top-header-nav-link current" href="">
-                  <p class="top-header-nav-link-text">Контакти</p></a
-                >
               </div>
 
               <div class="top-header-btn-container">
@@ -189,7 +175,19 @@
                   <a class="header-bottom-nav-link" href="">Відеонагляд</a>
                 </li>
                 <li>
-                  <a class="header-bottom-nav-link" href="">Інше</a>
+                  <a class="header-bottom-nav-link" href="">Інше</a
+                  ><svg
+                    class="header-backdrop-arrow"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.91602 4.66699L6.77985 9.0828C6.89605 9.2156 7.10265 9.2156 7.21885 9.0828L11.0827 4.66699"
+                      stroke-width="1.75"
+                      stroke-linecap="round"
+                    />
+                  </svg>
                 </li>
               </ul>
             </nav>
@@ -197,10 +195,19 @@
 
           <div class="bottom-header-right">
             <address class="bottom-header-addres-container">
+              <div class="without-light-header-container">
+                <svg>
+                  <use href="../images/header-icons.svg#icon-bolt"></use>
+                </svg>
+                <p>до 72 годин без світла</p>
+                <svg>
+                  <use href="../images/header-icons.svg#icon-bolt"></use>
+                </svg>
+              </div>
               <a class="address-tel-number" href="tel:+380674811650"
                 ><svg class="address-icon">
                   <use
-                    href="/images/header-icons.svg#icon-phone-call"
+                    href="../images/header-icons.svg#icon-phone-call"
                   ></use></svg
                 >+38(067) 481 16 50<svg
                   class="header-backdrop-arrow"
@@ -219,88 +226,423 @@
         </div>
       </section>
     </header>
-
     <main>
-      <section class="hero-swiper-section">
+      <section class="internet-tv-hero-section">
+        <div class="container internet-tv-hero-container">
+          <div class="internet-tv-hero-inf0">
+            <h1 class="internet-tv-hero-title">СКС, Монтаж</h1>
+            <p class="internet-tv-hero-text">
+              Simnet спеціалізується на проектуванні, монтажі та тестуванні
+              структурованих кабельних систем будь-якої складності для будинків,
+              офісів, бізнес-центрів та інших інфраструктурних об'єктів у Києві.
+            </p>
+            <button class="internet-tv-hero-btn">Залишити заявку</button>
+          </div>
+
+          <div class="internet-tv-hero-image-container">
+            <img src="../images/assembling/hero.jpg" alt="Assembling" />
+          </div>
+        </div>
+      </section>
+
+      <section class="video-tabs-section b2b in-sweet-tv">
         <div class="container">
-          <div class="hero-swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide hero-slide-item">
-                <h1 class="hero-slide-title">Як дивитися Євро-2024?</h1>
-                <p class="hero-slide-text">
-                  Підключайте MEGOGO в тарифі Simnet
-                </p>
-                <button class="hero-slide-btn" type="button">Детальніше</button>
+          <h2 class="tariff-section-title">
+            Переваги структурованої кабельної мережі?
+          </h2>
+
+          <div class="supervision-tab-list within is-active">
+            <div class="supervision-tab-item small">
+              <div class="supervision-tab-item-img">
+                <img
+                  src="../images/assembling/Mask group-1.jpg"
+                  alt="senior-woman-is-helping-senior"
+                />
               </div>
 
-              <div class="swiper-slide hero-slide-item">
-                <h1 class="hero-slide-title">Як дивитися Євро-2024?</h1>
-                <p class="hero-slide-text">
-                  Підключайте MEGOGO в тарифі Simnet
+              <div class="supervision-tab-item-text-container">
+                <h3 class="supervision-tab-item-title">
+                  Надійність та стабільність
+                </h3>
+                <p class="supervision-tab-item-text">
+                  Забезпечення надійного та безперебійного зв'язку між усіма
+                  елементами мережі, що є критично важливим для стабільної
+                  роботи бізнесу чи дому.
                 </p>
-                <button class="hero-slide-btn" type="button">Детальніше</button>
+              </div>
+            </div>
+
+            <div class="supervision-tab-item small">
+              <div class="supervision-tab-item-img">
+                <img src="../images/assembling/Mask group-2.jpg" />
               </div>
 
-              <div class="swiper-slide hero-slide-item">
-                <h1 class="hero-slide-title">Як дивитися Євро-2024?</h1>
-                <p class="hero-slide-text">
-                  Підключайте MEGOGO в тарифі Simnet
+              <div class="supervision-tab-item-text-container">
+                <h3 class="supervision-tab-item-title">
+                  Гнучкість та масштабованість
+                </h3>
+                <p class="supervision-tab-item-text">
+                  Легке розширення та модифікація мережі відповідно до змін у
+                  потребах вашого бізнесу або домашнього господарства без
+                  значних витрат на перепланування та переустановку.
                 </p>
-                <button class="hero-slide-btn" type="button">Детальніше</button>
+              </div>
+            </div>
+
+            <div class="supervision-tab-item small">
+              <div class="supervision-tab-item-img">
+                <img src="../images/assembling/Mask group-3.jpg" />
               </div>
 
-              <div class="swiper-slide hero-slide-item">
-                <h1 class="hero-slide-title">Як дивитися Євро-2024?</h1>
-                <p class="hero-slide-text">
-                  Підключайте MEGOGO в тарифі Simnet
+              <div class="supervision-tab-item-text-container">
+                <h3 class="supervision-tab-item-title">
+                  Оптимізація та ефективність
+                </h3>
+                <p class="supervision-tab-item-text">
+                  Зменшення затрат на обслуговування та підвищення
+                  продуктивності мережі завдяки продуманому та організованому
+                  розташуванню кабелів і обладнання, що сприяє кращій
+                  продуктивності всієї системи.
                 </p>
-                <button class="hero-slide-btn" type="button">Детальніше</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="we-can-section b2b">
+        <div class="container">
+          <h2 class="we-can-section-title">
+            Структурована кабельна система під ключ
+          </h2>
+
+          <div class="we-can-swiper-container">
+            <div class="swiper-wrapper we-can-list">
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/assembling/we-can-icons/advantages.svg"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">
+                    Проектування комп’ютерної чи телефонної мережі
+                  </h4>
+                  <p class="we-can-item-text">
+                    Розроблення плану мережі, включаючи визначення оптимального
+                    розташування обладнання та прокладання кабелів для
+                    забезпечення безперебійної роботи.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/assembling/we-can-icons/advantages-1.svg"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">Монтаж СКС</h4>
+                  <p class="we-can-item-text">
+                    Повний цикл робіт зі встановлення структурованої кабельної
+                    системи, від проектування до запуску в експлуатацію, з
+                    дотриманням всіх необхідних стандартів.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/assembling/we-can-icons/advantages-2.svg"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">
+                    Монтаж локальної мережі у офісних та житлових будівлях
+                  </h4>
+                  <p class="we-can-item-text">
+                    Встановлення локальної мережі для забезпечення стабільного і
+                    швидкого інтернет-з'єднання в офісних та житлових
+                    приміщеннях.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/assembling/we-can-icons/advantages-3.svg"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">
+                    Створення бездротової мережі Wi-Fi та точок доступу
+                  </h4>
+                  <p class="we-can-item-text">
+                    Налаштування бездротової мережі з покриттям усіх необхідних
+                    зон, забезпечення стабільного та швидкого підключення до
+                    інтернету через Wi-Fi.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/assembling/we-can-icons/advantages-4.svg"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">
+                    Підключення інтернет розеток та мережевого обладнання
+                  </h4>
+                  <p class="we-can-item-text">
+                    Встановлення та налаштування інтернет розеток та іншого
+                    мережевого обладнання для зручного підключення та
+                    користування.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide we-can-item-container">
+                <div class="we-can-icon-container">
+                  <img
+                    class="we-can-icon"
+                    src="../images/assembling/we-can-icons/advantages-5.svg"
+                  />
+                </div>
+
+                <div>
+                  <h4 class="we-can-item-title">Тестування СКС</h4>
+                  <p class="we-can-item-text">
+                    Проведення комплексних тестів та перевірок роботи
+                    структурованих кабельних систем та слабострумних мереж для
+                    забезпечення їх безперебійної роботи.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
 
-            <div class="hero-swiper-nav-container">
-              <div class="hero-swiper-btn-prev">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 3.33337L4.91241 7.78502C4.78231 7.89885 4.78231 8.10123 4.91241 8.21506L10 12.6667"
-                    stroke="#030317"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M10 3.33337L4.91241 7.78502C4.78231 7.89885 4.78231 8.10123 4.91241 8.21506L10 12.6667"
-                    stroke="black"
-                    stroke-opacity="0.2"
-                    stroke-linecap="round"
-                  />
-                </svg>
+      <section class="blue-form-section b2b server">
+        <div class="container blue-form-container">
+          <h2 class="blue-form-title">Залишити заявку на консультацію</h2>
+          <p class="blue-form-text">
+            Залиште ваші контактні дані і ми зв'яжемося з вами для консультації
+          </p>
+          <form class="blue-form">
+            <label class="blue-form-label"
+              >Ім’я
+              <input
+                class="blue-form-input"
+                type="text"
+                placeholder="Ваше ім’я"
+              />
+            </label>
+
+            <label class="blue-form-label"
+              >Ваш номер телефону
+              <input
+                class="blue-form-input"
+                type="tel"
+                placeholder="+38(0_)__ __ __"
+              />
+            </label>
+
+            <button class="blue-form-btn" type="submit">
+              Передзвоніть мені
+            </button>
+          </form>
+
+          <p class="blue-form-bottom-text">
+            Натискаючи "Підключити", ви погоджуєтеся з<a
+              class="blue-form-bottom-link"
+              href=""
+            >
+              Умовами обробки даних</a
+            >
+          </p>
+
+          <img
+            class="blue-form-img in-video"
+            src="../images/assembling/assembling-server-img.png"
+            alt="Supervision"
+          />
+        </div>
+      </section>
+
+      <section class="instruction-section b2b">
+        <div class="container">
+          <h2 class="we-can-section-title">Основні етапи проектування СКС</h2>
+          <div class="instructions-list">
+            <div class="instructions-item">
+              <img
+                class="instructions-item-icon"
+                src="../images/assembling/instructions-assembling-icon/Container.svg"
+                alt="First"
+              />
+              <h3 class="we-can-item-title">Оцінка</h3>
+
+              <p class="we-can-item-text">
+                Проведення первинної консультації з клієнтом для визначення потреб та бажаного результату.
+              </p>
+            </div>
+
+            <div class="instructions-item">
+              <img
+                class="instructions-item-icon"
+                src="../images/assembling/instructions-assembling-icon/Container-1.svg"
+                alt="Second"
+              />
+
+              <h3 class="we-can-item-title">Створення проекту</h3>
+
+              <p class="we-can-item-text">
+                Проведення первинної консультації з клієнтом для визначення потреб та бажаного результату.
+              </p>
+            </div>
+
+            <div class="instructions-item">
+              <img
+                class="instructions-item-icon"
+                src="../images/assembling/instructions-assembling-icon/Container-2.svg"
+                alt="Second"
+              />
+              <h3 class="we-can-item-title">Подання докладного кошторису</h3>
+
+              <p class="we-can-item-text">
+                До початку будь-яких монтажних робіт клієнт нашої компанії буде в курсі повної вартості готового рішення.
+              </p>
+            </div>
+
+            <div class="instructions-item">
+              <img
+                class="instructions-item-icon"
+                src="../images/assembling/instructions-assembling-icon/Container-3.svg"
+                alt="Second"
+              />
+              <h3 class="we-can-item-title">
+               Монтаж кабелю
+              </h3>
+
+              <p class="we-can-item-text">
+                Прокладання кабелю та його кріплення проводяться виключно згідно світових та українських стандартів.
+              </p>
+            </div>
+
+            <div class="instructions-item">
+              <img
+                class="instructions-item-icon"
+                src="../images/assembling/instructions-assembling-icon/Container-4.svg"
+                alt="Second"
+              />
+              <h3 class="we-can-item-title">Маркування СКС</h3>
+
+              <p class="we-can-item-text">
+                Якщо йдеться про складну архітектуру, де з першого погляду складно визначити куди веде той чи інший кабель, проводитися маркування елементів та створюється схема підключення.
+              </p>
+            </div>
+
+            <div class="instructions-item">
+              <img
+                class="instructions-item-icon"
+                src="../images/assembling/instructions-assembling-icon/Container-5.svg"
+                alt="Second"
+              />
+              <h3 class="we-can-item-title">
+                Тестування СКС
+              </h3>
+
+              <p class="we-can-item-text">
+               Готове підключене рішення в обов'язковому порядку тестується на наявність вузьких місць, проводитиметься фінальне налаштування мережі та сертифікація СКС перед здачею проекту клієнту.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sks-table-section">
+        <div class="container">
+          <div class="sks-table-container">
+            <h2 class="sks-title">Роботи по СКС:</h2>
+
+            <div class="sks-table-list">
+              <div class="sks-table-item title">
+                <span>Найменування</span>
+                <span>Од.вим.</span>
               </div>
-              <div class="hero-swiper-btn-next">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 3.33337L11.0876 7.78502C11.2177 7.89885 11.2177 8.10123 11.0876 8.21506L6 12.6667"
-                    stroke="#030317"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M6 3.33337L11.0876 7.78502C11.2177 7.89885 11.2177 8.10123 11.0876 8.21506L6 12.6667"
-                    stroke="black"
-                    stroke-opacity="0.2"
-                    stroke-linecap="round"
-                  />
-                </svg>
+
+              <div class="sks-table-item black">
+                <span>Комплекс робіт по монтажу СКС, три рівня:</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Легкий порт СКС (лінія до 30 м)</span>
+                <span>порт</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Середній порт СКС (лінія до 60 м)</span>
+                <span>порт</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Важкий порт СКС (лінія до 90 м)</span>
+                <span>порт</span>
+              </div>
+
+              <div class="sks-table-item black">
+                <span>Додаткові роботи по монтажу СКС:</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Монтаж лотка / кабель роста</span>
+                <span>м / п</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Монтаж короба від 16 до 40 мм</span>
+                <span>м / п</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Монтаж колон або відпусток</span>
+                <span>м / п</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Монтаж колон або відпусток</span>
+                <span>шт</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Монтаж лючків</span>
+                <span>шт</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Монтаж і установка шафи / стійки</span>
+                <span>шт</span>
+              </div>
+
+              <div class="sks-table-item">
+                <span>Тестування Флюком (Fluke DTX-1800)</span>
+                <span>лінія</span>
               </div>
             </div>
           </div>
@@ -309,6 +651,7 @@
 
       <section class="services-section b2b">
         <div class="container">
+          <h2 class="we-can-section-title">Додаткові послуги</h2>
           <div class="services-swiper-container">
             <div class="swiper-wrapper services-list">
               <div class="swiper-slide services-item">
@@ -610,857 +953,162 @@
         </div>
       </section>
 
-      <section class="b2b-we-can-section">
+      <section class="question-section">
         <div class="container">
-          <div class="b2b-we-can-list">
-            <div class="b2b-we-can-item">
-              <div class="b2b-we-can-icon-title-container">
-                <svg class="b2b-we-can-icon">
-                  <use href="../images/b2b-we-can-icons.svg#icon-247"></use>
-                </svg>
+          <h2 class="we-can-section-title">Часті запитання</h2>
 
-                <h4 class="b2b-we-can-item-title">Підтримка 24/7</h4>
-              </div>
-              <p class="b2b-we-can-item-text">
-                Індивідуальна підтримка, допоможе вирішити всі питання,
-                пов'язані з підключенням, налаштуванням та експлуатацією
-                інтернет-послуг.
-              </p>
-            </div>
-            <div class="b2b-we-can-item">
-              <div class="b2b-we-can-icon-title-container">
-                <svg class="b2b-we-can-icon">
-                  <use href="../images/b2b-we-can-icons.svg#icon-energy"></use>
-                </svg>
-
-                <h4 class="b2b-we-can-item-title">
-                  Резервне живлення до 72 годин
-                </h4>
-              </div>
-              <p class="b2b-we-can-item-text">
-                Безперебійний доступ до інтернету навіть під час тривалих
-                відключень електроенергії.
-              </p>
-            </div>
-            <div class="b2b-we-can-item">
-              <div class="b2b-we-can-icon-title-container">
-                <svg class="b2b-we-can-icon">
-                  <use
-                    href="../images/b2b-we-can-icons.svg#icon-settings"
-                  ></use>
-                </svg>
-
-                <h4 class="b2b-we-can-item-title">Комплексні рішення</h4>
-              </div>
-              <p class="b2b-we-can-item-text">
-                Отримайте повний набір послуг, включаючи високошвидкісний
-                інтернет, захист мережі, резервне копіювання даних та підтримку.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="b2b-tariff-section">
-        <div class="container">
-          <h2 class="b2b-tariff-section-title">Інтернет для бізнесу</h2>
-          <div class="b2b-tariff-item-list">
-            <div class="b2b-tariff-item white">
-              <div class="tariff-marker-container">
-                <div class="tariff-popular-marker">Популярний</div>
-                <div class="special-item-action">Акція</div>
-              </div>
-              <div>
-                <h3 class="b2b-tariff-item-title">
-                  Для малого і середнього бізнесу
+          <div class="question-container">
+            <div class="question-item">
+              <div class="question-item-title-container">
+                <h3 class="question-item-title">
+                  Аналогові камери чи IP-камери? 
                 </h3>
 
-                <div class="tariff-info-container-list">
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Безлімітний інтернет</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <span class="enth-speed-span">до</span>
-
-                        <p class="enth-speed-value">100</p>
-                        <span class="enth-speed-span">Мбіт/с</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Резервне живлення</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">4 - 8</p>
-                        <span class="enth-speed-span">години</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Кількість ком’ютерів</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">1 - 3</p>
-                        <span class="enth-speed-span">шт</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tariff-equipment-btn">
-                  <svg class="tariff-item-icon">
-                    <use
-                      href="../images/b2b-tariff-item-icons.svg#icon-router"
-                    ></use>
+                <div class="question-item-icon-circle">
+                  <svg
+                    class="question-item-icon"
+                    width="14"
+                    height="9"
+                    viewBox="0 0 14 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.8346 1.5L7.37759 7.73662C7.17838 7.96429 6.82422 7.96429 6.62501 7.73662L1.16797 1.5"
+                      stroke="#030317"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M12.8346 1.5L7.37759 7.73662C7.17838 7.96429 6.82422 7.96429 6.62501 7.73662L1.16797 1.5"
+                      stroke="black"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
                   </svg>
-                  <p class="equipment-text">Обладнання</p>
-                </div>
-
-                <div class="b2b-tariff-option-container">
-                  <div class="b2b-tariff-option-item">
-                    <p>Віділена IP-адреса</p>
-                    <span>-</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>Персональний менеджер</p>
-                    <span>-</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>SLA</p>
-                    <span>-</span>
-                  </div>
-                </div>
-
-                <div class="bonus-tag-container">
-                  <p class="bonus-tag-text">Бонус</p>
-                </div>
-
-                <div class="b2b-tariff-item-add-info-container">
-                  <div class="add-info-item">
-                    25% знижка на монтажні роботи додаткових послу
-                  </div>
-                  <div class="add-info-item">ІТ Аудит 1 година</div>
-                  <div class="add-info-item">
-                    Для нових клієнтів діє знижка при умові оплати початкового
-                    платежу за послугу Інтернету за 2 місяці.
-                  </div>
                 </div>
               </div>
 
-              <button class="b2b-tariff-button primary">
-                Замовити дзвінок
-              </button>
+              <p class="question-item-acardeon-text-JS">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                in unde sapiente cum natus ipsa nihil, facilis provident a,
+                tempora voluptate tenetur doloremque beatae sint consequatur
+                ducimus perspiciatis? Ab, architecto! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Saepe in unde sapiente cum natus
+                ipsa nihil, facilis provident a, tempora voluptate tenetur
+                doloremque beatae sint consequatur ducimus perspiciatis? Ab,
+                architecto!
+              </p>
             </div>
-            <div class="b2b-tariff-item primary">
-              <div>
-                <h3 class="b2b-tariff-item-title">
-                  Для бізнесу в житлових комплексах
+
+            <div class="question-item">
+              <div class="question-item-title-container">
+                <h3 class="question-item-title">
+                  Що таке цифровий відеонагляд? 
                 </h3>
 
-                <div class="tariff-info-container-list">
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Безлімітний інтернет</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <span class="enth-speed-span">до</span>
-
-                        <p class="enth-speed-value">300</p>
-                        <span class="enth-speed-span">Мбіт/с</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Резервне живлення</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">8 - 15</p>
-                        <span class="enth-speed-span">години</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Кількість ком’ютерів</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">4 - 15</p>
-                        <span class="enth-speed-span">шт</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tariff-equipment-btn">
-                  <svg class="tariff-item-icon">
-                    <use
-                      href="../images/b2b-tariff-item-icons.svg#icon-router"
-                    ></use>
+                <div class="question-item-icon-circle">
+                  <svg
+                    class="question-item-icon"
+                    width="14"
+                    height="9"
+                    viewBox="0 0 14 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.8346 1.5L7.37759 7.73662C7.17838 7.96429 6.82422 7.96429 6.62501 7.73662L1.16797 1.5"
+                      stroke="#030317"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M12.8346 1.5L7.37759 7.73662C7.17838 7.96429 6.82422 7.96429 6.62501 7.73662L1.16797 1.5"
+                      stroke="black"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
                   </svg>
-                  <p class="equipment-text">Обладнання</p>
-                </div>
-
-                <div class="b2b-tariff-option-container">
-                  <div class="b2b-tariff-option-item">
-                    <p>Віділена IP-адреса</p>
-                    <span>+</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>Персональний менеджер</p>
-                    <span>-</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>SLA</p>
-                    <span>-</span>
-                  </div>
-                </div>
-
-                <div class="bonus-tag-container">
-                  <p class="bonus-tag-text">Бонус</p>
-                </div>
-
-                <div class="b2b-tariff-item-add-info-container">
-                  <div class="add-info-item">
-                    25% знижка на монтажні роботи додаткових послу
-                  </div>
-                  <div class="add-info-item">
-                    ІТ Аутсорсинг та підтримка 1 година
-                  </div>
-                  <div class="add-info-item">ІТ Аудит 2 години</div>
-
-                  <div class="add-info-item">1 виїзд майстра в місяць</div>
-                  <div class="add-info-item">
-                    Для нових клієнтів діє знижка при умові оплати початкового
-                    платежу за послугу Інтернету за 2 місяці.
-                  </div>
                 </div>
               </div>
 
-              <button class="b2b-tariff-button white">Замовити дзвінок</button>
+              <p class="question-item-acardeon-text-JS">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                in unde sapiente cum natus ipsa nihil, facilis provident a,
+                tempora voluptate tenetur doloremque beatae sint consequatur
+                ducimus perspiciatis? Ab, architecto! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Saepe in unde sapiente cum natus
+                ipsa nihil, facilis provident a, tempora voluptate tenetur
+                doloremque beatae sint consequatur ducimus perspiciatis? Ab,
+                architecto!
+              </p>
             </div>
-            <div class="b2b-tariff-item dark-primary">
-              <div class="tariff-marker-container">
-                <div class="tariff-popular-marker">Популярний</div>
-              </div>
-              <div>
-                <h3 class="b2b-tariff-item-title">
-                  Для великого<br />
-                  бізнесу
+
+            <div class="question-item">
+              <div class="question-item-title-container">
+                <h3 class="question-item-title">
+                  Які переваги цифрового відеонагляду? 
                 </h3>
 
-                <div class="tariff-info-container-list">
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Безлімітний інтернет</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <span class="enth-speed-span">до</span>
-
-                        <p class="enth-speed-value">1000</p>
-                        <span class="enth-speed-span">Мбіт/с</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Резервне живлення</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">15 - 24</p>
-                        <span class="enth-speed-span">години</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Кількість ком’ютерів</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <span class="enth-speed-span">до</span>
-
-                        <p class="enth-speed-value">100</p>
-                        <span class="enth-speed-span">шт</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tariff-equipment-btn">
-                  <svg class="tariff-item-icon">
-                    <use
-                      href="../images/b2b-tariff-item-icons.svg#icon-router"
-                    ></use>
+                <div class="question-item-icon-circle">
+                  <svg
+                    class="question-item-icon"
+                    width="14"
+                    height="9"
+                    viewBox="0 0 14 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.8346 1.5L7.37759 7.73662C7.17838 7.96429 6.82422 7.96429 6.62501 7.73662L1.16797 1.5"
+                      stroke="#030317"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M12.8346 1.5L7.37759 7.73662C7.17838 7.96429 6.82422 7.96429 6.62501 7.73662L1.16797 1.5"
+                      stroke="black"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
                   </svg>
-                  <p class="equipment-text">Обладнання</p>
-                </div>
-
-                <div class="b2b-tariff-option-container">
-                  <div class="b2b-tariff-option-item">
-                    <p>Віділена IP-адреса</p>
-                    <span>+</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>Персональний менеджер</p>
-                    <span>+</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>SLA</p>
-                    <span>+</span>
-                  </div>
-                </div>
-
-                <div class="bonus-tag-container">
-                  <p class="bonus-tag-text">Бонус</p>
-                </div>
-
-                <div class="b2b-tariff-item-add-info-container">
-                  <div class="add-info-item">
-                    25% знижка на монтажні роботи додаткових послу
-                  </div>
-                  <div class="add-info-item">
-                    ІТ Аутсорсинг підтримка 2 година, 1 виклик майстра
-                    безкоштовний
-                  </div>
-                  <div class="add-info-item">ІТ Аудит 2 години</div>
-                  <div class="add-info-item">2 виїзда майстра в місяць</div>
-                  <div class="add-info-item">
-                    Для нових клієнтів діє знижка при умові оплати початкового
-                    платежу за послугу Інтернету за 2 місяці.
-                  </div>
                 </div>
               </div>
 
-              <button class="b2b-tariff-button white">Замовити дзвінок</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="b2b-form-section">
-        <div class="container">
-          <div class="b2b-form-image-wrapper">
-            <img src="../images/b2b-form-img.jpg" alt="" />
-          </div>
-
-          <div class="b2b-checkbox-form-container">
-            <div class="b2b-form-container">
-              <h2 class="form-container-title">Замовити консультацію</h2>
-              <p class="form-container-text">
-                Залиште ваші контактні дані і ми зв'яжемося з вами для
-                консультації з підключення та підбору послуг від Simnet для
-                вашого бізнесу
+              <p class="question-item-acardeon-text-JS">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                in unde sapiente cum natus ipsa nihil, facilis provident a,
+                tempora voluptate tenetur doloremque beatae sint consequatur
+                ducimus perspiciatis? Ab, architecto! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Saepe in unde sapiente cum natus
+                ipsa nihil, facilis provident a, tempora voluptate tenetur
+                doloremque beatae sint consequatur ducimus perspiciatis? Ab,
+                architecto!
               </p>
-
-              <form class="b2b-form">
-                <label
-                  >Ім’я
-                  <input type="text" placeholder="Ваше ім’я" />
-                </label>
-
-                <label
-                  >Ваш номер телефону
-                  <input type="tel" placeholder="+38(0_)__ __ __" />
-                </label>
-
-                <button type="submit">Підключити</button>
-              </form>
-
-              <div class="b2b-bottom-tetxt">
-                <p>Натискаючи "Підключити", ви погоджуєтеся з</p>
-                <a href="">Умовами обробки даних</a>
-              </div>
-            </div>
-            <div class="b2b-checkbox-container">
-              <h3 class="checkbox-title">Послуги, що цікавлять:</h3>
-
-              <form>
-                <label
-                  ><p>Інтернет для бізнесу</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>Відеонагляд</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>СКС, Монтаж</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>Охорона</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>IT- аутсорсинг</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>Житловим комплексам</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>Рішення для бізнесу</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-              </form>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="b2b-decision-section">
-        <div class="container">
-          <h2 class="b2b-section-title">Рішення для бізнесу</h2>
-
-          <div class="relative-descision-container-for-btn">
-            <div class="descision-swiper-container">
-              <div class="swiper-wrapper b2b-decision-list">
-                <div class="swiper-slide b2b-decision-item">
-                  <div>
-                    <div class="decision-item-image-wraooer">
-                      <img
-                        src="../images/b2b-decision/making-presentation 1.jpg"
-                        alt=""
-                      />
-                    </div>
-
-                    <h3 class="decision-item-title">Кафе та ресторани</h3>
-                    <p class="decision-item-text">
-                      Забезпечте свій бізнес швидким інтернетом з безперебійним
-                      зв'язком та цілодобовою технічною підтримкою
-                    </p>
-                  </div>
-
-                  <button class="decision-item-btn" type="button">
-                    Детальніше
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-opacity="0.2"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="swiper-slide b2b-decision-item">
-                  <div>
-                    <div class="decision-item-image-wraooer">
-                      <img
-                        src="../images/b2b-decision/young-team-colleagues-works-sitting-desks-with-laptop-documents-light-modern-office 1.jpg"
-                        alt=""
-                      />
-                    </div>
-
-                    <h3 class="decision-item-title">Офіси</h3>
-                    <p class="decision-item-text">
-                      Забезпечте свій бізнес швидким інтернетом з безперебійним
-                      зв'язком та цілодобовою технічною підтримкою
-                    </p>
-                  </div>
-
-                  <button class="decision-item-btn" type="button">
-                    Детальніше
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-opacity="0.2"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="swiper-slide b2b-decision-item">
-                  <div>
-                    <div class="decision-item-image-wraooer">
-                      <img
-                        src="../images/b2b-decision/stylish-elegant-couple-car-salon 1.jpg"
-                        alt=""
-                      />
-                    </div>
-
-                    <h3 class="decision-item-title">Автосалони</h3>
-                    <p class="decision-item-text">
-                      Забезпечте свій бізнес швидким інтернетом з безперебійним
-                      зв'язком та цілодобовою технічною підтримкою
-                    </p>
-                  </div>
-
-                  <button class="decision-item-btn" type="button">
-                    Детальніше
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-opacity="0.2"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="swiper-slide b2b-decision-item">
-                  <div>
-                    <div class="decision-item-image-wraooer">
-                      <img
-                        src="../images/b2b-decision/medium-shot-man-looking-floating-screen 1.jpg"
-                        alt=""
-                      />
-                    </div>
-
-                    <h3 class="decision-item-title">Готелі</h3>
-                    <p class="decision-item-text">
-                      Забезпечте свій бізнес швидким інтернетом з безперебійним
-                      зв'язком та цілодобовою технічною підтримкою
-                    </p>
-                  </div>
-
-                  <button class="decision-item-btn" type="button">
-                    Детальніше
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-opacity="0.2"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="swiper-slide b2b-decision-item">
-                  <div>
-                    <div class="decision-item-image-wraooer">
-                      <img
-                        src="../images/b2b-decision/making-presentation 1.jpg"
-                        alt=""
-                      />
-                    </div>
-
-                    <h3 class="decision-item-title">Кафе та ресторани</h3>
-                    <p class="decision-item-text">
-                      Забезпечте свій бізнес швидким інтернетом з безперебійним
-                      зв'язком та цілодобовою технічною підтримкою
-                    </p>
-                  </div>
-
-                  <button class="decision-item-btn" type="button">
-                    Детальніше
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-opacity="0.2"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="swiper-slide b2b-decision-item">
-                  <div>
-                    <div class="decision-item-image-wraooer">
-                      <img
-                        src="../images/b2b-decision/making-presentation 1.jpg"
-                        alt=""
-                      />
-                    </div>
-
-                    <h3 class="decision-item-title">Кафе та ресторани</h3>
-                    <p class="decision-item-text">
-                      Забезпечте свій бізнес швидким інтернетом з безперебійним
-                      зв'язком та цілодобовою технічною підтримкою
-                    </p>
-                  </div>
-
-                  <button class="decision-item-btn" type="button">
-                    Детальніше
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-opacity="0.2"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="swiper-slide b2b-decision-item">
-                  <div>
-                    <div class="decision-item-image-wraooer">
-                      <img
-                        src="../images/b2b-decision/making-presentation 1.jpg"
-                        alt=""
-                      />
-                    </div>
-
-                    <h3 class="decision-item-title">Кафе та ресторани</h3>
-                    <p class="decision-item-text">
-                      Забезпечте свій бізнес швидким інтернетом з безперебійним
-                      зв'язком та цілодобовою технічною підтримкою
-                    </p>
-                  </div>
-
-                  <button class="decision-item-btn" type="button">
-                    Детальніше
-                    <svg
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                      <path
-                        d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                        stroke-opacity="0.2"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="swiper-btn-next">
-              <svg
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M5.33301 12.668L10.4513 8.18945C10.5652 8.08984 10.5652 7.91276 10.4513 7.81316L5.33301 3.33464"
-                  stroke-opacity="0.2"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="b2b-company-section">
-        <div class="container">
-          <h2 class="b2b-section-title">Нам довіряють</h2>
-
-          <div class="b2b-company-list">
-            <div class="b2b-company-item"></div>
-            <div class="b2b-company-item"></div>
-            <div class="b2b-company-item"></div>
-            <div class="b2b-company-item"></div>
-            <div class="b2b-company-item"></div>
-            <div class="b2b-company-item"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="b2b-form-section question">
-        <div class="container">
-          <div class="b2b-form-image-wrapper">
-            <img src="../images/b2b-question-form-image.jpg" alt="" />
-          </div>
-
-          <div class="b2b-checkbox-form-container question">
-            <div class="b2b-form-container">
-              <h2 class="form-container-title">Замовити консультацію</h2>
-              <p class="form-container-text">
-                Залиште ваші контактні дані і ми зв'яжемося з вами для
-                консультації з підключення та підбору послуг від Simnet для
-                вашого бізнесу
-              </p>
-
-              <form class="b2b-form">
-                <div class="b2b-question-form-labels">
-                  <label
-                    >Ім’я
-                    <input type="text" placeholder="Ваше ім’я" />
-                  </label>
-
-                  <label
-                    >Ваш номер телефону
-                    <input type="tel" placeholder="+38(0_)__ __ __" />
-                  </label>
-                </div>
-
-                <button type="submit">Підключити</button>
-              </form>
-
-              <div class="b2b-bottom-tetxt">
-                <p>Натискаючи "Підключити", ви погоджуєтеся з</p>
-                <a href="">Умовами обробки даних</a>
-              </div>
-            </div>
-            <div class="b2b-checkbox-container">
-              <h3 class="checkbox-title">Послуги, що цікавлять:</h3>
-
-              <form>
-                <label
-                  ><p>Інтернет для бізнесу</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>Відеонагляд</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>СКС, Монтаж</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>Охорона</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>IT- аутсорсинг</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>Житловим комплексам</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-                <label
-                  ><p>Рішення для бізнесу</p>
-                  <input type="checkbox" />
-                  <div class="b2b-custom-checkbox"><div></div></div
-                ></label>
-              </form>
-            </div>
-          </div>
+          <a class="question-link" href=""
+            >Усі запитання
+            <svg
+              class="question-link-icon"
+              width="8"
+              height="12"
+              viewBox="0 0 8 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.33398 10.6668L6.4523 6.18825C6.56613 6.08864 6.56613 5.91156 6.4523 5.81196L1.33398 1.33344"
+                stroke="#3358FF"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
         </div>
       </section>
     </main>
@@ -1557,51 +1205,39 @@
           </div>
 
           <div class="footer-nav-container">
-            <div>
+            <div class="footer-nav-block">
               <h4 class="footer-question-title">Послуги для дому</h4>
-
-              <div class="footer-nav-block">
-                <a class="footer-nav-link-item" href="">Інтернет і ТБ</a>
-                <a class="footer-nav-link-item" href="">Інтернет</a>
-                <a class="footer-nav-link-item" href="">Телебачення</a>
-                <a class="footer-nav-link-item" href="">Домофонія</a>
-                <a class="footer-nav-link-item" href="">Відеонагляд</a>
-              </div>
+              <a class="footer-nav-link-item" href="">Інтернет і ТБ</a>
+              <a class="footer-nav-link-item" href="">Інтернет</a>
+              <a class="footer-nav-link-item" href="">Телебачення</a>
+              <a class="footer-nav-link-item" href="">Домофонія</a>
+              <a class="footer-nav-link-item" href="">Відеонагляд</a>
             </div>
 
-            <div>
+            <div class="footer-nav-block">
               <h4 class="footer-question-title">Послуги для бізнесу</h4>
-
-              <div class="footer-nav-block">
-                <a class="footer-nav-link-item" href="">Інтернет для бізнесу</a>
-                <a class="footer-nav-link-item" href="">Відеонагляд</a>
-                <a class="footer-nav-link-item" href="">СКС, монтаж</a>
-                <a class="footer-nav-link-item" href="">Охорона</a>
-                <a class="footer-nav-link-item" href="">Житловим комплексам</a>
-                <a class="footer-nav-link-item" href="">Рішення для бізнесу</a>
-              </div>
+              <a class="footer-nav-link-item" href="">Інтернет для бізнесу</a>
+              <a class="footer-nav-link-item" href="">Відеонагляд</a>
+              <a class="footer-nav-link-item" href="">СКС, монтаж</a>
+              <a class="footer-nav-link-item" href="">Охорона</a>
+              <a class="footer-nav-link-item" href="">Житловим комплексам</a>
+              <a class="footer-nav-link-item" href="">Рішення для бізнесу</a>
             </div>
 
-            <div>
+            <nav class="footer-nav-block">
               <h4 class="footer-question-title">Навігація</h4>
+              <a class="footer-nav-link-item" href="">Акції</a>
+              <a class="footer-nav-link-item" href="">Новини</a>
+              <a class="footer-nav-link-item" href="">Клієнтам</a>
+              <a class="footer-nav-link-item" href="">Вакансії</a>
+              <a class="footer-nav-link-item" href="">Обладнання</a>
+              <a class="footer-nav-link-item" href="">Про компанію</a>
+            </nav>
 
-              <nav class="footer-nav-block">
-                <a class="footer-nav-link-item" href="">Акції</a>
-                <a class="footer-nav-link-item" href="">Новини</a>
-                <a class="footer-nav-link-item" href="">Клієнтам</a>
-                <a class="footer-nav-link-item" href="">Вакансії</a>
-                <a class="footer-nav-link-item" href="">Обладнання</a>
-                <a class="footer-nav-link-item" href="">Про компанію</a>
-              </nav>
-            </div>
-
-            <div>
+            <div class="footer-nav-block">
               <h4 class="footer-question-title">Центр підтримки</h4>
-
-              <div class="footer-nav-block">
-                <a class="footer-nav-link-item" href="">Допомога</a>
-                <a class="footer-nav-link-item" href="">Контакти</a>
-              </div>
+              <a class="footer-nav-link-item" href="">Допомога</a>
+              <a class="footer-nav-link-item" href="">Контакти</a>
             </div>
           </div>
         </div>
@@ -1657,18 +1293,22 @@
             <a class="footer-social-link" href=""
               ><svg class="footer-social-icon">
                 <use
-                  href="/images/footer-social-icons.svg#icon-instagram"
+                  href="../images/footer-social-icons.svg#icon-instagram"
                 ></use>
               </svg>
             </a>
             <a class="footer-social-link" href=""
               ><svg class="footer-social-icon">
-                <use href="/images/footer-social-icons.svg#icon-telegram"></use>
+                <use
+                  href="../images/footer-social-icons.svg#icon-telegram"
+                ></use>
               </svg>
             </a>
             <a class="footer-social-link" href=""
               ><svg class="footer-social-icon">
-                <use href="/images/footer-social-icons.svg#icon-facebook"></use>
+                <use
+                  href="../images/footer-social-icons.svg#icon-facebook"
+                ></use>
               </svg>
             </a>
           </div>
@@ -1691,13 +1331,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="/js/hero-swiper.js"></script>
-    <script src="/js/loyalty-swiper.js"></script>
-
-    <script src="/js/input-range.js"></script>
-    <script src="/js/main-tariff-swiper.js"></script>
-    <script src="/js/special-swiper.js"></script>
+    <script type="module" src="../js/tariff-swiper.js"></script>
+    <script type="module" src="../js/universal-swiper.js"></script>
+    <script src="/js/acardeon.js"></script>
+    <script src="../js/catalog-swiper.js"></script>
+    <script src="/js/company-slider.js"></script>
+    <script src="../js/we-can-swiper.js"></script>
     <script src="../js/b2b-services-swiper.js"></script>
-    <script src="../js/descision-swiper.js"></script>
   </body>
 </html>
