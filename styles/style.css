@@ -1462,6 +1462,7 @@ section {
 
 .in-article.special-loyalty {
   padding-top: 4vw;
+  padding-bottom: 7.2vw;
 }
 
 /* SPECIAL SECTION ============================================== */
@@ -1768,7 +1769,7 @@ footer {
   font-weight: 500;
   font-size: 0.8vw;
   color: #9a9aa2;
-  margin-bottom: 1.2vw;
+  margin-bottom: 0.4vw;
 }
 
 .footer-email-address {
@@ -6896,4 +6897,406 @@ footer {
   .tariff-navigation-list.mb {
     margin-bottom: 9.6vw;
   }
+}
+
+/* ABOUT PAGE============================ */
+/* ABOUT_HERO_SECTION =============================================== */
+
+.internet-tv-hero-image-container.equipment {
+  background-color: rgba(242, 243, 247, 1);
+  padding: 2.8vw 0 2.8vw 2vw;
+}
+
+.about-hero-container {
+  position: relative;
+}
+
+.about-hero-image-container {
+  width: 57.7vw;
+  border-radius: 1vw;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.about-hero-text-container {
+  position: absolute;
+  top: 4vw;
+  background-color: #ffffff;
+  border-radius: 1vw;
+  padding: 2.6vw;
+  width: 40vw;
+  left: 0;
+}
+
+.about-hero-section {
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+  background-color: #f2f3f7;
+}
+
+.about-hero-section .internet-tv-hero-text {
+  width: 100%;
+}
+
+/* characterictics-section =================================================== */
+.internet-tv-hero-section.about {
+  background-color: transparent;
+}
+
+.characterisctics-list {
+  display: flex;
+  gap: 0.7vw;
+}
+
+.characteristics-item {
+  background-color: #ffffff;
+  flex-basis: calc((100% - 3 * 0.7vw) / 4);
+  padding: 1.6vw;
+  border-radius: 0.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 12.5vw;
+}
+
+.characteristic-qty {
+  font-family: "Exo 2";
+  font-size: 4.1vw;
+  font-weight: 600;
+  line-height: 4.1vw;
+  text-align: left;
+}
+
+.characteristic-text {
+  font-family: "Exo 2";
+  font-size: 1.2vw;
+  font-weight: 600;
+  line-height: 1.4vw;
+  text-align: left;
+}
+
+.internet-tv-hero-image-container.about {
+  position: relative;
+  padding-bottom: 1.8vw;
+}
+
+.internet-tv-hero-image-container.about img {
+  border-radius: 1vw;
+}
+
+.swiper-btn-icon {
+  width: 1.4vw;
+  height: 1.4vw;
+}
+
+.about-swiper-prev {
+  position: absolute;
+  left: 0.6vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 2.9vw;
+  height: 2.9vw;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-swiper-next {
+  position: absolute;
+  right: 0.6vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 2.9vw;
+  height: 2.9vw;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-swiper-relative-container {
+  position: relative;
+}
+
+.internet-tv-hero-image-container.about .swiper-pagination-bullet {
+  border-radius: 0.8vw;
+  width: 1.2vw;
+  height: 0.31vw;
+  transition: 0.3s;
+
+  background: #8d8d8d;
+}
+
+.internet-tv-hero-image-container.about .swiper-pagination-bullet-active {
+  border-radius: 0.8vw;
+  width: 2.5vw;
+  height: 0.31vw;
+
+  background: #030317;
+}
+
+.reviews-icon-wrapper {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 0.4vw;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.6vw;
+}
+
+.reviews-icon-wrapper svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.reviews-info-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+  line-height: 1.3vw;
+  color: #000000;
+  margin-bottom: 0.8vw;
+}
+
+.reviews-info-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #686874;
+  margin-bottom: 0.8vw;
+}
+
+.reviews-info-item {
+  background-color: var(--primary-blue-bg);
+  border-radius: 0.8vw;
+  padding: 1.6vw;
+}
+
+.reviews-info-item:nth-child(1) {
+  margin-bottom: 0.8vw;
+}
+
+.reviews-info-container {
+  width: 25vw;
+  flex-shrink: 0;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 1.2vw;
+}
+
+.author-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+}
+
+.reviews-coments-container {
+  flex-basis: 100%;
+}
+
+.author-image-wrapper {
+  width: 2.3vw;
+}
+
+.comment-author-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2vw;
+}
+
+.author-info-container h4 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  color: #000;
+}
+
+.author-info-container span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.6vw;
+
+  line-height: 0.9vw;
+  color: #686874;
+}
+
+.coment-rating-icons-container svg {
+  width: 6.8vw;
+  height: 1vw;
+}
+
+.reviews-coment-item {
+  background-color: #ffffff;
+  border-radius: 0.8vw;
+  padding: 1.6vw;
+}
+
+/* ================================== */
+
+.comment-text {
+  overflow: hidden;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.dots {
+  display: inline;
+  transition: 0.3s;
+}
+
+.more-text {
+  display: none;
+  transition: 0.3s;
+}
+
+.show-more .dots {
+  display: none;
+  transition: 0.3s;
+}
+
+.show-more .more-text {
+  display: inline;
+  transition: 0.3s;
+}
+
+.comment button span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  color: black;
+}
+
+.btnIcon {
+  width: 0.8vw;
+  height: 0.8vw;
+  transition: 0.3s;
+}
+
+.comment button {
+  display: block;
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.reviews-coment-item:not(:last-child) {
+  margin-bottom: 0.8vw;
+}
+
+.comment-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+
+  line-height: 1.2vw;
+  color: black;
+  margin-bottom: 1.2vw;
+}
+
+.reviews-coment-item {
+  transition: 0.3s;
+}
+
+.comment-text {
+  transition: 0.3s;
+}
+
+.comment {
+  transition: 0.3s;
+}
+
+.reviews-section-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.reviews-qty-container {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 700;
+  line-height: 1vw;
+  text-align: left;
+  color: rgba(154, 154, 162, 1);
+}
+
+.reviews-section-title {
+  font-family: "Exo 2";
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 2.2vw;
+  text-align: left;
+}
+
+.reviews-section {
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+}
+
+.reviews-info-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 0.5vw;
+  border: none;
+  padding: 1.2vw;
+  color: #ffffff;
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 700;
+  line-height: 0.8vw;
+  text-align: left;
+  text-align: center;
+  margin-top: 0.8vw;
+  transition: 0.3s;
+}
+
+.reviews-info-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.characterictics-section {
+  padding-top: 4vw;
+}
+
+.reviews-section .question-link {
+  margin-top: 1.6vw;
+}
+
+/* LICENSE SECTION ================================ */
+
+.license-section {
+  padding-bottom: 4vw;
+}
+
+.license-section-title {
+  margin-bottom: 2vw;
+  font-family: "Exo 2";
+  font-size: 1.2vw;
+  font-weight: 600;
+  line-height: 2.2vw;
+  text-align: left;
+}
+
+.license-list {
+  display: flex;
+  gap: 1vw;
+}
+
+.license-item {
+  width: 16vw;
 }
