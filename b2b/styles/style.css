@@ -7601,3 +7601,112 @@ footer {
   z-index: 1; /* Додаємо псевдоелемент перед фоновим зображенням */
   transition: 0.3s;
 }
+
+@media (max-width: 1024px) {
+  .header-bottom-section {
+    display: none;
+  }
+
+  .top-header-right-nav-list {
+    position: relative;
+
+    display: none;
+  }
+
+  .top-header-nav-link-text {
+    font-size: 3.2vw;
+    line-height: 3.2vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+  }
+
+  .top-header-left {
+    display: flex;
+    align-items: center;
+    gap: 3.2vw;
+  }
+
+  .top-heaer-nav-list-mob-backdrop {
+    display: none;
+  }
+
+  .top-heaer-nav-list-mob-backdrop.is-active {
+    position: absolute;
+    flex-direction: column;
+    top: 14vw;
+    z-index: 11;
+    background-color: var(--primary-color);
+    display: block;
+    height: auto;
+  }
+
+  .top-heaer-nav-list-mob-backdrop .top-header-nav-link {
+    padding: 2vw 0;
+  }
+
+  .top-header-nav-list {
+    flex-direction: column;
+  }
+
+  .top-header-nav-link {
+    padding: 6.4vw 0;
+    gap: 1vw;
+  }
+
+  .header-nav-icon {
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+
+  .addition-header-btn {
+    display: none;
+  }
+
+  .header-enter-btn-text {
+    font-size: 3.2vw;
+    line-height: 3.2vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .header-enter-icon {
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+
+  .header-enter-btn {
+    border: 0.6vw solid #fff;
+    border-radius: 1vw;
+    padding: 3.7vw 4.2vw;
+  }
+
+  .header-menu-container {
+    background-color: #ffffff;
+    padding: 0 3.3vw;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-mob-logo img {
+    width: 18vw;
+  }
+
+  .header-menu-container svg {
+    width: 5.3vw;
+    height: 5.3vw;
+  }
+
+  .top-header-btn-container {
+    gap: 3.2vw;
+  }
+
+  .top-header-backdrop-icon {
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+}
