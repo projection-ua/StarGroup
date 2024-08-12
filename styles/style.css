@@ -530,6 +530,7 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .services-item {
@@ -541,6 +542,10 @@ section {
   border-bottom-right-radius: 0.8vw;
   padding: 1.25vw;
   transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .services-images {
@@ -558,9 +563,9 @@ section {
 }
 
 .services-text-backdrop-container {
-  height: 0px;
-  opacity: 0;
-  transition: 0.3s;
+  max-height: 0px;
+  transition: 1s;
+  display: none;
 }
 
 .services-text {
@@ -582,6 +587,9 @@ section {
   color: rgba(0, 0, 0, 0.2);
   border: none;
   background: transparent;
+  width: fit-content;
+  border-radius: 0.4vw;
+  transition: 1s;
 }
 
 .services-btn-icon {
@@ -590,6 +598,30 @@ section {
   height: 0.6vw;
 }
 
+.services-images {
+  width: 16.6vw;
+  transition: 1s;
+  margin: 0 auto;
+}
+
+.services-item:hover .services-images {
+  width: 8vw;
+}
+
+.services-item:hover .services-text-backdrop-container {
+  max-height: 1000px;
+  display: block;
+}
+
+.services-item:hover .services-btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1vw;
+}
+
+.services-item:hover .services-btn-icon {
+  stroke: #ffffff;
+}
 /* TARRIF SECTION  ============================================= */
 
 .tariff-section {
@@ -1032,7 +1064,6 @@ section {
 
 .tariff-list-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .tv-list-container:hover .tv-icon {
@@ -2774,6 +2805,11 @@ footer {
   transition: 0.3s;
 }
 
+.table-btn:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-color);
+}
+
 .first-column-btn.hovered {
   background-color: var(--primary-color);
   color: #fff;
@@ -4048,13 +4084,14 @@ footer {
   outline: 0.4vw solid var(--primary-color);
 }
 
-/* .range-input::-moz-range-thumb {
+.range-input::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background: #000000;
   cursor: pointer;
-} */
+  transition: 3s;
+}
 
 .range-input {
   position: relative;
@@ -4097,7 +4134,35 @@ footer {
   cursor: pointer;
 }
 
-.input-range-line-container 
+@media (max-width: 1024px) {
+  .input-range-line-container {
+    height: 5.5vw;
+  }
+
+  .range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 4.8vw;
+    height: 4.8vw;
+    border-radius: 100%;
+    background: #ffffff;
+    cursor: pointer;
+    outline: 1.8vw solid var(--primary-color);
+  }
+
+  .range-input::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+
+  .range-input::after {
+    right: 1vw;
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+}
 
 /* ======================== PAYMENT_METHODS_PAGE ======================== */
 
@@ -5124,11 +5189,12 @@ footer {
 
   .tariff-title {
     font-size: 6.4vw;
-    margin-bottom: 6.4vw;
+    margin-bottom: 1vw;
   }
 
   .host-name-title {
     font-size: 4.2vw;
+    margin-bottom: 6.4vw;
   }
 
   .inner-tariff-container {
@@ -5163,6 +5229,7 @@ footer {
   .info-container-title {
     font-size: 3.7vw;
     line-height: 5.6vw;
+    margin-bottom: 2.6vw;
   }
 
   .range-label {
@@ -5172,7 +5239,7 @@ footer {
 
   .range-labels {
     width: 100%;
-    margin-bottom: 2.1vw;
+    margin-bottom: 4.1vw;
   }
 
   .range-label span {
