@@ -549,7 +549,7 @@ section {
 }
 
 .services-images {
-  transition: 0.3s;
+  transition: 1s;
   margin-bottom: 1vw;
 }
 
@@ -565,7 +565,7 @@ section {
 .services-text-backdrop-container {
   max-height: 0px;
   transition: 1s;
-  display: none;
+  overflow: hidden;
 }
 
 .services-text {
@@ -609,14 +609,15 @@ section {
 }
 
 .services-item:hover .services-text-backdrop-container {
-  max-height: 1000px;
-  display: block;
+  max-height: 30vw;
+  overflow: visible;
+  margin-bottom: 1vw;
 }
 
 .services-item:hover .services-btn {
   background-color: var(--primary-color);
   color: #ffffff;
-  padding: 1vw;
+  padding: 0.8vw;
 }
 
 .services-item:hover .services-btn-icon {
@@ -7559,5 +7560,151 @@ footer {
 
   .footer-line.mobile {
     display: none;
+  }
+}
+
+/* АДАПТИВ ЗАГАЛЬНИХ СТОРІНОК===================================== */
+
+@media (max-width: 1024px) {
+  .online-payment .container {
+    flex-direction: column;
+  }
+
+  .online-payment-form-container {
+    width: 100%;
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+  }
+
+  .online-payment-form-container .payment-title {
+    font-size: 6.4vw;
+    line-height: 6.9vw;
+    margin-bottom: 8.5vw;
+    width: auto;
+  }
+
+  .online-payment-form label {
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+    margin-bottom: 2.1vw;
+  }
+
+  .online-payment-form input {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    border: 0.4vw solid #f2f2f2;
+    border-radius: 1.6vw;
+    padding: 4.2vw;
+  }
+
+  .online-payment-form input::placeholder {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+  }
+
+  .online-payment-form-container .tariff-btn {
+    margin-top: 8.5vw;
+    margin-bottom: 0;
+  }
+
+  #option1 {
+    margin-bottom: 4.2vw;
+  }
+
+  .online-payment {
+    padding-top: 8.5vw;
+  }
+
+  .online-payment-instruction-container {
+    width: 100%;
+    gap: 6.3vw;
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+  }
+
+  .online-payment .container {
+    gap: 4.2vw;
+  }
+
+  .payment-instruction-icon-container {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 2.1vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .payment-instruction-icon-container img {
+    width: 8.5vw;
+    height: 8.5vw;
+  }
+
+  .online-payment .instructions-item .we-can-item-text {
+    width: auto;
+  }
+
+  .online-payment-system-images {
+    gap: 6.4vw;
+  }
+
+  .online-payment-system-images:nth-child(1) {
+    margin-bottom: 6.4vw;
+  }
+
+  .payment-title {
+    font-size: 6.4vw;
+    line-height: 6.9vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .privat-img {
+    width: 16.5vw;
+    height: 16.5vw;
+  }
+
+  .easy-img {
+    width: 29vw;
+    height: 14.5vw;
+  }
+  .city-img {
+    width: 16.5vw;
+    height: 16.5vw;
+  }
+  .ibox-img {
+    width: 29vw;
+    height: 9.6vw;
+  }
+
+  .tyme-img {
+    width: 12.5vw;
+    height: 16.5vw;
+  }
+
+  .cash-terminal-list {
+    flex-wrap: wrap;
+    gap: 2.6vw;
+  }
+
+  .cash-terminal-item {
+    padding: 6.6vw;
+  }
+
+  .cash-terminal-item:nth-child(5) {
+    flex-basis: 100%;
+  }
+
+  .cash-terminal-item:nth-child(2),
+  .cash-terminal-item:nth-child(4) {
+    flex-basis: 57.6%;
+  }
+
+  .cash-container {
+    background-color: #ffffff;
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+  }
+
+  .cash-payment {
+    padding-top: 8.5vw;
+    padding-bottom: 0;
   }
 }
