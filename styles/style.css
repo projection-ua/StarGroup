@@ -3975,10 +3975,10 @@ footer {
 }
 
 .range-labels {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 14vw;
-  margin-bottom: 0.4vw;
+  margin-bottom: 0.8vw;
 }
 
 .range-label {
@@ -3987,11 +3987,20 @@ footer {
   font-size: 1.4vw;
   line-height: 1.4vw;
   letter-spacing: -0.03em;
-  text-align: center;
   color: #b3b3b9;
   display: flex;
   flex-direction: column;
   gap: 0.2vw;
+}
+
+.range-label:nth-child(1) {
+  text-align: left;
+}
+.range-label:nth-child(2) {
+  text-align: center;
+}
+.range-label:nth-child(3) {
+  text-align: right;
 }
 
 .range-label span {
@@ -4016,10 +4025,10 @@ footer {
   -webkit-appearance: none;
   width: 100%;
   height: 10px;
-  background: #ddd;
+  background: transparent;
   border-radius: 5px;
   outline: none;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
@@ -4031,20 +4040,21 @@ footer {
 .range-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: var(--primary-color);
+  width: 1vw;
+  height: 1vw;
+  border-radius: 100%;
+  background: #ffffff;
   cursor: pointer;
+  outline: 0.4vw solid var(--primary-color);
 }
 
-.range-input::-moz-range-thumb {
+/* .range-input::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background: #000000;
   cursor: pointer;
-}
+} */
 
 .range-input {
   position: relative;
@@ -4053,32 +4063,41 @@ footer {
 .range-input::before {
   content: "";
   position: absolute;
-  left: 0;
-  width: 0.5vw;
-  height: 0.5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.7vw;
+  height: 0.7vw;
   background: #b7b7cb;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .range-input::after {
   content: "";
   position: absolute;
-  right: 50%;
-  width: 0.5vw;
-  height: 0.5vw;
+  right: 0.5vw;
+  width: 0.7vw;
+  height: 0.7vw;
   background: #b7b7cb;
   border-radius: 50%;
+  z-index: -1;
 }
 
-.range-input::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 0.5vw;
-  height: 0.5vw;
-  background: #b7b7cb;
-  border-radius: 50%;
+.input-range-line-container {
+  width: 100%;
+  height: 1.5vw;
+  background-image: url(../images/input-range-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 9;
+  cursor: pointer;
 }
+
+.input-range-line-container input {
+  cursor: pointer;
+}
+
+.input-range-line-container 
 
 /* ======================== PAYMENT_METHODS_PAGE ======================== */
 

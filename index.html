@@ -194,7 +194,7 @@
                       />
                     </svg></p
                 ></a>
-                <div class="top-heaer-nav-list-mob-backdrop">
+                <div class="top-heaer-nav-list-mob-backdrop is-active">
                   <a class="top-header-nav-link" href=""
                     ><svg class="header-nav-icon">
                       <use href="./images/header-icons.svg#icon-bag"></use>
@@ -750,15 +750,18 @@
                               1000 <span>Мбіт/с</span>
                             </div>
                           </div>
-                          <input
-                            type="range"
-                            min="0"
-                            max="2"
-                            step="1"
-                            value="0"
-                            class="range-input"
-                            id="speedRange"
-                          />
+
+                          <div class="input-range-line-container">  
+                            <input
+                              type="range"
+                              min="0"
+                              max="2"
+                              step="1"
+                              value="0"
+                              class="range-input"
+                              id="speedRange"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1019,7 +1022,7 @@
                           fill="#9A9AA2"
                         />
                       </svg>
-                      <div>
+                     <div>
                         <p class="info-container-title">Безлімітний інтернет</p>
                         <div class="range-container">
                           <div class="range-labels">
@@ -1033,15 +1036,18 @@
                               1000 <span>Мбіт/с</span>
                             </div>
                           </div>
-                          <input
-                            type="range"
-                            min="0"
-                            max="2"
-                            step="1"
-                            value="0"
-                            class="range-input"
-                            id="speedRange"
-                          />
+
+                          <div class="input-range-line-container">  
+                            <input
+                              type="range"
+                              min="0"
+                              max="2"
+                              step="1"
+                              value="0"
+                              class="range-input"
+                              id="speedRange"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2342,7 +2348,9 @@
             </div>
 
             <div class="footer-backdrop-container">
-              <h4 class="footer-question-title nav">Послуги для бізнесу <svg
+              <h4 class="footer-question-title nav">
+                Послуги для бізнесу
+                <svg
                   viewBox="0 0 12 12"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2351,7 +2359,8 @@
                     d="M11.4998 3.32333C11.5034 3.16283 11.4563 3.00523 11.3649 2.87242C11.2735 2.73961 11.1425 2.6382 10.9901 2.58229C10.8376 2.52638 10.6713 2.51874 10.5143 2.56045C10.3573 2.60215 10.2174 2.69111 10.1139 2.81497L6.01265 7.54101L1.91282 2.81497C1.84903 2.72929 1.76805 2.65754 1.67486 2.6042C1.58168 2.55086 1.47831 2.51709 1.3713 2.50501C1.26428 2.49292 1.15591 2.50278 1.05294 2.53396C0.949957 2.56514 0.854579 2.61698 0.772834 2.68622C0.691089 2.75547 0.62478 2.84063 0.577918 2.93637C0.531056 3.03211 0.504736 3.13638 0.500583 3.24263C0.49643 3.34889 0.514484 3.45485 0.553734 3.55387C0.592983 3.65289 0.652519 3.74285 0.728617 3.81811L5.41825 9.22899C5.4917 9.31396 5.58287 9.3822 5.68562 9.42898C5.78838 9.47577 5.90022 9.5 6.01337 9.5C6.12653 9.5 6.23837 9.47577 6.34112 9.42898C6.44387 9.3822 6.53513 9.31396 6.60859 9.22899L11.3027 3.81811C11.4257 3.68142 11.4955 3.5061 11.4998 3.32333Z"
                     fill="#B3B3B9"
                   />
-                </svg></h4>
+                </svg>
+              </h4>
 
               <div class="footer-nav-block">
                 <a class="footer-nav-link-item" href="">Інтернет для бізнесу</a>
@@ -2364,7 +2373,9 @@
             </div>
 
             <div class="footer-backdrop-container">
-              <h4 class="footer-question-title nav">Навігація <svg
+              <h4 class="footer-question-title nav">
+                Навігація
+                <svg
                   viewBox="0 0 12 12"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2373,7 +2384,8 @@
                     d="M11.4998 3.32333C11.5034 3.16283 11.4563 3.00523 11.3649 2.87242C11.2735 2.73961 11.1425 2.6382 10.9901 2.58229C10.8376 2.52638 10.6713 2.51874 10.5143 2.56045C10.3573 2.60215 10.2174 2.69111 10.1139 2.81497L6.01265 7.54101L1.91282 2.81497C1.84903 2.72929 1.76805 2.65754 1.67486 2.6042C1.58168 2.55086 1.47831 2.51709 1.3713 2.50501C1.26428 2.49292 1.15591 2.50278 1.05294 2.53396C0.949957 2.56514 0.854579 2.61698 0.772834 2.68622C0.691089 2.75547 0.62478 2.84063 0.577918 2.93637C0.531056 3.03211 0.504736 3.13638 0.500583 3.24263C0.49643 3.34889 0.514484 3.45485 0.553734 3.55387C0.592983 3.65289 0.652519 3.74285 0.728617 3.81811L5.41825 9.22899C5.4917 9.31396 5.58287 9.3822 5.68562 9.42898C5.78838 9.47577 5.90022 9.5 6.01337 9.5C6.12653 9.5 6.23837 9.47577 6.34112 9.42898C6.44387 9.3822 6.53513 9.31396 6.60859 9.22899L11.3027 3.81811C11.4257 3.68142 11.4955 3.5061 11.4998 3.32333Z"
                     fill="#B3B3B9"
                   />
-                </svg></h4>
+                </svg>
+              </h4>
 
               <nav class="footer-nav-block">
                 <a class="footer-nav-link-item" href="">Акції</a>
@@ -2386,7 +2398,9 @@
             </div>
 
             <div class="footer-backdrop-container">
-              <h4 class="footer-question-title nav">Центр підтримки <svg
+              <h4 class="footer-question-title nav">
+                Центр підтримки
+                <svg
                   viewBox="0 0 12 12"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2395,7 +2409,8 @@
                     d="M11.4998 3.32333C11.5034 3.16283 11.4563 3.00523 11.3649 2.87242C11.2735 2.73961 11.1425 2.6382 10.9901 2.58229C10.8376 2.52638 10.6713 2.51874 10.5143 2.56045C10.3573 2.60215 10.2174 2.69111 10.1139 2.81497L6.01265 7.54101L1.91282 2.81497C1.84903 2.72929 1.76805 2.65754 1.67486 2.6042C1.58168 2.55086 1.47831 2.51709 1.3713 2.50501C1.26428 2.49292 1.15591 2.50278 1.05294 2.53396C0.949957 2.56514 0.854579 2.61698 0.772834 2.68622C0.691089 2.75547 0.62478 2.84063 0.577918 2.93637C0.531056 3.03211 0.504736 3.13638 0.500583 3.24263C0.49643 3.34889 0.514484 3.45485 0.553734 3.55387C0.592983 3.65289 0.652519 3.74285 0.728617 3.81811L5.41825 9.22899C5.4917 9.31396 5.58287 9.3822 5.68562 9.42898C5.78838 9.47577 5.90022 9.5 6.01337 9.5C6.12653 9.5 6.23837 9.47577 6.34112 9.42898C6.44387 9.3822 6.53513 9.31396 6.60859 9.22899L11.3027 3.81811C11.4257 3.68142 11.4955 3.5061 11.4998 3.32333Z"
                     fill="#B3B3B9"
                   />
-                </svg></h4>
+                </svg>
+              </h4>
 
               <div class="footer-nav-block">
                 <a class="footer-nav-link-item" href="">Допомога</a>
@@ -2452,8 +2467,7 @@
             </defs>
           </svg>
 
-        <div class="footer-line mobile"></div>
-
+          <div class="footer-line mobile"></div>
 
           <div class="footer-social-link-container">
             <a class="footer-social-link" href=""
@@ -2482,12 +2496,10 @@
 
         <div class="footer-line"></div>
 
-
         <div class="footer-bottom-info">
           <p class="footer-bottom-text">© Інтернет-провайдер «SIMNET» 2024</p>
 
-        <div class="footer-line mobile second"></div>
-
+          <div class="footer-line mobile second"></div>
 
           <p class="footer-bottom-text">
             ТОВ «СТАРГРУП» обробляє призначені для користувача дані при роботі
