@@ -78,6 +78,10 @@ section {
   display: none;
 }
 
+.tariff-section-title.payment {
+  font-size: 2.6vw;
+}
+
 @media (max-width: 1024px) {
   .container {
     width: 97vw;
@@ -2353,6 +2357,7 @@ footer {
 .question-item-icon {
   width: 0.7vw;
   height: 0.4vw;
+  stroke: #1436cf;
 }
 
 .question-link {
@@ -5774,7 +5779,7 @@ footer {
   .internet-tv-hero-text {
     font-size: 3.7vw;
     line-height: 5.8vw;
-    width: 74vw;
+    width: 100%;
     margin-bottom: 6.4vw;
   }
 
@@ -7021,10 +7026,15 @@ footer {
 }
 
 .about-hero-image-container {
-  width: 57.7vw;
+  width: 54.7vw;
   border-radius: 1vw;
   overflow: hidden;
   margin-left: auto;
+  height: 25vw;
+}
+
+.about-hero-image-container img {
+  width: 100%;
 }
 
 .about-hero-text-container {
@@ -7045,6 +7055,7 @@ footer {
 
 .about-hero-section .internet-tv-hero-text {
   width: 100%;
+  margin-bottom: 1vw;
 }
 
 /* characterictics-section =================================================== */
@@ -7130,6 +7141,7 @@ footer {
 
 .about-swiper-relative-container {
   position: relative;
+  width: 100%;
 }
 
 .internet-tv-hero-image-container.about .swiper-pagination-bullet {
@@ -7403,11 +7415,18 @@ footer {
 
 .license-list {
   display: flex;
-  gap: 1vw;
 }
 
 .license-item {
   width: 16vw;
+}
+
+.license-item img {
+  width: 100%;
+}
+
+.swiper-license-container {
+  width: 50vw;
 }
 
 /* FOOTER ADDAPTIVE ================================================== */
@@ -7707,4 +7726,428 @@ footer {
     padding-top: 8.5vw;
     padding-bottom: 0;
   }
+
+  .payment-text {
+    font-size: 3.8vw;
+    line-height: 4.8vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .mob-app-payment .payment-title {
+    margin-bottom: 3.2vw;
+  }
+
+  .mob-app-item {
+    flex-basis: calc((100% - 2 * 2.6vw) / 3);
+  }
+
+  .mob-app-list {
+    gap: 2.6vw;
+  }
+
+  .mob-app-container {
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+  }
+
+  .portmone-container {
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+  }
+
+  .portmone-logo {
+    margin-bottom: 3.2vw;
+  }
+
+  .portmone .payment-text {
+    margin-bottom: 8.5vw;
+  }
+
+  .portmone-container .instructions-item .we-can-item-text {
+    margin-bottom: 0;
+  }
+
+  .portmone {
+    padding-top: 8.5vw;
+  }
+
+  .tariff-section-title.payment {
+    font-size: 8.5vw;
+  }
+
+  .page-title {
+    font-size: 8.5vw;
+    line-height: 8.5vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .document-flex-container {
+    flex-direction: column;
+    gap: 0.8vw;
+  }
+
+  .documenet-backdrop-title {
+    font-size: 5.8vw;
+    line-height: 6.4vw;
+  }
+
+  .document-list-icon {
+    width: 5.3vw;
+    height: 5.3vw;
+    min-width: 5.3vw;
+    margin-right: 2.1vw;
+  }
+
+  .document-list-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    transition: 0.3s;
+  }
+
+  .download-text {
+    display: none;
+  }
+
+  .document-download-icon {
+    width: 4.2vw;
+    height: 4.2vw;
+    margin-right: 0;
+  }
+
+  .document-list-item:not(:last-child) {
+    margin-bottom: 6.4vw;
+  }
+
+  .document-item-flex-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .document-backdrop-container-JS.is-active {
+    margin-top: 8.5vw;
+  }
+
+  .documents-backdrop-container {
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+    flex-basis: calc((100% - 0.8vw) / 2);
+  }
+
+  /* CONTACTS -=================================================== */
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.2vw;
+  }
+
+  .contact-support-container {
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+  }
+
+  .contact-title {
+    font-size: 6.4vw;
+    line-height: 6.9vw;
+    margin-bottom: 3.2vw;
+    width: 45vw;
+  }
+
+  .contact-text {
+    font-size: 4.2vw;
+    line-height: 6.4vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .contact-number-item {
+    gap: 4.2vw;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-number {
+    font-size: 6.4vw;
+    line-height: 6.4vw;
+    text-align: left;
+  }
+
+  .number-item-text {
+    font-size: 3.7vw;
+    color: #9a9aa2;
+  }
+
+  .contact-number-item:not(:last-child) {
+    margin-bottom: 5.3vw;
+  }
+
+  .contact-support-number-container {
+    margin-bottom: 8.5vw;
+  }
+
+  .tg-text {
+    font-size: 4.2vw;
+  }
+
+  .tg-icon {
+    width: 5.3vw;
+    height: 5.3vw;
+  }
+
+  .tg-container {
+    gap: 2.6vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .team-viewer-container {
+    padding: 3.2vw 4.2vw;
+    border-radius: 1.6vw;
+    margin-bottom: 8.5vw;
+    gap: 4.2vw;
+  }
+
+  .team-viewer-icon {
+    margin-right: 0;
+    width: 33vw;
+  }
+
+  .social-link-title {
+    font-size: 3.7vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .contact-title.second {
+    width: 100%;
+  }
+
+  .contact-form label {
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+    margin-bottom: 2.1vw;
+  }
+
+  .contact-form-input-line {
+    flex-direction: column;
+  }
+
+  .contact-label-container input,
+  .contact-label-container textarea {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    padding: 4.2vw;
+    border: 0.04vw solid #f2f2f2;
+    border-radius: 1.6vw;
+  }
+
+  .contact-label-container {
+    margin-bottom: 4.2vw;
+  }
+
+  .contact-label-container textarea {
+    resize: none;
+    height: 40.8vw;
+  }
+
+  .contact-form-btn {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    padding: 6.4vw;
+    border-radius: 2.1vw;
+    margin-top: 8.5vw;
+  }
+
+  .contact-form-container {
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+  }
+
+  .question-container.in-page {
+    width: 100%;
+  }
+
+  .question-search-form input {
+    width: 100%;
+    margin-bottom: 1.6vw;
+    font-size: 5.6vw;
+    line-height: 5.6vw;
+    padding: 4.2vw;
+    border: 0.4vw solid #cdcdd1;
+    border-radius: 1.6vw;
+  }
+
+  .question-search-form input::placeholder {
+    font-size: 5.6vw;
+    line-height: 5.6vw;
+  }
+
+  .search-input-container {
+    width: 100%;
+  }
+
+  .question-search-icon {
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+
+  .question-search-icon-container {
+    position: absolute;
+    top: 50%;
+    right: 4.2vw;
+    transform: translateY(-50%);
+  }
+
+  .catalog-equipment-container .catalog-item {
+    flex-basis: calc((100% - 0.8vw) / 2);
+    padding: 3.2vw 4.2vw;
+  }
+
+  .catalog-equipment-container .tariff-marker-container {
+    position: absolute;
+    left: 0;
+    top: -2.5vw;
+    margin-left: 0;
+    left: 2.1vw;
+  }
+
+  .catalog-equipment-container .catalog-current-price {
+    font-size: 5.3vw;
+    line-height: 5.3vw;
+  }
+
+  .catalog-equipment-container .catalog-old-price {
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+  }
+
+  .catalog-equipment-container {
+    row-gap: 6.4vw;
+    margin-bottom: 8.5vw;
+  }
+
+  /* ABOUUT PAGE =========================================================== */
+
+  .about-hero-text-container {
+    position: static;
+    border-radius: 3vw;
+    padding: 4.2vw;
+    width: 100%;
+  }
+
+  .about-hero-section .internet-tv-hero-text {
+    margin-bottom: 2vw;
+  }
+
+  .about-hero-image-container {
+    width: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+    height: auto;
+    margin-left: auto;
+  }
+
+  .about-hero-container {
+    position: static;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.4vw;
+  }
+
+  .about-hero-section {
+    padding-top: 5.3vw;
+    padding-bottom: 5.3vw;
+  }
+
+  .characteristics-item {
+    flex-basis: calc((100% - 1vw) / 2);
+    padding: 6.4vw;
+    border-radius: 0.8vw;
+    min-height: 35vw;
+  }
+
+  .characterisctics-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+  }
+
+  .characteristic-qty {
+    font-size: 8.5vw;
+    line-height: 8.5vw;
+    text-align: left;
+  }
+
+  .characteristic-text {
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+    text-align: left;
+    width: 20vw;
+  }
+
+  .characterictics-section {
+    padding-top: 15vw;
+  }
+
+  .internet-tv-hero-image-container.about {
+    width: 100%;
+  }
+
+  .internet-tv-hero-image-container.about .swiper-pagination-bullet {
+    border-radius: 4.2vw;
+    width: 5.3vw;
+    height: 1vw;
+    background: #8b8b8b;
+    transition: 0.3s;
+  }
+
+  .internet-tv-hero-image-container.about .swiper-pagination-bullet-active {
+    width: 10.6vw !important;
+    background-color: #000;
+  }
+
+  .internet-tv-hero-image-container.about {
+    padding-bottom: 5vw;
+  }
+
+  .internet-tv-hero-image-container.about img {
+    border-radius: 3.2vw;
+  }
+
+  .about-swiper-next {
+    display: none;
+  }
+
+  .about-swiper-prev {
+    display: none;
+  }
+
+  .swiper-license-container {
+    width: 100%;
+  }
+
+  .license-section-title {
+    margin-bottom: 8.5vw;
+    font-size: 6.4vw;
+    line-height: 6.4vw;
+    text-align: left;
+  }
+
+  .swiper-license-container {
+    position: relative;
+    padding-bottom: 9.6vw;
+  }
+
+  .swiper-license-container .swiper-pagination-bullet {
+    border-radius: 4.2vw;
+    width: 5.3vw;
+    height: 1vw;
+    background: #8b8b8b;
+    transition: 0.3s;
+  }
+
+  .swiper-license-container .swiper-pagination-bullet-active {
+    width: 10.6vw !important;
+    background-color: #000;
+  }
+
+  .license-section {
+    padding-bottom: 15vw;
+}
 }
