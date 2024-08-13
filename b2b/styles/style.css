@@ -4829,7 +4829,7 @@ footer {
   }
 
   .hero-slide-item {
-    background-image: url(../images/main-page/hero-bg-mob.jpg);
+    background-image: url(/images/main-page/hero-bg-mob.jpg);
     padding-bottom: 36vw;
   }
 
@@ -6606,6 +6606,7 @@ footer {
 /* B2B tariffSECTION ========================== */
 .b2b-tariff-section {
   padding-bottom: 4vw;
+  overflow: hidden;
 }
 
 .tariff-item-icon {
@@ -6742,7 +6743,6 @@ footer {
 
 .b2b-tariff-item-list {
   display: flex;
-  gap: 0.8vw;
 }
 
 .b2b-tariff-item.primary {
@@ -6877,7 +6877,7 @@ footer {
   line-height: 1.2vw;
 }
 
-.b2b-form button {
+.form-btn-2b2 {
   font-family: "Manrope";
   font-size: 0.8vw;
   font-weight: 700;
@@ -6939,6 +6939,7 @@ footer {
 .b2b-checkbox-container label {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .b2b-checkbox-container label p {
@@ -7709,4 +7710,305 @@ footer {
     width: 3.2vw;
     height: 3.2vw;
   }
+
+  .services-list {
+    flex-wrap: wrap;
+  }
+
+  .services-item:nth-child(6),
+  .services-item:nth-child(7) {
+    flex-basis: calc((100% - 1.8vw) / 2);
+  }
+
+  .services-section.b2b .services-item {
+    padding-top: 5vw;
+  }
+
+  .services-section.b2b .services-images {
+    margin-bottom: 6vw;
+  }
+
+  .b2b-section-title.dn {
+    display: none;
+  }
+
+  .b2b-we-can-list {
+    flex-direction: column;
+    gap: 3.2vw;
+  }
+
+  .b2b-we-can-icon {
+    min-width: 10.6vw;
+    min-height: 10.6vw;
+  }
+
+  .b2b-we-can-item-title {
+    font-size: 5.3vw;
+    line-height: 5.8vw;
+    margin-bottom: 3.2vw;
+  }
+
+  .b2b-we-can-item-text {
+    font-size: 3.2vw;
+    line-height: 4.2vw;
+  }
+
+  .b2b-we-can-icon-title-container {
+    gap: 6.4vw;
+    margin-bottom: 1.2vw;
+  }
+
+  .b2b-we-can-item {
+    flex-basis: 100%;
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+    background-color: #ffffff;
+  }
+
+  .b2b-we-can-icon-title-container {
+    align-items: flex-start;
+  }
+
+  .b2b-tariffes-swiper-container {
+    position: relative;
+    padding-bottom: 9.6vw;
+  }
+
+  .b2b-tariffes-swiper-container .swiper-pagination-bullet {
+    border-radius: 4.2vw;
+    width: 5.3vw;
+    height: 1vw;
+    background: #808080;
+  }
+
+  .b2b-tariffes-swiper-container .swiper-pagination-bullet-active {
+    border-radius: 4.2vw;
+    width: 10.6vw;
+    height: 1vw;
+    background: black;
+  }
+
+  .b2b-tariff-item-title {
+    font-size: 6.1vw;
+    line-height: 7.2vw;
+    margin-bottom: 6.4vw;
+    width: auto;
+  }
+
+  .b2b-tariff-item {
+    min-height: 245vw;
+    flex-basis: auto;
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+    box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .b2b-tariff-section-title {
+    font-size: 6.4vw;
+    line-height: 7.4vw;
+    margin-bottom: 11.7vw;
+  }
+
+  .b2b-tariff-section .tariff-marker-container {
+    margin-left: 0;
+    top: -3.8vw;
+  }
+
+  .tariff-item-icon {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .info-container-title {
+    margin-bottom: 2.6vw;
+  }
+
+  .tariff-equipment-btn {
+    border-top: 0.4vw solid #f2f2f2;
+    border-bottom: 0.4vw solid #f2f2f2;
+    display: flex;
+    gap: 2.6vw;
+    padding: 2.6vw 0;
+    align-items: center;
+    margin-bottom: 5.3vw;
+  }
+
+  .equipment-text {
+    font-size: 3.7vw;
+    line-height: 5vw;
+  }
+
+  .b2b-tariff-option-item p {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    width: 46vw;
+  }
+
+  .b2b-tariff-option-item {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .b2b-tariff-option-item span {
+    font-size: 6.6vw;
+    line-height: 6.6vw;
+  }
+
+  .b2b-tariff-option-item:not(:last-child) {
+    margin-bottom: 2.1vw;
+  }
+
+  .b2b-tariff-option-container {
+    border-bottom: 0.4vw solid #f2f2f2;
+    padding-bottom: 5.3vw;
+  }
+
+  .b2b-tariff-section .bonus-tag-container {
+    background-image: url(/star-group/images/main-page/bonus-tag-container.png);
+    margin-top: 3.2vw;
+    margin-bottom: 1vw;
+  }
+
+  .add-info-item {
+    padding-left: 2.7vw;
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+  }
+
+  .add-info-item::before {
+    width: 1.2vw;
+    height: 1.2vw;
+    top: 2.5vw;
+  }
+
+  .add-info-item:not(:last-child) {
+    margin-bottom: 1.4vw;
+  }
+
+  .b2b-tariff-button {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    padding: 5.3vw 0;
+    border-radius: 2.4vw;
+  }
+
+  .b2b-we-can-section {
+    padding-bottom: 15vw;
+  }
+
+  .b2b-form-image-wrapper {
+    display: none;
+  }
+
+  .b2b-form-container {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .b2b-checkbox-form-container {
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+    gap: 2.5vw;
+    flex-direction: column;
+  }
+
+  .form-container-title {
+    font-size: 6.4vw;
+    line-height: 6.9vw;
+    margin-bottom: 3.2vw;
+  }
+
+  .form-container-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    margin-bottom: 8.5vw;
+    width: auto;
+  }
+
+  .b2b-form label {
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+    gap: 0.6vw;
+  }
+
+  .b2b-form input::placeholder {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+  }
+
+  .b2b-form input {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    padding: 4.2vw;
+    border: 0.4vw solid #f2f2f2;
+    border-radius: 1.6vw;
+  }
+
+  .b2b-form label:not(:last-child) {
+    margin-bottom: 4.2vw;
+  }
+
+  .form-btn-2b2 {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    padding: 6.4vw 0;
+    border-radius: 2.1vw;
+    margin-top: 1.2vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .b2b-bottom-tetxt {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .b2b-bottom-tetxt p {
+    font-size: 3.2vw;
+    line-height: 5vw;
+  }
+
+  .b2b-bottom-tetxt a {
+    font-size: 3.2vw;
+    line-height: 5vw;
+  }
+
+  .checkbox-title {
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .b2b-checkbox-container label p {
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+  }
+
+  .b2b-custom-checkbox {
+    width: 9.6vw;
+    height: 5.3vw;
+    border-radius: 1vw;
+    padding: 0.5vw;
+  }
+
+  .b2b-custom-checkbox div {
+    border-radius: 1vw;
+  }
+
+  .b2b-checkbox-container label:not(:last-child) {
+    margin-bottom: 4.2vw;
+  }
+
+ .b2b-question-form-labels {
+    flex-direction: column;
+    gap: 0.8vw;
 }
+
+.form-btn-2b2.question{
+  margin-top: 8.5vw;
+
+}
+}
+
+
