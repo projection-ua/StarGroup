@@ -1,7 +1,6 @@
 new Swiper(".descision-swiper-container", {
-  slidesPerView: 3.5,
-  spaceBetween: 16,
-  loop: true,
+  slidesPerView: 1.12,
+  spaceBetween: 12,
 
   pagination: {
     el: ".swiper-pagination",
@@ -10,4 +9,31 @@ new Swiper(".descision-swiper-container", {
   navigation: {
     nextEl: ".swiper-btn-next",
   },
+
+  breakpoints: {
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 3.5,
+      spaceBetween: 16,
+    },
+  },
 });
+
+new Swiper(".company-swiper-container", {
+  slidesPerView: 6,
+  spaceBetween: 0,
+
+  // Плавний перехід
+  speed: 1000, // Швидкість прокручування (тут 2 секунди)
+  effect: "slide",
+
+  breakpoints: {
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 5.6,
+      spaceBetween: 16,
+    },
+  },
+});
+
+

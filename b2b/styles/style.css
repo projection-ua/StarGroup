@@ -7019,7 +7019,7 @@ footer {
   stroke: black;
   width: 0.8vw;
   height: 0.8vw;
-  transform: 0.3s;
+  transition: 0.3s;
 }
 
 .decision-item-btn {
@@ -7068,7 +7068,7 @@ footer {
   background-color: #ffffff;
   border-radius: 0.8vw;
   padding: 1.2vw;
-  height: 34.5vw;
+  min-height: 34.5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7148,14 +7148,13 @@ footer {
   padding-bottom: 4vw;
 }
 
-.b2b-company-list {
+/* .b2b-company-list {
   display: flex;
   gap: 0.8vw;
-}
+} */
 
 .b2b-company-item {
   position: relative;
-  flex-basis: calc((100% - 5 * 0.8vw) / 6);
   text-align: center;
   height: 8vw;
   background-color: #ffffff;
@@ -7165,47 +7164,34 @@ footer {
   background-size: 14vw;
   overflow: hidden; /* Додаємо overflow: hidden, щоб сховати вихід за межі елемента */
   cursor: pointer;
-}
-
-.b2b-company-item::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit; /* Копіюємо фонове зображення */
-  background-size: inherit;
-  background-position: inherit;
-  background-repeat: inherit;
-  filter: grayscale(100%);
-  z-index: 1; /* Додаємо псевдоелемент перед фоновим зображенням */
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
 }
 
-.b2b-company-item:hover::before {
-  filter: grayscale(
-    0%
-  ); /* При наведенні прибираємо фільтр чорно-білого зображення */
+.b2b-company-item img {
+  transform: scale(0.7);
+  transition: 0.5s;
 }
 
-.b2b-company-item:nth-child(1) {
-  background-image: url(../images/company-logos/atl.jpg);
+@media (min-width: 1024px) {
+  .b2b-company-item img {
+    transform: scale(0.7);
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transition: 0.5s;
+  }
+
+  .b2b-company-item:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+  }
 }
-.b2b-company-item:nth-child(2) {
-  background-image: url(../images/company-logos/dnipro.jpg);
-}
-.b2b-company-item:nth-child(3) {
-  background-image: url(../images/company-logos/room.jpg);
-}
-.b2b-company-item:nth-child(4) {
-  background-image: url(../images/company-logos/nova.jpg);
-}
-.b2b-company-item:nth-child(5) {
-  background-image: url(../images/company-logos/privat.jpg);
-}
-.b2b-company-item:nth-child(6) {
-  background-image: url(../images/company-logos/rozetka.jpg);
+
+.b2b-company-item:hover {
+  box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.08);
 }
 
 /* B2B question FPRM ==================================================== */
@@ -7601,6 +7587,10 @@ footer {
   filter: grayscale(0);
   z-index: 1; /* Додаємо псевдоелемент перед фоновим зображенням */
   transition: 0.3s;
+}
+
+.company-swiper-container {
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {
@@ -8000,15 +7990,271 @@ footer {
     margin-bottom: 4.2vw;
   }
 
- .b2b-question-form-labels {
+  .b2b-question-form-labels {
     flex-direction: column;
     gap: 0.8vw;
+  }
+
+  .form-btn-2b2.question {
+    margin-top: 8.5vw;
+  }
+
+  .b2b-decision-item {
+    border-radius: 5.3vw;
+    padding: 4.2vw;
+    min-height: 138vw;
+  }
+
+  .decision-item-image-wraooer {
+    border-radius: 3.2vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .decision-item-title {
+    font-size: 4.9vw;
+    line-height: 4.9vw;
+    margin-bottom: 3.2vw;
+  }
+
+  .decision-item-text {
+    font-size: 3.9vw;
+    line-height: 5.6vw;
+  }
+
+  .decision-item-btn {
+    gap: 2.1vw;
+    font-size: 4.2vw;
+    line-height: 5.6vw;
+    padding: 4.5vw 1.2vw;
+    border-radius: 2.4vw;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .decision-item-btn svg {
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+
+  .descision-swiper-container {
+    padding-bottom: 9.6vw;
+  }
+
+  .descision-swiper-container .swiper-pagination-bullet {
+    border-radius: 4.2vw;
+    width: 5.3vw;
+    height: 1vw;
+  }
+
+  .descision-swiper-container .swiper-pagination-bullet-active {
+    border-radius: 4.2vw;
+    width: 10.4vw;
+    height: 1vw;
+  }
+
+  .b2b-company-list {
+    flex-wrap: wrap;
+    gap: 1.3vw;
+  }
+
+  /* .company-swiper-container {
+    overflow: visible;
+  } */
+
+  .b2b-company-item {
+    flex-basis: calc((100% - 1.3vw) / 2);
+    height: 24.5vw;
+  }
+
+  .b2b-company-item img {
+    transform: scale(0.5);
+  }
+
+  .b2b-section-title {
+    font-size: 6.4vw;
+    line-height: 7.4vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .b2b-decision-section {
+    padding: 15vw 0;
+  }
+
+  .b2b-form-section {
+    padding: 10.6vw 0;
+  }
+
+  .b2b-tariff-section {
+    padding-bottom: 15vw;
+  }
+
+  .swiper-btn-next {
+    display: none;
+  }
+
+  .main-footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-number {
+    font-size: 5.3vw;
+    line-height: 5.3vw;
+    gap: 2.1vw;
+    padding: 4.2vw;
+    border-radius: 2.1vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .footer-number-backdrop-icon {
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+
+  .footer-question-title {
+    font-size: 3.7vw;
+    color: #9a9aa2;
+    margin-bottom: 2.1vw;
+  }
+
+  .footer-email-address {
+    gap: 2.1vw;
+    font-size: 4.2vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .copy-icon {
+    width: 5.3vw;
+    height: 5.3vw;
+  }
+
+  .footer-info-container {
+    font-size: 3.7vw;
+    width: 70vw;
+    gap: 4vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .location-icon {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .footer-nav-container {
+    flex-direction: column;
+    gap: 5.2vw;
+    justify-content: space-between;
+  }
+
+  .footer-question-title.nav {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-nav-block {
+    max-height: 0vw;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .footer-nav-block.active {
+    height: max-content;
+    max-height: 1000px;
+    overflow: hidden;
+    margin-top: 5vw;
+  }
+
+  .footer-nav-link-item {
+    display: block;
+    font-size: 3.3vw;
+    line-height: 3.3vw;
+  }
+
+  .footer-nav-link-item {
+    margin-bottom: 3vw;
+  }
+
+  .footer-backdrop-container {
+    border-bottom: 0.07vw solid rgba(242, 243, 247, 1);
+  }
+
+  .footer-question-title.nav svg {
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .footer-social-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .footer-line.mobile {
+    display: block;
+    width: 100%;
+    margin-top: 12.8vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .footer-logo {
+    width: 24vw;
+    height: 10.6vw;
+  }
+
+  .footer-bottom-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-bottom-text {
+    font-size: 3.2vw;
+    color: #9a9aa2;
+  }
+
+  .footer-bottom-text:nth-child(2) {
+    width: 100%;
+  }
+
+  .footer-line.mobile.second {
+    margin-top: 8.5vw;
+    margin-bottom: 8.5vw;
+  }
+
+  footer {
+    background-color: #ffffff;
+    padding: 9vw 0;
+  }
+
+  .footer-social-link {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 2.1vw;
+  }
+
+  .footer-social-icon {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .footer-social-link-container {
+    gap: 3.2vw;
+  }
 }
 
-.form-btn-2b2.question{
-  margin-top: 8.5vw;
+@media (min-width: 1024px) {
+  .footer-question-title.nav svg {
+    display: none;
+  }
+
+  .footer-line.mobile {
+    display: none;
+  }
+
 
 }
-}
-
-
