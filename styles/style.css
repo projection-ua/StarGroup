@@ -36,7 +36,7 @@ img {
 
 body {
   margin: 0;
-  background: #f9f9f9;
+  background: rgba(249, 249, 249, 1);
 }
 
 input,
@@ -63,6 +63,7 @@ section {
   --primary-orange: #ff5300;
   --primary-orange-bg: #ffe3d5;
   --primary-transparrent-blue: rgba(255, 255, 255, 0.1);
+  --primaty-yellow-bg: rgba(255, 224, 0, 0.1);
 }
 
 .primary-color {
@@ -5893,7 +5894,7 @@ footer {
     padding: 5.3vw;
     border-radius: 3.2vw;
     flex-direction: column;
-    flex-basis: 82vw;
+    flex-basis: auto;
   }
 
   .we-can-icon-container {
@@ -7026,11 +7027,10 @@ footer {
 }
 
 .about-hero-image-container {
-  width: 54.7vw;
+  width: 58vw;
   border-radius: 1vw;
   overflow: hidden;
   margin-left: auto;
-  height: 25vw;
 }
 
 .about-hero-image-container img {
@@ -7060,7 +7060,7 @@ footer {
 
 /* characterictics-section =================================================== */
 .internet-tv-hero-section.about {
-  background-color: transparent;
+  background-color: rgba(242, 243, 247, 1);
 }
 
 .characterisctics-list {
@@ -7141,7 +7141,6 @@ footer {
 
 .about-swiper-relative-container {
   position: relative;
-  width: 100%;
 }
 
 .internet-tv-hero-image-container.about .swiper-pagination-bullet {
@@ -7427,6 +7426,418 @@ footer {
 
 .swiper-license-container {
   width: 50vw;
+}
+
+.video-link-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  margin-bottom: 1.2vw;
+  cursor: pointer;
+}
+
+.video-link-container svg {
+  fill: #3358ff;
+  width: 1.6vw;
+  height: 1.6vw;
+}
+
+.video-link-container p {
+  font-family: "Exo 2";
+  font-size: 1.2vw;
+  font-weight: 600;
+  line-height: 1.4vw;
+  text-align: left;
+  color: var(--primary-color);
+}
+
+/* MISSION SECTION ========================================= */
+
+.mission-section {
+  padding-top: 2vw;
+}
+
+.misiion-title {
+  font-family: "Manrope";
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 1.4vw;
+  text-align: left;
+  margin-bottom: 1.6vw;
+}
+
+.mission-text {
+  font-family: "Exo 2";
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 2.5vw;
+  text-align: left;
+  width: 62vw;
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  margin-bottom: 4vw;
+}
+
+.supervision-tab-list.mission {
+  gap: 0.8vw;
+}
+
+.supervision-tab-list.mission .supervision-tab-item {
+  flex-basis: calc((100% - 0.8vw) / 2);
+}
+
+.supervision-tab-list.mission .supervision-tab-item-img {
+  margin-bottom: 1.2vw;
+}
+
+.supervision-tab-list.mission .supervision-tab-item {
+  border-radius: 1vw;
+}
+
+.supervision-tab-list.mission .supervision-tab-item-text-container {
+  padding: 1.6vw;
+}
+
+/* PRINCIPALES =============================================== */
+
+.principales-section {
+  padding-bottom: 2vw;
+}
+
+.principales-section-title {
+  font-family: "Exo 2";
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 2.1vw;
+  text-align: center;
+  margin-bottom: 0.8vw;
+}
+
+.principales-section-title-text {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.3vw;
+  text-align: center;
+  width: 37vw;
+  margin: 0 auto;
+  margin-bottom: 2vw;
+}
+
+.principales-list {
+  display: flex;
+  gap: 0.7vw;
+}
+
+.principales-item {
+  border-radius: 0.6vw;
+  padding: 2vw;
+  flex-basis: calc((100% - 3 * 0.7vw) / 4);
+}
+
+.principales-item:nth-child(even) {
+  background-color: var(--primary-blue-bg);
+}
+
+.principales-item:nth-child(even) .principles-item-img-wrapper {
+  background-color: var(--primary-yellow);
+}
+
+.principales-item:nth-child(even) {
+  background-color: rgba(255, 224, 0, 0.1);
+}
+
+.principales-item:nth-child(odd) {
+  background-color: rgba(235, 238, 255, 1);
+}
+
+.principales-item:nth-child(odd) .principles-item-img-wrapper {
+  background-color: var(--primary-color);
+}
+
+.principles-item-img-wrapper {
+  width: 4.1vw;
+  height: 4.1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4vw;
+  margin-bottom: 1.6vw;
+}
+
+.principales-item svg {
+  width: 2.1vw;
+  height: 2.1vw;
+}
+
+.principales-item-title {
+  font-family: "Manrope";
+  font-size: 1vw;
+  font-weight: 700;
+  line-height: 1.4vw;
+  text-align: left;
+  margin-bottom: 0.8vw;
+}
+
+.principales-item-text {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+  text-align: left;
+}
+
+/* FORM SECTIO b2b =============================== */
+
+.b2b-form-section {
+  background-color: #f2f3f7;
+  padding-top: 4vw;
+  padding-bottom: 5vw;
+}
+
+.b2b-form-container {
+  width: 100%;
+}
+
+.b2b-checkbox-form-container {
+  display: flex;
+  background-color: #ffffff;
+  padding: 3.1vw;
+  border-radius: 0.8vw;
+  width: 100%;
+  gap: 2.5vw;
+}
+
+.form-container-title {
+  font-family: "Exo 2";
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 2.2vw;
+  margin-bottom: 0.8vw;
+}
+
+.form-container-text {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+  text-align: left;
+  margin-bottom: 1.2vw;
+  width: 27vw;
+  opacity: 0.7;
+}
+
+.b2b-form {
+}
+
+.b2b-form label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 1vw;
+  text-align: left;
+  gap: 0.6vw;
+  flex-basis: calc((100% - 0.8vw) / 2);
+}
+
+.b2b-form label:not(:last-child) {
+  margin-bottom: 0.8vw;
+}
+
+.b2b-form input {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+  text-align: left;
+  padding: 1vw;
+  border: 0.07vw solid #f2f2f2;
+  border-radius: 0.3vw;
+}
+
+.b2b-form input::placeholder {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.2vw;
+}
+
+.form-btn-2b2 {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 700;
+  line-height: 0.8vw;
+  text-align: left;
+  border: none;
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 1.2vw 0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.4vw;
+  margin-top: 1.2vw;
+  margin-bottom: 1.2vw;
+
+  transition: 0.3s;
+}
+
+.b2b-form button:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-color);
+}
+
+.b2b-bottom-tetxt p {
+  font-family: "Manrope";
+  font-size: 0.6vw;
+  font-weight: 500;
+  line-height: 0.8vw;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.b2b-bottom-tetxt {
+  display: flex;
+  gap: 0.3vw;
+}
+
+.b2b-bottom-tetxt a {
+  font-family: "Manrope";
+  font-weight: 900;
+  text-align: left;
+  font-size: 0.6vw;
+  line-height: 0.8vw;
+}
+
+.b2b-form-image-wrapper {
+  border-radius: 1vw;
+  overflow: hidden;
+  width: 37vw;
+  flex-shrink: 0;
+}
+
+.b2b-form-section .container {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.b2b-checkbox-container label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b2b-checkbox-container label p {
+  font-family: "Manrope";
+  font-size: 0.9vw;
+  font-weight: 600;
+  line-height: 0.9vw;
+  text-align: left;
+  opacity: 0.5;
+}
+
+.b2b-checkbox-container label:not(:last-child) {
+  margin-bottom: 0.8vw;
+}
+
+.b2b-question-form-labels {
+  display: flex;
+  gap: 0.8vw;
+}
+
+.b2b-form-section.vacation{
+  padding: 10vw 0;
+}
+
+/* VACATION SECTION ================================================ */
+.vacation-section {
+  padding: 4vw 0;
+}
+
+.vacation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7vw;
+  margin-bottom: 2vw;
+}
+
+.vacation-item {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 15.5vw;
+  justify-content: space-between;
+  border-radius: 0.8vw;
+  padding: 1.6vw;
+  flex-basis: calc((100% - 3 * 0.7vw) / 4);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.vacation-title {
+  font-family: "Exo 2";
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 1.2vw;
+  margin-bottom: 0.8vw;
+}
+
+.vacation-desc {
+  font-family: "Manrope";
+  font-size: 0.7vw;
+  font-weight: 500;
+  line-height: 1.1vw;
+  margin-bottom: 0.8vw;
+}
+
+.vacation-location {
+  display: flex;
+  gap: 0.4vw;
+  align-items: center;
+}
+
+.vacation-location img {
+  width: 1vw;
+}
+
+.vacation-location p {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 0.8vw;
+}
+
+.vacation-link {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 1vw;
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.vacation-link svg {
+  width: 0.8vw;
+  height: 0.8vw;
+  stroke: black;
+}
+
+.vacation-item:hover {
+  box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.08);
+}
+
+.vacation-item:hover .vacation-link {
+  opacity: 1;
+  gap: 0.8vw;
 }
 
 /* FOOTER ADDAPTIVE ================================================== */
@@ -8037,7 +8448,7 @@ footer {
 
   .about-hero-image-container {
     width: 100%;
-    border-radius: 1vw;
+    border-radius: 3.2vw;
     overflow: hidden;
     height: auto;
     margin-left: auto;
@@ -8149,5 +8560,391 @@ footer {
 
   .license-section {
     padding-bottom: 15vw;
+  }
+
+  .about-swiper-relative-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .video-link-container {
+    gap: 3.2vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .video-link-container svg {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .video-link-container p {
+    font-size: 4.2vw;
+    line-height: 5vw;
+  }
+
+  .mission-text {
+    font-size: 5.8vw;
+    line-height: 6vw;
+    width: auto;
+  }
+
+  .mission-text a {
+    font-size: 5.8vw;
+    line-height: 9vw;
+    border-bottom: 1.06vw dashed var(--primary-color);
+    white-space: nowrap;
+  }
+
+  .mission-text svg {
+    width: 5.8vw;
+    height: 5.8vw;
+    margin-right: 0.5vw;
+  }
+
+  .misiion-title {
+    font-size: 3.7vw;
+    line-height: 5vw;
+    margin-bottom: 4.2vw;
+    margin-left: 7.2vw;
+  }
+
+  .mission-container {
+    padding: 0 7.2vw;
+    margin-bottom: 15vw;
+    gap: 4vw;
+  }
+
+  .supervision-tab-list.mission .supervision-tab-item-text-container {
+    padding: 4.2vw;
+  }
+
+  .supervision-tab-list.mission .supervision-tab-item {
+    border-radius: 3.2vw;
+  }
+
+  .supervision-tab-list.mission .supervision-tab-item-img {
+    margin-bottom: 6.4vw;
+  }
+
+  .supervision-tab-list.mission {
+    gap: 3.2vw;
+  }
+
+  .mission-section {
+    padding-top: 10vw;
+  }
+
+  /* reviews-principales-section ============================================= */
+
+  .reviews-container {
+    flex-direction: column-reverse;
+    gap: 10.6vw;
+  }
+
+  .principales-section-title {
+    font-size: 6.4vw;
+    line-height: 7.4vw;
+    text-align: left;
+    margin-bottom: 3.2vw;
+  }
+
+  .principales-section-title-text {
+    font-size: 4.2vw;
+    line-height: 6.6vw;
+    text-align: left;
+    width: auto;
+    margin: 0 0;
+    margin-bottom: 6.4vw;
+  }
+
+  .principales-list {
+    flex-wrap: wrap;
+    gap: 3.2vw;
+  }
+
+  .principales-item {
+    border-radius: 3.2vw;
+    padding: 5.3vw;
+    flex-basis: 100%;
+  }
+
+  .principles-item-img-wrapper {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 2.1vw;
+    margin-bottom: 5.3vw;
+  }
+
+  .principales-item svg {
+    width: 8.5vw;
+    height: 8.5vw;
+  }
+
+  .principales-item-title {
+    font-size: 4.8vw;
+    line-height: 6.4vw;
+    text-align: left;
+    margin-bottom: 2.1vw;
+  }
+
+  .principales-item-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+  }
+
+  .principales-section {
+    padding-bottom: 7.5vw;
+  }
+
+  .reviews-section-title {
+    font-size: 6.4vw;
+    line-height: 7.4vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .reviews-coment-item {
+    border-radius: 4.2vw;
+    padding: 4.2vw;
+  }
+
+  .author-image-wrapper {
+    width: 12.2vw;
+  }
+
+  .author-info-container h4 {
+    font-size: 4.2vw;
+  }
+
+  .author-info-container span {
+    display: none;
+  }
+
+  .comment-author-container {
+    margin-bottom: 1.2vw;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.2vw;
+  }
+
+  .coment-rating-icons-container svg {
+    width: 29.8vw;
+    height: 4.2vw;
+  }
+
+  .comment-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    margin-bottom: 5.3vw;
+  }
+
+  .comment button span {
+    font-size: 3.7vw;
+  }
+
+  .btnIcon {
+    width: 3.7vw;
+    height: 3.7vw;
+  }
+
+  .comment button {
+    gap: 2.1vw;
+  }
+
+  .reviews-coment-item:not(:last-child) {
+    margin-bottom: 2.1vw;
+  }
+
+  .reviews-section .question-link {
+    margin-top: 6.4vw;
+  }
+
+  .reviews-info-container {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .reviews-info-item {
+    border-radius: 3.2vw;
+    padding: 6.9vw 4.2vw;
+  }
+
+  .reviews-icon-wrapper {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 2.1vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .reviews-icon-wrapper svg {
+    width: 8.5vw;
+    height: 8.5vw;
+  }
+
+  .reviews-info-title {
+    font-size: 5.8vw;
+    line-height: 6.4vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .reviews-info-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .reviews-info-item:nth-child(1) {
+    margin-bottom: 2.1vw;
+  }
+
+  .reviews-info-btn {
+    border-radius: 2.4vw;
+    padding: 5.3vw 0;
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+  }
+
+  .reviews-section {
+    padding-top: 7.5vw;
+    padding-bottom: 15vw;
+  }
+
+  .b2b-form-image-wrapper {
+    display: none;
+  }
+
+  .b2b-form-container {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .b2b-checkbox-form-container {
+    padding: 8.5vw 6.4vw;
+    border-radius: 3.2vw;
+    gap: 2.5vw;
+    flex-direction: column;
+  }
+
+  .form-container-title {
+    font-size: 6.4vw;
+    line-height: 6.9vw;
+    margin-bottom: 3.2vw;
+  }
+
+  .form-container-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    margin-bottom: 8.5vw;
+    width: auto;
+  }
+
+  .b2b-form label {
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+    gap: 0.6vw;
+  }
+
+  .b2b-form input::placeholder {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+  }
+
+  .b2b-form input {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    padding: 4.2vw;
+    border: 0.4vw solid #f2f2f2;
+    border-radius: 1.6vw;
+  }
+
+  .b2b-form label:not(:last-child) {
+    margin-bottom: 4.2vw;
+  }
+
+  .form-btn-2b2 {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+    padding: 6.4vw 0;
+    border-radius: 2.1vw;
+    margin-top: 1.2vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .b2b-bottom-tetxt {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .b2b-bottom-tetxt p {
+    font-size: 3.2vw;
+    line-height: 5vw;
+  }
+
+  .b2b-bottom-tetxt a {
+    font-size: 3.2vw;
+    line-height: 5vw;
+  }
+
+  .b2b-question-form-labels {
+    flex-direction: column;
+    gap: 0.8vw;
+  }
+
+  .form-btn-2b2.question {
+    margin-top: 8.5vw;
+  }
+
+  /* VACATION =============================================== */
+
+  .vacation-item {
+    flex-basis: 100%;
+    padding: 8.5vw ;
+    border-radius: 4.2vw;
+    min-height: 68.2vw;
+  }
+
+  .vacation-title {
+    font-size: 5.3vw;
+    line-height: 6.4vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .vacation-desc {
+    font-size: 3.7vw;
+    line-height: 5.8vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .vacation-location img {
+    width: 5.3vw;
+  }
+
+  .vacation-location p {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+  }
+
+  .vacation-location {
+    gap: 2.1vw;
+  }
+
+  .vacation-link {
+    font-size: 3.7vw;
+    line-height: 5vw;
+    gap:2.1vw;
+}
+
+.vacation-link svg {
+    width: 3.7vw;
+    height: 3.7vw;
+}
+
+.vacation-section {
+    padding: 8.5vw 0;
+    padding-bottom: 15vw;
+}
+
+.vacation-list {
+    gap: 3.2vw;
+    margin-bottom: 8.5vw;
 }
 }

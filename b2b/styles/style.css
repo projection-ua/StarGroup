@@ -8245,6 +8245,10 @@ footer {
   .footer-social-link-container {
     gap: 3.2vw;
   }
+
+  .b2b-form-section.question {
+    margin-bottom: 15vw;
+}
 }
 
 @media (min-width: 1024px) {
