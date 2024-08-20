@@ -175,16 +175,24 @@
                 <li>
                   <a class="header-bottom-nav-link" href="">Відеонагляд</a>
                 </li>
-                <li><a class="header-bottom-nav-link" href="">СКС, монтаж</a></li>
+                <li>
+                  <a class="header-bottom-nav-link" href="">СКС, монтаж</a>
+                </li>
                 <li>
                   <a class="header-bottom-nav-link" href="">Охорона</a>
                 </li>
-                <li><a class="header-bottom-nav-link" href="">IT- аутсорсинг</a></li>
                 <li>
-                  <a class="header-bottom-nav-link" href="">Житловим комплексам</a>
+                  <a class="header-bottom-nav-link" href="">IT- аутсорсинг</a>
                 </li>
                 <li>
-                  <a class="header-bottom-nav-link" href="">Рішення для бізнесу</a>
+                  <a class="header-bottom-nav-link" href=""
+                    >Житловим комплексам</a
+                  >
+                </li>
+                <li>
+                  <a class="header-bottom-nav-link" href=""
+                    >Рішення для бізнесу</a
+                  >
                 </li>
                 <li>
                   <a class="header-bottom-nav-link" href="">Інше</a>
@@ -330,7 +338,9 @@
                   </defs>
                 </svg>
 
-                <h4 class="b2b-we-can-item-title">Персональний менеджер</h4>
+                <div class="b2b-we-can-item-title-container">
+                  <h4 class="b2b-we-can-item-title">Персональний менеджер</h4>
+                </div>
               </div>
               <p class="b2b-we-can-item-text">
                 Індивідуальна підтримка, допоможе вирішити всі питання,
@@ -413,7 +423,9 @@
                   </defs>
                 </svg>
 
-                <h4 class="b2b-we-can-item-title">Комплексні рішення</h4>
+                <div class="b2b-we-can-item-title-container">
+                  <h4 class="b2b-we-can-item-title">Комплексні рішення</h4>
+                </div>
               </div>
               <p class="b2b-we-can-item-text">
                 Отримайте повний набір послуг, включаючи високошвидкісний
@@ -469,8 +481,9 @@
                     fill="black"
                   />
                 </svg>
-
-                <h4 class="b2b-we-can-item-title">Швидкість до 10 Гбіт/с</h4>
+                <div class="b2b-we-can-item-title-container">
+                  <h4 class="b2b-we-can-item-title">Швидкість до 10 Гбіт/с</h4>
+                </div>
               </div>
               <p class="b2b-we-can-item-text">
                 Працюйте з великими обсягами даних, використовуйте хмарні
@@ -507,7 +520,9 @@
                   </defs>
                 </svg>
 
-                <h4 class="b2b-we-can-item-title">Підтримка 24/7</h4>
+                <div class="b2b-we-can-item-title-container">
+                  <h4 class="b2b-we-can-item-title">Підтримка 24/7</h4>
+                </div>
               </div>
               <p class="b2b-we-can-item-text">
                 Підвищуйте ефективність свого бізнесу з надійним інтернетом для
@@ -558,8 +573,9 @@
                     </clipPath>
                   </defs>
                 </svg>
-
-                <h4 class="b2b-we-can-item-title">Доступні ціни</h4>
+                <div class="b2b-we-can-item-title-container">
+                  <h4 class="b2b-we-can-item-title">Доступні ціни</h4>
+                </div>
               </div>
               <p class="b2b-we-can-item-text">
                 Пропонуємо конкурентоспроможні тарифи, які дозволяють
@@ -607,9 +623,11 @@
                   </defs>
                 </svg>
 
-                <h4 class="b2b-we-can-item-title">
-                  Резервне живлення до 72 годин
-                </h4>
+                <div class="b2b-we-can-item-title-container">
+                  <h4 class="b2b-we-can-item-title">
+                    Резервне живлення до 72 годин
+                  </h4>
+                </div>
               </div>
               <p class="b2b-we-can-item-text">
                 Безперебійний доступ до інтернету навіть під час тривалих
@@ -620,331 +638,341 @@
         </div>
       </section>
 
-      <section class="b2b-tariff-section">
+      <section class="b2b-tariff-section without-title">
         <div class="container">
-          <div class="b2b-tariff-item-list">
-            <div class="b2b-tariff-item white">
-              <div class="tariff-marker-container">
-                <div class="tariff-popular-marker">Популярний</div>
-                <div class="special-item-action">Акція</div>
+          <div class="b2b-tariffes-swiper-container">
+            <div class="swiper-wrapper b2b-tariff-item-list">
+              <div class="swiper-slide b2b-tariff-item white">
+                <div class="tariff-marker-container">
+                  <div class="tariff-popular-marker">Популярний</div>
+                  <div class="special-item-action">Акція</div>
+                </div>
+                <div>
+                  <h3 class="b2b-tariff-item-title">
+                    Для малого і середнього бізнесу
+                  </h3>
+
+                  <div class="tariff-info-container-list">
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Безлімітний інтернет</p>
+
+                        <div class="tariff-enth-speed-container">
+                          <span class="enth-speed-span">до</span>
+
+                          <p class="enth-speed-value">100</p>
+                          <span class="enth-speed-span">Мбіт/с</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Резервне живлення</p>
+
+                        <div class="tariff-enth-speed-container">
+                          <p class="enth-speed-value">4 - 8</p>
+                          <span class="enth-speed-span">години</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Кількість ком’ютерів</p>
+
+                        <div class="tariff-enth-speed-container">
+                          <p class="enth-speed-value">1 - 3</p>
+                          <span class="enth-speed-span">шт</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tariff-equipment-btn">
+                    <svg class="tariff-item-icon">
+                      <use
+                        href="../images/b2b-tariff-item-icons.svg#icon-router"
+                      ></use>
+                    </svg>
+                    <p class="equipment-text">Обладнання</p>
+                  </div>
+
+                  <div class="b2b-tariff-option-container">
+                    <div class="b2b-tariff-option-item">
+                      <p>Віділена IP-адреса</p>
+                      <span>-</span>
+                    </div>
+                    <div class="b2b-tariff-option-item">
+                      <p>Персональний менеджер</p>
+                      <span>-</span>
+                    </div>
+                    <div class="b2b-tariff-option-item">
+                      <p>SLA</p>
+                      <span>-</span>
+                    </div>
+                  </div>
+
+                  <div class="bonus-tag-container">
+                    <p class="bonus-tag-text">Бонус</p>
+                  </div>
+
+                  <div class="b2b-tariff-item-add-info-container">
+                    <div class="add-info-item">
+                      25% знижка на монтажні роботи додаткових послу
+                    </div>
+                    <div class="add-info-item">ІТ Аудит 1 година</div>
+                    <div class="add-info-item">
+                      Для нових клієнтів діє знижка при умові оплати початкового
+                      платежу за послугу Інтернету за 2 місяці.
+                    </div>
+                  </div>
+                </div>
+
+                <button class="b2b-tariff-button primary">
+                  Замовити дзвінок
+                </button>
               </div>
-              <div>
-                <h3 class="b2b-tariff-item-title">
-                  Для малого і середнього бізнесу
-                </h3>
 
-                <div class="tariff-info-container-list">
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Безлімітний інтернет</p>
+              <div class="swiper-slide b2b-tariff-item primary">
+                <div>
+                  <h3 class="b2b-tariff-item-title">
+                    Для бізнесу в житлових комплексах
+                  </h3>
 
-                      <div class="tariff-enth-speed-container">
-                        <span class="enth-speed-span">до</span>
+                  <div class="tariff-info-container-list">
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Безлімітний інтернет</p>
 
-                        <p class="enth-speed-value">100</p>
-                        <span class="enth-speed-span">Мбіт/с</span>
+                        <div class="tariff-enth-speed-container">
+                          <span class="enth-speed-span">до</span>
+
+                          <p class="enth-speed-value">300</p>
+                          <span class="enth-speed-span">Мбіт/с</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Резервне живлення</p>
+
+                        <div class="tariff-enth-speed-container">
+                          <p class="enth-speed-value">8 - 15</p>
+                          <span class="enth-speed-span">години</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Кількість ком’ютерів</p>
+
+                        <div class="tariff-enth-speed-container">
+                          <p class="enth-speed-value">4 - 15</p>
+                          <span class="enth-speed-span">шт</span>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
+                  <div class="tariff-equipment-btn">
+                    <svg class="tariff-item-icon">
                       <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
+                        href="../images/b2b-tariff-item-icons.svg#icon-router"
                       ></use>
                     </svg>
-                    <div>
-                      <p class="info-container-title">Резервне живлення</p>
+                    <p class="equipment-text">Обладнання</p>
+                  </div>
 
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">4 - 8</p>
-                        <span class="enth-speed-span">години</span>
-                      </div>
+                  <div class="b2b-tariff-option-container">
+                    <div class="b2b-tariff-option-item">
+                      <p>Віділена IP-адреса</p>
+                      <span>+</span>
+                    </div>
+                    <div class="b2b-tariff-option-item">
+                      <p>Персональний менеджер</p>
+                      <span>-</span>
+                    </div>
+                    <div class="b2b-tariff-option-item">
+                      <p>SLA</p>
+                      <span>-</span>
                     </div>
                   </div>
 
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Кількість ком’ютерів</p>
+                  <div class="bonus-tag-container">
+                    <p class="bonus-tag-text">Бонус</p>
+                  </div>
 
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">1 - 3</p>
-                        <span class="enth-speed-span">шт</span>
-                      </div>
+                  <div class="b2b-tariff-item-add-info-container">
+                    <div class="add-info-item">
+                      25% знижка на монтажні роботи додаткових послу
+                    </div>
+                    <div class="add-info-item">
+                      ІТ Аутсорсинг та підтримка 1 година
+                    </div>
+                    <div class="add-info-item">ІТ Аудит 2 години</div>
+
+                    <div class="add-info-item">1 виїзд майстра в місяць</div>
+                    <div class="add-info-item">
+                      Для нових клієнтів діє знижка при умові оплати початкового
+                      платежу за послугу Інтернету за 2 місяці.
                     </div>
                   </div>
                 </div>
 
-                <div class="tariff-equipment-btn">
-                  <svg class="tariff-item-icon">
-                    <use
-                      href="../images/b2b-tariff-item-icons.svg#icon-router"
-                    ></use>
-                  </svg>
-                  <p class="equipment-text">Обладнання</p>
-                </div>
-
-                <div class="b2b-tariff-option-container">
-                  <div class="b2b-tariff-option-item">
-                    <p>Віділена IP-адреса</p>
-                    <span>-</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>Персональний менеджер</p>
-                    <span>-</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>SLA</p>
-                    <span>-</span>
-                  </div>
-                </div>
-
-                <div class="bonus-tag-container">
-                  <p class="bonus-tag-text">Бонус</p>
-                </div>
-
-                <div class="b2b-tariff-item-add-info-container">
-                  <div class="add-info-item">
-                    25% знижка на монтажні роботи додаткових послу
-                  </div>
-                  <div class="add-info-item">ІТ Аудит 1 година</div>
-                  <div class="add-info-item">
-                    Для нових клієнтів діє знижка при умові оплати початкового
-                    платежу за послугу Інтернету за 2 місяці.
-                  </div>
-                </div>
+                <button class="b2b-tariff-button white">
+                  Замовити дзвінок
+                </button>
               </div>
 
-              <button class="b2b-tariff-button primary">
-                Замовити дзвінок
-              </button>
+              <div class="swiper-slide b2b-tariff-item dark-primary">
+                <div class="tariff-marker-container">
+                  <div class="tariff-popular-marker">Популярний</div>
+                </div>
+                <div>
+                  <h3 class="b2b-tariff-item-title">
+                    Для великого<br />
+                    бізнесу
+                  </h3>
+
+                  <div class="tariff-info-container-list">
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Безлімітний інтернет</p>
+
+                        <div class="tariff-enth-speed-container">
+                          <span class="enth-speed-span">до</span>
+
+                          <p class="enth-speed-value">1000</p>
+                          <span class="enth-speed-span">Мбіт/с</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Резервне живлення</p>
+
+                        <div class="tariff-enth-speed-container">
+                          <p class="enth-speed-value">15 - 24</p>
+                          <span class="enth-speed-span">години</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tariff-info-container">
+                      <svg class="tariff-item-icon grey">
+                        <use
+                          href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
+                        ></use>
+                      </svg>
+                      <div>
+                        <p class="info-container-title">Кількість ком’ютерів</p>
+
+                        <div class="tariff-enth-speed-container">
+                          <span class="enth-speed-span">до</span>
+
+                          <p class="enth-speed-value">100</p>
+                          <span class="enth-speed-span">шт</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tariff-equipment-btn">
+                    <svg class="tariff-item-icon">
+                      <use
+                        href="../images/b2b-tariff-item-icons.svg#icon-router"
+                      ></use>
+                    </svg>
+                    <p class="equipment-text">Обладнання</p>
+                  </div>
+
+                  <div class="b2b-tariff-option-container">
+                    <div class="b2b-tariff-option-item">
+                      <p>Віділена IP-адреса</p>
+                      <span>+</span>
+                    </div>
+                    <div class="b2b-tariff-option-item">
+                      <p>Персональний менеджер</p>
+                      <span>+</span>
+                    </div>
+                    <div class="b2b-tariff-option-item">
+                      <p>SLA</p>
+                      <span>+</span>
+                    </div>
+                  </div>
+
+                  <div class="bonus-tag-container">
+                    <p class="bonus-tag-text">Бонус</p>
+                  </div>
+
+                  <div class="b2b-tariff-item-add-info-container">
+                    <div class="add-info-item">
+                      25% знижка на монтажні роботи додаткових послу
+                    </div>
+                    <div class="add-info-item">
+                      ІТ Аутсорсинг підтримка 2 година, 1 виклик майстра
+                      безкоштовний
+                    </div>
+                    <div class="add-info-item">ІТ Аудит 2 години</div>
+                    <div class="add-info-item">2 виїзда майстра в місяць</div>
+                    <div class="add-info-item">
+                      Для нових клієнтів діє знижка при умові оплати початкового
+                      платежу за послугу Інтернету за 2 місяці.
+                    </div>
+                  </div>
+                </div>
+
+                <button class="b2b-tariff-button white">
+                  Замовити дзвінок
+                </button>
+              </div>
             </div>
-            <div class="b2b-tariff-item primary">
-              <div>
-                <h3 class="b2b-tariff-item-title">
-                  Для бізнесу в житлових комплексах
-                </h3>
 
-                <div class="tariff-info-container-list">
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Безлімітний інтернет</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <span class="enth-speed-span">до</span>
-
-                        <p class="enth-speed-value">300</p>
-                        <span class="enth-speed-span">Мбіт/с</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Резервне живлення</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">8 - 15</p>
-                        <span class="enth-speed-span">години</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Кількість ком’ютерів</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">4 - 15</p>
-                        <span class="enth-speed-span">шт</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tariff-equipment-btn">
-                  <svg class="tariff-item-icon">
-                    <use
-                      href="../images/b2b-tariff-item-icons.svg#icon-router"
-                    ></use>
-                  </svg>
-                  <p class="equipment-text">Обладнання</p>
-                </div>
-
-                <div class="b2b-tariff-option-container">
-                  <div class="b2b-tariff-option-item">
-                    <p>Віділена IP-адреса</p>
-                    <span>+</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>Персональний менеджер</p>
-                    <span>-</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>SLA</p>
-                    <span>-</span>
-                  </div>
-                </div>
-
-                <div class="bonus-tag-container">
-                  <p class="bonus-tag-text">Бонус</p>
-                </div>
-
-                <div class="b2b-tariff-item-add-info-container">
-                  <div class="add-info-item">
-                    25% знижка на монтажні роботи додаткових послу
-                  </div>
-                  <div class="add-info-item">
-                    ІТ Аутсорсинг та підтримка 1 година
-                  </div>
-                  <div class="add-info-item">ІТ Аудит 2 години</div>
-
-                  <div class="add-info-item">1 виїзд майстра в місяць</div>
-                  <div class="add-info-item">
-                    Для нових клієнтів діє знижка при умові оплати початкового
-                    платежу за послугу Інтернету за 2 місяці.
-                  </div>
-                </div>
-              </div>
-
-              <button class="b2b-tariff-button white">Замовити дзвінок</button>
-            </div>
-            <div class="b2b-tariff-item dark-primary">
-              <div class="tariff-marker-container">
-                <div class="tariff-popular-marker">Популярний</div>
-              </div>
-              <div>
-                <h3 class="b2b-tariff-item-title">
-                  Для великого<br />
-                  бізнесу
-                </h3>
-
-                <div class="tariff-info-container-list">
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-internet-speed-wifi-2"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Безлімітний інтернет</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <span class="enth-speed-span">до</span>
-
-                        <p class="enth-speed-value">1000</p>
-                        <span class="enth-speed-span">Мбіт/с</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-charging-station"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Резервне живлення</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <p class="enth-speed-value">15 - 24</p>
-                        <span class="enth-speed-span">години</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="tariff-info-container">
-                    <svg class="tariff-item-icon grey">
-                      <use
-                        href="../images/b2b-tariff-item-icons.svg#icon-computer-speaker"
-                      ></use>
-                    </svg>
-                    <div>
-                      <p class="info-container-title">Кількість ком’ютерів</p>
-
-                      <div class="tariff-enth-speed-container">
-                        <span class="enth-speed-span">до</span>
-
-                        <p class="enth-speed-value">100</p>
-                        <span class="enth-speed-span">шт</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tariff-equipment-btn">
-                  <svg class="tariff-item-icon">
-                    <use
-                      href="../images/b2b-tariff-item-icons.svg#icon-router"
-                    ></use>
-                  </svg>
-                  <p class="equipment-text">Обладнання</p>
-                </div>
-
-                <div class="b2b-tariff-option-container">
-                  <div class="b2b-tariff-option-item">
-                    <p>Віділена IP-адреса</p>
-                    <span>+</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>Персональний менеджер</p>
-                    <span>+</span>
-                  </div>
-                  <div class="b2b-tariff-option-item">
-                    <p>SLA</p>
-                    <span>+</span>
-                  </div>
-                </div>
-
-                <div class="bonus-tag-container">
-                  <p class="bonus-tag-text">Бонус</p>
-                </div>
-
-                <div class="b2b-tariff-item-add-info-container">
-                  <div class="add-info-item">
-                    25% знижка на монтажні роботи додаткових послу
-                  </div>
-                  <div class="add-info-item">
-                    ІТ Аутсорсинг підтримка 2 година, 1 виклик майстра
-                    безкоштовний
-                  </div>
-                  <div class="add-info-item">ІТ Аудит 2 години</div>
-                  <div class="add-info-item">2 виїзда майстра в місяць</div>
-                  <div class="add-info-item">
-                    Для нових клієнтів діє знижка при умові оплати початкового
-                    платежу за послугу Інтернету за 2 місяці.
-                  </div>
-                </div>
-              </div>
-
-              <button class="b2b-tariff-button white">Замовити дзвінок</button>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -1184,56 +1212,12 @@
         </div>
       </section>
 
-      <section class="services-section b2b">
+      <section class="services-section b2b in-pages">
         <div class="container">
           <h2 class="b2b-section-title">Додаткові послуги</h2>
 
           <div class="services-swiper-container">
             <div class="swiper-wrapper services-list">
-              <div class="swiper-slide services-item">
-                <div>
-                  <img
-                    class="services-images"
-                    src="../images/services-image/compresspng/746523 3-min.png"
-                    alt="Internet"
-                  />
-                  <div class="services-item-info-container">
-                    <h3 class="services-title">Інтернет Для бізнесу</h3>
-
-                    <div class="services-text-backdrop-container">
-                      <p class="services-text">
-                        Швидкий і надійний інтернет разом із широким вибором
-                        телевізійних каналів для всієї сім'ї
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <button class="services-btn">
-                  Детальніше
-                  <svg
-                    class="services-btn-icon"
-                    width="8"
-                    height="12"
-                    viewBox="0 0 8 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33398 10.6663L6.4523 6.18782C6.56613 6.08822 6.56613 5.91113 6.4523 5.81153L1.33398 1.33301"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M1.33398 10.6663L6.4523 6.18782C6.56613 6.08822 6.56613 5.91113 6.4523 5.81153L1.33398 1.33301"
-                      stroke-opacity="0.2"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-
               <div class="swiper-slide services-item">
                 <div>
                   <img
@@ -1510,7 +1494,7 @@
                 вказаним на сайті
               </p>
 
-              <button class="instructions-item-btn">Підключити</button>
+              <button class="instructions-item-btn">Надіслати</button>
             </div>
 
             <div class="instructions-item">
@@ -1975,14 +1959,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="/js/hero-swiper.js"></script>
-    <script src="/js/loyalty-swiper.js"></script>
     <script src="/js/acardeon.js"></script>
 
-    <script src="/js/input-range.js"></script>
-    <script src="/js/main-tariff-swiper.js"></script>
     <script src="/js/special-swiper.js"></script>
     <script src="../js/b2b-services-swiper.js"></script>
-    <script src="../js/descision-swiper.js"></script>
+    <script src="../js/resize.js"></script>
+    <script src="../js/tariff-swiper.js"></script>
+    <script src="/js/we-can-swiper.js"></script>
   </body>
 </html>

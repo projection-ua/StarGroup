@@ -42,3 +42,18 @@ new Swiper(".we-can-swiper-container-short2", {
     },
   },
 });
+
+new Swiper(".we-can-swiper-container-large", {
+  slidesPerView: 1.1,
+  spaceBetween: 12,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    1024: {
+      slidesPerView: 8,
+      spaceBetween: 0,
+    },
+  },
+});

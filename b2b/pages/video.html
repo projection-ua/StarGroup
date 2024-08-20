@@ -19,7 +19,7 @@
     <title>Star Group</title>
   </head>
   <body>
-   <header>
+    <header>
       <section class="header-top-section">
         <div class="container">
           <div class="top-header">
@@ -168,16 +168,24 @@
                 <li>
                   <a class="header-bottom-nav-link" href="">Відеонагляд</a>
                 </li>
-                <li><a class="header-bottom-nav-link" href="">СКС, монтаж</a></li>
+                <li>
+                  <a class="header-bottom-nav-link" href="">СКС, монтаж</a>
+                </li>
                 <li>
                   <a class="header-bottom-nav-link" href="">Охорона</a>
                 </li>
-                <li><a class="header-bottom-nav-link" href="">IT- аутсорсинг</a></li>
                 <li>
-                  <a class="header-bottom-nav-link" href="">Житловим комплексам</a>
+                  <a class="header-bottom-nav-link" href="">IT- аутсорсинг</a>
                 </li>
                 <li>
-                  <a class="header-bottom-nav-link" href="">Рішення для бізнесу</a>
+                  <a class="header-bottom-nav-link" href=""
+                    >Житловим комплексам</a
+                  >
+                </li>
+                <li>
+                  <a class="header-bottom-nav-link" href=""
+                    >Рішення для бізнесу</a
+                  >
                 </li>
                 <li>
                   <a class="header-bottom-nav-link" href="">Інше</a>
@@ -511,49 +519,52 @@
       </section>
 
       <section class="blue-form-section b2b">
-        <div class="container blue-form-container">
-          <h2 class="blue-form-title">Залишити заявку на консультацію</h2>
-          <p class="blue-form-text">
-            Залиште ваші контактні дані і ми зв'яжемося з вами для консультації
-          </p>
-          <form class="blue-form">
-            <label class="blue-form-label"
-              >Ім’я
-              <input
-                class="blue-form-input"
-                type="text"
-                placeholder="Ваше ім’я"
-              />
-            </label>
+        <div class="container">
+          <div class="blue-form-container">
+            <h2 class="blue-form-title">Залишити заявку на консультацію</h2>
+            <p class="blue-form-text">
+              Залиште ваші контактні дані і ми зв'яжемося з вами для
+              консультації
+            </p>
+            <form class="blue-form">
+              <label class="blue-form-label"
+                >Ім’я
+                <input
+                  class="blue-form-input"
+                  type="text"
+                  placeholder="Ваше ім’я"
+                />
+              </label>
 
-            <label class="blue-form-label"
-              >Ваш номер телефону
-              <input
-                class="blue-form-input"
-                type="tel"
-                placeholder="+38(0_)__ __ __"
-              />
-            </label>
+              <label class="blue-form-label"
+                >Ваш номер телефону
+                <input
+                  class="blue-form-input"
+                  type="tel"
+                  placeholder="+38(0_)__ __ __"
+                />
+              </label>
 
-            <button class="blue-form-btn" type="submit">
-              Передзвоніть мені
-            </button>
-          </form>
+              <button class="blue-form-btn" type="submit">
+                Передзвоніть мені
+              </button>
+            </form>
 
-          <p class="blue-form-bottom-text">
-            Натискаючи "Підключити", ви погоджуєтеся з<a
-              class="blue-form-bottom-link"
-              href=""
-            >
-              Умовами обробки даних</a
-            >
-          </p>
+            <p class="blue-form-bottom-text">
+              Натискаючи "Підключити", ви погоджуєтеся з<a
+                class="blue-form-bottom-link"
+                href=""
+              >
+                Умовами обробки даних</a
+              >
+            </p>
 
-          <img
-            class="blue-form-img in-video"
-            src="/images/video-page/supervision-form-img-min.png"
-            alt="Supervision"
-          />
+            <img
+              class="blue-form-img in-video"
+              src="/images/video-page/supervision-form-img-min.png"
+              alt="Supervision"
+            />
+          </div>
         </div>
       </section>
 
@@ -578,7 +589,7 @@
             <div class="instructions-item">
               <img
                 class="instructions-item-icon"
-                src="../images/instruction-icons/Step Icon Container-1.svg"
+                src="../images/instruction-icons/Step Icon Container.png"
                 alt="Second"
               />
 
@@ -654,7 +665,7 @@
       </section>
 
       <section class="akuvox-section in-video">
-        <div class="container">
+        <div class="container akuvox-container-JS">
           <div style="max-width: 50%">
             <div class="swiper-container company">
               <div class="swiper-wrapper">
@@ -671,6 +682,7 @@
                   <img src="/images/video-page/smartphones-min.png" alt="" />
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
 
             <div class="pagination-custom">
@@ -744,58 +756,33 @@
             </div>
           </div>
         </div>
+
+        <script>
+          function moveTitle() {
+            const title = document.querySelector(".akuvox-section-title");
+            const section = document.querySelector(".akuvox-container-JS");
+
+            if (window.innerWidth < 1024) {
+              section.insertBefore(title, section.firstChild);
+            } else {
+              const container = document.querySelector(
+                ".akuvox-info-container"
+              );
+              container.insertBefore(title, container.firstChild);
+            }
+          }
+
+          window.addEventListener("resize", moveTitle);
+          document.addEventListener("DOMContentLoaded", moveTitle);
+        </script>
       </section>
 
-      <section class="services-section b2b">
+      <section class="services-section b2b in-pages">
         <div class="container">
           <h2 class="b2b-section-title">Додаткові послуги</h2>
 
           <div class="services-swiper-container">
             <div class="swiper-wrapper services-list">
-              <div class="swiper-slide services-item">
-                <div>
-                  <img
-                    class="services-images"
-                    src="../images/services-image/compresspng/746523 3-min.png"
-                    alt="Internet"
-                  />
-                  <div class="services-item-info-container">
-                    <h3 class="services-title">Інтернет Для бізнесу</h3>
-
-                    <div class="services-text-backdrop-container">
-                      <p class="services-text">
-                        Швидкий і надійний інтернет разом із широким вибором
-                        телевізійних каналів для всієї сім'ї
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <button class="services-btn">
-                  Детальніше
-                  <svg
-                    class="services-btn-icon"
-                    width="8"
-                    height="12"
-                    viewBox="0 0 8 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33398 10.6663L6.4523 6.18782C6.56613 6.08822 6.56613 5.91113 6.4523 5.81153L1.33398 1.33301"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M1.33398 10.6663L6.4523 6.18782C6.56613 6.08822 6.56613 5.91113 6.4523 5.81153L1.33398 1.33301"
-                      stroke-opacity="0.2"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-
               <div class="swiper-slide services-item">
                 <div>
                   <img
@@ -1438,7 +1425,8 @@
     <script src="/js/acardeon.js"></script>
     <script src="../js/catalog-swiper.js"></script>
     <script src="/js/company-slider.js"></script>
-    <script src="../js/we-can-swiper.js"></script>
+    <script src="/js/we-can-swiper.js"></script>
     <script src="../js/b2b-services-swiper.js"></script>
+    <script src="../js/resize.js"></script>
   </body>
 </html>

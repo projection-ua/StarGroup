@@ -32,6 +32,29 @@ new Swiper(".company-swiper-container", {
     1024: {
       slidesPerView: 5.6,
       spaceBetween: 16,
+      navigation: {
+        nextEl: ".swiper-btn-next",
+      },
+    },
+  },
+});
+
+new Swiper(".company-swiper-container-residential", {
+  slidesPerView: 1.7,
+  spaceBetween: 10,
+
+  // Плавний перехід
+  speed: 1000, // Швидкість прокручування (тут 2 секунди)
+  effect: "slide",
+
+  breakpoints: {
+    // when window width is >= 1024px
+    1024: {
+      slidesPerView: 5.6,
+      spaceBetween: 16,
+      navigation: {
+        nextEl: ".swiper-btn-next",
+      },
     },
   },
 });

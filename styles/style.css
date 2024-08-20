@@ -551,6 +551,7 @@ section {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  height: 16.5vw;
 }
 
 .services-images {
@@ -564,12 +565,12 @@ section {
   font-size: 1.4vw;
   text-transform: uppercase;
   color: #030317;
-  margin-bottom: 1.25vw;
+  margin-bottom: 0.4vw;
 }
 
 .services-text-backdrop-container {
   max-height: 0px;
-  transition: 1s;
+  transition: 0.3s;
   overflow: hidden;
 }
 
@@ -594,7 +595,7 @@ section {
   background: transparent;
   width: fit-content;
   border-radius: 0.4vw;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .services-btn-icon {
@@ -605,7 +606,7 @@ section {
 
 .services-images {
   width: 16.6vw;
-  transition: 1s;
+  transition: 0.3s;
   margin: 0 auto;
 }
 
@@ -741,6 +742,11 @@ section {
   color: #fff;
   width: fit-content;
 }
+
+.akuvox-section.in-video .swiper-pagination {
+  display: none;
+}
+
 
 .tariff-title {
   font-family: "Exo 2";
@@ -5090,6 +5096,7 @@ footer {
     border-radius: 2.1vw;
     padding: 4.2vw;
     padding-top: 0;
+    height: auto;
   }
 
   .services-item img {
@@ -6677,7 +6684,7 @@ footer {
 
   .pagination-custom {
     flex-wrap: wrap;
-    margin-top: 3.2vw;
+    margin-top: 8.5vw;
     gap: 1.8vw;
     margin-bottom: 8.5vw;
   }
@@ -6734,6 +6741,24 @@ footer {
 
   .akuvox-section.in-video .akuvox-acardeon-item:not(:last-child) {
     margin-bottom: 4.2vw;
+  }
+
+  .swiper-container.company {
+    padding-bottom: 7.4vw;
+    position: relative;
+  }
+
+  .swiper-container.company .swiper-pagination-bullet {
+    border-radius: 4.2vw;
+    width: 5.3vw;
+    height: 1vw;
+    background: #838383;
+    transition: 0.3s;
+  }
+
+  .swiper-container.company .swiper-pagination-bullet-active {
+    width: 10.6vw;
+    background: #000000;
   }
 
   /* ==================== DISCOUNT_PAGE ============================== */
@@ -7060,7 +7085,7 @@ footer {
 
 /* characterictics-section =================================================== */
 .internet-tv-hero-section.about {
-  background-color: rgba(242, 243, 247, 1);
+  background-color: transparent;
 }
 
 .characterisctics-list {
@@ -7137,6 +7162,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .about-swiper-relative-container {
@@ -7751,10 +7777,6 @@ footer {
   gap: 0.8vw;
 }
 
-.b2b-form-section.vacation{
-  padding: 10vw 0;
-}
-
 /* VACATION SECTION ================================================ */
 .vacation-section {
   padding: 4vw 0;
@@ -7840,9 +7862,329 @@ footer {
   gap: 0.8vw;
 }
 
+/* COATING PAGE ================================================== */
+
+.map-container {
+}
+
+.map-form-container {
+  display: flex;
+  gap: 3.3vw;
+  width: 60vw;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 2.5vw;
+  height: fit-content;
+  border-radius: 0.8vw;
+}
+
+.map-form-title-container {
+}
+
+.map-form-title {
+  font-family: "Exo 2";
+  font-size: 1.2vw;
+  font-weight: 600;
+  line-height: 1.6vw;
+  margin-bottom: 1.2vw;
+  width: fit-content;
+}
+
+.location-point {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.location-point svg {
+  width: 1.2vw;
+  height: 1.2vw;
+  fill: var(--primary-color);
+}
+
+.location-point p {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 700;
+  line-height: 0.8vw;
+  color: var(--primary-color);
+}
+
+.form-step-tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2vw;
+}
+
+.form-step-tabs div {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-step-tabs div:not(:last-child) {
+  margin-right: -0.3vw;
+}
+
+.form-step-tabs div p {
+  position: relative;
+  z-index: 2;
+
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 700;
+  line-height: 1.1vw;
+  text-align: center;
+  opacity: 0.5;
+  padding: 0.6vw 2.9vw;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+.form-step-tabs div svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: -webkit-fill-available;
+  fill: rgba(242, 243, 247, 1);
+}
+
+.form-step-tabs .active svg {
+  fill: rgba(235, 238, 255, 1);
+}
+
+.form-step-tabs div:not(:last-child) {
+}
+
+.locality-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.steps-form label {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 1.1vw;
+  margin-bottom: 0.6vw;
+}
+
+.step-form-btn {
+  background-color: var(--primary-color);
+  border: none;
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 700;
+  line-height: 0.8vw;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  width: 13vw;
+  border-radius: 0.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 1.2vw 0;
+}
+
+.step-form-btn:hover {
+  opacity: 1;
+}
+
+.steps-form {
+  display: flex;
+}
+
+.step-form-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5vw;
+}
+
+.steps-form input {
+  width: 100%;
+  height: 100%;
+  border: 0.07vw solid #f2f2f2;
+  border-radius: 0.3vw;
+  padding-left: 3vw;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  transition: 0.3s;
+  line-height: 1.2vw;
+  color: #9a9aa2;
+}
+
+.steps-form input:hover {
+  border: 0.07vw solid black;
+}
+.steps-form input:focus {
+  border: 0.07vw solid var(--primary-color);
+}
+
+.steps-form input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+
+  line-height: 1.2vw;
+  color: #9a9aa2;
+}
+
+.input-container {
+  width: 100%;
+}
+
+.steps-form .inner-form-arrow-icon {
+  transform: translateY(-50%);
+}
+
+.map-order-backdrop-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6vw;
+}
+
+.map-order-container {
+  width: 21.5vw;
+  padding: 1.6vw;
+  background-color: #ffffff;
+  border-radius: 0.8vw;
+}
+
+.map-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.map-order-back-drop-btn {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  width: 2vw;
+  height: 2vw;
+}
+
+.map-order-back-drop-btn:hover {
+  background-color: #dddddd;
+}
+
+.map-order-info-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.9vw;
+  line-height: 1.2vw;
+  color: #000;
+  margin-bottom: 0.6vw;
+}
+
+.map-order0info-block-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: black;
+  background: #f2f3f7;
+  padding: 0.4vw 0.6vw;
+  width: fit-content;
+  border-radius: 0.2vw;
+}
+
+.map-order-info-block-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4vw;
+}
+
+.map-order-energy-list svg {
+  width: 1.6vw;
+  height: 1.6vw;
+  fill: var(--primary-color);
+}
+
+.map-order-energy-list {
+  display: flex;
+  gap: 0.4vw;
+  flex-wrap: wrap;
+}
+
+.map-order-energy-item {
+  flex-basis: calc((100% - 0.4vw) / 2);
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  background: #ebeeff;
+  padding: 0.4vw 0.8vw;
+  height: 2.9vw;
+  border-radius: 0.2vw;
+}
+
+.map-order-energy-item p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+
+  line-height: 1.1vw;
+  color: var(--primary-color);
+}
+
+.map-order-energy-item span {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.6vw;
+  line-height: 0.6vw;
+  color: var(--primary-color);
+}
+
+.map-order-info-block {
+  margin-bottom: 1.6vw;
+}
+
+.map-order-btn {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.4vw;
+  width: 100%;
+  padding: 1.2vw 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 0.8vw;
+  transition: 0.3s;
+  line-height: 0.8vw;
+  color: #fff;
+  margin-top: 1vw;
+}
+
+.map-order-btn:hover {
+  background-color: var(--primary-yellow);
+  color: var(--primary-color);
+}
+
+.map-section {
+  background-image: url(../images/coating/map-section-bg.jpg);
+  background-position: 0 4vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 2vw;
+  padding-bottom: 15vw;
+}
+
+.principales-section.coating {
+  padding-top: 4vw;
+}
 /* FOOTER ADDAPTIVE ================================================== */
 
 @media (max-width: 1024px) {
+  .b2b-form-section.vacation {
+    padding: 10vw 0;
+  }
   .main-footer-container {
     display: flex;
     flex-direction: column;
@@ -8897,7 +9239,7 @@ footer {
 
   .vacation-item {
     flex-basis: 100%;
-    padding: 8.5vw ;
+    padding: 8.5vw;
     border-radius: 4.2vw;
     min-height: 68.2vw;
   }
@@ -8930,21 +9272,26 @@ footer {
   .vacation-link {
     font-size: 3.7vw;
     line-height: 5vw;
-    gap:2.1vw;
-}
+    gap: 2.1vw;
+  }
 
-.vacation-link svg {
+  .vacation-link svg {
     width: 3.7vw;
     height: 3.7vw;
-}
+  }
 
-.vacation-section {
+  .vacation-section {
     padding: 8.5vw 0;
     padding-bottom: 15vw;
-}
+  }
 
-.vacation-list {
+  .vacation-list {
     gap: 3.2vw;
     margin-bottom: 8.5vw;
+  }
+
+  .akuvox-section.in-video .swiper-pagination {
+    display: block;
+  }
 }
-}
+
