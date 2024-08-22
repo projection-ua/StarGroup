@@ -236,14 +236,12 @@
             <div class="navigation-item current-nav-item">
               Багатоквартирний будинок
             </div>
-            <div class="navigation-item">
-              Клієнт-банк (мобільний застосунок)
-            </div>
+            <div class="navigation-item">Приватний сектор</div>
           </div>
         </div>
       </section>
 
-      <section class="map-section">
+      <section class="map-section active">
         <div class="container">
           <div class="map-container">
             <div class="map-form-container">
@@ -295,7 +293,7 @@
                 </div>
 
                 <form class="steps-form">
-                  <div class="locality-input">
+                  <div class="locality-input active">
                     <label for="locality"
                       >Населений пункт
                       <span style="color: var(--primary-color)">*</span></label
@@ -320,6 +318,196 @@
                         />
                       </div>
                       <div class="step-form-btn">Далі</div>
+                    </div>
+                  </div>
+
+                  <div class="locality-input">
+                    <label for="locality"
+                      >Назва вулиці
+                      <span style="color: var(--primary-color)">*</span></label
+                    >
+
+                    <div class="step-form-btn-container">
+                      <div class="input-container">
+                        <input
+                          style="padding-left: 20px"
+                          type="text"
+                          id="locality"
+                          placeholder="вул.Героїв України"
+                        />
+                      </div>
+                      <div class="step-form-btn">Далі</div>
+                    </div>
+                  </div>
+
+                  <div class="locality-input">
+                    <label for="locality"
+                      >Номер будинку
+                      <span style="color: var(--primary-color)">*</span></label
+                    >
+
+                    <div class="step-form-btn-container">
+                      <div class="input-container">
+                        <input
+                          style="padding-left: 20px"
+                          type="text"
+                          id="locality"
+                          placeholder="42"
+                        />
+                      </div>
+                      <button type="submit" class="step-form-btn">Далі</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="map-order-container">
+              <div class="map-order-backdrop-container">
+                <div class="location-point">
+                  <svg>
+                    <use
+                      href="../images/coating/icons.svg#icon-location-point"
+                    ></use>
+                  </svg>
+                  <p>м. Київ</p>
+                </div>
+
+                <div class="map-order-back-drop-btn">
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.832 12.5L10.375 6.26338C10.1758 6.03571 9.82162 6.03571 9.62241 6.26338L4.16536 12.5"
+                      stroke="#030317"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M15.832 12.5L10.375 6.26338C10.1758 6.03571 9.82162 6.03571 9.62241 6.26338L4.16536 12.5"
+                      stroke="black"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="order-backdrop-JS active">
+                <div class="map-order-info-block">
+                  <h3 class="map-order-info-title">Інтернет</h3>
+                  <div class="map-order-info-block-list">
+                    <p class="map-order0info-block-text">Гігабіт (Ethernet)</p>
+                    <p class="map-order0info-block-text">Оптика (хPON)</p>
+                  </div>
+                </div>
+
+                <div class="map-order-info-block">
+                  <h3 class="map-order-info-title">Послуги</h3>
+
+                  <div class="map-order-info-block-list">
+                    <p class="map-order0info-block-text">
+                      Кабельне телебачення
+                    </p>
+                    <p class="map-order0info-block-text">Домофонія</p>
+                    <p class="map-order0info-block-text">Відеоспостереження</p>
+                  </div>
+                </div>
+
+                <div class="map-order-info-block">
+                  <h3 class="map-order-info-title">Безперебійне живлення</h3>
+
+                  <div class="map-order-energy-list">
+                    <div class="map-order-energy-item">
+                      <svg>
+                        <use
+                          href="../images/coating/icons.svg#icon-battery-bolt"
+                        ></use>
+                      </svg>
+                      <div class="map-order-info-container">
+                        <p>Встановлено</p>
+                      </div>
+                    </div>
+
+                    <div class="map-order-energy-item">
+                      <svg>
+                        <use
+                          href="../images/coating/icons.svg#icon-time-fast"
+                        ></use>
+                      </svg>
+                      <div>
+                        <div class="map-order-info-container">
+                          <p>до 8 Годин</p>
+                          <span>Ethernet</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="map-order-energy-item">
+                      <svg>
+                        <use
+                          href="../images/coating/icons.svg#icon-time-fast"
+                        ></use>
+                      </svg>
+                      <div>
+                        <div class="map-order-info-container">
+                          <p>до 72 Годин</p>
+                          <span>xPON</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="button" class="map-order-btn">
+                  Замовити підключення
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section private">
+        <div class="container">
+          <div class="map-container">
+            <div class="map-form-container">
+              <div class="map-form-title-container">
+                <h2 class="map-form-title">
+                  Дізнайтеся, чи є за вашою адресою можливiсть підключення та
+                  наявність безперебійного живлення
+                </h2>
+              </div>
+
+              <div class="map-form">
+                <form class="steps-form">
+                  <div class="locality-input active">
+                    <label for="locality"
+                      >Населений пункт
+                      <span style="color: var(--primary-color)">*</span></label
+                    >
+
+                    <div class="step-form-btn-container">
+                      <div class="input-container">
+                        <input
+                          type="text"
+                          id="locality"
+                          placeholder="м. Київ"
+                        />
+                        <img
+                          class="jk-icon"
+                          src="../images/intercom-page/form-icon.svg"
+                          alt=""
+                        />
+                        <img
+                          class="inner-form-arrow-icon"
+                          src="../images/intercom-page/form-arrow.svg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </form>
@@ -362,72 +550,76 @@
                 </div>
               </div>
 
-              <div class="map-order-info-block">
-                <h3 class="map-order-info-title">Інтернет</h3>
-                <div class="map-order-info-block-list">
-                  <p class="map-order0info-block-text">Гігабіт (Ethernet)</p>
-                  <p class="map-order0info-block-text">Оптика (хPON)</p>
-                </div>
-              </div>
-
-              <div class="map-order-info-block">
-                <h3 class="map-order-info-title">Послуги</h3>
-
-                <div class="map-order-info-block-list">
-                  <p class="map-order0info-block-text">Кабельне телебачення</p>
-                  <p class="map-order0info-block-text">Домофонія</p>
-                  <p class="map-order0info-block-text">Відеоспостереження</p>
-                </div>
-              </div>
-
-              <div class="map-order-info-block">
-                <h3 class="map-order-info-title">Безперебійне живлення</h3>
-
-                <div class="map-order-energy-list">
-                  <div class="map-order-energy-item">
-                    <svg>
-                      <use
-                        href="../images/coating/icons.svg#icon-battery-bolt"
-                      ></use>
-                    </svg>
-                    <div class="map-order-info-container">
-                      <p>Встановлено</p>
-                    </div>
+              <div class="order-backdrop-JS active">
+                <div class="map-order-info-block">
+                  <h3 class="map-order-info-title">Інтернет</h3>
+                  <div class="map-order-info-block-list">
+                    <p class="map-order0info-block-text">Гігабіт (Ethernet)</p>
+                    <p class="map-order0info-block-text">Оптика (хPON)</p>
                   </div>
+                </div>
 
-                  <div class="map-order-energy-item">
-                    <svg>
-                      <use
-                        href="../images/coating/icons.svg#icon-time-fast"
-                      ></use>
-                    </svg>
-                    <div>
+                <div class="map-order-info-block">
+                  <h3 class="map-order-info-title">Послуги</h3>
+
+                  <div class="map-order-info-block-list">
+                    <p class="map-order0info-block-text">
+                      Кабельне телебачення
+                    </p>
+                    <p class="map-order0info-block-text">Домофонія</p>
+                    <p class="map-order0info-block-text">Відеоспостереження</p>
+                  </div>
+                </div>
+
+                <div class="map-order-info-block">
+                  <h3 class="map-order-info-title">Безперебійне живлення</h3>
+
+                  <div class="map-order-energy-list">
+                    <div class="map-order-energy-item">
+                      <svg>
+                        <use
+                          href="../images/coating/icons.svg#icon-battery-bolt"
+                        ></use>
+                      </svg>
                       <div class="map-order-info-container">
-                        <p>до 8 Годин</p>
-                        <span>Ethernet</span>
+                        <p>Встановлено</p>
+                      </div>
+                    </div>
+
+                    <div class="map-order-energy-item">
+                      <svg>
+                        <use
+                          href="../images/coating/icons.svg#icon-time-fast"
+                        ></use>
+                      </svg>
+                      <div>
+                        <div class="map-order-info-container">
+                          <p>до 8 Годин</p>
+                          <span>Ethernet</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="map-order-energy-item">
+                      <svg>
+                        <use
+                          href="../images/coating/icons.svg#icon-time-fast"
+                        ></use>
+                      </svg>
+                      <div>
+                        <div class="map-order-info-container">
+                          <p>до 72 Годин</p>
+                          <span>xPON</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-
-                  <div class="map-order-energy-item">
-                    <svg>
-                      <use
-                        href="../images/coating/icons.svg#icon-time-fast"
-                      ></use>
-                    </svg>
-                    <div>
-                      <div class="map-order-info-container">
-                        <p>до 72 Годин</p>
-                        <span>Ethernet</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
 
-              <button type="button" class="map-order-btn">
-                Замовити підключення
-              </button>
+                <button type="button" class="map-order-btn">
+                  Замовити підключення
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -550,7 +742,7 @@
                 />
               </div>
             </div>
-            
+
             <div class="swiper-btn-next">
               <svg
                 viewBox="0 0 16 16"
@@ -571,6 +763,100 @@
               </svg>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="b2b-form-section vacation">
+        <div class="container">
+          <div class="b2b-form-image-wrapper">
+            <img src="../images/vacation/form-image.jpg" alt="" />
+          </div>
+
+          <div class="b2b-checkbox-form-container question">
+            <div class="b2b-form-container">
+              <h2 class="form-container-title">
+                Не знайшли необхідну вакансію?
+              </h2>
+              <p class="form-container-text">
+                Залиште ваші дані і ми зв'яжемося з Вами коли необхідна вакансія
+                буде відкрита.
+              </p>
+
+              <form class="b2b-form">
+                <div class="b2b-question-form-labels">
+                  <label
+                    >Ім’я
+                    <input type="text" placeholder="Ваше ім’я" />
+                  </label>
+
+                  <label
+                    >Ваш номер телефону
+                    <input type="tel" placeholder="+38(0_)__ __ __" />
+                  </label>
+                </div>
+
+                <button class="form-btn-2b2 question" type="submit">
+                  Залишити заявку
+                </button>
+              </form>
+
+              <div class="b2b-bottom-tetxt">
+                <p>Натискаючи "Підключити", ви погоджуєтеся з</p>
+                <a href="">Умовами обробки даних</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="coating-section">
+        <div class="container">
+          <h2 class=" coating-title">Зона покриття мережі Simnet м. Київ та Київська область</h2>
+          <p class="coating-text coating-heading-text">Інтернет-провайдер Simnet пропонує послуги доступу до мережі Інтернет в окремих районах м. Києва та Київської області, позначених на карті.</p>
+
+          <p class="coating-text">Ознайомитися з покриттям у населених пунктах можна нижче:</p>
+          <p class="coating-text">м. Київ</p>
+          <p class="coating-text">Мережа побудована за технологією xPON (GPON або EPON)</p>
+          <p class="coating-text">с. Білогородка</p>
+          <p class="coating-text">с. Петропавлівська Борщагівка</p>
+          <p class="coating-text">с. Софіївська Борщагівка</p>
+          <p class="coating-text">с. Новосілки с. Чайки</p>
+          <p class="coating-text">с. Святопетрівське</p>
+          <p class="coating-text">с. Шевченкове, Києво-Святошинський район</p>
+          <p class="coating-text">с. Крюківщина</p>
+          <p class="coating-text">с. Козин</p>
+          <p class="coating-text">с. Хотів</p>
+          <p class="coating-text">с. Ходосівка</p>
+          <p class="coating-text">с. Лісники</p>
+          <p class="coating-text">м. Вишневе</p>
+          <p class="coating-text">с. Гатне</p>
+          <p class="coating-text">с. Українка</p>
+
+            <a
+            class="instruction-item-link instruction-item-link-intariff"
+            href=""
+            >Читати повністтю
+            <svg
+              class="instruction-item-link-icon"
+              width="8"
+              height="12"
+              viewBox="0 0 8 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.33398 10.6668L6.4523 6.18831C6.56613 6.0887 6.56613 5.91162 6.4523 5.81202L1.33398 1.3335"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M1.33398 10.6668L6.4523 6.18831C6.56613 6.0887 6.56613 5.91162 6.4523 5.81202L1.33398 1.3335"
+                stroke-opacity="0.2"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
         </div>
       </section>
     </main>
@@ -851,7 +1137,8 @@
       </div>
     </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/company-slider.js"></script>
+    <script src="/b2b/js/descision-swiper.js"></script>
+    <script src="../js/localty-form.js"></script>
 
     <script src="../js/footer-nav-acardeon.js"></script>
   </body>

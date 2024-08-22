@@ -93,10 +93,6 @@ section {
     display: block;
     margin-left: 1.5vw;
   }
-
-  .tariff-table-section {
-    display: none;
-  }
 }
 
 /* ========================= HEADER ======================== */
@@ -436,8 +432,8 @@ section {
 }
 
 .hero-slide-item {
-  padding: 5.7vw;
-  background-image: url(../images/main-page/hero-bg-1.jpg);
+  /* padding: 5.7vw; */
+  /* background-image: url(../images/main-page/main-hero-image.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   /* height: 26vw; */
@@ -552,6 +548,7 @@ section {
   justify-content: space-between;
   cursor: pointer;
   height: 16.5vw;
+  overflow: hidden;
 }
 
 .services-images {
@@ -566,6 +563,7 @@ section {
   text-transform: uppercase;
   color: #030317;
   margin-bottom: 0.4vw;
+  transition: 0.3s;
 }
 
 .services-text-backdrop-container {
@@ -602,16 +600,19 @@ section {
   stroke: rgba(0, 0, 0, 0.2);
   width: 0.4vw;
   height: 0.6vw;
+  transition: 0.3s;
 }
 
 .services-images {
   width: 16.6vw;
   transition: 0.3s;
   margin: 0 auto;
+  margin-bottom: 1.2vw;
 }
 
 .services-item:hover .services-images {
   width: 8vw;
+  margin-bottom: 0;
 }
 
 .services-item:hover .services-text-backdrop-container {
@@ -629,6 +630,11 @@ section {
 .services-item:hover .services-btn-icon {
   stroke: #ffffff;
 }
+
+.services-item:hover .services-title {
+  color: var(--primary-color);
+}
+
 /* TARRIF SECTION  ============================================= */
 
 .tariff-section {
@@ -746,7 +752,6 @@ section {
 .akuvox-section.in-video .swiper-pagination {
   display: none;
 }
-
 
 .tariff-title {
   font-family: "Exo 2";
@@ -2746,6 +2751,12 @@ footer {
   margin-bottom: 1.6vw;
 }
 
+@media (max-width: 1024px) {
+  .table-container {
+    display: none;
+  }
+}
+
 .main-upper-table-container {
   display: flex;
   justify-content: space-between;
@@ -2972,11 +2983,142 @@ footer {
   color: #81818b;
 }
 
+.checkpoint-info-text.bold {
+  font-weight: 700;
+}
+
+.mobile-table-container.omega .table-checkpoint-container:not(:last-child) {
+  margin-bottom: 6.4vw;
+}
+
 /* ======================== OMEGA PAGE ============================== */
 
 .omega-logo-image {
   width: 8.9vw;
   height: 3.3vw;
+}
+
+.mob-table-item {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 5.3vw;
+  padding: 6.4vw 8.5vw;
+  box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.08);
+}
+
+.mob-table-item .tariff-marker-container {
+  position: absolute;
+  left: 0;
+  top: -3.7vw;
+}
+
+.table-checkpoint-container {
+  display: flex;
+  gap: 4.2vw;
+}
+
+.table-checkpoint-icon {
+  width: 6.4vw;
+  height: 6.4vw;
+}
+
+.table-checkpoint-container:not(:last-child) {
+  margin-bottom: 4.2vw;
+}
+
+.mob-table-item:last-child {
+  margin-bottom: 8.5vw;
+}
+
+.checkpoint-info-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 3.7vw;
+  margin-bottom: 1vw;
+  line-height: 5.6vw;
+  color: black;
+}
+
+.mob-table-catergories-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 4.2vw;
+  line-height: 5vw;
+  color: black;
+  margin: 5.3vw 0;
+}
+
+.table-checkpoint-container span {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 6.4vw;
+
+  line-height: 6.4vw;
+  color: black;
+}
+
+.mob-table-item:not(:last-child) {
+  margin-bottom: 10vw;
+}
+
+.tariff-item-line.margin {
+  margin-bottom: 6.4vw;
+}
+
+.mob-table-item .internet-tv-hero-btn {
+  margin-bottom: 6.4vw;
+}
+
+.mobile-table-container {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .tariff-table-section {
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+  }
+
+  .mobile-table-container {
+    display: block;
+  }
+}
+.mob-table-logo-container {
+  margin-bottom: 6vw;
+}
+
+.mob-table-logo-container h2 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 6.4vw;
+  text-align: center;
+  color: #000;
+  margin-bottom: 2.1vw;
+}
+
+.mob-table-logo-container img {
+  width: 19vw;
+  height: 19vw;
+  margin: 0 auto;
+}
+
+.mob-table-logo-container.sweet-tv img {
+  width: 40vw;
+  height: 8vw;
+}
+
+.mob-table-logo-container.omega img {
+  width: 41vw;
+  height: 15vw;
+}
+
+.checkpoint-light-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 3.2vw;
+  line-height: 4.8vw;
+  color: #81818b;
+  margin-bottom: 1vw;
 }
 
 /*  ================================INTERCOM PAGE ==================================== */
@@ -3171,6 +3313,89 @@ footer {
 
 .akuvox-acardeon-item:not(.is-active) .progress-bar {
   transition: none;
+}
+
+.mob.akuvox-image-container {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .akuvox-swiper-container {
+    display: none;
+  }
+
+  .pointer-swiper .akuvox-section-title {
+    width: 90%;
+  }
+
+  .pointer-swiper .akuvox-info-container {
+    padding: 0;
+  }
+
+  .mob.akuvox-image-container {
+    display: block;
+    margin-bottom: 3.2vw;
+  }
+
+  .akuvox-image-container {
+    width: auto;
+    padding: 5.3vw 20vw 0 20vw;
+  }
+
+  .akuvox-image-container img {
+    margin: 0 auto;
+  }
+
+  .akuvox-acardeon-item .progress-bar {
+    display: none;
+  }
+
+  .akuvox-acardeon-item .progress-bar-bg {
+    display: none;
+  }
+
+  .akuvox-acardeon-item-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    opacity: 1;
+    height: auto;
+    margin-top: 0.8vw;
+    color: #030317;
+  }
+
+  .akuvox-acardeon-item-icon.with-stroke {
+    stroke: var(--primary-color);
+    min-width: 6.4vw;
+    min-height: 6.4vw;
+  }
+
+  .akuvox-acardeon-item-icon.with-fill {
+    fill: var(--primary-color);
+    min-width: 6.4vw;
+    min-height: 6.4vw;
+  }
+
+  .akuvox-acardeon-item-title {
+    color: #030317;
+    margin-bottom: 2.1vw;
+    font-size: 4.8vw;
+  }
+
+  .akuvox-acardeon-item.is-active {
+    background-color: transparent;
+  }
+
+  .pointer-swiper .akuvox-acardeon-item {
+    flex-direction: row;
+    gap: 4.2vw;
+    padding: 6.4vw 4.2vw;
+    border-bottom: 0.4vw solid #ebeeff;
+    margin-bottom: 12vw;
+  }
+
+  .akuvox-section .pointer-swiper {
+    padding: 15vw 0;
+  }
 }
 
 /*=-============================= AKYVOX COMPANY SLIDER ========================= */
@@ -4145,6 +4370,11 @@ footer {
 
 .input-range-line-container input {
   cursor: pointer;
+}
+
+.map-order-back-drop-btn svg {
+  width: 1vw;
+  height: 1vw;
 }
 
 @media (max-width: 1024px) {
@@ -7085,7 +7315,11 @@ footer {
 
 /* characterictics-section =================================================== */
 .internet-tv-hero-section.about {
-  background-color: transparent;
+  background: transparent;
+}
+
+.internet-tv-hero-section.about.bg {
+  background: #f2f3f7;
 }
 
 .characterisctics-list {
@@ -7862,6 +8096,42 @@ footer {
   gap: 0.8vw;
 }
 
+.no-vacation {
+  padding: 8vw 0;
+}
+
+.no-vacation img {
+  width: 4vw;
+  margin: 0 auto;
+  margin-bottom: 1.2vw;
+}
+
+.no-vacation h2 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  text-align: center;
+  color: #000;
+  width: 20vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .no-vacation {
+    padding: 25vw 0 32vw 0;
+  }
+
+  .no-vacation img {
+    width: 22vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .no-vacation h2 {
+    font-size: 6.4vw;
+    width: 60vw;
+    margin: 0 auto;
+  }
+}
 /* COATING PAGE ================================================== */
 
 .map-container {
@@ -7957,6 +8227,10 @@ footer {
 }
 
 .locality-input {
+  display: none;
+}
+
+.locality-input.active {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8047,7 +8321,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.6vw;
 }
 
 .map-order-container {
@@ -8055,6 +8328,7 @@ footer {
   padding: 1.6vw;
   background-color: #ffffff;
   border-radius: 0.8vw;
+  height: fit-content;
 }
 
 .map-container {
@@ -8173,11 +8447,35 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 2vw;
-  padding-bottom: 15vw;
+  height: 49vw;
+}
+
+.map-section.private .map-form-container {
+  flex-direction: column;
+  gap: 1.2vw;
+  width: 28vw;
+  padding: 2.5vw;
+  height: fit-content;
+}
+
+.map-section.private .map-form-title {
+  margin-bottom: 0;
 }
 
 .principales-section.coating {
   padding-top: 4vw;
+}
+
+.map-section {
+  display: none;
+}
+
+.map-section.active {
+  display: block;
+}
+
+.map-section.private .steps-form input {
+  height: 3.3vw;
 }
 /* FOOTER ADDAPTIVE ================================================== */
 
@@ -9293,5 +9591,442 @@ footer {
   .akuvox-section.in-video .swiper-pagination {
     display: block;
   }
+
+  .supervision-tab-item-img img {
+    width: 100%;
+  }
 }
 
+.b2b-company-section.residential .b2b-company-item img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.b2b-company-section.residential {
+  position: relative;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  overflow: hidden;
+}
+
+.b2b-company-section.residential .swiper-btn-next {
+  right: 6.5vw;
+  top: 53%;
+}
+
+.company-swiper-container-residential {
+  overflow: hidden;
+}
+
+.equipment-option-section.outsource {
+  padding-bottom: 0;
+}
+
+.b2b-section-title {
+  font-family: "Exo 2";
+  font-size: 1.8vw;
+  font-weight: 600;
+  line-height: 2.2vw;
+  text-align: left;
+  margin-bottom: 2vw;
+}
+
+.b2b-company-section {
+  padding-bottom: 4vw;
+}
+
+/* .b2b-company-list {
+  display: flex;
+  gap: 0.8vw;
+} */
+
+.b2b-company-item {
+  position: relative;
+  text-align: center;
+  height: 8vw;
+  background-color: #ffffff;
+  border-radius: 0.6vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14vw;
+  overflow: hidden; /* Додаємо overflow: hidden, щоб сховати вихід за межі елемента */
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.b2b-company-item img {
+  transform: scale(0.7);
+  transition: 0.5s;
+}
+
+@media (min-width: 1024px) {
+  .b2b-company-item img {
+    transform: scale(0.7);
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transition: 0.5s;
+  }
+
+  .b2b-company-item:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}
+
+.b2b-company-item:hover {
+  box-shadow: 0 5px 24px 0 rgba(0, 0, 0, 0.08);
+}
+
+.swiper-btn-next {
+  position: absolute;
+  width: 2.9vw;
+  height: 2.9vw;
+  border-radius: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -1.5vw;
+  top: 35%;
+  z-index: 1;
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.swiper-btn-next svg {
+  stroke: black;
+  width: 1.4vw;
+  height: 1.4vw;
+}
+
+.relative-descision-container-for-btn {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .b2b-company-item {
+    height: 31vw;
+  }
+
+  .swiper-btn-next {
+    display: none;
+  }
+
+  .b2b-section-title {
+    font-size: 6.4vw;
+    line-height: 7.4vw;
+    margin-bottom: 6.4vw;
+  }
+  .b2b-company-section.residential {
+    padding-top: 10vw;
+    padding-bottom: 15vw;
+  }
+}
+
+.order-backdrop-JS {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.order-backdrop-JS.active {
+  height: 27vw;
+  margin-top: 1.6vw;
+}
+
+@media (max-width: 1024px) {
+  .map-section {
+    background-image: url(/star-group/images/coating/map-section-bg.jpg);
+    background-position: 0 4vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2vw;
+    height: auto;
+  }
+
+  .map-container {
+    flex-direction: column;
+    gap: 2.1vw;
+  }
+
+  .map-form-container {
+    flex-direction: column;
+    gap: 0vw;
+    width: 100%;
+    padding: 5.3vw;
+    border-radius: 3.2vw;
+  }
+
+  .form-step-tabs {
+    display: none;
+  }
+
+  .step-form-btn-container {
+    display: flex;
+    width: 100%;
+    gap: 6.4vw;
+    flex-direction: column;
+  }
+
+  .map-form-container .location-point {
+    display: none;
+  }
+
+  .map-form-title {
+    font-size: 4.8vw;
+    line-height: 5.8vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .steps-form label {
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+    margin-bottom: 2.1vw;
+  }
+
+  .steps-form input {
+    height: 14vw;
+    border: 0.07vw solid #f2f2f2;
+    border-radius: 0.3vw;
+    padding-left: 10vw;
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    border: 0.4vw solid #f2f2f2;
+    border-radius: 1.6vw;
+  }
+
+  .steps-form input::placeholder {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+  }
+
+  .jk-icon {
+    width: 5.3vw;
+    left: 3vw;
+  }
+
+  .map-section {
+    height: 230vw;
+    margin-top: 6.4vw;
+  }
+
+  .inner-form-arrow-icon {
+    right: 5vw;
+    top: 45%;
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+
+  .step-form-btn {
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+    width: 100%;
+    border-radius: 2.4vw;
+    padding: 5.3vw 0;
+  }
+
+  .map-order-container {
+    width: 100%;
+    padding: 5.3vw;
+    border-radius: 3.2vw;
+  }
+
+  .location-point svg {
+    width: 5.3vw;
+    height: 5.3vw;
+    fill: var(--primary-color);
+  }
+
+  .location-point p {
+    font-size: 4.2vw;
+    line-height: 4.2vw;
+  }
+
+  .location-point {
+    gap: 2.1vw;
+  }
+
+  .map-order-back-drop-btn svg {
+    min-width: 4.2vw;
+    min-height: 4.2vw;
+  }
+
+  .map-order-info-title {
+    font-size: 4.2vw;
+    line-height: 5.6vw;
+    margin-bottom: 3.2vw;
+  }
+
+  .order-backdrop-JS.active {
+    height: auto;
+    margin-top: 6.4vw;
+  }
+
+  .map-order0info-block-text {
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+    padding: 1.6vw 2.1vw;
+    border-radius: 1vw;
+  }
+
+  .map-order-info-block-list {
+    gap: 2.1vw;
+  }
+
+  .map-order-info-block {
+    margin-bottom: 6.4vw;
+  }
+
+  .map-order-energy-list svg {
+    width: 7.4vw;
+    height: 7.4vw;
+    fill: var(--primary-color);
+  }
+
+  .map-order-energy-item {
+    flex-basis: calc((100% - 1.3vw) / 2);
+    gap: 0.6vw;
+    padding: 2.1vw 3.2vw;
+    height: 12vw;
+    border-radius: 1vw;
+    justify-content: space-between;
+  }
+
+  .map-order-energy-item p {
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+  }
+
+  .map-order-energy-list {
+    gap: 1.3vw;
+  }
+
+  .map-order-energy-item span {
+    font-size: 2.6vw;
+    line-height: 2.6vw;
+  }
+
+  .map-order-btn {
+    border-radius: 3.2vw;
+    padding: 5.3vw 0;
+    font-size: 3.7vw;
+    line-height: 3.7vw;
+    margin-top: 1vw;
+  }
+
+  .principales-section.coating {
+    padding-top: 15vw;
+  }
+}
+
+/* COATING SECTION ======================================== */
+
+.coating-section {
+  padding: 4vw 0;
+}
+
+.coating-text {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  color: #222;
+}
+
+.coating-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+  line-height: 1.7vw;
+  color: #000;
+  margin-bottom: 0.8vw;
+}
+
+.coating-heading-text {
+  margin-bottom: 0.8vw;
+  width: 37vw;
+}
+
+@media (max-width: 1024px) {
+  .coating-section {
+    padding: 15vw 0;
+  }
+
+  .container {
+  }
+
+  .coating-title {
+    font-size: 6.4vw;
+    line-height: 9vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .coating-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+  }
+
+  .coating-heading-text {
+    width: 100%;
+    margin-bottom: 6vw;
+  }
+
+  .map-section.private .map-form-container {
+    gap: 6.4vw;
+    width: 100%;
+    padding: 5.3vw;
+    height: fit-content;
+  }
+
+  .map-section.private .steps-form input {
+    height: 14vw;
+  }
+}
+
+/* ADDITIOANL WHY SECTION PAGE ================================== */
+.why-section.additioanal .we-can-list {
+  gap: 0.7vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+}
+
+.why-section.additioanal .we-can-item-container {
+  flex-direction: column;
+  min-height: 18vw;
+  justify-content: space-between;
+  flex-basis: calc((100% - 3 * 0.7vw) / 4);
+}
+
+.why-section.additioanal .we-can-icon-container {
+  margin-bottom: 0.8vw;
+}
+
+.why-section.additioanal {
+}
+
+.why-section.additioanal {
+}
+
+@media (max-width: 1024px) {
+  .why-section.additioanal .we-can-list {
+  gap: 3.2vw;
+  margin-top: 1vw;
+  margin-bottom: 8.5vw;
+  flex-wrap: wrap;
+}
+
+.why-section.additioanal .we-can-item-container {
+    flex-direction: column;
+    min-height: none;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.why-section.additioanal .we-can-icon-container {
+  margin-bottom:5.3vw;
+}
+}

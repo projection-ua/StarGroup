@@ -1,4 +1,3 @@
-
 const swiper = new Swiper(".swiper-container", {
   loop: true,
   autoplay: {
@@ -9,8 +8,6 @@ const swiper = new Swiper(".swiper-container", {
   pagination: {
     el: ".swiper-pagination",
   },
-
-
 });
 
 const paginationItems = document.querySelectorAll(".pagination-custom div");
@@ -26,3 +23,4 @@ swiper.on("slideChange", () => {
   paginationItems.forEach((img) => img.classList.remove("active"));
   paginationItems[swiper.realIndex].classList.add("active");
 });
+
