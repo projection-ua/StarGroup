@@ -491,26 +491,23 @@ section {
 }
 
 .hero-swiper-container .swiper-pagination-bullet {
-  border-radius: 3.4vw !important;
-  width: 18.9vw !important;
-  height: 0.2vw !important;
-  background: #fff !important;
-  opacity: 0.1 !important;
+  width: 1.2vw;
+  height: 0.3vw;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border-radius: 0.8vw;
   transition: 0.3s;
+ 
 }
 
 .hero-swiper-container .swiper-pagination-bullet-active {
-  background: #fff !important;
-  opacity: 1 !important;
-  width: 14vw !important;
+opacity: 1;
+width: 2.5vw;
 }
 
 .hero-swiper-container .swiper-pagination {
   position: absolute;
-  top: 0.9vw !important;
-  left: 5vw;
   height: 2vw;
-  width: 74vw;
 }
 
 .address-tel-number .header-backdrop-arrow {
@@ -519,6 +516,52 @@ section {
 
 .hero-swiper-nav-container {
   display: none;
+}
+
+.hero-swiper-nav-container {
+  display: block;
+  
+}
+
+.hero-swiper-nav-container svg{
+  width: 1.2vw;
+ height: 1.2vw;
+}
+
+.hero-swiper-btn-prev {
+  position: absolute;
+  width: 2.9vw;
+  height: 2.9vw;
+  background-color: #ffffff;
+  border-radius: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-30%);
+  z-index: 9;
+  display: flex;
+  justify-content: center;align-items: center;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.16);
+}
+
+.hero-swiper-btn-next {
+    position: absolute;
+  width: 2.9vw;
+  height: 2.9vw;
+  background-color: #ffffff;
+  border-radius: 100%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(30%);
+  z-index: 9;
+  display: flex;
+  justify-content: center;align-items: center;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.16);
+}
+
+.hero-container{
+  position: relative;
 }
 
 /* SERVICES SECTION ========================================================== */
@@ -683,6 +726,7 @@ section {
 }
 
 .tariff-item-title-wrapper {
+  position: relative;
   padding: 2.2vw 0 0 2vw;
   background-image: url(../images/main-page/tariff-img.jpg);
   background-repeat: no-repeat;
@@ -690,10 +734,12 @@ section {
   width: 21.8vw;
   height: 42.2vw;
   border-radius: 1vw;
-  overflow: hidden;
+  overflow: visible;
   z-index: 9;
   flex-shrink: 0;
 }
+
+
 
 .tariff-item-title-wrapper .special-item-action {
   border-radius: 8.6vw;
@@ -2414,9 +2460,9 @@ footer {
 
 .tariff-swiper-container {
   position: relative;
-  width: 61vw;
-  /* height: 43.8vw; */
   padding-bottom: 4vw;
+  overflow: hidden;
+  width: 60vw;
 }
 
 .tariff-swiper-container .swiper-pagination-bullet-active {
@@ -2444,6 +2490,11 @@ footer {
 }
 
 .tariff-item-title-wrapper.megogo {
+}
+
+.tariff-swiper-relative-container-for-btn{
+  position: relative;
+  /* overflow: hidden; */
 }
 
 /* UNIVERSAL_SECTION ----------FOR MEGOGO SWEET OMEGA =======================*/
@@ -6337,8 +6388,9 @@ footer {
   /* TARIFF_SWIPER =============== */
 
   .tariff-swiper-container {
-    width: 100%;
+    width: 90vw;
     padding-bottom: 9.6vw;
+    overflow: visible;
   }
 
   .tariff-swiper-container .swiper-pagination-bullet {

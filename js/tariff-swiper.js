@@ -7,6 +7,7 @@ new Swiper(".tariff-swiper-container", {
   // modules: [Pagination],
 
   slidesPerView: 1.1,
+
   pagination: {
     el: ".swiper-pagination",
   },
@@ -17,6 +18,10 @@ new Swiper(".tariff-swiper-container", {
     1024: {
       slidesPerView: 3,
       spaceBetween: 0,
+      navigation: {
+        nextEl: ".hero-swiper-btn-next",
+        prevEl: ".hero-swiper-btn-prev",
+      },
     },
   },
 });
