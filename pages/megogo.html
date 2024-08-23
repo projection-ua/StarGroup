@@ -1829,38 +1829,75 @@
         </div>
       </section>
 
-      <section class="form-section internet-tv-form-section">
+       <section class="form-section internet-tv-form-section">
         <div class="container">
           <div class="form-container">
             <h2 class="form-title">
               Перевірте свою адресу на можливість підключення
             </h2>
-            <form class="form">
-              <div class="inner-form-container">
-                <label class="form-label first-label"
-                  >Назва вулиці<input
-                    class="form-input"
-                    type="text"
-                    placeholder="вул. Виноградна"
-                /></label>
+           
 
-                <div class="form-address">
-                  <label class="form-label"
-                    >Номер будинку<input
-                      class="form-input"
-                      type="number"
-                      placeholder="120"
-                  /></label>
-                  <label class="form-label"
-                    >Номер корпусу<input
-                      class="form-input"
-                      type="number"
-                      placeholder="3"
-                  /></label>
+              <form class="steps-form">
+              <div class="locality-input active">
+                <label for="locality"
+                  >Населений пункт
+                  <span style="color: var(--primary-color)">*</span></label
+                >
+
+                <div class="step-form-btn-container">
+                  <div class="input-container">
+                    <input type="text" id="locality" placeholder="м. Київ" />
+                    <img
+                      class="jk-icon"
+                      src="../images/intercom-page/form-icon.svg"
+                      alt=""
+                    />
+                    <img
+                      class="inner-form-arrow-icon"
+                      src="../images/intercom-page/form-arrow.svg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
 
-              <button class="form-btn" type="submit">
+                <div class="locality-input active">
+                  <label for="locality"
+                    >Назва вулиці
+                    <span style="color: var(--primary-color)">*</span></label
+                  >
+
+                  <div class="step-form-btn-container">
+                    <div class="input-container">
+                      <input
+                        style="padding-left: 20px"
+                        type="text"
+                        id="locality"
+                        placeholder="вул.Героїв України"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="locality-input active">
+                  <label for="locality"
+                    >Номер будинку
+                    <span style="color: var(--primary-color)">*</span></label
+                  >
+
+                  <div class="step-form-btn-container">
+                    <div class="input-container">
+                      <input
+                        style="padding-left: 20px"
+                        type="text"
+                        id="locality"
+                        placeholder="42"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+               <button class="form-btn" type="submit">
                 <svg
                   class="form-search-icon"
                   width="21"

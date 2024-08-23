@@ -1409,6 +1409,7 @@ textarea {
   justify-content: space-between;
 }
 
+
 /*========================= LOYALTY_SECTION ================================= */
 
 .loyalty-section {
@@ -4916,7 +4917,7 @@ footer {
   }
 
   .services-item:nth-child(1) img {
-    min-width: 48vw;
+    min-width: fit-content;
     height: 30vw;
     margin: 0 auto;
   }
@@ -7556,9 +7557,9 @@ footer {
   min-height: 17vw;
 }
 
-.services-section.b2b .services-images {
+/* .services-section.b2b .services-images {
   margin-bottom: 2vw;
-}
+} */
 
 .akuvox-acardeon-item svg {
   width: 1.6vw;

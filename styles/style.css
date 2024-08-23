@@ -1467,6 +1467,34 @@ width: 2.5vw;
   justify-content: space-between;
 }
 
+.form-section.main .steps-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form-flex-inputs{
+  display: flex;
+  gap: 1.2vw;
+  margin-top: 1.2vw;
+
+}
+
+.form-section.main input{
+  height: 3.3vw;
+}
+
+@media (max-width:1024px) {
+  .main-form-flex-inputs{
+    flex-direction: column;
+    gap: 4.2vw;
+    margin-top: 4.2vw;
+  }
+
+  .form-section.main input{
+  height:14vw;
+}
+  
+}
 /*========================= LOYALTY_SECTION ================================= */
 
 .loyalty-section {
@@ -2081,15 +2109,17 @@ footer {
 
 .internet-tv-form-section .form-container {
   width: 100%;
-  padding-left: 24vw;
+  padding-left: 22vw;
   background-image: url(../images/internet-tv-page/internet-tv-form-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  padding-bottom: 5vw;
 }
 
 .internet-tv-form-section .form-btn {
-  width: 19.1vw;
-  margin-top: 1.6vw;
+  width: 15vw;
+  margin-top: 0;
+  height: 3.5vw;
 }
 
 .inner-form-container {
@@ -2113,6 +2143,58 @@ footer {
 .internet-tv-form-section .form-title {
   width: auto;
 }
+
+.internet-tv-form-section .steps-form{
+  gap: 1.2vw;
+  align-items: end;
+}
+
+.internet-tv-form-section .steps-form input{
+  height: 3.5vw;
+}
+
+.internet-tv-form-section .steps-form .locality-input:nth-child(1){
+  width: 13vw;
+}
+.internet-tv-form-section .steps-form .locality-input:nth-child(2){
+  width: 13vw;
+}
+.internet-tv-form-section .steps-form .locality-input:nth-child(3){
+  width: 7.2vw;
+}
+
+@media (max-width:1024px) {
+
+  .internet-tv-form-section .steps-form {
+    flex-direction: column;
+    gap: 4.2vw;
+    align-items: start;
+}
+
+.internet-tv-form-section .steps-form .locality-input:nth-child(1){
+  width: 100%;
+}
+.internet-tv-form-section .steps-form .locality-input:nth-child(2){
+  width:100%;
+}
+.internet-tv-form-section .steps-form .locality-input:nth-child(3){
+  width: 100%;
+}
+
+
+.internet-tv-form-section .form-btn {
+  width: 15vw;
+  margin-top: 0;
+  height: 14vw;
+}
+
+.internet-tv-form-section .steps-form input{
+  height: 14vw;
+}
+  
+}
+
+
 
 /* WE CAN SECTION ================================= */
 
@@ -5770,7 +5852,7 @@ footer {
     font-size: 4.2vw;
     line-height: 4.2vw;
     border-radius: 2.1vw;
-    margin-top: 2vw;
+    margin-top: 8.5vw;
     gap: 2.1vw;
   }
 
@@ -5931,6 +6013,7 @@ footer {
   .special-section-title {
     font-size: 6.4vw;
     gap: 4.2vw;
+    margin-bottom: 8.5vw;
   }
 
   .special-title-icon {
