@@ -1613,6 +1613,7 @@ section {
 
 .special-item {
   width: max-content;
+  cursor: pointer;
 }
 
 .special-img-wrapper {
@@ -1699,6 +1700,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 17vw;
 }
 
 @media (min-width: 1024px) {
