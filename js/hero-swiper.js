@@ -10,7 +10,7 @@ new Swiper(".hero-swiper-container", {
   loop: true,
 
   autoplay: {
-    delay: 2500,
+    delay: 5000,
     disableOnInteraction: false,
   },
 
