@@ -7857,14 +7857,29 @@ footer {
   font-weight: 600;
   line-height: 2.5vw;
   text-align: left;
-  width: 62vw;
+}
+
+.misiion-text-container:nth-child(1){
+  margin-bottom: 1vw;
 }
 
 .mission-container {
   display: flex;
-  flex-direction: column;
-  gap: 0.5vw;
   margin-bottom: 4vw;
+  justify-content: space-between;
+}
+
+.mission-section .characteristics-item{
+  flex-basis: calc((100% - 0.7vw) / 2);
+  height: 12.5vw;
+}
+
+.mission-section .characterisctics-list{
+  width: 42vw;
+}
+
+.mission-text-container{
+  width: 37vw;
 }
 
 .supervision-tab-list.mission {
@@ -9377,7 +9392,26 @@ footer {
     padding: 0 7.2vw;
     margin-bottom: 15vw;
     gap: 4vw;
+    flex-direction: column;
   }
+
+  .mission-text-container {
+    width: auto;
+}
+
+.mission-section .characteristics-item {
+        flex-basis: calc((100% - 1vw) / 2);
+    height: auto;
+}
+
+.misiion-text-container:nth-child(1){
+  margin-bottom: 3vw;
+}
+
+.mission-section .characterisctics-list {
+    width: auto;
+    gap: 1vw;
+}
 
   .supervision-tab-list.mission .supervision-tab-item-text-container {
     padding: 4.2vw;
