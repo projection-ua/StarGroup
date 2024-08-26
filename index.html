@@ -244,69 +244,61 @@
             найближчим часом
           </p>
 
-          
-
           <form class="blue-form">
-<div class="steps-form">
-            <div class="locality-input active">
-              <label for="locality"
-                >Населений пункт
-                <span style="color: var(--primary-color)">*</span></label
-              >
+            <div class="steps-form">
+              <div class="locality-input active">
+                <label for="locality"
+                  >Населений пункт
+                  <span style="color: var(--primary-color)">*</span></label
+                >
 
-              <div class="step-form-btn-container">
-                <div class="input-container">
-                  <input type="text" id="locality" placeholder="м. Київ" />
-                  <img
-                    class="jk-icon"
-                    src="./images/intercom-page/form-icon.svg"
-                    alt=""
-                  />
-                  <img
-                    class="inner-form-arrow-icon"
-                    src="./images/intercom-page/form-arrow.svg"
-                    alt=""
-                  />
+                <div class="step-form-btn-container">
+                  <div class="input-container">
+                    <input type="text" id="locality" placeholder="м. Київ" />
+                    <img
+                      class="jk-icon"
+                      src="./images/intercom-page/form-icon.svg"
+                      alt=""
+                    />
+                    <img
+                      class="inner-form-arrow-icon"
+                      src="./images/intercom-page/form-arrow.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="locality-input active">
+                <label for="locality">Назва вулиці </label>
+
+                <div class="step-form-btn-container">
+                  <div class="input-container">
+                    <input
+                      style="padding-left: 20px"
+                      type="text"
+                      id="locality"
+                      placeholder="вул.Героїв України"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="locality-input short active">
+                <label for="locality">Номер будинку </label>
+
+                <div class="step-form-btn-container">
+                  <div class="input-container">
+                    <input
+                      style="padding-left: 20px"
+                      type="text"
+                      id="locality"
+                      placeholder="120"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="locality-input active">
-              <label for="locality"
-                >Назва вулиці
-                </label
-              >
-
-              <div class="step-form-btn-container">
-                <div class="input-container">
-                  <input
-                    style="padding-left: 20px"
-                    type="text"
-                    id="locality"
-                    placeholder="вул.Героїв України"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="locality-input short active">
-              <label for="locality"
-                >Номер будинку
-                </label
-              >
-
-              <div class="step-form-btn-container">
-                <div class="input-container">
-                  <input
-                    style="padding-left: 20px"
-                    type="text"
-                    id="locality"
-                    placeholder="120"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
 
             <label class="blue-form-label"
               >Ім’я
@@ -333,7 +325,7 @@
         </div>
       </div>
 
-       <!-- Кнопка або елемент для відкриття попапу GigabitXpon -->
+      <!-- Кнопка або елемент для відкриття попапу GigabitXpon -->
       <button class="open-popup-btn" data-popup-target="videoConsultPopup">
         Відкрити попап Відеонагляд
       </button>
@@ -376,7 +368,7 @@
         </div>
       </div>
 
-       <!-- Кнопка або елемент для відкриття попапу Подяка -->
+      <!-- Кнопка або елемент для відкриття попапу Подяка -->
       <button class="open-popup-btn" data-popup-target="thanksPopup">
         Відкрити попап Відеонагляд
       </button>
@@ -385,13 +377,13 @@
       <div id="thanksPopup" class="popup">
         <div class="popup-content">
           <span class="close">&times;</span>
-          <img src="./images/confetti-icon.svg" alt="Confeti">
-          
+          <img src="./images/confetti-icon.svg" alt="Confeti" />
+
           <p class="popup-form-title">Дякуємо за ваш вибір!</p>
           <p class="popup-form-text">
-           Вашу заявку отримано і менеджери Simnet зв'яжуться з Вами найближчим часом.
+            Вашу заявку отримано і менеджери Simnet зв'яжуться з Вами найближчим
+            часом.
           </p>
-         
         </div>
       </div>
     </div>
@@ -544,6 +536,20 @@
                 </li>
                 <li>
                   <a class="header-bottom-nav-link" href="">Інтернет + ТБ</a>
+                  <div class="header-nav-backdrop-container">
+                    <a class="header-nav-backdrop-link" href=""
+                      >Інтернет + Кабельне телебачення</a
+                    >
+                    <a class="header-nav-backdrop-link" href=""
+                      >Інтернет + MEGOGO</a
+                    >
+                    <a class="header-nav-backdrop-link" href=""
+                      >Інтернет + Sweet.TV</a
+                    >
+                    <a class="header-nav-backdrop-link" href=""
+                      >Інтернет + Omega.TV</a
+                    >
+                  </div>
                 </li>
                 <li><a class="header-bottom-nav-link" href="">Інтернет</a></li>
                 <li>
@@ -583,23 +589,51 @@
                   <use href="./images/header-icons.svg#icon-bolt"></use>
                 </svg>
               </div>
-              <a class="address-tel-number" href="tel:+380674811650"
-                ><svg class="address-icon">
-                  <use
-                    href="./images/header-icons.svg#icon-phone-call"
-                  ></use></svg
-                >+38(067) 481 16 50<svg
-                  class="header-backdrop-arrow"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.91602 4.66699L6.77985 9.0828C6.89605 9.2156 7.10265 9.2156 7.21885 9.0828L11.0827 4.66699"
-                    stroke-width="1.75"
-                    stroke-linecap="round"
-                  /></svg
-              ></a>
+
+              <div class="header-tel-numbers-container ">
+                <div class="address-tel-number">
+                  <svg class="address-icon">
+                    <use
+                      href="./images/header-icons.svg#icon-phone-call"
+                    ></use></svg
+                  >(044) 224-84-34<svg
+                    class="header-backdrop-arrow"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.91602 4.66699L6.77985 9.0828C6.89605 9.2156 7.10265 9.2156 7.21885 9.0828L11.0827 4.66699"
+                      stroke-width="1.75"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+
+                <div class="addres-tel-number-backdrop-list">
+                  <a class="tel-number-backdrop-link" href="tel:096444471">
+                    <img
+                      src="./images/header-tel-numbers-icon/Component 16.svg"
+                      alt="Kyivstar"
+                    />
+                    <span>(098) 6-4444-71</span>
+                  </a>
+                  <a class="tel-number-backdrop-link" href="tel:0666444470">
+                    <img
+                      src="./images/header-tel-numbers-icon/Component 16-1.svg"
+                      alt="Vodafone"
+                    />
+                    <span>(066) 6-4444-70</span>
+                  </a>
+                  <a class="tel-number-backdrop-link" href="tel:0936444470">
+                    <img
+                      src="./images/header-tel-numbers-icon/Component 16-2.svg"
+                      alt="Lifecell"
+                    />
+                    <span>(093) 6-4444-70</span>
+                  </a>
+                </div>
+              </div>
             </address>
           </div>
         </div>
@@ -2168,5 +2202,6 @@
     <script src="./js/main-tariff-swiper.js"></script>
     <script src="./js/special-swiper.js"></script>
     <script src="./js/footer-nav-acardeon.js"></script>
+    <script src="./js/backdrops.js"></script>
   </body>
 </html>

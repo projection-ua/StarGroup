@@ -4908,7 +4908,7 @@ footer {
   }
 
   .services-item img {
-    min-width: 33.6vw;
+    min-width: fit-content;
     height: 20.3vw;
   }
 

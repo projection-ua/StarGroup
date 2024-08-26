@@ -160,13 +160,14 @@ section {
 }
 
 .without-light-header-container {
+  position: relative;
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
   gap: 0.2vw;
   width: fit-content;
   height: fit-content;
-  padding: 0.2vw 0.4vw;
+  padding:  0.4vw;
   border-radius: 0.2vw;
 }
 
@@ -339,15 +340,32 @@ section {
 
 .address-tel-number {
   font-family: "Manrope", sans-serif;
-  font-weight: 700;
-  font-size: 0.8vw;
+  font-weight: 900;
+  font-size: 1vw;
   line-height: 0.8vw;
   color: #030317;
   font-style: normal;
   display: flex;
   align-items: center;
   gap: 0.4vw;
+  padding: 0.4vw;
+  border-radius: 0.3vw;
+  transition: 0.3s;
 }
+
+.address-tel-number:hover{
+  background-color: var(--primary-blue-bg);
+  color: var(--primary-color);
+}
+
+.address-tel-number:hover .address-icon{
+  fill: var(--primary-color);
+}
+.address-tel-number:hover .header-backdrop-arrow{
+ stroke: var(--primary-color);
+}
+
+
 
 .address-location {
   display: flex;
@@ -359,6 +377,7 @@ section {
   width: 0.8vw;
   height: 0.8vw;
   fill: #030317;
+  transition: 0.3s;
 }
 
 .addres-location-text {
@@ -373,6 +392,7 @@ section {
 .bottom-header-addres-container {
   display: flex;
   gap: 1.2vw;
+  align-items: center;
 }
 
 .header-bottom-section .container {
@@ -383,6 +403,7 @@ section {
 
 .header-bottom-section {
   background-color: #fff;
+  overflow: visible;
 }
 
 .header-botttom-nav-list svg {
@@ -411,6 +432,37 @@ section {
   gap: 1.6vw;
 }
 
+.header-nav-backdrop-container {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  background-color: #ffffff;
+  padding: 1.2vw;
+  display: none;
+  transition: 1s;
+}
+
+.header-botttom-nav-list li:hover .header-nav-backdrop-container {
+  display: flex;
+}
+
+.header-nav-backdrop-link {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 1vw;
+  min-width: 10.4vw;
+  transition: 0.3s;
+}
+
+.header-nav-backdrop-link:hover {
+  color: var(--primary-color);
+}
+
 @media (min-width: 1024px) {
   .header-mob-logo {
     display: none;
@@ -423,6 +475,59 @@ section {
   .header-menu-container {
     display: none;
   }
+}
+
+.header-tel-numbers-container{
+  position: relative;
+  padding: 0.4vw;
+
+
+}
+
+.header-tel-numbers-container.active{
+  background-color:  rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08); 
+  border-radius: 0.3vw; 
+
+}
+
+.address-tel-number{
+  cursor: pointer;
+}
+
+.tel-number-backdrop-link{
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  padding: 0.4vw 0.8vw;
+  font-style: normal;
+  
+}
+
+.tel-number-backdrop-link span{
+  font-family: "Manrope";
+font-size: 0.9vw;
+font-weight: 600;
+line-height: 0.9vw;
+
+}
+
+.tel-number-backdrop-link img{
+  width: 1vw;
+}
+
+.addres-tel-number-backdrop-list{
+  display: none;
+  margin-top: 0.4vw;
+}
+
+.addres-tel-number-backdrop-list.active{
+  position: absolute;
+  display: block;
+  z-index: 9;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
 }
 
 /* HERO SLIDER SECTION ====================================================== */
@@ -534,8 +639,7 @@ section {
   border-radius: 100%;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-30%);
+  transform: translateX(-30%) translateY(-50%);
   z-index: 9;
   display: flex;
   justify-content: center;
@@ -551,8 +655,7 @@ section {
   border-radius: 100%;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
-  transform: translateX(30%);
+  transform: translateX(30%) translateY(-50%);
   z-index: 9;
   display: flex;
   justify-content: center;
@@ -2692,6 +2795,13 @@ footer {
   color: #fff;
   width: 7vw;
 }
+
+.hero-swiper-nav-container svg {
+    width: 4.2vw;
+    height: 4.2vw;
+}
+
+
 
 /* INTERACTIVE-TV-SECTION ======================= */
 .interactive-tv-section {
@@ -5351,6 +5461,7 @@ footer {
 
   /* HERO SECTION IN MAIN  */
   .hero-swiper-btn-prev {
+    position: relative;
     background-color: #ffffff;
     border-radius: 100%;
     display: flex;
@@ -5358,9 +5469,13 @@ footer {
     align-items: center;
     width: 8.5vw;
     height: 8.5vw;
+    transform: translateX(0%);
+    top: auto;
+
   }
 
   .hero-swiper-btn-next {
+    position: relative;
     background-color: #ffffff;
     border-radius: 100%;
     display: flex;
@@ -5368,12 +5483,16 @@ footer {
     align-items: center;
     width: 8.5vw;
     height: 8.5vw;
+    transform: translateX(0%);
+    top: auto;
+
   }
 
   .hero-swiper-nav-container {
     position: absolute;
     z-index: 1;
     display: flex;
+    flex-direction: row;
     gap: 3.2vw;
     bottom: 6.4vw;
     right: 6.4vw;
@@ -5401,22 +5520,21 @@ footer {
   }
 
   .hero-slide-item {
-    padding: 9.3vw 4.2vw;
   }
 
   .hero-swiper-container .swiper-pagination-bullet {
-    width: 19.5vw !important;
-    height: 0.8vw !important;
+    width: 10vw ;
+    height: 0.8vw ;
   }
 
   .hero-swiper-container .swiper-pagination-bullet-active {
-    width: 15.2vw !important;
-    height: 0.8vw !important;
+    width: 5vw ;
+    height: 0.8vw ;
   }
 
   .hero-swiper-container .swiper-pagination {
     position: absolute;
-    top: 0.9vw !important;
+    top: 0.9vw ;
     left: 0;
     height: 6vw;
     width: 100%;
@@ -5424,7 +5542,6 @@ footer {
 
   .hero-slide-item {
     background-image: url(../images/main-page/hero-bg-mob.jpg);
-    padding-bottom: 36vw;
   }
 
   .hero-swiper-container .swiper-slide {
@@ -10296,21 +10413,16 @@ footer {
   transition: 0.3s;
 }
 
-.popup input:hover{
+.popup input:hover {
   border: 0.07vw solid black;
-
-  
 }
-.popup input:focus{
+.popup input:focus {
   border: 0.07vw solid var(--primary-color);
-
-  
 }
 
 .popup input::placeholder {
-      color: #9a9aa2;
+  color: #9a9aa2;
   opacity: 1;
-
 }
 
 .popup label {
@@ -10331,15 +10443,15 @@ footer {
   margin-bottom: 0;
 }
 
-.popup .steps-form{
+.popup .steps-form {
   flex-direction: row;
   gap: 0.8vw;
 }
 
-.popup .steps-form .locality-input.short{
-  width:20vw;
+.popup .steps-form .locality-input.short {
+  width: 20vw;
 }
 
-.popup .steps-form input{
+.popup .steps-form input {
   height: 3.3vw;
 }
