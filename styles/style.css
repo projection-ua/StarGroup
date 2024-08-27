@@ -167,7 +167,7 @@ section {
   gap: 0.2vw;
   width: fit-content;
   height: fit-content;
-  padding:  0.4vw;
+  padding: 0.4vw;
   border-radius: 0.2vw;
 }
 
@@ -351,21 +351,21 @@ section {
   padding: 0.4vw;
   border-radius: 0.3vw;
   transition: 0.3s;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.address-tel-number:hover{
+.address-tel-number:hover {
   background-color: var(--primary-blue-bg);
   color: var(--primary-color);
 }
 
-.address-tel-number:hover .address-icon{
+.address-tel-number:hover .address-icon {
   fill: var(--primary-color);
 }
-.address-tel-number:hover .header-backdrop-arrow{
- stroke: var(--primary-color);
+.address-tel-number:hover .header-backdrop-arrow {
+  stroke: var(--primary-color);
 }
-
-
 
 .address-location {
   display: flex;
@@ -477,57 +477,78 @@ section {
   }
 }
 
-.header-tel-numbers-container{
+.header-tel-numbers-container {
   position: relative;
   padding: 0.4vw;
 
-
 }
 
-.header-tel-numbers-container.active{
-  background-color:  rgba(255, 255, 255, 1);
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08); 
-  border-radius: 0.3vw; 
-
+.header-tel-numbers-container.active {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 0.3vw;
+    border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.address-tel-number{
+.address-tel-number {
   cursor: pointer;
 }
 
-.tel-number-backdrop-link{
+.tel-number-backdrop-link {
   display: flex;
   align-items: center;
   gap: 0.4vw;
   padding: 0.4vw 0.8vw;
   font-style: normal;
-  
+  transition: 0.3s;
 }
 
-.tel-number-backdrop-link span{
+.tel-number-backdrop-link span {
   font-family: "Manrope";
-font-size: 0.9vw;
-font-weight: 600;
-line-height: 0.9vw;
-
+  font-size: 0.9vw;
+  font-weight: 600;
+  line-height: 0.9vw;
 }
 
-.tel-number-backdrop-link img{
+.tel-number-backdrop-link img {
   width: 1vw;
 }
 
-.addres-tel-number-backdrop-list{
+.addres-tel-number-backdrop-list {
   display: none;
-  margin-top: 0.4vw;
 }
 
-.addres-tel-number-backdrop-list.active{
+.addres-tel-number-backdrop-list.active {
   position: absolute;
   display: block;
   z-index: 9;
   width: 100%;
   background-color: #ffffff;
   left: 0;
+  border-radius: 0.3vw;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0.4vw;
+  padding-bottom: 0.4vw;
+}
+
+.addres-tel-number-backdrop-list.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08), 
+                -10px 0 10px rgba(0, 0, 0, 0.08), 
+                10px 0 10px rgba(0, 0, 0, 0.08); */
+    z-index: -1;
+    border-radius: inherit;
+}
+
+.tel-number-backdrop-link:hover {
+  background-color: #f5f5f5;
 }
 
 /* HERO SLIDER SECTION ====================================================== */
@@ -2795,13 +2816,6 @@ footer {
   color: #fff;
   width: 7vw;
 }
-
-.hero-swiper-nav-container svg {
-    width: 4.2vw;
-    height: 4.2vw;
-}
-
-
 
 /* INTERACTIVE-TV-SECTION ======================= */
 .interactive-tv-section {
@@ -5471,7 +5485,6 @@ footer {
     height: 8.5vw;
     transform: translateX(0%);
     top: auto;
-
   }
 
   .hero-swiper-btn-next {
@@ -5485,7 +5498,6 @@ footer {
     height: 8.5vw;
     transform: translateX(0%);
     top: auto;
-
   }
 
   .hero-swiper-nav-container {
@@ -5523,18 +5535,18 @@ footer {
   }
 
   .hero-swiper-container .swiper-pagination-bullet {
-    width: 10vw ;
-    height: 0.8vw ;
+    width: 10vw;
+    height: 0.8vw;
   }
 
   .hero-swiper-container .swiper-pagination-bullet-active {
-    width: 5vw ;
-    height: 0.8vw ;
+    width: 5vw;
+    height: 0.8vw;
   }
 
   .hero-swiper-container .swiper-pagination {
     position: absolute;
-    top: 0.9vw ;
+    top: 0.9vw;
     left: 0;
     height: 6vw;
     width: 100%;
@@ -5877,6 +5889,11 @@ footer {
   .current-price-value {
     font-size: 12.8vw;
     line-height: 12.8vw;
+  }
+
+  .current-price-container {
+    display: flex;
+    gap: 1vw;
   }
 
   .current-inner-span {
@@ -7499,6 +7516,11 @@ footer {
     height: 1vw;
     background: #8b8b8b;
     transition: 0.3s;
+  }
+
+  .hero-swiper-nav-container svg {
+    width: 4.2vw;
+    height: 4.2vw;
   }
 
   .we-can-swiper-container-short .swiper-pagination-bullet-active {
