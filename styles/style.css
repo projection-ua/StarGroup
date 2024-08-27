@@ -64,6 +64,7 @@ section {
   --primary-orange-bg: #ffe3d5;
   --primary-transparrent-blue: rgba(255, 255, 255, 0.1);
   --primaty-yellow-bg: rgba(255, 224, 0, 0.1);
+  --primary-header-current: rgba(38, 71, 222, 1);
 }
 
 .primary-color {
@@ -129,20 +130,18 @@ section {
 
 .top-header-nav-list {
   display: flex;
-  gap: 1.6vw;
 }
 
 .top-header-nav-link {
   display: flex;
   gap: 0.4vw;
   align-items: center;
-  padding: 1.2vw 0;
-  opacity: 0.5;
+  padding: 1.2vw 0.8vw;
   transition: 0.3s;
 }
 
 .top-header-nav-link.current {
-  opacity: 1;
+  background-color: var(--primary-header-current);
 }
 
 .header-nav-icon {
@@ -429,7 +428,6 @@ section {
 
 .top-heaer-nav-list-mob-backdrop {
   display: flex;
-  gap: 1.6vw;
 }
 
 .header-nav-backdrop-container {
@@ -480,14 +478,13 @@ section {
 .header-tel-numbers-container {
   position: relative;
   padding: 0.4vw;
-
 }
 
 .header-tel-numbers-container.active {
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
   border-radius: 0.3vw;
-    border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
@@ -534,17 +531,17 @@ section {
 }
 
 .addres-tel-number-backdrop-list.active::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08), 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08), 
                 -10px 0 10px rgba(0, 0, 0, 0.08), 
                 10px 0 10px rgba(0, 0, 0, 0.08); */
-    z-index: -1;
-    border-radius: inherit;
+  z-index: -1;
+  border-radius: inherit;
 }
 
 .tel-number-backdrop-link:hover {

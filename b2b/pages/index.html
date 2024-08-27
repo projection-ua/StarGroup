@@ -42,7 +42,7 @@
                 ><img src="/images/header-mob-logo.svg" alt=""
               /></a>
               <div class="top-header-nav-list">
-                <a class="top-header-nav-link current" href=""
+                <a class="top-header-nav-link " href=""
                   ><svg class="header-nav-icon">
                     <use href="/images/header-icons.svg#icon-house"></use>
                   </svg>
@@ -65,7 +65,7 @@
                     </svg></p
                 ></a>
                 <div class="top-heaer-nav-list-mob-backdrop">
-                  <a class="top-header-nav-link" href=""
+                  <a class="top-header-nav-link current" href=""
                     ><svg class="header-nav-icon">
                       <use href="/images/header-icons.svg#icon-bag"></use>
                     </svg>
@@ -91,16 +91,14 @@
 
             <div class="top-header-right">
               <div class="top-header-right-nav-list">
-                <a class="top-header-nav-link current" href="">
-                  <p class="top-header-nav-link-text">Лояльність</p></a
-                >
-                <a class="top-header-nav-link current" href="">
+               
+                <a class="top-header-nav-link " href="">
                   <p class="top-header-nav-link-text">Клієнтам</p></a
                 >
-                <a class="top-header-nav-link current" href="">
+                <a class="top-header-nav-link " href="">
                   <p class="top-header-nav-link-text">Про нас</p></a
                 >
-                <a class="top-header-nav-link current" href="">
+                <a class="top-header-nav-link " href="">
                   <p class="top-header-nav-link-text">Допомога</p>
                   <svg
                     class="header-backdrop-arrow"
@@ -115,7 +113,7 @@
                     />
                   </svg>
                 </a>
-                <a class="top-header-nav-link current" href="">
+                <a class="top-header-nav-link " href="">
                   <p class="top-header-nav-link-text">Контакти</p></a
                 >
               </div>
@@ -210,23 +208,50 @@
 
           <div class="bottom-header-right">
             <address class="bottom-header-addres-container">
-              <a class="address-tel-number" href="tel:+380674811650"
-                ><svg class="address-icon">
-                  <use
-                    href="/images/header-icons.svg#icon-phone-call"
-                  ></use></svg
-                >+38(067) 481 16 50<svg
-                  class="header-backdrop-arrow"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2.91602 4.66699L6.77985 9.0828C6.89605 9.2156 7.10265 9.2156 7.21885 9.0828L11.0827 4.66699"
-                    stroke-width="1.75"
-                    stroke-linecap="round"
-                  /></svg
-              ></a>
+              <div class="header-tel-numbers-container ">
+                <div class="address-tel-number">
+                  <svg class="address-icon">
+                    <use
+                      href="/images/header-icons.svg#icon-phone-call"
+                    ></use></svg
+                  >(044) 224-84-34<svg
+                    class="header-backdrop-arrow"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.91602 4.66699L6.77985 9.0828C6.89605 9.2156 7.10265 9.2156 7.21885 9.0828L11.0827 4.66699"
+                      stroke-width="1.75"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+
+                <div class="addres-tel-number-backdrop-list">
+                  <a class="tel-number-backdrop-link" href="tel:096444471">
+                    <img
+                      src="/images/header-tel-numbers-icon/Component 16.svg"
+                      alt="Kyivstar"
+                    />
+                    <span>(098) 6-4444-71</span>
+                  </a>
+                  <a class="tel-number-backdrop-link" href="tel:0666444470">
+                    <img
+                      src="/images/header-tel-numbers-icon/Component 16-1.svg"
+                      alt="Vodafone"
+                    />
+                    <span>(066) 6-4444-70</span>
+                  </a>
+                  <a class="tel-number-backdrop-link" href="tel:0936444470">
+                    <img
+                      src="/images/header-tel-numbers-icon/Component 16-2.svg"
+                      alt="Lifecell"
+                    />
+                    <span>(093) 6-4444-70</span>
+                  </a>
+                </div>
+              </div>
             </address>
           </div>
         </div>
@@ -1820,6 +1845,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/js/hero-swiper.js"></script>
     <script src="../js/resize.js"></script>
+    <script src="/js/backdrops.js"></script>
 
     <script src="/js/loyalty-swiper.js"></script>
     <script src="../js/tariff-swiper.js"></script>

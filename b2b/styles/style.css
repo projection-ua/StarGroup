@@ -59,6 +59,8 @@ textarea {
   --primary-orange: #ff5300;
   --primary-orange-bg: #ffe3d5;
   --primary-transparrent-blue: rgba(255, 255, 255, 0.1);
+  --primary-header-current:rgba(4, 31, 127, 1);
+
 }
 
 .primary-color {
@@ -124,20 +126,18 @@ textarea {
 
 .top-header-nav-list {
   display: flex;
-  gap: 1.6vw;
 }
 
 .top-header-nav-link {
   display: flex;
   gap: 0.4vw;
   align-items: center;
-  padding: 1.2vw 0;
-  opacity: 0.5;
+  padding: 1.2vw 0.8vw;
   transition: 0.3s;
 }
 
 .top-header-nav-link.current {
-  opacity: 1;
+  background-color:var(--primary-header-current);
 }
 
 .header-nav-icon {
@@ -155,13 +155,14 @@ textarea {
 }
 
 .without-light-header-container {
+  position: relative;
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
   gap: 0.2vw;
   width: fit-content;
   height: fit-content;
-  padding: 0.2vw 0.4vw;
+  padding: 0.4vw;
   border-radius: 0.2vw;
 }
 
@@ -334,14 +335,31 @@ textarea {
 
 .address-tel-number {
   font-family: "Manrope", sans-serif;
-  font-weight: 700;
-  font-size: 0.8vw;
+  font-weight: 900;
+  font-size: 1vw;
   line-height: 0.8vw;
   color: #030317;
   font-style: normal;
   display: flex;
   align-items: center;
   gap: 0.4vw;
+  padding: 0.4vw;
+  border-radius: 0.3vw;
+  transition: 0.3s;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.address-tel-number:hover {
+  background-color: var(--primary-blue-bg);
+  color: var(--primary-color);
+}
+
+.address-tel-number:hover .address-icon {
+  fill: var(--primary-color);
+}
+.address-tel-number:hover .header-backdrop-arrow {
+  stroke: var(--primary-color);
 }
 
 .address-location {
@@ -354,6 +372,7 @@ textarea {
   width: 0.8vw;
   height: 0.8vw;
   fill: #030317;
+  transition: 0.3s;
 }
 
 .addres-location-text {
@@ -368,6 +387,7 @@ textarea {
 .bottom-header-addres-container {
   display: flex;
   gap: 1.2vw;
+  align-items: center;
 }
 
 .header-bottom-section .container {
@@ -378,6 +398,7 @@ textarea {
 
 .header-bottom-section {
   background-color: #fff;
+  overflow: visible;
 }
 
 .header-botttom-nav-list svg {
@@ -403,7 +424,37 @@ textarea {
 
 .top-heaer-nav-list-mob-backdrop {
   display: flex;
-  gap: 1.6vw;
+}
+
+.header-nav-backdrop-container {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  background-color: #ffffff;
+  padding: 1.2vw;
+  display: none;
+  transition: 1s;
+}
+
+.header-botttom-nav-list li:hover .header-nav-backdrop-container {
+  display: flex;
+}
+
+.header-nav-backdrop-link {
+  font-family: "Manrope";
+  font-size: 0.8vw;
+  font-weight: 600;
+  line-height: 1vw;
+  min-width: 10.4vw;
+  transition: 0.3s;
+}
+
+.header-nav-backdrop-link:hover {
+  color: var(--primary-color);
 }
 
 @media (min-width: 1024px) {
@@ -418,6 +469,79 @@ textarea {
   .header-menu-container {
     display: none;
   }
+}
+
+.header-tel-numbers-container {
+  position: relative;
+  padding: 0.4vw;
+}
+
+.header-tel-numbers-container.active {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 0.3vw;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.address-tel-number {
+  cursor: pointer;
+}
+
+.tel-number-backdrop-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  padding: 0.4vw 0.8vw;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.tel-number-backdrop-link span {
+  font-family: "Manrope";
+  font-size: 0.9vw;
+  font-weight: 600;
+  line-height: 0.9vw;
+}
+
+.tel-number-backdrop-link img {
+  width: 1vw;
+}
+
+.addres-tel-number-backdrop-list {
+  display: none;
+}
+
+.addres-tel-number-backdrop-list.active {
+  position: absolute;
+  display: block;
+  z-index: 9;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
+  border-radius: 0.3vw;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0.4vw;
+  padding-bottom: 0.4vw;
+}
+
+.addres-tel-number-backdrop-list.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08), 
+                -10px 0 10px rgba(0, 0, 0, 0.08), 
+                10px 0 10px rgba(0, 0, 0, 0.08); */
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.tel-number-backdrop-link:hover {
+  background-color: #f5f5f5;
 }
 
 /* HERO SLIDER SECTION ====================================================== */
