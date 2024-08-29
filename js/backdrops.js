@@ -1,23 +1,29 @@
-// Header tel numbers backdrop
-const telBackdropBtn = document.querySelector(".address-tel-number");
-const telBackdrop = document.querySelector(".addres-tel-number-backdrop-list");
-const telNumbersContainer = document.querySelector(
+// Вибір всіх кнопок і контейнерів
+const telBackdropBtns = document.querySelectorAll(".address-tel-number");
+const telBackdrops = document.querySelectorAll(
+  ".addres-tel-number-backdrop-list"
+);
+const telNumbersContainers = document.querySelectorAll(
   ".header-tel-numbers-container"
 );
 
-// Додавання або зняття класу active при кліку на кнопку
-telBackdropBtn.addEventListener("click", (event) => {
-  telBackdrop.classList.toggle("active");
-  telNumbersContainer.classList.toggle("active");
-  event.stopPropagation(); // Запобігає спрацюванню події на документі
+// Додавання або зняття класу active при кліку на кнопку для кожного випадку
+telBackdropBtns.forEach((btn, index) => {
+  btn.addEventListener("click", (event) => {
+    telBackdrops[index].classList.toggle("active");
+    telNumbersContainers[index].classList.toggle("active");
+    event.stopPropagation(); // Запобігає спрацюванню події на документі
+  });
 });
 
 // Закриття при кліку за межами контейнера
 document.addEventListener("click", (event) => {
-  const isClickInside = telNumbersContainer.contains(event.target);
+  telNumbersContainers.forEach((container, index) => {
+    const isClickInside = container.contains(event.target);
 
-  if (!isClickInside) {
-    telBackdrop.classList.remove("active");
-    telNumbersContainer.classList.remove("active");
-  }
+    if (!isClickInside) {
+      telBackdrops[index].classList.remove("active");
+      container.classList.remove("active");
+    }
+  });
 });

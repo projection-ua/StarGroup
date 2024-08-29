@@ -10484,3 +10484,80 @@ footer {
 .popup .steps-form input {
   height: 3.3vw;
 }
+
+footer .header-tel-numbers-container .address-icon {
+  width: 1.2vw;
+  height: 1.2vw;
+  fill: var(--primary-color);
+}
+
+footer .header-tel-numbers-container .address-tel-number {
+  font-size: 1.4vw;
+  width: fit-content;
+  padding: 0.8vw;
+  background-color: var(--primary-blue-bg);
+  color: var(--primary-color);
+  border-radius: 0.4vw;
+}
+
+footer .header-tel-numbers-container .header-backdrop-arrow {
+  width: 0.8vw;
+  height: 0.8vw;
+  stroke: var(--primary-color);
+}
+
+footer .header-tel-numbers-container {
+  width: fit-content;
+  margin-bottom: 1.2vw;
+}
+
+footer .header-tel-numbers-container .tel-number-backdrop-link img {
+  width: 1.2vw;
+}
+
+footer .header-tel-numbers-container .tel-number-backdrop-link span {
+  font-size: 1.2vw;
+}
+
+@media (max-width: 1024px) {
+  footer .header-tel-numbers-container .address-icon {
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+
+  footer .header-tel-numbers-container .address-tel-number {
+    font-size: 5.3vw;
+    padding: 4.2vw;
+    border-radius: 1.6vw;
+  }
+
+  footer .header-tel-numbers-container .header-backdrop-arrow {
+    width: 3.7vw;
+    height: 3.7vw;
+  }
+
+  footer .header-tel-numbers-container {
+    width: fit-content;
+    padding: 1.4vw;
+    border-radius: 1.6vw !important;
+    margin-bottom: 6.4vw;
+
+
+  }
+
+  footer .header-tel-numbers-container .tel-number-backdrop-link img {
+    width: 5.3vw;
+  }
+
+  footer .header-tel-numbers-container .tel-number-backdrop-link span {
+    font-size: 4.8vw;
+        line-height: 4.8vw;
+  }
+
+ footer .header-tel-numbers-container .tel-number-backdrop-link {
+    gap: 2.1vw;
+    padding: 2.1vw 4.2vw;
+}
+
+
+}
