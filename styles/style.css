@@ -729,6 +729,7 @@ section {
   color: #030317;
   margin-bottom: 0.4vw;
   transition: 0.3s;
+  text-align: center;
 }
 
 .services-text-backdrop-container {
@@ -744,6 +745,7 @@ section {
   line-height: 1.25vw;
   line-height: 1.5;
   color: #686874;
+  text-align: center;
 }
 
 .services-btn {
@@ -759,6 +761,7 @@ section {
   width: fit-content;
   border-radius: 0.4vw;
   transition: 0.3s;
+  margin: 0 auto;
 }
 
 .services-btn-icon {
@@ -790,6 +793,8 @@ section {
   background-color: var(--primary-color);
   color: #ffffff;
   padding: 0.8vw;
+  width: 100%;
+  justify-content: center;
 }
 
 .services-item:hover .services-btn-icon {
@@ -5417,7 +5422,7 @@ footer {
 
   .top-header-nav-link.current {
     background-color: transparent;
-}
+  }
 
   .header-nav-icon {
     width: 3.2vw;
