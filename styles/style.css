@@ -2579,7 +2579,7 @@ footer {
   font-size: 1vw;
   line-height: 1.5vw;
   color: #030317;
-  max-width: 31vw;
+  max-width: 34vw;
 }
 
 .question-item-acardeon-text-JS {
@@ -4237,9 +4237,6 @@ footer {
 }
 
 .article-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6vw;
   margin-bottom: 2vw;
 }
 
@@ -4254,7 +4251,7 @@ footer {
   font-size: 2.6vw;
   line-height: 2.8vw;
   color: #030317;
-  width: 33vw;
+  width: 35vw;
   margin-bottom: 1.6vw;
 }
 
@@ -4349,9 +4346,19 @@ footer {
 }
 
 .loyalty-hero-section .special-form-btn {
-  width: 10.4vw;
-  height: 3.2vw;
-  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6vw ;
+  width: 13.5vw;
+  height: 3.3vw;
+  transition: 0.3s
+
+;
+}
+
+.loyalty-hero-section .special-form-btn:hover{
+  background-color: var(--primary-yellow);
 }
 
 .loyalty-hero-section .special-form-input-container {
@@ -4360,6 +4367,13 @@ footer {
 .loyalty-hero-section .special-form-input {
   height: 3.2vw;
   width: 17.7vw;
+}
+
+.loyalty-hero-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 45.5vw;
 }
 
 .equipment-hero-gift {
@@ -7472,11 +7486,21 @@ footer {
     width: 100%;
     height: 17vw;
     color: black;
+    margin-bottom: 8.5vw;
+    gap: 3vw;
   }
 
   .loyalty-container {
     padding: 8.5vw 6.4vw;
     border-radius: 3.2vw;
+    min-height: 86vw;
+    padding-bottom: 0;
+  }
+
+  .loyalty-hero-bg{
+    position: static;
+    width: 80vw;
+    margin: 0 auto;
   }
 
   .loyalty-hero-section .special-form-input-container {
@@ -7495,6 +7519,7 @@ footer {
   .special-list.in-loyalty {
     gap: 3.2vw;
     margin-bottom: 8.5vw;
+    margin-top:6.4vw;
   }
 
   .we-can-swiper-container-short2 .special-item:hover {
