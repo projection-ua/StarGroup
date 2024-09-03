@@ -853,17 +853,13 @@ section {
 }
 
 .tariff-item-title-wrapper {
-  position: relative;
-  padding: 2.2vw 0 0 2vw;
-  background-image: url(../images/main-page/tariff-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 21.8vw;
-  height: 42.2vw;
+  width: 21vw;
+  height: fit-content;
   border-radius: 1vw;
-  overflow: visible;
-  z-index: 9;
-  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.tariff-item-title-wrapper.megogo {
 }
 
 .tariff-item-title-wrapper .special-item-action {
@@ -1101,7 +1097,7 @@ section {
 .tariff-item-price-container {
   margin: 1.6vw 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
@@ -1340,6 +1336,7 @@ section {
 
 .tariff-in-apartment-bottom-text {
   width: 64vw;
+  max-width: 64vw !important;
 }
 
 .tariff-ckeckbox-container {
@@ -2016,7 +2013,7 @@ footer {
   font-weight: 500;
   font-size: 0.8vw;
   color: #9a9aa2;
-  margin-bottom: 1.2vw;
+  margin-bottom: 0.4vw;
 }
 
 .footer-email-address {
@@ -2146,10 +2143,6 @@ footer {
   color: #353545;
 }
 
-.footer-bottom-text:nth-child(2) {
-  width: 31vw;
-}
-
 /* =============INTERNET + TV PAGE====================================================== */
 /*  INTERNET_TV_HERO===========================================*/
 .internet-tv-hero-section {
@@ -2228,6 +2221,7 @@ footer {
   font-size: 0.7vw;
   line-height: 1vw;
   color: #9a9aa2;
+  max-width: 32vw;
 }
 
 /* INTERNET-TV-FORM-SECTION ========================================================= */
@@ -2365,6 +2359,12 @@ footer {
   padding: 1.5vw;
   border-radius: 0.6vw;
   height: auto;
+}
+
+.why-section .we-can-item-container {
+  flex-basis: calc((100% - 2 * 0.4vw) / 4);
+
+
 }
 
 .we-can-item-title {
@@ -2984,11 +2984,22 @@ footer {
 }
 
 .tariff-in-private-house .inner-tariff-container {
-  min-height: 31vw;
+  min-height: 26vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+.tariff-in-private-house.kozyn .inner-tariff-container {
+  min-height:unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
 
 /* ============== TABLE_SECTION ================ */
 
@@ -5775,6 +5786,7 @@ footer {
     width: 100%;
     position: relative;
     padding-bottom: 9.6vw;
+    margin-bottom: 8.5vw;
   }
 
   .main-tariff-swiper-container .swiper-pagination-bullet {
@@ -6323,11 +6335,12 @@ footer {
     font-size: 3.3vw;
     line-height: 5.6vw;
     width: 100%;
+    max-width: 100% !important;
   }
 
   .tariff-in-private-house .inner-tariff-container {
     min-height: unset;
-    height: 142vw;
+    height: 120vw;
   }
 
   /* .tariff-section.tariff-in-internet-tv .main-tariff-swiper-container {
@@ -10541,8 +10554,6 @@ footer .header-tel-numbers-container .tel-number-backdrop-link span {
     padding: 1.4vw;
     border-radius: 1.6vw !important;
     margin-bottom: 6.4vw;
-
-
   }
 
   footer .header-tel-numbers-container .tel-number-backdrop-link img {
@@ -10551,13 +10562,34 @@ footer .header-tel-numbers-container .tel-number-backdrop-link span {
 
   footer .header-tel-numbers-container .tel-number-backdrop-link span {
     font-size: 4.8vw;
-        line-height: 4.8vw;
+    line-height: 4.8vw;
   }
 
- footer .header-tel-numbers-container .tel-number-backdrop-link {
+  footer .header-tel-numbers-container .tel-number-backdrop-link {
     gap: 2.1vw;
     padding: 2.1vw 4.2vw;
+  }
+}
+
+.we-can-list.additional-services .we-can-item-container {
+  flex-direction: column;
+ 
+}
+
+.we-can-list.additional-services .we-can-item-container .we-can-icon-container {
+  margin-bottom: 0.8vw;
 }
 
 
+@media (max-width: 1024px) {
+  .tariff-swiper-relative-container-for-btn .hero-swiper-nav-container {
+    display: none;
+  }
+
+  .we-can-list.additional-services
+    .we-can-item-container
+    .we-can-icon-container {
+    margin-bottom: 5.3vw;
+  }
 }
+
